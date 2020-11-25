@@ -1,0 +1,18 @@
+saves/
+coremods/
+crash-reports/
+journeymap/
+local/
+logs/
+mods/
+patchouli_books/
+resourcepacks/
+server-resource packs/
+shaderpacks/
+TombManyGraves/
+crafttweaker.log
+options.txt
+patchouli_data.json
+usercache.json
+usernamecache.json
+textures_0.png
