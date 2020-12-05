@@ -39,22 +39,22 @@ furnace.remove(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>); #
 //	Tier 20	[9700 temp]		500000	Fusion		Neutronium Nugget, 
 
 //Steel [tier 0]
-blast_furnace.findRecipe(120, [<ore:dustSteel>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustSteel>.firstItem], [null]).remove();	
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot>], [<liquid:oxygen> * 1000]).remove();	
 blast_furnace.findRecipe(120, [<gregtech:meta_item_1:10140>], [<liquid:oxygen> * 1000]).remove();	
-blast_furnace.findRecipe(120, [<ore:ingotWroughtIron>], [<liquid:oxygen> * 1000]).remove();	
+blast_furnace.findRecipe(120, [<ore:ingotWroughtIron>.firstItem], [<liquid:oxygen> * 1000]).remove();	
 
 //Silcon [tier 0]
-blast_furnace.findRecipe(120, [<ore:dustSilicon>, gt.getCirc(0)], [null]).remove();	
-furnace.addRecipe(<ore:ingotSilicon>.firstItem, <ore:dustSilicon>, 0.0);
+blast_furnace.findRecipe(120, [<ore:dustSilicon>.firstItem, gt.getCirc(0)], [null]).remove();	
+furnace.addRecipe(<ore:ingotSilicon>.firstItem, <ore:dustSilicon>.firstItem, 0.0);
 
 //Black Steel [tier 1]
-blast_furnace.findRecipe(120, [<ore:dustBlackSteel>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustBlackSteel>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustBlackSteel>]).outputs([<ore:ingotBlackSteel>.firstItem]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
 
 //Annealed Copper [tier 1]
-blast_furnace.findRecipe(120, [<ore:dustCopper>], [<liquid:oxygen> * 1000]).remove();	
-blast_furnace.findRecipe(120, [<ore:ingotCopper>], [<liquid:oxygen> * 1000]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustCopper>.firstItem], [<liquid:oxygen> * 1000]).remove();	
+blast_furnace.findRecipe(120, [<ore:ingotCopper>.firstItem], [<liquid:oxygen> * 1000]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:ingotCopper>]).fluidInputs([<liquid:oxygen> * 1000]).outputs([<ore:ingotAnnealedCopper>.firstItem]).property("temperature", 1000).duration(200).EUt(120).buildAndRegister();
 
 //HSLA - unused
@@ -62,15 +62,15 @@ blast_furnace.recipeBuilder().inputs([<ore:ingotCopper>]).fluidInputs([<liquid:o
 
 
 //Kanthal [tier 2]
-blast_furnace.findRecipe(120, [<ore:dustKanthal>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustKanthal>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustKanthal>]).outputs([<ore:ingotHotKanthal>.firstItem]).property("temperature", 1500).duration(200).EUt(120).buildAndRegister();
 
 //Aluminium [tier 2]
-blast_furnace.findRecipe(120, [<ore:dustAluminium>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustAluminium>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustAluminium>]).outputs([<ore:ingotAluminium>.firstItem]).property("temperature", 1500).duration(400).EUt(120).buildAndRegister();
 
 //Neodymium [tier 2]
-blast_furnace.findRecipe(120, [<ore:dustNeodymium>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustNeodymium>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustNeodymium>]).outputs([<ore:ingotNeodymium>.firstItem]).property("temperature", 1500).duration(400).EUt(120).buildAndRegister();
 
 //Energetic Alloy [tier 2]
@@ -83,33 +83,33 @@ blast_furnace.recipeBuilder().inputs([<ore:ingotSilver>,<nuclearcraft:compound:2
 blast_furnace.recipeBuilder().inputs([<enderio:item_alloy_ingot:1>,<minecraft:ender_pearl>]).outputs([<enderio:item_alloy_ingot:2>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Silicon Boule [tier 3]
-blast_furnace.findRecipe(120, [<ore:dustSilicon> * 32, <ore:dustTinyGallium>, gt.getCirc(1)], [null]).remove();	
+//blast_furnace.findRecipe(120, [<ore:dustSilicon>.firstItem * 32, <ore:dustTinyGallium>.firstItem, gt.getCirc(1)], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustSilicon> * 32, <ore:dustTinyGallium>]).outputs([<metaitem:boule.silicon>]).property("temperature", 1700).duration(6000).EUt(120).buildAndRegister();
 
 //Red Steel [tier 3]
-blast_furnace.findRecipe(120, [<ore:dustRedSteel>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustRedSteel>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustRedSteel>]).outputs([<ore:ingotRedSteel>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Nickel Zinc Ferrite [tier 3]
-furnace.addRecipe(<ore:ingotNickelZincFerrite>, <ore:dustNickelZincFerrite>, 0.0);
-blast_furnace.findRecipe(120, [<ore:dustFerriteMixture>], [<liquid:oxygen> * 2000]).remove();	
-blast_furnace.findRecipe(120, [<ore:dustNickelZincFerrite>], [null]).remove();	
+furnace.addRecipe(<ore:ingotNickelZincFerrite>.firstItem, <ore:dustNickelZincFerrite>, 0.0);
+blast_furnace.findRecipe(120, [<ore:dustFerriteMixture>.firstItem], [<liquid:oxygen> * 2000]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustNickelZincFerrite>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustFerriteMixture>]).fluidInputs([<liquid:oxygen> * 2000]).outputs([<ore:ingotNickelZincFerrite>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Stainless Steel [tier 3]
-blast_furnace.findRecipe(120, [<ore:dustStainlessSteel>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustStainlessSteel>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustStainlessSteel>]).outputs([<ore:ingotStainlessSteel>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Ilmenite [tier 3]
-blast_furnace.findRecipe(500, [<ore:dustIlmenite>,<ore:dustCarbon>], [null]).remove();	
+blast_furnace.findRecipe(500, [<ore:dustIlmenite>.firstItem,<ore:dustCarbon>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustIlmenite>,<ore:dustCarbon>]).outputs([<ore:nuggetWroughtIron>.firstItem * 4, <ore:dustTinyRutile>.firstItem * 5]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Palladium [tier 3]
-blast_furnace.findRecipe(120, [<ore:dustPalladium>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustPalladium>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustPalladium>]).outputs([<ore:ingotPalladium>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Chrome [tier 3]
-blast_furnace.findRecipe(120, [<ore:dustChrome>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustChrome>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustChrome>]).outputs([<ore:ingotChrome>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Modularium [tier 3]
@@ -118,42 +118,42 @@ blast_furnace.recipeBuilder().inputs([<ore:dustSteel>,<nuclearcraft:compound:2>]
 blast_furnace.recipeBuilder().inputs([<ore:ingotSteel>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<modularmachinery:itemmodularium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Nichrome [tier 4]
-blast_furnace.findRecipe(480, [<ore:ingotNickel> * 4,<ore:ingotChrome>], [null]).remove();
-blast_furnace.findRecipe(120, [<ore:dustNichrome>], [null]).remove();	
-furnace.addRecipe(<ore:ingotNichrome>, <ore:dustNichrome>, 0.0);
+blast_furnace.findRecipe(480, [<ore:ingotNickel>.firstItem * 4,<ore:ingotChrome>.firstItem], [null]).remove();
+blast_furnace.findRecipe(120, [<ore:dustNichrome>.firstItem], [null]).remove();	
+furnace.addRecipe(<ore:ingotNichrome>.firstItem, <ore:dustNichrome>, 0.0);
 blast_furnace.recipeBuilder().inputs([<ore:ingotNickel> * 4,<ore:ingotChrome>]).outputs([<ore:ingotHotNichrome>.firstItem * 5]).property("temperature", 2100).duration(800).EUt(480).buildAndRegister();
 
 //Titanium [tier 4]
-blast_furnace.findRecipe(480, [<ore:dustMagnesium> * 2], [<liquid:titanium_tetrachloride> * 1000]).remove();
-blast_furnace.findRecipe(120, [<ore:dustTitanium>], [null]).remove();	
+blast_furnace.findRecipe(480, [<ore:dustMagnesium>.firstItem * 2], [<liquid:titanium_tetrachloride> * 1000]).remove();
+blast_furnace.findRecipe(120, [<ore:dustTitanium>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustMagnesium> * 2]).fluidInputs([<liquid:titanium_tetrachloride> * 1000]).outputs([<ore:ingotHotTitanium>.firstItem,<ore:dustMagnesiumChloride>.firstItem * 6]).property("temperature", 2100).duration(800).EUt(480).buildAndRegister();
 
 //Yttrium [tier 4]
-blast_furnace.findRecipe(120, [<ore:dustYttrium>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustYttrium>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustYttrium>]).outputs([<ore:ingotYttrium>.firstItem]).property("temperature", 2100).duration(800).EUt(480).buildAndRegister();
 
 //Tungstencarbide [tier 5]
-blast_furnace.findRecipe(120, [<ore:dustTungstenCarbide>], [null]).remove();	
-blast_furnace.findRecipe(480, [<ore:ingotTungsten>,<ore:dustCarbon>], [null]).remove();
+blast_furnace.findRecipe(120, [<ore:dustTungstenCarbide>.firstItem], [null]).remove();	
+blast_furnace.findRecipe(480, [<ore:ingotTungsten>.firstItem,<ore:dustCarbon>.firstItem], [null]).remove();
 blast_furnace.recipeBuilder().inputs([<ore:ingotTungsten>,<ore:dustCarbon>]).outputs([<ore:ingotHotTungstenCarbide>.firstItem]).property("temperature", 2700).duration(500).EUt(480).buildAndRegister();	
-furnace.addRecipe(<ore:ingotTungstenCarbide>, <ore:dustTungstenCarbide>, 0.0);
+furnace.addRecipe(<ore:ingotTungstenCarbide>.firstItem, <ore:dustTungstenCarbide>, 0.0);
 
 //Tungstensteel [tier 5]
-blast_furnace.findRecipe(120, [<ore:dustTungstenSteel>], [null]).remove();	
-blast_furnace.findRecipe(480, [<ore:ingotTungsten>,<ore:ingotSteel>], [null]).remove();
-furnace.addRecipe(<ore:ingotTungstenSteel>, <ore:dustTungstenSteel>, 0.0);
+blast_furnace.findRecipe(120, [<ore:dustTungstenSteel>.firstItem], [null]).remove();	
+blast_furnace.findRecipe(480, [<ore:ingotTungsten>.firstItem,<ore:ingotSteel>.firstItem], [null]).remove();
+furnace.addRecipe(<ore:ingotTungstenSteel>.firstItem, <ore:dustTungstenSteel>, 0.0);
 blast_furnace.recipeBuilder().inputs([<ore:ingotTungsten>,<ore:ingotSteel>]).outputs([<ore:ingotHotTungstenSteel>.firstItem * 2]).property("temperature", 2700).duration(1000).EUt(480).buildAndRegister();	
 
 //Glowstone Doped Silicon Boule [tier 5]
-blast_furnace.findRecipe(480, [<ore:dustSilicon> * 64, <minecraft:glowstone_dust> * 8, gt.getCirc(1)], [<liquid:nitrogen> * 8000]).remove();	
+blast_furnace.findRecipe(480, [<ore:dustSilicon>.firstItem * 64, <minecraft:glowstone_dust> * 8, gt.getCirc(1)], [<liquid:nitrogen> * 8000]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustSilicon> * 64, <minecraft:glowstone_dust> * 8]).fluidInputs([<liquid:argon> * 8000]).outputs([<metaitem:boule.glowstone>]).property("temperature", 2700).duration(3000).EUt(480).buildAndRegister();
 
 //Tungsten [tier 6]
-blast_furnace.findRecipe(120, [<ore:dustTungsten>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustTungsten>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustTungsten>]).outputs([<ore:ingotHotTungsten>.firstItem]).property("temperature", 3000).duration(600).EUt(480).buildAndRegister();	
 
 //Niobium [tier 6]
-blast_furnace.findRecipe(120, [<ore:dustNiobium>], [null]).remove();	
+blast_furnace.findRecipe(120, [<ore:dustNiobium>.firstItem], [null]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:dustNiobium>]).outputs([<ore:ingotHotNiobium>.firstItem]).property("temperature", 3000).duration(600).EUt(480).buildAndRegister();	
 
 //Signalum [tier 8]
@@ -165,9 +165,9 @@ recipes.addShapeless(<thermalfoundation:material:101> * 4, [  // Mixer Recipe ??
 blast_furnace.recipeBuilder().inputs([<thermalfoundation:material:101>]).fluidInputs([<liquid:mana>*250]).outputs([<thermalfoundation:material:165>]).property("temperature", 4000).duration(12800).EUt(120).buildAndRegister();
 
 //Vanadium-Gallium [tier 8]
-blast_furnace.findRecipe(480, [<ore:ingotVanadium> * 3, <ore:ingotGallium>], [null]).remove();
-blast_furnace.findRecipe(120, [<ore:dustVanadiumGallium>], [null]).remove();
-furnace.addRecipe(<ore:ingotVanadiumGallium>, <ore:dustVanadiumGallium>, 0.0);		
+blast_furnace.findRecipe(480, [<ore:ingotVanadium>.firstItem * 3, <ore:ingotGallium>.firstItem], [null]).remove();
+blast_furnace.findRecipe(120, [<ore:dustVanadiumGallium>.firstItem], [null]).remove();
+furnace.addRecipe(<ore:ingotVanadiumGallium>.firstItem, <ore:dustVanadiumGallium>, 0.0);		
 blast_furnace.recipeBuilder().inputs([<ore:ingotVanadium> * 3, <ore:ingotGallium>]).outputs([<ore:ingotHotVanadiumGallium>.firstItem * 4]).property("temperature", 4000).duration(10000).EUt(120).buildAndRegister();
 	
 //Lumium [tier 9]
@@ -179,28 +179,28 @@ recipes.addShapeless(<thermalfoundation:material:102> * 4, [ // Mixer Recipe??
 	<extendedcrafting:material:7>,<extendedcrafting:material:7>,<thermalfoundation:material:894>]);
 
 //Niobium-Titanium [tier 9]
-blast_furnace.findRecipe(480, [<ore:ingotNiobium>,<ore:ingotTitanium>], [null]).remove();
-blast_furnace.findRecipe(120, [<ore:dustNiobiumTitanium>], [null]).remove();	
-furnace.addRecipe(<ore:ingotNiobiumTitanium>, <ore:dustNiobiumTitanium>, 0.0);
+blast_furnace.findRecipe(480, [<ore:ingotNiobium>.firstItem,<ore:ingotTitanium>.firstItem], [null]).remove();
+blast_furnace.findRecipe(120, [<ore:dustNiobiumTitanium>.firstItem], [null]).remove();	
+furnace.addRecipe(<ore:ingotNiobiumTitanium>.firstItem, <ore:dustNiobiumTitanium>, 0.0);
 blast_furnace.recipeBuilder().inputs([<ore:ingotNiobium>,<ore:ingotTitanium>]).outputs([<ore:ingotHotNiobiumTitanium>.firstItem * 2]).property("temperature", 4500).duration(7000).EUt(120).buildAndRegister();	
 
 //Naquadah [tier 11] // Use Gregicality Ore processing
-blast_furnace.findRecipe(120, [<ore:dustNaquadah>], [null]).remove();	
-freezer.findRecipe(120, [<ore:ingotHotNaquadah>], [null]).remove();
+blast_furnace.findRecipe(120, [<ore:dustNaquadah>.firstItem], [null]).remove();	
+freezer.findRecipe(120, [<ore:ingotHotNaquadah>.firstItem], [null]).remove();
 mods.jei.JEI.removeAndHide(<ore:ingotHotNaquadah>.firstItem);	
-furnace.addRecipe(<ore:ingotNaquadah>, <ore:ingotNaquadah>, 0.0);
+furnace.addRecipe(<ore:ingotNaquadah>.firstItem, <ore:ingotNaquadah>, 0.0);
 
 //Enriched Naquadah
 //FIXME: [ERROR] Invalid amount of recipe inputs. Actual: 7. Should be between 1 and 3 inclusive. // blast_furnace.recipeBuilder().inputs([<ore:ingotNaquadah>,<enderio:item_material:20>,<enderio:item_material:37>,<enderio:item_material:36>,<enderio:item_material:35>,<enderio:item_material:34>,<contenttweaker:grainsofinnocence>]).fluidInputs([<liquid:ender_distillation> * 1000]).outputs([<ore:dustNaquadahEnriched>]).property("temperature", 5400).duration(3600).EUt(120).buildAndRegister();
 
 //Naquadah Doped Boule [tier 11]
-blast_furnace.findRecipe(1920, [<ore:blockSilicon> * 9, <ore:ingotNaquadah>, gt.getCirc(1)], [<liquid:argon> * 8000]).remove();	
+blast_furnace.findRecipe(1920, [<ore:blockSilicon>.firstItem * 9, <ore:ingotNaquadah>.firstItem, gt.getCirc(1)], [<liquid:argon> * 8000]).remove();	
 blast_furnace.recipeBuilder().inputs([<ore:blockSilicon> * 9, <ore:ingotNaquadah>]).fluidInputs([<liquid:argon> * 16000]).outputs([<metaitem:boule.naquadah>]).property("temperature", 5400).duration(1440).EUt(8000).buildAndRegister();
 	
 //Osiridium [tier 12]		DISABLED IN FAVOR OF VANILLA RECIPE
 //blast_furnace.findRecipe(1920, [<gregtech:meta_item_1:10032> * 3, <gregtech:meta_item_1:10047>], [<liquid:helium>*1000]).remove();
-blast_furnace.findRecipe(120, [<ore:dustOsmiridium>], [null]).remove();		
-furnace.addRecipe(<ore:ingotOsmiridium>, <ore:dustOsmiridium>, 0.0);
+blast_furnace.findRecipe(120, [<ore:dustOsmiridium>.firstItem], [null]).remove();		
+furnace.addRecipe(<ore:ingotOsmiridium>.firstItem, <ore:dustOsmiridium>, 0.0);
 //blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:10032> * 3, <gregtech:meta_item_1:10047>]).fluidInputs([<liquid:helium>*1000]).outputs([<gregtech:meta_item_1:11207> * 4]).property("temperature", 6000).duration(4400).EUt(8000).buildAndRegister();	
 	
 //Enderium [tier 13]
@@ -216,8 +216,8 @@ blast_furnace.recipeBuilder().inputs([<draconicevolution:draconium_dust>]).fluid
 blast_furnace.recipeBuilder().inputs([<armorplus:material:3> * 4]).fluidInputs([<liquid:nitro_fuel>*8000]).outputs([<contenttweaker:hotdraconiumingot> * 2]).property("temperature", 6800).duration(20000).EUt(120).buildAndRegister();
 
 //Naquadah Alloy [tier 15]		DISABLED IN FAVOR OF VANILLA RECIPE
-blast_furnace.findRecipe(120, [<ore:dustNaquadahAlloy>], [null]).remove();		
-furnace.addRecipe(<ore:ingotNaquadahAlloy>, <ore:dustNaquadahAlloy>, 0.0);
+blast_furnace.findRecipe(120, [<ore:dustNaquadahAlloy>.firstItem], [null]).remove();		
+furnace.addRecipe(<ore:ingotNaquadahAlloy>.firstItem, <ore:dustNaquadahAlloy>, 0.0);
 
 //Dark Soularium [tier 18]
 blast_furnace.recipeBuilder().inputs([<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:7>]).fluidInputs([<liquid:tritium>*1000]).outputs([<simplyjetpacks:metaitemmods:3>]).property("temperature", 8600).duration(1200).EUt(32000).buildAndRegister();
@@ -233,8 +233,8 @@ alloy.recipeBuilder().inputs([<minecraft:iron_ingot>,<forestry:crafting_material
 
 
 //Removed
-blast_furnace.findRecipe(120, [<ore:dustNaquadria>], [null]).remove();		//Naquadriah
-furnace.addRecipe(<ore:ingotNaquadria>, <ore:dustNaquadria>, 0.0);
+blast_furnace.findRecipe(120, [<ore:dustNaquadria>.firstItem], [null]).remove();		//Naquadriah
+furnace.addRecipe(<ore:ingotNaquadria>.firstItem, <ore:dustNaquadria>, 0.0);
 
 
 

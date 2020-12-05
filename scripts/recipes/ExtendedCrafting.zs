@@ -1,10 +1,10 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import scripts.CommonVars.makeShaped as makeShaped;
-import scripts.CommonVars.makeExtremeRecipe5 as makeExtremeRecipe5;
-import scripts.CommonVars.makeExtremeRecipe7 as makeExtremeRecipe7;
-import scripts.CommonVars.makeExtremeRecipe9 as makeExtremeRecipe9;
+//import scripts.CommonVars.craft.makeShaped as craft.makeShaped;
+//import scripts.CommonVars.craft.makeExtremeRecipe5 as craft.makeExtremeRecipe5;
+//import scripts.CommonVars.craft.makeExtremeRecipe7 as craft.makeExtremeRecipe7;
+//import scripts.CommonVars.craft.makeExtremeRecipe9 as craft.makeExtremeRecipe9;
 
 fluid_extractor.recipeBuilder()
     .inputs([<ore:dustCryotheum>])
@@ -310,7 +310,7 @@ fluid_extractor.recipeBuilder()
 
 solidifier.recipeBuilder()
     .fluidInputs([<liquid:moltencrystalmatrix> * 144])
-    .notConsumable(<gregtech:meta_item_1:32306>)
+    .notConsumable(<metaitem:shape.mold.ingot>)
     .outputs(<avaritia:resource:1>)
     .duration(500).EUt(16).buildAndRegister();
 
@@ -331,7 +331,7 @@ fluid_extractor.recipeBuilder()
     .duration(180).EUt(16).buildAndRegister();
 
 fluid_extractor.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2201>])
+    .inputs([<ore:dustNetherQuartz>])
     .fluidOutputs([<liquid:quartz> * 144])
     .duration(180).EUt(16).buildAndRegister();
 
@@ -352,7 +352,7 @@ fluid_extractor.recipeBuilder()
     .duration(180).EUt(16).buildAndRegister();
 
 fluid_extractor.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2201>])
+    .inputs([<ore:dustNetherQuartz>])
     .fluidOutputs([<liquid:quartz> * 144])
     .duration(180).EUt(16).buildAndRegister();
 
@@ -411,7 +411,7 @@ fluid_extractor.recipeBuilder()
     .fluidOutputs([<liquid:neptunium> * 16])
     .duration(20).EUt(16).buildAndRegister();
 
-fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:10052>], []).remove();
+//fluid_extractor.findRecipe(32, [<ore:ingotPlutonium>.firstItem], []).remove();
 fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:10053>], []).remove();
 fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:9052>], []).remove();
 fluid_extractor.findRecipe(32, [<gregtech:meta_item_1:9053>], []).remove();
@@ -457,7 +457,7 @@ fluid_extractor.recipeBuilder()
     .duration(20).EUt(16).buildAndRegister();
 
 fluid_extractor.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:10052>])
+    .inputs([<ore:ingotPlutonium>])
     .fluidOutputs([<liquid:plutonium2> * 144])
     .duration(180).EUt(16).buildAndRegister();
 
@@ -618,7 +618,7 @@ mods.jei.JEI.removeAndHide(<extendedcrafting:material:3>);
 mods.jei.JEI.removeAndHide(<extendedcrafting:table_basic>);
 
 recipes.remove(<extendedcrafting:compressor>);
-makeShaped("of_extendedcrafting_compressor", <extendedcrafting:compressor>,
+craft.makeShaped("of_extendedcrafting_compressor", <extendedcrafting:compressor>,
     ["ABA",
      "CDC",
      "AEA"],
@@ -631,7 +631,7 @@ makeShaped("of_extendedcrafting_compressor", <extendedcrafting:compressor>,
 recipes.remove(<extendedcrafting:guide>);
 
 recipes.remove(<extendedcrafting:frame>);
-makeShaped("of_extendedcrafting_frame", <extendedcrafting:frame>,
+craft.makeShaped("of_extendedcrafting_frame", <extendedcrafting:frame>,
     ["AGA",
      "GBG",
      "AGA"],
@@ -640,7 +640,7 @@ makeShaped("of_extendedcrafting_frame", <extendedcrafting:frame>,
       G : <ore:blockGlass> });
 
 recipes.remove(<extendedcrafting:interface>);
-makeShaped("of_extendedcrafting_interface", <extendedcrafting:interface>,
+craft.makeShaped("of_extendedcrafting_interface", <extendedcrafting:interface>,
     ["ABA",
      "CDC",
      "AEA"],
@@ -653,7 +653,7 @@ makeShaped("of_extendedcrafting_interface", <extendedcrafting:interface>,
 //Remove the unavailable pedestal
 recipes.removeByRecipeName("extendedcrafting:pedestal");
 
-makeShaped("of_extendedcrafting_pedestal", <extendedcrafting:pedestal>,
+craft.makeShaped("of_extendedcrafting_pedestal", <extendedcrafting:pedestal>,
     [" A ",
      " A ",
      "BCB"],
@@ -664,7 +664,7 @@ makeShaped("of_extendedcrafting_pedestal", <extendedcrafting:pedestal>,
 <extendedcrafting:material:19>.displayName = "Conflux Component";
 recipes.remove(<extendedcrafting:material:19>);
 
-makeShaped("of_conflux_component", <extendedcrafting:material:19>,
+craft.makeShaped("of_conflux_component", <extendedcrafting:material:19>,
     [" A ",
      "BCD",
      " E "],
@@ -677,7 +677,7 @@ makeShaped("of_conflux_component", <extendedcrafting:material:19>,
 <extendedcrafting:material:13>.displayName = "Conflux Catalyst";
 recipes.remove(<extendedcrafting:material:13>);
 
-makeShaped("of_conflux_catalyst", <extendedcrafting:material:13>,
+craft.makeShaped("of_conflux_catalyst", <extendedcrafting:material:13>,
     [" A ",
      "BCD",
      " E "],
@@ -695,7 +695,7 @@ recipes.removeByRecipeName("extrautils2:angel_ring_4");
 recipes.removeByRecipeName("extrautils2:angel_ring_5");
 
 
-makeExtremeRecipe5(<extrautils2:angelring>,
+craft.makeExtremeRecipe5(<extrautils2:angelring>,
     [" GGG ",
      "G R G",
      "GV VG",
@@ -707,7 +707,7 @@ makeExtremeRecipe5(<extrautils2:angelring>,
 
 ///////////////////////// ZPM  ///////////////////////////////
 
-makeExtremeRecipe9(<gregtech:meta_item_1:32599>,
+craft.makeExtremeRecipe9(<gregtech:meta_item_1:32599>,
     ["  NNNNN  ",
      "  NBCBN  ",
      "  NCBCN  ",
@@ -719,9 +719,9 @@ makeExtremeRecipe9(<gregtech:meta_item_1:32599>,
      "   NNN   "],
     { B : <contenttweaker:stabilizedberkelium>,
       C : <contenttweaker:stabilizedcalifornium>,
-      G : <gregtech:meta_item_1:32676>,
+      G : <metaitem:field.generator.zpm>,
       N : <nuclearcraft:part:3>,
-      U : <ore:circuitUltimate> });
+      U : gt.getCirc("ZPM") });
 
 
 //Luminescence
@@ -765,36 +765,36 @@ val catalystShape as string[] = [" A ",
                                  " A "];
 
 recipes.remove(<extendedcrafting:material:8>);
-makeShaped("of_catalyst_1", <extendedcrafting:material:8>, catalystShape,
+craft.makeShaped("of_catalyst_1", <extendedcrafting:material:8>, catalystShape,
     { A : <extendedcrafting:material:14>,
       B : <ore:plateBlackSteel> });
 
 recipes.remove(<extendedcrafting:material:9>);
 
-makeShaped("of_catalyst_2", <extendedcrafting:material:9>, catalystShape,
+craft.makeShaped("of_catalyst_2", <extendedcrafting:material:9>, catalystShape,
     { A : <extendedcrafting:material:15>,
       B : <ore:plateBlackSteel> });
 
 
 recipes.remove(<extendedcrafting:material:10>);
-makeShaped("of_catalyst_3", <extendedcrafting:material:10>, catalystShape,
+craft.makeShaped("of_catalyst_3", <extendedcrafting:material:10>, catalystShape,
     { A : <extendedcrafting:material:16>,
       B : <ore:plateBlackSteel> });
 
 recipes.remove(<extendedcrafting:material:11>);
-makeShaped("of_catalyst_4", <extendedcrafting:material:11>, catalystShape,
+craft.makeShaped("of_catalyst_4", <extendedcrafting:material:11>, catalystShape,
     { A : <extendedcrafting:material:17>,
       B : <ore:plateBlackSteel> });
 
 recipes.remove(<extendedcrafting:material:12>);
-makeShaped("of_catalyst_5", <extendedcrafting:material:12>, catalystShape,
+craft.makeShaped("of_catalyst_5", <extendedcrafting:material:12>, catalystShape,
     { A : <extendedcrafting:material:18>,
       B : <ore:plateBlackSteel> });
 
 //Advanced Extended Crafting Table
 recipes.remove(<extendedcrafting:table_advanced>);
 recipes.addShapeless(<extendedcrafting:table_advanced> * 2, [<extendedcrafting:table_advanced>]);
-makeShaped("of_extendedcrafting_table_advanced", <extendedcrafting:table_advanced>,
+craft.makeShaped("of_extendedcrafting_table_advanced", <extendedcrafting:table_advanced>,
     ["ABA",
      "CDC",
      "ABA"],
@@ -808,7 +808,7 @@ makeShaped("of_extendedcrafting_table_advanced", <extendedcrafting:table_advance
 //Elite Extended Crafting Table
 recipes.remove(<extendedcrafting:table_elite>);
 recipes.addShapeless(<extendedcrafting:table_elite> * 2,[<extendedcrafting:table_elite>]);
-makeExtremeRecipe5(<extendedcrafting:table_elite>,
+craft.makeExtremeRecipe5(<extendedcrafting:table_elite>,
     ["CBABC",
      "BDDDB",
      "ADTDA",
@@ -826,7 +826,7 @@ recipes.remove(<extendedcrafting:table_ultimate>);
 recipes.addShapeless(<extendedcrafting:table_ultimate> * 2, [<extendedcrafting:table_ultimate>]);
 
 <extendedcrafting:table_ultimate>.displayName = "Ultimate Extended Crafting Table";
-makeExtremeRecipe7(<extendedcrafting:table_ultimate>,
+craft.makeExtremeRecipe7(<extendedcrafting:table_ultimate>,
     ["EBBABBE",
      "BCCCCCB",
      "BCBDBCB",
@@ -856,16 +856,16 @@ implosion.recipeBuilder()
 
 
 recipes.remove(<minecraft:end_crystal>);
-makeShaped("of_end_crystal", <minecraft:end_crystal>,
+craft.makeShaped("of_end_crystal", <minecraft:end_crystal>,
     ["AAA",
      "ABA",
      "AAA"],
     { A : <minecraft:glass_pane>,
-      B : <metaitem.quantumstar> });
+      B : <metaitem:quantumstar> });
 
 ///////////////////////// Nether Star  ///////////////////////////////
 recipes.remove(<minecraft:nether_star>);
-makeShaped("of_nether_star", <minecraft:nether_star>,
+craft.makeShaped("of_nether_star", <minecraft:nether_star>,
     [" N ",
      "WCE",
      " S "],
@@ -877,28 +877,28 @@ makeShaped("of_nether_star", <minecraft:nether_star>,
 
 <cns:star_fragment>.displayName = "Nether Star Tip North";
 recipes.remove(<cns:star_fragment>);
-makeShaped("of_nether_star_north", <cns:star_fragment>,
+craft.makeShaped("of_nether_star_north", <cns:star_fragment>,
     [" A ",
      "ABA",
      "ABA"],
     { A : <minecraft:quartz>,
       B : <thermalfoundation:material:1026> });
 
-makeShaped("of_nether_star_south", <contenttweaker:netherstarsouth>,
+craft.makeShaped("of_nether_star_south", <contenttweaker:netherstarsouth>,
     ["ABA",
      "ABA",
      " A "],
     { A : <minecraft:quartz>,
       B : <thermalfoundation:material:1027> });
 
-makeShaped("of_nether_star_east", <contenttweaker:netherstareast>,
+craft.makeShaped("of_nether_star_east", <contenttweaker:netherstareast>,
     ["AA ",
      "BBA",
      "AA "],
     { A : <minecraft:quartz>,
       B : <thermalfoundation:material:1024> });
 
-makeShaped("of_nether_star_west", <contenttweaker:netherstarwest>,
+craft.makeShaped("of_nether_star_west", <contenttweaker:netherstarwest>,
     [" AA",
      "ABB",
      " AA"],
@@ -906,7 +906,7 @@ makeShaped("of_nether_star_west", <contenttweaker:netherstarwest>,
       B : <thermalfoundation:material:1025> });
 
 recipes.remove(<cns:star_core>);
-makeShaped("of_nether_star_core", <cns:star_core> * 4,
+craft.makeShaped("of_nether_star_core", <cns:star_core> * 4,
     ["ABA",
      "DEF",
      "ACA"],
@@ -976,7 +976,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:singularity_ulti
 [null,                            null,                                <extendedcrafting:material:140>,    <contenttweaker:solidifiedhydrogen>,  <contenttweaker:solidifiedhelium>,        <gregtech:meta_item_1:10036>,           <extendedcrafting:material:140>,   null,                               null],
 [null,                            <extendedcrafting:material:140>,     <gregtech:meta_item_1:10007>,       <gregtech:meta_item_1:2009>,          <ore:ingotCarbon>,             <contenttweaker:solidifiednitrogen>,    <contenttweaker:solidifiedoxygen>, <extendedcrafting:material:140>,    null],
 [<extendedcrafting:material:140>, <contenttweaker:solidifiedfluorine>, <contenttweaker:solidifiedneon>,    <gregtech:meta_item_1:10063>,         <gregtech:meta_item_1:10038>,             <ore:ingotAluminium>,           <ore:ingotSilicon>,      <gregtech:meta_item_1:2050>,        <extendedcrafting:material:140>],
-[<gregtech:meta_item_1:2065>,     <contenttweaker:solidifiedchlorine>, <contenttweaker:solidifiedargon>,   <gregtech:meta_item_1:10054>,         <gregtech:meta_item_1:10011>,             <ore:ingotTitanium>,           <ore:ingotVanadium>,      <ore:ingotChrome>,       <gregtech:meta_item_1:10039>],
+[<ore:dustSulfur>,     <contenttweaker:solidifiedchlorine>, <contenttweaker:solidifiedargon>,   <gregtech:meta_item_1:10054>,         <gregtech:meta_item_1:10011>,             <ore:ingotTitanium>,           <ore:ingotVanadium>,      <ore:ingotChrome>,       <gregtech:meta_item_1:10039>],
 [<minecraft:iron_ingot>,          <gregtech:meta_item_1:10017>,        <ore:ingotNickel>,       <ore:ingotCopper>,         <contenttweaker:exoticmaterialscatalyst>, <gregtech:meta_item_1:10079>,           <ore:ingotGallium>,      <gregtech:meta_item_1:2005>,        <contenttweaker:solidifiedkrypton>],
 [<gregtech:meta_item_1:10078>,    <ore:ingotPalladium>,        <ore:ingotSilver>,       <gregtech:meta_item_1:10031>,         <ore:ingotTin>,             <gregtech:meta_item_1:10003>,           <contenttweaker:solidifiedxenon>,  <gregtech:meta_item_1:10034>,       <ore:ingotTungsten>],
 [<extendedcrafting:material:140>, <gregtech:meta_item_1:10047>,        <gregtech:meta_item_1:10032>,       <gregtech:meta_item_1:10051>,         <ore:ingotGold>,                   <contenttweaker:solidifiedmercury>,     <contenttweaker:solidifiedradon>,  <contenttweaker:stabilizedthorium>, <extendedcrafting:material:140>],
@@ -985,7 +985,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:singularity_ulti
 
 
 //////////////////// Exotic Materials Catalyst ////////////////////////
-makeExtremeRecipe7(<contenttweaker:exoticmaterialscatalyst>,
+craft.makeExtremeRecipe7(<contenttweaker:exoticmaterialscatalyst>,
     ["L  M  J",
      " K W S ",
      "  YNT  ",
@@ -1021,7 +1021,7 @@ makeExtremeRecipe7(<contenttweaker:exoticmaterialscatalyst>,
 
 ////////////////////////// Crystal Matrix Ingot ///////////////////////
 recipes.remove(<avaritia:resource:1>);
-makeExtremeRecipe9(<avaritia:resource:1>,
+craft.makeExtremeRecipe9(<avaritia:resource:1>,
     ["         ",
      "     TDDD",
      "  TDDDNAD",
@@ -1046,7 +1046,7 @@ recipes.addShaped(<avaritia:resource>, [
 
 ////////////////////////// Ultimate Material ///////////////////////
 
-makeExtremeRecipe5(<armorplus:material:4>,
+craft.makeExtremeRecipe5(<armorplus:material:4>,
     ["BCCCB",
      "CBABC",
      "CADAC",
@@ -1059,7 +1059,7 @@ makeExtremeRecipe5(<armorplus:material:4>,
 
 ////////////////////////// Eternal Catalyst ///////////////////////
 
-makeExtremeRecipe9(<contenttweaker:eternalcatalyst>,
+craft.makeExtremeRecipe9(<contenttweaker:eternalcatalyst>,
     ["    D    ",
      " D  D  D ",
      "  DDJDD  ",
@@ -1073,8 +1073,8 @@ makeExtremeRecipe9(<contenttweaker:eternalcatalyst>,
       B : <armorplus:material:4>,
       C : <extendedcrafting:material:40>,
       D : <extendedcrafting:singularity_ultimate>,
-      E : <metaitem.quantumstar>,
-      F : <gregtech:meta_item_1:32726>,
+      E : <metaitem:quantumstar>,
+      F : <metaitem:gravistar>,
       G : <moreplates:empowered_diamatine_gear>,
       H : <moreplates:empowered_emeradic_gear>,
       I : <moreplates:empowered_enori_gear>,
@@ -1082,14 +1082,14 @@ makeExtremeRecipe9(<contenttweaker:eternalcatalyst>,
       K : <moreplates:empowered_restonia_gear>,
       L : <moreplates:empowered_void_gear> });
 <contenttweaker:eternalcatalyst>.addTooltip(format.darkGray(format.italic("Gaze into the Abyss...")));
-<metaitem.quantumstar>.clearTooltip();
-<metaitem.quantumstar>.addTooltip(format.darkPurple("Quantum Star"));
-<metaitem.quantumstar>.displayName = "Quantum Star";
+<metaitem:quantumstar>.clearTooltip();
+<metaitem:quantumstar>.addTooltip(format.darkPurple("Quantum Star"));
+<metaitem:quantumstar>.displayName = "Quantum Star";
 
 
 ////////////////////////// Infinity Ingot ///////////////////////
 mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:6>);
-makeExtremeRecipe9(<avaritia:resource:6>,
+craft.makeExtremeRecipe9(<avaritia:resource:6>,
     ["         ",
      "     ABBB",
      "  ABBBCDB",
@@ -1109,7 +1109,7 @@ makeExtremeRecipe9(<avaritia:resource:6>,
 ////////////////////////// Infinity Catalyst ///////////////////////
 
 mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:5>);
-makeExtremeRecipe9(<avaritia:resource:5>,
+craft.makeExtremeRecipe9(<avaritia:resource:5>,
     ["AAAABAAAA",
      "ABAABAABA",
      "AABBBBBAA",
@@ -1161,7 +1161,7 @@ val creativecell = <thermalexpansion:cell>.withTag({Recv: 250000, RSControl: 0 a
 val creativetank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte});
 val creativebuffer = <appliedenergistics2:creative_energy_cell>;
 
-makeExtremeRecipe9(<storagedrawers:upgrade_creative:1> * 2,
+craft.makeExtremeRecipe9(<storagedrawers:upgrade_creative:1> * 2,
     ["ABBBBBBBA",
      "BCTGDEFCB",
      "BFSEHGSTB",
@@ -1205,7 +1205,7 @@ fluid_extractor.recipeBuilder()
 ////////////////////////// Creative Items ///////////////////////
 
 //Skullfire Sword
-makeExtremeRecipe9(<avaritia:skullfire_sword>,
+craft.makeExtremeRecipe9(<avaritia:skullfire_sword>,
     ["       AI",
      "      AHA",
      "     AGA ",
@@ -1227,7 +1227,7 @@ makeExtremeRecipe9(<avaritia:skullfire_sword>,
       N : <minecraft:nether_star> });
 
 //Blade Of The Cosmos
-makeExtremeRecipe9(<avaritia:infinity_sword>,
+craft.makeExtremeRecipe9(<avaritia:infinity_sword>,
     ["       AA",
      "      AHA",
      "     AGA ",
@@ -1247,7 +1247,7 @@ makeExtremeRecipe9(<avaritia:infinity_sword>,
       H : <avaritia:skullfire_sword>,
       N : <avaritia:resource:5> });
 
-makeExtremeRecipe9(<draconicevolution:creative_rf_source>,
+craft.makeExtremeRecipe9(<draconicevolution:creative_rf_source>,
     ["ABBCDCBBA",
      "BBCDEDCBB",
      "BCDEFEDCB",
@@ -1266,7 +1266,7 @@ makeExtremeRecipe9(<draconicevolution:creative_rf_source>,
       G : <draconicevolution:reactor_core>,
       H : <avaritia:resource:5> });
 
-makeExtremeRecipe9(<extrautils2:passivegenerator:6>,
+craft.makeExtremeRecipe9(<extrautils2:passivegenerator:6>,
     ["AABCDCBAA",
      "ABCDEDCBA",
      "BCDEFEDCB",
@@ -1285,7 +1285,7 @@ makeExtremeRecipe9(<extrautils2:passivegenerator:6>,
       G : <contenttweaker:ultimate_generator>,
       H : <avaritia:resource:5> });
 
-makeExtremeRecipe9(creativecell,
+craft.makeExtremeRecipe9(creativecell,
     ["AAABCBAAA",
      "AABCDCBAA",
      "ABCDEDCBA",
@@ -1303,7 +1303,7 @@ makeExtremeRecipe9(creativecell,
       F : <contenttweaker:ultimate_power_storage>,
       G : <avaritia:resource:5> });
 
-makeExtremeRecipe9(<extrautils2:creativeenergy>,
+craft.makeExtremeRecipe9(<extrautils2:creativeenergy>,
     ["CDEFGFEDC",
      "DEFGHGFED",
      "EFGHIHGFE",
@@ -1323,7 +1323,7 @@ makeExtremeRecipe9(<extrautils2:creativeenergy>,
       H : <extrautils2:opinium:8>,
       I : <extrautils2:rainbowgenerator> });
 
-makeExtremeRecipe9(<extrautils2:drum:4>,
+craft.makeExtremeRecipe9(<extrautils2:drum:4>,
     ["BBBCDCBBB",
      "BBCDEDCBB",
      "BCDEFEDCB",
@@ -1341,7 +1341,7 @@ makeExtremeRecipe9(<extrautils2:drum:4>,
       F : <gregtech:machine:2200> });
 
 
-makeExtremeRecipe9(creativebuffer,
+craft.makeExtremeRecipe9(creativebuffer,
     ["IBCDEDCBI",
      "BCDEFEDCB",
      "CDEFGFEDC",
@@ -1361,7 +1361,7 @@ makeExtremeRecipe9(creativebuffer,
       H : <gregtech:machine:649>,
       I : <contenttweaker:ultimate_power_storage> });
 
-makeExtremeRecipe9(<thermalcultivation:watering_can:32000>,
+craft.makeExtremeRecipe9(<thermalcultivation:watering_can:32000>,
     ["         ",
      "E   CCC  ",
      "IE E  AAA",
@@ -1378,7 +1378,7 @@ makeExtremeRecipe9(<thermalcultivation:watering_can:32000>,
       E : <thermalcultivation:watering_can:4>.withTag({Water:0, Mode:0}),
       I : <avaritia:resource:5>});
 
-makeExtremeRecipe9(<solarflux:solar_panel_infinity>,
+craft.makeExtremeRecipe9(<solarflux:solar_panel_infinity>,
     ["SNNNNNNNS",
      "NPPPNPPPN",
      "NPPPNPPPN",
@@ -1400,47 +1400,47 @@ val plateShape as string[] = [" P ",
                               " P "];
 
 recipes.remove(<simplyjetpacks:metaitemmods:12>);
-makeShaped("sj2_wroughtiron_plate",
+craft.makeShaped("sj2_wroughtiron_plate",
            <simplyjetpacks:metaitemmods:12>,
            plateShape, { P : <ore:plateWroughtIron> });
 <simplyjetpacks:metaitemmods:12>.displayName = "Wrought Iron Armor Plating";
 
 recipes.remove(<simplyjetpacks:metaitemmods:13>);
-makeShaped("sj2_ConductiveIron_plating",
+craft.makeShaped("sj2_ConductiveIron_plating",
            <simplyjetpacks:metaitemmods:13>,
            plateShape, { P : <ore:plateConductiveIron> });
 
 recipes.remove(<simplyjetpacks:metaitemmods:14>);
-makeShaped("sj2_ElectricalSteel_plating",
+craft.makeShaped("sj2_ElectricalSteel_plating",
            <simplyjetpacks:metaitemmods:14>,
           plateShape, { P : <ore:plateElectricalSteel> });
 
 recipes.remove(<simplyjetpacks:metaitemmods:15>);
-makeShaped("sj2_DarkSteel_plating",
+craft.makeShaped("sj2_DarkSteel_plating",
            <simplyjetpacks:metaitemmods:15>,
            plateShape, { P : <ore:plateDarkSteel> });
 
 recipes.remove(<simplyjetpacks:metaitemmods:22>);
-makeShaped("sj2_Iron_plating",
+craft.makeShaped("sj2_Iron_plating",
            <simplyjetpacks:metaitemmods:22>,
            plateShape, { P : <ore:plateElectricalSteel> });
 
 recipes.remove(<simplyjetpacks:metaitemmods:23>);
-makeShaped("sj2_Bronze_plating",
+craft.makeShaped("sj2_Bronze_plating",
            <simplyjetpacks:metaitemmods:23>,
            plateShape, { P : <ore:plateBronze> });
 
 recipes.remove(<simplyjetpacks:metaitemmods:24>);
-makeShaped("sj2_Invar_plating", <simplyjetpacks:metaitemmods:24>,
+craft.makeShaped("sj2_Invar_plating", <simplyjetpacks:metaitemmods:24>,
            plateShape, { P : <ore:plateInvar> });
 
 recipes.remove(<simplyjetpacks:metaitemmods:25>);
-makeShaped("sj2_Enderium_plating",
+craft.makeShaped("sj2_Enderium_plating",
            <simplyjetpacks:metaitemmods:25>,
            plateShape, { P : <ore:plateEnderium> });
 
 // Creative Jetpack
-makeExtremeRecipe9(<simplyjetpacks:itemjetpack>,
+craft.makeExtremeRecipe9(<simplyjetpacks:itemjetpack>,
     ["  A   E  ",
      " AAA EEE ",
      " ABAIEFE ",
@@ -1463,7 +1463,7 @@ makeExtremeRecipe9(<simplyjetpacks:itemjetpack>,
      K: darksoulariumjetplate });
 
 // Creative Flux Capacitor
-makeExtremeRecipe9(<thermalexpansion:capacitor:32000>,
+craft.makeExtremeRecipe9(<thermalexpansion:capacitor:32000>,
     ["ABCDEDCBA",
      "BCDEFEDCB",
      "CDEFGFEDC",
@@ -1483,7 +1483,7 @@ makeExtremeRecipe9(<thermalexpansion:capacitor:32000>,
       H: <contenttweaker:ultimate_power_storage>,
       I: <avaritia:resource:5> });
 
-makeExtremeRecipe9(<storagedrawers:upgrade_creative>,
+craft.makeExtremeRecipe9(<storagedrawers:upgrade_creative>,
     ["IBAHDHABI",
      "BAHDEDHAB",
      "AHDEFEDHA",
@@ -1546,7 +1546,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(<contenttweaker:ultimate_genera
 
 
 //Ultimate Power Storage
-makeExtremeRecipe9(<contenttweaker:ultimate_power_storage>,
+craft.makeExtremeRecipe9(<contenttweaker:ultimate_power_storage>,
     ["ABCDIDCBA",
      "BCDIEIDCB",
      "CDIEFEIDC",

@@ -1,8 +1,16 @@
 #loader contenttweaker
+#priority 100000000
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
+import mods.contenttweaker.Block;
 import mods.contenttweaker.Color;
+import mods.contenttweaker.Fluid;
+
+import mods.contenttweaker.AxisAlignedBB;
+
+import mods.contenttweaker.IItemFoodEaten;
+import crafttweaker.potions.IPotion;
 
 
 var smallgearextrudershape = VanillaFactory.createItem("smallgearextrudershape");
@@ -213,8 +221,17 @@ var blazepowder = VanillaFactory.createItem("blazepowder");
 blazepowder.maxStackSize = 64;
 blazepowder.register();
 
-var excitationcoil = VanillaFactory.createItem("excitationcoil");
-excitationcoil.maxStackSize = 64;
+var excitationcoil = VanillaFactory.createBlock("excitationcoil", <blockmaterial:iron>);
+excitationcoil.axisAlignedBB = AxisAlignedBB.create(
+     4.0 / 16.0,
+     0.0 / 16.0,
+     4.0 / 16.0,
+    12.0 / 16.0,
+     9.0 / 16.0,
+    12.0 / 16.0
+);
+excitationcoil.lightValue = 1;
+excitationcoil.fullBlock = false;
 excitationcoil.register();
 
 var block_dust = VanillaFactory.createItem("block_dust");
@@ -644,3 +661,47 @@ ultradensehydrogen.maxStackSize = 64;
 ultradensehydrogen.rarity = "rare";
 ultradensehydrogen.register();
 
+var microverse_casing = VanillaFactory.createBlock("microverse_casing", <blockmaterial:iron>);
+microverse_casing.register();
+
+var microverse_vent = VanillaFactory.createBlock("microverse_vent", <blockmaterial:iron>);
+microverse_vent.register();
+
+var smingots as string[] = [
+    "eightsmore",
+    "sixteensmore",
+    "thirtytwosmore",
+    "sixtyfoursmore"
+] as string[];
+
+function getItemFoodEaten(duration as int) as IItemFoodEaten {
+    return function(stack, world, player) {
+        val potions = [ // These can't resolve when the script is run, so resolve them within the function.
+            <potion:minecraft:absorption>,
+            <potion:minecraft:speed>,
+            <potion:minecraft:haste>,
+            <potion:minecraft:saturation>,
+            <potion:minecraft:health_boost>
+        ] as IPotion[];
+        for potion in potions {
+            player.addPotionEffect(potion.makePotionEffect(duration, 1));
+        }
+    } as IItemFoodEaten;
+}
+
+var heal = 44;
+var saturation = 8.6 as float;
+var potionDuration = 1200;
+
+for smingot in smingots {
+    heal = (heal * 2) + 4;
+    saturation = (saturation * 2) + 1;
+    potionDuration = potionDuration * 2;
+
+    val foodRep = VanillaFactory.createItemFood(smingot, heal);
+    foodRep.saturation = saturation;
+    foodRep.alwaysEdible = true;
+    foodRep.onItemFoodEaten = getItemFoodEaten(potionDuration);
+
+    foodRep.register();
+}

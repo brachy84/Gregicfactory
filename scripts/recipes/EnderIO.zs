@@ -208,7 +208,7 @@ mods.jei.JEI.addItem(doublecompressedoctadiccap);
 var bonus = 1 as int;
 var cost  = 20000 as int;
 
-for wafer in [<gregtech:meta_item_2:32441>, <gregtech:meta_item_2:32442>] as IItemStack[] {
+for wafer in [<metaitem:wafer.glowstone>, <metaitem:wafer.naquadah>] as IItemStack[] {
     bonus = bonus * 2;
     cost  = cost  * 2;
 
@@ -261,26 +261,26 @@ val liquidMap as IItemStack[][ILiquidStack] = {
 for liquid, items in liquidMap {
 
     //Ingots
-    solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [liquid * 144]).remove();
+    solidifier.findRecipe(8, [<metaitem:shape.mold.ingot>], [liquid * 144]).remove();
     solidifier.recipeBuilder()
         .fluidInputs(liquid * 144)
-        .notConsumable(<gregtech:meta_item_1:32306>)
+        .notConsumable(<metaitem:shape.mold.ingot>)
         .outputs(items[0])
         .duration(20).EUt(8).buildAndRegister();
 
     //Blocks
-    solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [liquid * 1296]).remove();
+    solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [liquid * 1296]).remove();
     solidifier.recipeBuilder()
         .fluidInputs(liquid * 1296)
-        .notConsumable(<gregtech:meta_item_1:32308>)
+        .notConsumable(<metaitem:shape.mold.block>)
         .outputs(items[1])
         .duration(98).EUt(8).buildAndRegister();
 
     //Nuggets
-    solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [liquid * 144]).remove();
+    solidifier.findRecipe(8, [<metaitem:shape.mold.nugget>], [liquid * 144]).remove();
     solidifier.recipeBuilder()
         .fluidInputs(liquid * 144)
-        .notConsumable(<gregtech:meta_item_1:32309>)
+        .notConsumable(<metaitem:shape.mold.nugget>)
         .outputs(items[2] * 9)
         .duration(98).EUt(8).buildAndRegister();
 }
@@ -288,25 +288,25 @@ for liquid, items in liquidMap {
 
 //Furnace Recipes
 //End Steel
-furnace.remove(<gregtech:meta_item_1:10712>, <gregtech:meta_item_1:2712>);
-furnace.addRecipe(<enderio:item_alloy_ingot:8>, <gregtech:meta_item_1:2712>);
+furnace.remove(<ore:ingotEndSteel>.firstItem, <ore:dustEndSteel>);
+furnace.addRecipe(<enderio:item_alloy_ingot:8>, <ore:dustEndSteel>);
 
 //Vibrant Alloy
-furnace.remove(<gregtech:meta_item_1:10702>, <gregtech:meta_item_1:2702>);
-furnace.addRecipe(<enderio:item_alloy_ingot:2>, <gregtech:meta_item_1:2702>);
+furnace.remove(<ore:ingotVibrantAlloy>.firstItem, <ore:dustVibrantAlloy>);
+furnace.addRecipe(<enderio:item_alloy_ingot:2>, <ore:dustVibrantAlloy>);
 
 //Pulsating Iron
-furnace.remove(<gregtech:meta_item_1:10703>, <gregtech:meta_item_1:2703>);
-furnace.addRecipe(<enderio:item_alloy_ingot:5>, <gregtech:meta_item_1:2703>);
+furnace.remove(<ore:ingotPulsatingIron>.firstItem, <ore:dustPulsatingIron>);
+furnace.addRecipe(<enderio:item_alloy_ingot:5>, <ore:dustPulsatingIron>);
 
 //Energetic Alloy
-furnace.remove(<gregtech:meta_item_1:10701>, <gregtech:meta_item_1:2701>);
-furnace.addRecipe(<enderio:item_alloy_ingot:1>, <gregtech:meta_item_1:2701>);
+furnace.remove(<ore:ingotEnergeticAlloy>.firstItem, <ore:dustEnergeticAlloy>);
+furnace.addRecipe(<enderio:item_alloy_ingot:1>, <ore:dustEnergeticAlloy>);
 
 //Electrical Steel
-furnace.remove(<gregtech:meta_item_1:10705>, <gregtech:meta_item_1:2705>);
-furnace.addRecipe(<enderio:item_alloy_ingot:0>, <gregtech:meta_item_1:2705>);
+furnace.remove(<ore:ingotElectricalSteel>.firstItem, <ore:dustElectricalSteel>);
+furnace.addRecipe(<enderio:item_alloy_ingot:0>, <ore:dustElectricalSteel>);
 
 //Dark Steel
-furnace.remove(<gregtech:meta_item_1:10704>, <gregtech:meta_item_1:2704>);
-furnace.addRecipe(<enderio:item_alloy_ingot:6>, <gregtech:meta_item_1:2704>);
+furnace.remove(<ore:ingotDarkSteel>.firstItem, <ore:dustDarkSteel>);
+furnace.addRecipe(<enderio:item_alloy_ingot:6>, <ore:dustDarkSteel>);

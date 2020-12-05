@@ -134,9 +134,9 @@ recipes.addShaped(<thermalfoundation:upgrade>, [
 //reinforced upgrade
 recipes.remove(<thermalfoundation:upgrade:1>);
 recipes.addShaped(<thermalfoundation:upgrade:1>, [
-	[<gregtech:meta_item_2:26112>, <gregtech:meta_item_1:12112>, <gregtech:meta_item_2:26112>],
+	[<ore:gearElectrum>, <gregtech:meta_item_1:12112>, <ore:gearElectrum>],
 	[<gregtech:meta_item_1:12112>, <gregtech:compressed_0>, <gregtech:meta_item_1:12112>],
-	[<gregtech:meta_item_2:26112>, <gregtech:meta_item_1:12112>, <gregtech:meta_item_2:26112>]]);
+	[<ore:gearElectrum>, <gregtech:meta_item_1:12112>, <ore:gearElectrum>]]);
 
 //sig upgrade
 recipes.remove(<thermalfoundation:upgrade:2>);
@@ -412,26 +412,26 @@ val liquidMap as IItemStack[][ILiquidStack] = {
 for liquid,items in liquidMap {
 	
 	//Ingots
-	solidifier.findRecipe(8, [<gregtech:meta_item_1:32306>], [liquid * 144]).remove();
+	solidifier.findRecipe(8, [<metaitem:shape.mold.ingot>], [liquid * 144]).remove();
 	solidifier.recipeBuilder()
 		.fluidInputs(liquid * 144)
-		.notConsumable(<gregtech:meta_item_1:32306>)
+		.notConsumable(<metaitem:shape.mold.ingot>)
 		.outputs(items[0])
 		.duration(20).EUt(8).buildAndRegister();
 
 	//Blocks
-	solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [liquid * 1296]).remove();
+	solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [liquid * 1296]).remove();
 	solidifier.recipeBuilder()
 		.fluidInputs(liquid * 1296)
-		.notConsumable(<gregtech:meta_item_1:32308>)
+		.notConsumable(<metaitem:shape.mold.block>)
 		.outputs(items[1])
 		.duration(98).EUt(8).buildAndRegister();
 
 	//Nuggets
-	solidifier.findRecipe(8, [<gregtech:meta_item_1:32309>], [liquid * 144]).remove();
+	solidifier.findRecipe(8, [<metaitem:shape.mold.nugget>], [liquid * 144]).remove();
 	solidifier.recipeBuilder()
 		.fluidInputs(liquid * 144)
-		.notConsumable(<gregtech:meta_item_1:32309>)
+		.notConsumable(<metaitem:shape.mold.nugget>)
 		.outputs(items[2] * 9)
 		.duration(98).EUt(8).buildAndRegister();
 }

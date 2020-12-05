@@ -50,7 +50,7 @@ recipes.addShaped(<appliedenergistics2:inscriber>, [
 recipes.remove(<appliedenergistics2:material:52>);
 recipes.addShaped(<appliedenergistics2:material:52> * 8, [
 	[<ore:wireFineSilver>,<ore:wireFineSilver>,<ore:wireFineSilver>], 
-	[<ore:platePlastic>,<ore:circuitAdvanced>,<ore:platePlastic>],
+	[<ore:platePlastic>,gt.getCirc("HV"),<ore:platePlastic>],
 	[<ore:platePlastic>, <ore:platePlastic>, <ore:platePlastic>]]);	
 
 //Crafting CPU
@@ -156,14 +156,14 @@ recipes.addShapeless(<appliedenergistics2:biometric_card>, [<appliedenergistics2
 
 //Memory Card	
 recipes.remove(<appliedenergistics2:memory_card>);	
-recipes.addShapeless(<appliedenergistics2:memory_card>, [<appliedenergistics2:material:25>, <ore:circuitAdvanced>]);
+recipes.addShapeless(<appliedenergistics2:memory_card>, [<appliedenergistics2:material:25>, gt.getCirc("HV")]);
 	
 //Basic Card
 recipes.remove(<appliedenergistics2:material:25>);	
 recipes.addShaped(<appliedenergistics2:material:25>, [
-[<gregtech:meta_item_2:16018>,<ore:plateIron>,null],
-[<gregtech:meta_item_2:16018>,<appliedenergistics2:material:23>,<ore:plateIron>],
-[<gregtech:meta_item_2:16018>,<ore:plateIron>,null]]);
+[<ore:wireFineCopper>,<ore:plateIron>,null],
+[<ore:wireFineCopper>,<appliedenergistics2:material:23>,<ore:plateIron>],
+[<ore:wireFineCopper>,<ore:plateIron>,null]]);
 
 //Advanced Card
 recipes.remove(<appliedenergistics2:material:28>);	
@@ -176,7 +176,7 @@ recipes.addShaped(<appliedenergistics2:material:28>, [
 recipes.remove(<appliedenergistics2:condenser>);	
 recipes.addShaped(<appliedenergistics2:condenser>, [
 	[<ore:plateTitanium>,<ore:plateTitanium>,<ore:plateTitanium>], 
-	[<ore:plateTitanium>, <metaitem.quantumstar>, <ore:plateTitanium>], 
+	[<ore:plateTitanium>, <metaitem:quantumstar>, <ore:plateTitanium>], 
 	[<ore:plateTitanium>,<ore:plateTitanium>,<ore:plateTitanium>]]);
 
 //Wireless Part	
@@ -206,7 +206,7 @@ recipes.addShapeless(<appliedenergistics2:part:120>, [<ore:boltSteel>]);
 //Interface
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/interfaces_interface");
 recipes.addShaped(<appliedenergistics2:interface>, [
-	[<ore:plateAluminium>, <metaitem.robot.arm.mv>, <ore:plateAluminium>], 
+	[<ore:plateAluminium>, <metaitem:robot.arm.mv>, <ore:plateAluminium>], 
 	[<appliedenergistics2:material:44>, <meta_tile_entity:gregtech:hull.mv>, <appliedenergistics2:material:43>], 
 	[<ore:plateAluminium>, <ore:plateAluminium>, <ore:plateAluminium>]]);
 	
@@ -282,7 +282,7 @@ recipes.addShaped(<ae2stuff:grower>, [
 recipes.remove(<appliedenergistics2:quantum_ring>);
 recipes.addShaped(<appliedenergistics2:quantum_ring>, [
 [<ore:plateStainlessSteel>, <appliedenergistics2:material:23>, <ore:plateStainlessSteel>], 
-[<appliedenergistics2:material:24>, <metaitem.quantumstar>, <appliedenergistics2:material:24>], 
+[<appliedenergistics2:material:24>, <metaitem:quantumstar>, <appliedenergistics2:material:24>], 
 [<ore:plateStainlessSteel>, <appliedenergistics2:material:23>,<ore:plateStainlessSteel>]]);
 
 	
@@ -310,21 +310,21 @@ recipes.addShaped(<appliedenergistics2:material:35>, [
 recipes.remove(<appliedenergistics2:material:36>);	
 recipes.addShaped(<appliedenergistics2:material:36>, [
 	[<ore:blockGlass>, <appliedenergistics2:material:22>, <ore:blockGlass>],
-	[<appliedenergistics2:material:35>, <ore:circuitGood>, <appliedenergistics2:material:35>],
+	[<appliedenergistics2:material:35>, gt.getCirc("MV"), <appliedenergistics2:material:35>],
 	[<ore:blockGlass>, <appliedenergistics2:material:35>, <ore:blockGlass>]]);
 	
 // 16k Storage
 recipes.remove(<appliedenergistics2:material:37>);
 recipes.addShaped(<appliedenergistics2:material:37>, [
 	[<ore:blockGlass>, <appliedenergistics2:material:24>, <ore:blockGlass>],
-	[<appliedenergistics2:material:36>, <ore:circuitAdvanced>, <appliedenergistics2:material:36>],
+	[<appliedenergistics2:material:36>, gt.getCirc("HV"), <appliedenergistics2:material:36>],
 	[<ore:blockGlass>, <appliedenergistics2:material:36>, <ore:blockGlass>]]);
 	
 // 64k Storage
 recipes.remove(<appliedenergistics2:material:38>);
 recipes.addShaped(<appliedenergistics2:material:38>, [
 	[<appliedenergistics2:material:22>, <appliedenergistics2:material:24>, <appliedenergistics2:material:22>],
-	[<appliedenergistics2:material:37>, <ore:circuitExtreme>, <appliedenergistics2:material:37>],
+	[<appliedenergistics2:material:37>, gt.getCirc("EV"), <appliedenergistics2:material:37>],
 	[<appliedenergistics2:material:22>, <appliedenergistics2:material:37>, <appliedenergistics2:material:22>]]);
 	
 //AE2 Wireless Terminal, Infinity Booster Card

@@ -2,7 +2,7 @@ import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
-import scripts.CommonVars.makeShaped as makeShaped;
+//import scripts.CommonVars.craft.makeShaped as craft.makeShaped;
 
 //Conductive Iron Thruster
 recipes.remove(<simplyjetpacks:metaitemmods:7>);
@@ -285,9 +285,9 @@ recipes.addShapeless("armored_resonant_jetpack",
 
 recipes.remove(<openglider:hang_glider_part:2>);
 recipes.addShaped(<openglider:hang_glider_part:2>, [
-	[null, <gregtech:meta_item_1:14033>, null],
-	[<gregtech:meta_item_1:14033>, null, <gregtech:meta_item_1:14033>],
-	[<gregtech:meta_item_1:14033>, <gregtech:meta_item_1:14033>,<gregtech:meta_item_1:14033>]]);
+	[null, <ore:stickIron>, null],
+	[<ore:stickIron>, null, <ore:stickIron>],
+	[<ore:stickIron>, <ore:stickIron>,<ore:stickIron>]]);
 
 
 //Staff of Travel
@@ -315,7 +315,7 @@ recipes.addShaped(<enderio:block_ender_generator>, [
 //Wireless Dish
 recipes.remove(<enderio:item_material:65>);
 recipes.addShaped(<enderio:item_material:65>,
-    [[<gregtech:meta_item_1:32680>],[<gregtech:meta_item_1:14705>]]);
+    [[<metaitem:emitter.lv>],[<gregtech:meta_item_1:14705>]]);
 
 recipes.remove(<enderio:item_material>); // simple machine chassis
 recipes.remove(<enderio:item_material:66>); // end steel chassis
@@ -464,7 +464,7 @@ autoclave.recipeBuilder()
 
 // GT certus quartz
 autoclave.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:8202>])
+    .inputs([<ore:gemCertusQuartz>])
     .fluidInputs([<liquid:water> * 250])
     .outputs([<appliedenergistics2:material>])
     .duration(80).EUt(16).buildAndRegister();

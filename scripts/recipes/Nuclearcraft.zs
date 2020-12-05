@@ -7,7 +7,7 @@ import mods.contenttweaker.Fluid;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.Recipe;
 
-import scripts.CommonVars.makeShaped as makeShaped;
+//import scripts.CommonVars.craft.makeShaped;
 
 //////////////////////////////////////////////////////////////
 /////////////////       Nuclearcraft       ///////////////////
@@ -533,13 +533,13 @@ alloy.recipeBuilder()
 // FIXME: this stuff isn't really related to NC at all
 //Manyullyn
 mixer.recipeBuilder()
-    .outputs(<ore:dustManyullyn> * 4)
+    .outputs(<ore:dustManyullyn>.firstItem * 4)
     .inputs([<ore:dustArdite> * 4, <gregtech:meta_item_1:2017> * 4, <thermalfoundation:material:1028>])
     .duration(400).EUt(30).buildAndRegister();
 
 //Ardite
 mixer.recipeBuilder()
-    .outputs(<ore:dustArdite> * 4)
+    .outputs(<ore:dustArdite>.firstItem * 4)
     .inputs([<ore:dustRedSteel> * 3, <minecraft:blaze_powder>])
     .duration(200).EUt(30).buildAndRegister();
 
@@ -639,7 +639,7 @@ canner.recipeBuilder()
     .duration(400).EUt(2).buildAndRegister();
 
 recipes.remove(<nuclearcraft:cobblestone_generator>);
-makeShaped("of_nc_cobblestone_generator",
+craft.makeShaped("of_nc_cobblestone_generator",
     <nuclearcraft:cobblestone_generator>,
     ["AAA",
      "B C",
@@ -648,7 +648,7 @@ makeShaped("of_nc_cobblestone_generator",
       B : <minecraft:water_bucket:*>,
       C : <minecraft:lava_bucket:*> });
 
-makeShaped("of_nc_cobblestone_generator_mirrored",
+craft.makeShaped("of_nc_cobblestone_generator_mirrored",
     <nuclearcraft:cobblestone_generator>,
     ["AAA",
      "C B",
@@ -658,7 +658,7 @@ makeShaped("of_nc_cobblestone_generator_mirrored",
       C : <minecraft:lava_bucket:*> });
 
 recipes.remove(<nuclearcraft:water_source>);
-makeShaped("of_nc_water_source", <nuclearcraft:water_source>,
+craft.makeShaped("of_nc_water_source", <nuclearcraft:water_source>,
     ["AAA",
      "B B",
      "AAA"],
@@ -667,7 +667,7 @@ makeShaped("of_nc_water_source", <nuclearcraft:water_source>,
 
 //Uranium RTG
 recipes.remove(<nuclearcraft:rtg_uranium>);
-makeShaped("of_nc_rtg_uranium", <nuclearcraft:rtg_uranium>,
+craft.makeShaped("of_nc_rtg_uranium", <nuclearcraft:rtg_uranium>,
     ["ABA",
      "BCB",
      "ABA"],
@@ -677,7 +677,7 @@ makeShaped("of_nc_rtg_uranium", <nuclearcraft:rtg_uranium>,
 
 // Basic Plating
 recipes.remove(<nuclearcraft:part>);
-makeShaped("of_nc_basic_plating", <nuclearcraft:part> * 2,
+craft.makeShaped("of_nc_basic_plating", <nuclearcraft:part> * 2,
     ["ABA",
      "BCB",
      "ABA"],
@@ -687,7 +687,7 @@ makeShaped("of_nc_basic_plating", <nuclearcraft:part> * 2,
 
 // Advanced Plating
 recipes.remove(<nuclearcraft:part:1>);
-makeShaped("of_nc_advanced_plating", <nuclearcraft:part:1> * 2,
+craft.makeShaped("of_nc_advanced_plating", <nuclearcraft:part:1> * 2,
     ["ABA",
      "BCB",
      "ABA"],
@@ -704,7 +704,7 @@ alloy.recipeBuilder()
 
 // Elite Plating
 recipes.remove(<nuclearcraft:part:3>);
-makeShaped("of_nc_elite_plating", <nuclearcraft:part:3>,
+craft.makeShaped("of_nc_elite_plating", <nuclearcraft:part:3>,
     ["ABA",
      "BCB",
      "ABA"],
@@ -717,7 +717,7 @@ recipes.remove(<nuclearcraft:fission_block:1>);
 recipes.remove(<nuclearcraft:cell_block>);
 
 recipes.remove(<nuclearcraft:fission_block>);
-makeShaped("of_nc_fission_block", <nuclearcraft:fission_block> * 8,
+craft.makeShaped("of_nc_fission_block", <nuclearcraft:fission_block> * 8,
     ["AAA",
      "ABA",
      "AAA"],
@@ -725,13 +725,13 @@ makeShaped("of_nc_fission_block", <nuclearcraft:fission_block> * 8,
       B : <gregtech:metal_casing:7> });
 
 recipes.remove(<nuclearcraft:fission_controller_new_fixed>);
-makeShaped("of_nc_fission_controller", <nuclearcraft:fission_controller_new_fixed>,
+craft.makeShaped("of_nc_fission_controller", <nuclearcraft:fission_controller_new_fixed>,
     ["ABA",
      "BCB",
      "ABA"],
     { A : <nuclearcraft:part:1>,
-      B : <ore:circuitExtreme>,
-      C : <gregtech:metal_casing:7> });
+      B : gt.getCirc("EV"),
+      C : <gregtech:metal_casing:7> } as IIngredient[string]);
 
 alloy.recipeBuilder()
     .outputs([<nuclearcraft:alloy:2> * 2])
@@ -792,18 +792,18 @@ recipes.addShapeless("of_nc_fission_port", <nuclearcraft:fission_port>,
     [<nuclearcraft:fission_block>, <minecraft:hopper>]);
 
 recipes.remove(<nuclearcraft:part:4>);
-makeShaped("of_nc_coppersolenoid", <nuclearcraft:part:4>,
+craft.makeShaped("of_nc_coppersolenoid", <nuclearcraft:part:4>,
     ["AAA",
      "ABA",
      "AAA"],
     { A : <ore:wireFineCopper>,
-      B : <ore:stickStainlessSteel> });
+      B : <ore:stickStainlessSteel> } as IIngredient[string]);
 
 
 // unused part
 recipes.remove(<nuclearcraft:part:5>);
 /*
-makeShaped("of_nc_magnesium_diboride_solenoid", <nuclearcraft:part:5>,
+craft.makeShaped("of_nc_magnesium_diboride_solenoid", <nuclearcraft:part:5>,
     ["AAA",
      "ABA",
      "AAA"],

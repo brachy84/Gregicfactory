@@ -1,6 +1,6 @@
 import crafttweaker.item.IIngredient;
 import mods.gregtech.recipe.RecipeMap;
-import scripts.CommonVars.makeShaped as makeShaped;
+//import scripts.CommonVars.craft.makeShaped as craft.makeShaped;
 
 <deepmoblearning:glitch_fragment>.addTooltip(format.aqua(format.italic(
     "Obtained by crushing Glitch Hearts against Obsidian.")));
@@ -9,20 +9,21 @@ import scripts.CommonVars.makeShaped as makeShaped;
     "Obtained by charging with RF power in the AE2 Charger.")));
 
 //Gravistar
-autoclave.findRecipe(7680, [<minecraft:nether_star>], [<liquid:neutronium> * 288]).remove();
+// gregicality grvi star? ??!!
+//autoclave.findRecipe(7680, [<minecraft:nether_star>], [<liquid:neutronium> * 288]).remove();
 autoclave.recipeBuilder()
     .inputs(<minecraft:nether_star>)
     .fluidInputs(<liquid:neutronium> * 36)
-    .outputs([<gregtech:meta_item_1:32726>])
+    .outputs([<metaitem:gravistar>])
     .duration(480).EUt(7680).buildAndRegister();
 
-makeShaped("of_sunnarium_plates", <advsolars:sunnarium_plate> * 4, 
+craft.makeShaped("of_sunnarium_plates", <advsolars:sunnarium_plate> * 4, 
     ["RRR",
      "RSR",
      "RRR"],
-    { S : <advsolars:sunnarium>, R : <gregtech:meta_item_2:32435> });
+    { S : <advsolars:sunnarium>, R : <metaitem:plate.iridium_alloy> });
 
-makeShaped("of_enriched_sunnarium", <advsolars:sunnarium_enriched> * 4,
+craft.makeShaped("of_enriched_sunnarium", <advsolars:sunnarium_enriched> * 4,
     ["NAN",
      "ASA",
      "NAN"],
@@ -30,7 +31,7 @@ makeShaped("of_enriched_sunnarium", <advsolars:sunnarium_enriched> * 4,
       A : <contenttweaker:stabilizedamericium>,
       S : <advsolars:sunnarium> });
 
-makeShaped("of_enriched_sunnarium_plate", <advsolars:sunnarium_enriched_plate>,
+craft.makeShaped("of_enriched_sunnarium_plate", <advsolars:sunnarium_enriched_plate>,
     [" E ",
      "EPE",
      " E "],
@@ -38,16 +39,16 @@ makeShaped("of_enriched_sunnarium_plate", <advsolars:sunnarium_enriched_plate>,
 	
 electrolyzer.recipeBuilder()
     .inputs([<ore:dustSphalerite> * 3])
-    .outputs([<gregtech:meta_item_1:2079>,
-              <gregtech:meta_item_1:1079> * 2,
-              <gregtech:meta_item_1:2065>,
-              <gregtech:meta_item_1:1025>])
+    .outputs([<ore:dustZinc>.firstItem,
+              <ore:dustSmallZinc>.firstItem * 2,
+              <ore:dustSulfur>.firstItem,
+              <ore:dustSmallGallium>.firstItem])
     .duration(200).EUt(30).buildAndRegister();
 
 //Radon
 electrolyzer.recipeBuilder()
     .inputs([<contenttweaker:radiumsalt>])
-    .outputs([<gregtech:meta_item_1:2151>])
+    .outputs([<ore:dustRockSalt>.firstItem])
     .fluidOutputs(<liquid:radon> * 1000)
     .duration(200).EUt(2000).buildAndRegister();
 
@@ -56,12 +57,12 @@ electrolyzer.recipeBuilder()
     .outputs([<minecraft:quartz>])
     .duration(100).EUt(20).buildAndRegister();
 
-reactor.findRecipe(8, [<gregtech:meta_item_1:10052> * 3], [null]).remove();
+//reactor.findRecipe(8, [<ore:ingotPlutonium>.firstItem * 3], [null]).remove();  // ??
 
-autoclave.findRecipe(40, [<ore:dustCarbon>], [<liquid:platinum> * 1]).remove();
+autoclave.findRecipe(40, [<ore:dustCarbon>.firstItem], [<liquid:platinum> * 1]).remove();
 
 //Gem Sensor
-makeShaped("of_gem_sensor", <contenttweaker:gemsensor>,
+craft.makeShaped("of_gem_sensor", <contenttweaker:gemsensor>,
     [" O ",
      "PSP",
      " P "],
@@ -71,7 +72,7 @@ makeShaped("of_gem_sensor", <contenttweaker:gemsensor>,
 
 //Composition Sensor
 recipes.remove(<advancedrocketry:satelliteprimaryfunction:1>);
-makeShaped("of_composition_sensor", <advancedrocketry:satelliteprimaryfunction:1>,
+craft.makeShaped("of_composition_sensor", <advancedrocketry:satelliteprimaryfunction:1>,
     [" O ",
      "PSP",
      " P "],
@@ -80,9 +81,9 @@ makeShaped("of_composition_sensor", <advancedrocketry:satelliteprimaryfunction:1
       P : <ore:plateStainlessSteel> });
 
 //Wetware Boards
-assembler.findRecipe(480,
-    [<metaitem:board.multilayer.fiber_reinforced>, <metaitem:circuit.good>],
-    [<liquid:polystyrene> * 144]).remove();
+//assembler.findRecipe(480,
+//    [<metaitem:board.multilayer.fiber_reinforced>, <metaitem:circuit.good>],
+//    [<liquid:polystyrene> * 144]).remove();
 
 reactor.recipeBuilder()
     .inputs([<metaitem:board.multilayer.fiber_reinforced>, <contenttweaker:draconicstemcells> * 8])
@@ -99,7 +100,7 @@ reactor.recipeBuilder()
 
 //Growth Medium
 reactor.recipeBuilder()
-    .inputs([<gregtech:meta_item_1:2938>])
+    .inputs([<ore:dustMeat>])
     .fluidInputs(<liquid:distilled_water> * 1000)
     .fluidOutputs([<liquid:raw_growth_medium> * 1000])
     .duration(200).EUt(200).buildAndRegister();
@@ -112,38 +113,38 @@ blast_furnace.recipeBuilder()
     .property("temperature", 9600)
     .duration(40).EUt(500000).buildAndRegister();
 
-//Neutron Reflector
-assembler.findRecipe(120,
-    [<gregtech:meta_item_1:12007> * 30,
-     <gregtech:meta_item_1:12300> * 3,
-     <gregtech:meta_item_2:32435>],
-    [<liquid:tin_alloy> * 13824]).remove();
+//Neutron Reflector // ??
+//assembler.findRecipe(120,
+//    [<ore:plateBeryllium>.firstItem * 30,
+//     <ore:plateTungstenCarbide>.firstItem * 3,
+//     <metaitem:plate.iridium_alloy>],
+//    [<liquid:tin_alloy> * 13824]).remove();
 
 //Superconductor Wires
-assembler.findRecipe(512,
-    [<gregtech:cable:200> * 3,
-     <ore:plateTungstenSteel>.firstItem * 3,
-     <metaitem:electric.pump.lv>],
-    [<liquid:nitrogen> * 2000]).remove();
+//assembler.findRecipe(512,
+//    [<gregtech:cable:200> * 3,
+//     <ore:plateTungstenSteel>.firstItem * 3,
+//     <metaitem:electric.pump.lv>],
+//    [<liquid:nitrogen> * 2000]).remove();
 
-assembler.findRecipe(512,
-    [<gregtech:cable:135> * 3,
-     <ore:plateTungstenSteel>.firstItem * 3,
-     <metaitem:electric.pump.lv>],
-    [<liquid:nitrogen> * 2000]).remove();
+//assembler.findRecipe(512,
+//    [<gregtech:cable:135> * 3,
+//     <ore:plateTungstenSteel>.firstItem * 3,
+//     <metaitem:electric.pump.lv>],
+//    [<liquid:nitrogen> * 2000]).remove();
 
-assembler.findRecipe(512,
-    [<gregtech:cable:195> * 3,
-     <ore:plateTungstenSteel>.firstItem * 3,
-     <metaitem:electric.pump.lv>],
-    [<liquid:nitrogen> * 2000]).remove();
+//assembler.findRecipe(512,
+//    [<gregtech:cable:195> * 3,
+//     <ore:plateTungstenSteel>.firstItem * 3,
+//     <metaitem:electric.pump.lv>],
+//    [<liquid:nitrogen> * 2000]).remove();
 
 freezer.recipeBuilder()
-    .inputs(<gregtech:cable:710>)
+    .inputs(<ore:wireGtSingleDraconium>)
     .fluidInputs([<liquid:moltennetherstar> * 144])
-    .outputs(<gregtech:cable:354>)
+    .outputs(<ore:wireGtSingleSuperconductor>.firstItem)
     .duration(100).EUt(6000).buildAndRegister();
-
+/*
 //t6 circuits
 val t6c as IIngredient[] = [
     <metaitem:component.smd.capacitor> * 2,
@@ -153,8 +154,9 @@ val t6c as IIngredient[] = [
     <gregtech:meta_item_2:32474>,
     <gregtech:meta_item_2:32481>];
 
-assembler.findRecipe(32800, t6c, [<liquid:tin> * 144]).remove();
-assembler.findRecipe(32800, t6c, [<liquid:soldering_alloy> * 72]).remove();
+// gregicality !!
+#assembler.findRecipe(32800, t6c, [<liquid:tin> * 144]).remove();
+#assembler.findRecipe(32800, t6c, [<liquid:soldering_alloy> * 72]).remove();
 
 //t7 circuits
 val t7c as IIngredient[] = [
@@ -165,8 +167,8 @@ val t7c as IIngredient[] = [
     <metaitem:circuit.wetware_processor> * 2,
     <metaitem:board.wetware>];
 
-assembler.findRecipe(34400, t7c, [<liquid:tin> * 288]).remove();
-assembler.findRecipe(34400, t7c, [<liquid:soldering_alloy> * 144]).remove();
+#assembler.findRecipe(34400, t7c, [<liquid:tin> * 288]).remove();
+#assembler.findRecipe(34400, t7c, [<liquid:soldering_alloy> * 144]).remove();
 
 //t8 circuits
 val t8c as IIngredient[] = [
@@ -177,35 +179,35 @@ val t8c as IIngredient[] = [
     <metaitem:circuit.wetware_assembly> * 3,
     <metaitem:board.wetware> * 2];
 
-assembler.findRecipe(34400, t8c, [<liquid:tin> * 288]).remove();
-assembler.findRecipe(34400, t8c, [<liquid:soldering_alloy> * 144]).remove();
+#assembler.findRecipe(34400, t8c, [<liquid:tin> * 288]).remove();
+#assembler.findRecipe(34400, t8c, [<liquid:soldering_alloy> * 144]).remove();
 
 recipes.remove(<gregtech:meta_item_2:26708>);
 recipes.remove(<gregtech:meta_item_2:26707>);
-
-//neuroprocessor
-assembly_line.findRecipe(80000,
-    [<gregtech:meta_item_1:19391> * 64,
-     <gtadditions:ga_meta_item:32018> * 8,
-     <gregtech:meta_item_2:32454> * 8,
-     <ore:plateGold> * 8,
-     <ore:plateStainlessSteel> * 4,
-     <metaitem:board.wetware>],
-    [<liquid:sterilized_growth_medium> * 250,
-     <liquid:uumatter> * 100,
-     <liquid:water> * 250,
-     <liquid:lava> * 1000]).remove();
+*/
+//neuroprocessor // ??
+//assembly_line.findRecipe(80000,
+//    [<gregtech:meta_item_1:19391> * 64,
+//     <gtadditions:ga_meta_item:32018> * 8,
+//     <gregtech:meta_item_2:32454> * 8,
+//     <ore:plateGold>.firstItem * 8,
+//     <ore:plateStainlessSteel>.firstItem * 4,
+//     <metaitem:board.wetware>],
+//    [<liquid:sterilized_growth_medium> * 250,
+//     <liquid:uumatter> * 100,
+//     <liquid:water> * 250,
+//     <liquid:lava> * 1000]).remove();
 
 assembly_line.recipeBuilder()
     .inputs(<contenttweaker:draconicstemcells> * 8,
             <gregtech:cable:708> * 32,
-            <gregtech:meta_item_2:32498> * 8,
+            <metaitem:circuit.wetware_processor> * 8,
             <metaitem:board.wetware> * 4)
     .fluidInputs(<liquid:sterilized_growth_medium> * 16000)
-    .outputs(<gtadditions:ga_meta_item:32015>)
+    .outputs(<metaitem:processor.neuro>)
     .duration(200).EUt(80000).buildAndRegister();
 
-extractor.findRecipe(512, [<minecraft:egg>], [null]).remove();
+extractor.findRecipe(1024, [<minecraft:egg>], [null]).remove();
 
 extractor.recipeBuilder()
     .inputs(<contenttweaker:impossiblerealmdata>)
@@ -213,7 +215,7 @@ extractor.recipeBuilder()
     .duration(100).EUt(3000).buildAndRegister();
 
 recipes.remove(<extrautils2:rainbowgenerator>);
-makeShaped("of_rainbow_generator", <extrautils2:rainbowgenerator>,
+craft.makeShaped("of_rainbow_generator", <extrautils2:rainbowgenerator>,
     ["OTO",
      "OHO",
      "OBO"],
@@ -223,34 +225,34 @@ makeShaped("of_rainbow_generator", <extrautils2:rainbowgenerator>,
       B : <extrautils2:rainbowgenerator:1> });
 
 recipes.remove(<craftelytra:elytra_wing>);
-makeShaped("of_elytra_wing", <craftelytra:elytra_wing>,
+craft.makeShaped("of_elytra_wing", <craftelytra:elytra_wing>,
     [" PP",
      "PE ",
      "PP "],
-    { P : <gregtech:meta_item_1:12049>,
-      E : <gregtech:meta_item_2:25113> });
+    { P : <ore:platePalladium>,
+      E : <ore:gemExquisiteEmerald> });
 
 recipes.remove(<minecraft:elytra>);
-makeShaped("of_elytra", <minecraft:elytra>,
+craft.makeShaped("of_elytra", <minecraft:elytra>,
     ["   ", "WGW", "   "],
     { W : <craftelytra:elytra_wing>,
       G : <enderio:item_material:7> });
 
 //ZPM Field Generator
 assembly_line.recipeBuilder()
-    .inputs(<gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_1:32686> * 4,
-            <gregtech:frame_tritanium>,
+    .inputs(<ore:wireFineOsmium> * 64,
+            <ore:wireFineOsmium> * 64,
+            <ore:wireFineOsmium> * 64,
+            <ore:wireFineOsmium> * 64,
+            <ore:wireFineOsmium> * 64,
+            <ore:wireFineOsmium> * 64,
+            <metaitem:emitter.zpm> * 4,
+            <ore:frameGtTritanium>,
             <moreplates:awakened_draconium_plate> * 8,
-            <gregtech:cable:6307> * 6,
+            <ore:cableGtDoubleNaquadah> * 6,
             <extendedcrafting:material:40>)
     .fluidInputs(<liquid:soldering_alloy> * 1152)
-    .outputs(<gregtech:meta_item_1:32676>)
+    .outputs(<metaitem:field.generator.zpm>)
     .duration(600).EUt(122880).buildAndRegister();
 
 fluidextractor.recipeBuilder()
@@ -273,47 +275,47 @@ fusion_reactor.recipeBuilder()
 recipes.remove(<gregtech:machine_casing:6>);
 
 // LuV Machine Hull
-recipes.remove(<gregtech:machine:506>);
+recipes.remove(<meta_tile_entity:gregtech:hull.luv>);
 
-recipes.addShaped(<gregtech:machine:506>, [
+recipes.addShaped(<meta_tile_entity:gregtech:hull.luv>, [
 	[<ore:platePlastic>, <ore:plateLumium>, <ore:platePlastic>], 
 	[<ore:cableGtSingleVanadiumGallium>, <gregtech:machine_casing:6>, <ore:cableGtSingleVanadiumGallium>]]);
 
 assembler.findRecipe(16,
-    [<ore:plateChrome>.firstItem * 8,
+    [<ore:plateRhodiumPlatedPalladium>.firstItem * 8,
      gt.getCirc(8)],
     [null]).remove();
 	
 assembler.recipeBuilder()
-    .inputs(<ore:plateLumium> * 8)
+    .inputs(<ore:plateLumium> * 6, <ore:plateRhodiumPlatedPalladium> * 2)
     .outputs([<gregtech:machine_casing:6>])
     .duration(30).EUt(16).buildAndRegister();
 
 //Rare Earth
-centrifuge.findRecipe(24, [<gregtech:meta_item_1:3215>], [null]).remove();
+centrifuge.findRecipe(24, [<ore:dustImpureRedstone>.firstItem], [null]).remove();
 centrifuge.recipeBuilder()
-    .inputs(<gregtech:meta_item_1:3215>)
-    .outputs([<minecraft:redstone>, <gregtech:meta_item_1:326>])
+    .inputs(<ore:dustImpureRedstone>)
+    .outputs([<minecraft:redstone>, <ore:dustTinyRareEarth>.firstItem])
     .duration(900).EUt(24).buildAndRegister();
 
 
 //Bismuth
-centrifuge.findRecipe(24, [<gregtech:meta_item_1:3035>], [null]).remove();
+centrifuge.findRecipe(24, [<ore:dustImpureLead>.firstItem], [null]).remove();
 centrifuge.recipeBuilder()
-    .inputs(<gregtech:meta_item_1:3035>)
-    .outputs([<ore:dustLead>, <gregtech:meta_item_1:8> * 3])
+    .inputs(<ore:dustImpureLead>)
+    .outputs([<ore:dustLead>.firstItem, <ore:dustTinyBismuth>.firstItem * 3])
     .duration(900).EUt(24).buildAndRegister();
 
-centrifuge.findRecipe(24, [<gregtech:meta_item_1:3158>], [null]).remove();
+centrifuge.findRecipe(24, [<ore:dustImpureScheelite>.firstItem], [null]).remove();
 centrifuge.recipeBuilder()
-    .inputs(<gregtech:meta_item_1:3158>)
-    .outputs([<gregtech:meta_item_1:2158>, <gregtech:meta_item_1:8> * 3])
+    .inputs(<ore:dustImpureScheelite>)
+    .outputs([<ore:dustScheelite>.firstItem, <ore:dustTinyBismuth>.firstItem * 3])
     .duration(900).EUt(24).buildAndRegister();
 
 
 //Nuclear Stuff
 
-centrifuge.findRecipe(320, [<gregtech:meta_item_1:2075>], [null]).remove();
+//centrifuge.findRecipe(320, [<gregtech:meta_item_1:2075>], [null]).remove(); //??
 
 chemical_bath.findRecipe(384, [<minecraft:ender_eye>], [<liquid:plutonium> * 288]).remove();
 chemical_bath.recipeBuilder()
@@ -326,10 +328,10 @@ chemical_bath.findRecipe(384, [<minecraft:nether_star>], [<liquid:plutonium> * 1
 chemical_bath.recipeBuilder()
     .inputs(<minecraft:nether_star>)
     .fluidInputs(<liquid:radon> * 2000)
-    .outputs([<metaitem.quantumstar>])
+    .outputs([<metaitem:quantumstar>])
     .duration(1920).EUt(384).buildAndRegister();
 
-makeShaped("of_nc_cell_block", <nuclearcraft:cell_block>,
+craft.makeShaped("of_nc_cell_block", <nuclearcraft:cell_block>,
     ["TCT",
      "C C",
      "TCT"],
@@ -341,34 +343,34 @@ val trimPattern as string[] = ["N N",
                                "N N"];
 
 recipes.remove(<extendedcrafting:trimmed>);
-makeShaped("of_iron_trimmed_black_steel",
+craft.makeShaped("of_iron_trimmed_black_steel",
     <extendedcrafting:trimmed>, trimPattern,
-    { N : <ore:nuggetIron>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetIron>, C : <ore:blockBlackSteel> });
 
 recipes.remove(<extendedcrafting:trimmed:1>);
-makeShaped("of_gold_trimmed_black_steel",
+craft.makeShaped("of_gold_trimmed_black_steel",
     <extendedcrafting:trimmed:1>, trimPattern,
-    { N : <ore:nuggetGold>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetGold>, C : <ore:blockBlackSteel> });
 
 recipes.remove(<extendedcrafting:trimmed:2>);
-makeShaped("of_diamond_trimmed_black_steel",
+craft.makeShaped("of_diamond_trimmed_black_steel",
     <extendedcrafting:trimmed:2>, trimPattern,
-    { N : <ore:nuggetDiamond>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetDiamond>, C : <ore:blockBlackSteel> });
 
 recipes.remove(<extendedcrafting:trimmed:3>);
-makeShaped("of_emerald_trimmed_black_steel",
+craft.makeShaped("of_emerald_trimmed_black_steel",
     <extendedcrafting:trimmed:3>, trimPattern,
-    { N : <ore:nuggetEmerald>, C : <gregtech:compressed_10:10> });
+    { N : <ore:nuggetEmerald>, C : <ore:blockBlackSteel> });
 
 recipes.remove(<extendedcrafting:trimmed:4>);
-makeShaped("of_crystaltine_trimmed_black_steel",
+craft.makeShaped("of_crystaltine_trimmed_black_steel",
     <extendedcrafting:trimmed:4>, trimPattern,
-    { N : <extendedcrafting:material:25>, C : <gregtech:compressed_10:10> });
+    { N : <extendedcrafting:material:25>, C : <ore:blockBlackSteel> });
 
 recipes.remove(<extendedcrafting:trimmed:5>);
-makeShaped("of_omnium_trimmed_black_steel",
+craft.makeShaped("of_omnium_trimmed_black_steel",
     <extendedcrafting:trimmed:5>, trimPattern,
-    { N : <extendedcrafting:material:33>, C : <gregtech:compressed_10:10> });
+    { N : <extendedcrafting:material:33>, C : <ore:blockBlackSteel> });
 
 
 //Remove hardcoded gtce neutronium recipes and replace with oredicted versions
@@ -396,126 +398,128 @@ saw.recipeBuilder()
     .duration(20000).EUt(30).buildAndRegister();
 
 //Extruder Recipes
-extruder.findRecipe(64,[<avaritia:resource:4>, <gregtech:meta_item_1:32350>], [null]).remove();
+extruder.findRecipe(64,[<avaritia:resource:4>, <metaitem:shape.extruder.plate>], [null]).remove();
 extruder.recipeBuilder()
     .inputs(<avaritia:resource:4>)
-    .notConsumable(<gregtech:meta_item_1:32350>)
+    .notConsumable(<metaitem:shape.extruder.plate>)
     .outputs(<moreplates:neutronium_plate>)
     .duration(5000).EUt(64).buildAndRegister();
 
 //Alloy Smelter recipes
-alloy.findRecipe(16, [<avaritia:resource:4> * 2, <gregtech:meta_item_1:32301>], [null]).remove();
+alloy.findRecipe(16, [<avaritia:resource:4> * 2, <metaitem:shape.mold.plate>], [null]).remove();
 alloy.recipeBuilder()
     .inputs(<ore:ingotNeutronium> * 2)
-    .notConsumable(<gregtech:meta_item_1:32301>)
+    .notConsumable(<metaitem:shape.mold.plate>)
     .outputs(<moreplates:neutronium_plate>)
     .duration(10000).EUt(16).buildAndRegister();
 
 //Assembly Line Recipes
 
 //UV Electric Pump
+/*
 assembly_line.findRecipe(245760,
-    [<gregtech:meta_item_1:18391> * 16, <gregtech:meta_item_1:17972> * 8,
-     <gregtech:fluid_pipe:3192> * 2, <gregtech:meta_item_1:12972> * 2,
-     <gregtech:meta_item_2:18972> * 2, <gregtech:cable:7135> * 2,
-     <gregtech:meta_item_1:32608>],
-    [<fluid:lubricant> * 2000, <fluid:soldering_alloy> * 1296]).remove();
+    [<ore:ringSiliconRubber> * 16, <ore:screwNeutronium> * 8,
+     <ore:pipeLargeUltimet> * 2, <ore:plateNeutronium> * 2,
+     <ore:rotorNeutronium> * 2, <ore:cableGtQuadrupleNiobiumTitanium> * 2,
+     <metaitem:electric.motor.uv>],
+    [<fluid:lubricant> * 2000, <fluid:soldering_alloy> * 1296]).remove();*/
 
 assembly_line.recipeBuilder()
-    .inputs(<gregtech:meta_item_1:18391> * 16,
-            <gregtech:meta_item_1:17972> * 8,
-            <gregtech:fluid_pipe:3192> * 2,
+    .inputs(<ore:ringSiliconRubber> * 16,
+            <ore:screwNeutronium> * 8,
+            <ore:pipeLargeUltimet> * 2,
             <ore:plateNeutronium> * 2,
-            <gregtech:meta_item_2:18972> * 2,
-            <gregtech:cable:7135> * 2,
-            <gregtech:meta_item_1:32608>)
+            <ore:rotorNeutronium> * 2,
+            <ore:cableGtQuadrupleNiobiumTitanium> * 2,
+            <metaitem:electric.motor.uv>)
     .fluidInputs(<liquid:lubricant> * 2000, <liquid:soldering_alloy> * 1296)
-    .outputs(<gregtech:meta_item_1:32617>)
+    .outputs(<metaitem:electric.pump.uv>)
     .duration(600).EUt(245760).buildAndRegister();
-
+/*
 //UV Electric Piston
 assembly_line.findRecipe(245760,
-    [<gtadditions:ga_meta_item:2972> * 32, <gregtech:meta_item_1:12972> * 6,
-     <gregtech:meta_item_1:18972> * 4, <gregtech:meta_item_1:14972> * 4,
-     <gregtech:cable:7135> * 4, <gregtech:meta_item_2:17972> * 2,
-     <gregtech:meta_item_1:32608>, <gregtech:meta_item_2:26972>,
+    [<ore:roundNeutronium> * 32, <ore:plateNeutronium> * 6,
+     <ore:ringNeutronium> * 4, <ore:stickNeutronium> * 4,
+     <ore:cableGtQuadrupleNiobiumTitanium> * 4, <ore:gearSmallNeutronium> * 2,
+     <metaitem:electric.motor.uv>, <ore:gearNeutronium>,
      gt.getCirc(2)],
- [<liquid:lubricant> * 2000, <liquid:soldering_alloy> * 1296]).remove();
+ [<liquid:lubricant> * 2000, <liquid:soldering_alloy> * 1296]).remove();*/
 
 assembly_line.recipeBuilder()
-    .inputs(<gtadditions:ga_meta_item:2972> * 32,
+    .inputs(<ore:roundNeutronium> * 32,
             <ore:plateNeutronium> * 6,
-            <gregtech:meta_item_1:18972> * 4,
-            <gregtech:meta_item_1:14972> * 4,
-            <gregtech:cable:7135> * 4,
-            <gregtech:meta_item_2:17972> * 2,
-            <gregtech:meta_item_1:32608>,
-            <gregtech:meta_item_2:26972>)
+            <ore:ringNeutronium> * 4,
+            <ore:stickNeutronium> * 4,
+            <ore:cableGtQuadrupleNiobiumTitanium> * 4,
+            <ore:gearSmallNeutronium> * 2,
+            <metaitem:electric.motor.uv>,
+            <ore:gearNeutronium>)
     .notConsumable(gt.getCirc(2))
     .fluidInputs(<liquid:lubricant> * 2000, <liquid:soldering_alloy> * 1296)
-    .outputs(<gregtech:meta_item_1:32647>)
+    .outputs(<metaitem:electric.piston.uv>)
     .duration(600).EUt(245760).buildAndRegister();
 
+/*
 // UV Conveyor Belt
 assembly_line.findRecipe(245760,
-    [<gtadditions:ga_meta_item:2972> * 32,
-     <gregtech:meta_item_1:18972> * 4,
-     <gregtech:meta_item_1:32608> * 2,
-     <gregtech:meta_item_1:12972> * 2,
-     <gregtech:cable:7135> * 2,
-     <gregtech:meta_item_1:32766>.withTag({Configuration:1})],
-     [<liquid:lubricant> * 2000, <liquid:styrene_butadiene_rubber> * 2880]).remove();
+    [<ore:roundNeutronium> * 32,
+     <ore:ringNeutronium> * 4,
+     <metaitem:electric.motor.uv> * 2,
+     <ore:plateNeutronium> * 2,
+     <ore:cableGtQuadrupleNiobiumTitanium> * 2,
+     gt.getCirc(1)],
+     [<liquid:lubricant> * 2000, <liquid:styrene_butadiene_rubber> * 2880]).remove();*/
 
 assembly_line.recipeBuilder()
-    .inputs(<gtadditions:ga_meta_item:2972> * 32,
-            <gregtech:meta_item_1:18972> * 4,
-            <gregtech:meta_item_1:32608> * 2,
+    .inputs(<ore:roundNeutronium> * 32,
+            <ore:ringNeutronium> * 4,
+            <metaitem:electric.motor.uv> * 2,
             <ore:plateNeutronium> * 2,
-            <gregtech:cable:7135> * 2)
+            <ore:cableGtQuadrupleNiobiumTitanium> * 2)
     .notConsumable(gt.getCirc(1))
     .fluidInputs(<liquid:lubricant> * 2000, <liquid:styrene_butadiene_rubber> * 2880)
-    .outputs(<gregtech:meta_item_1:32637>)
+    .outputs(<metaitem:conveyor.module.uv>)
     .duration(600).EUt(245760).buildAndRegister();
 
-
+/*
 //UV Field Generator
 assembly_line.findRecipe(491520,
-    [<gregtech:meta_item_2:32446> * 64, <gregtech:meta_item_2:16047> * 64,
-     <gregtech:meta_item_2:16047> * 64, <gregtech:meta_item_2:16047> * 64,
-     <gregtech:meta_item_2:16047> * 64, <gregtech:meta_item_2:16047> * 64,
-     <gregtech:meta_item_2:16047> * 64, <gregtech:meta_item_2:16047> * 64,
-     <gregtech:meta_item_2:16047> * 64, <gregtech:cable:7135> * 8,
-     <gregtech:meta_item_1:12972> * 6, <gregtech:meta_item_1:32687> * 4,
-     <gregtech:frame_neutronium>, <gregtech:meta_item_1:32726>],
-    [<liquid:soldering_alloy> * 2304]).remove();
+    [<metaitem:board.multilayer.fiber_reinforced> * 64, <ore:wireFineOsmium> * 64,
+     <ore:wireFineOsmium> * 64, <ore:wireFineOsmium> * 64,
+     <ore:wireFineOsmium> * 64, <ore:wireFineOsmium> * 64,
+     <ore:wireFineOsmium> * 64, <ore:wireFineOsmium> * 64,
+     <ore:wireFineOsmium> * 64, <ore:cableGtQuadrupleNiobiumTitanium> * 8,
+     <ore:plateNeutronium> * 6, <metaitem:emitter.uv> * 4,
+     <gregtech:frame_neutronium>, <metaitem:gravistar>],
+    [<liquid:soldering_alloy> * 2304]).remove();*/
 
 assembly_line.recipeBuilder()
-    .inputs(<gregtech:meta_item_2:32446> * 64, <gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_2:16047> * 64, <gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_2:16047> * 64, <gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_2:16047> * 64, <gregtech:meta_item_2:16047> * 64,
-            <gregtech:meta_item_2:16047> * 64, <gregtech:cable:7135> * 8,
-            <ore:plateNeutronium> * 6, <gregtech:meta_item_1:32687> * 4,
-            <gregtech:frame_neutronium>, <gregtech:meta_item_1:32726>)
+    .inputs(<metaitem:board.multilayer.fiber_reinforced> * 64, <ore:wireFineOsmium> * 64,
+            <ore:wireFineOsmium> * 64, <ore:wireFineOsmium> * 64,
+            <ore:wireFineOsmium> * 64, <ore:wireFineOsmium> * 64,
+            <ore:wireFineOsmium> * 64, <ore:wireFineOsmium> * 64,
+            <ore:wireFineOsmium> * 64, <ore:cableGtQuadrupleNiobiumTitanium> * 8,
+            <ore:plateNeutronium> * 6, <metaitem:emitter.uv> * 4,
+            <gregtech:frame_neutronium>, <metaitem:gravistar>)
     .fluidInputs(<liquid:soldering_alloy> * 2304)
-    .outputs(<gregtech:meta_item_1:32677>)
+    .outputs(<metaitem:field.generator.uv>)
     .duration(600).EUt(491520).buildAndRegister();
-
+/*
 //MAX Battery
 assembly_line.findRecipe(300000,
     [<gregtech:meta_item_2:32479> * 64, <gregtech:meta_item_2:32479> * 64,
-     <gregtech:cable:354> * 32, <gregtech:meta_item_1:12972> * 16,
+     <ore:wireGtSingleSuperconductor> * 32, <ore:plateNeutronium> * 16,
      <gregtech:meta_item_2:32457> * 16, <gregtech:meta_item_1:32598> * 8,
-     <gregtech:meta_item_1:32677> * 2, <gregtech:meta_item_2:32501>,
-     <gregtech:meta_item_2:32501>, <gregtech:meta_item_2:32501>,
-     <gregtech:meta_item_2:32501> ],
+     <metaitem:field.generator.uv> * 2, gt.getCirc("MAX"),
+     gt.getCirc("MAX"), gt.getCirc("MAX"),
+     gt.getCirc("MAX") ],
     [<liquid:water> * 16000, <liquid:soldering_alloy> * 2880]).remove();
 
 assembly_line.recipeBuilder()
     .inputs(<gregtech:meta_item_2:32479> * 64, <gregtech:meta_item_2:32479> * 64,
-            <gregtech:cable:354> * 32, <ore:plateNeutronium> * 16,
+            <ore:wireGtSingleSuperconductor> * 32, <ore:plateNeutronium> * 16,
             <gregtech:meta_item_2:32457> * 16, <gregtech:meta_item_1:32598> * 8,
-            <gregtech:meta_item_1:32677> * 2, <gregtech:meta_item_2:32501> * 4)
+            <metaitem:field.generator.uv> * 2, gt.getCirc("MAX") * 4)
     .fluidInputs(<liquid:water> * 16000, <liquid:soldering_alloy> * 2880)
     .outputs(<gtadditions:ga_meta_item:32124>)
-    .duration(2000).EUt(300000).buildAndRegister();
+    .duration(2000).EUt(300000).buildAndRegister();*/

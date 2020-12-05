@@ -25,7 +25,7 @@ recipes.addShaped(<solarflux:mirror>,[
 recipes.remove(<solarflux:solar_panel_1>);
 recipes.addShaped(<solarflux:solar_panel_1>,[
 	[<solarflux:mirror>, <solarflux:mirror>, <solarflux:mirror>],
-	[<gregtech:meta_item_2:16018>,<gregtech:meta_item_2:16018>,<gregtech:meta_item_2:16018>],
+	[<ore:wireFineCopper>,<ore:wireFineCopper>,<ore:wireFineCopper>],
 	[<minecraft:stone_slab>, <enderio:item_power_conduit>, <minecraft:stone_slab>]]);
 	
 //Solar 2	
@@ -112,7 +112,7 @@ recipes.removeByRecipeName("darkutils:soulsand");
 recipes.remove(<deepmoblearning:extraction_chamber>);
 recipes.addShaped(<deepmoblearning:extraction_chamber>, [	
 	[<enderio:item_alloy_ingot:1>, <minecraft:glass_pane>, <enderio:item_alloy_ingot:1>], 
-	[<ore:circuitGood>, <deepmoblearning:machine_casing>, <ore:circuitGood>], 
+	[gt.getCirc("MV"), <deepmoblearning:machine_casing>, gt.getCirc("MV")], 
 	[<enderio:item_alloy_ingot:1>, <minecraft:hopper>, <enderio:item_alloy_ingot:1>]]);
 
 recipes.remove(<deepmoblearning:machine_casing>);

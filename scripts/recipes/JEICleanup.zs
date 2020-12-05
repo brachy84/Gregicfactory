@@ -32,12 +32,13 @@ val curvedPlatesDoubleIngots as int[] = [1, 2, 3, 7, 16, 17, 18, 21, 22, 25, 26,
  1309, 1310, 1311, 1312, 1353, 1391, 1395, 1398, 1410, 1411, 1421, 1424, 1470,
  1700, 1701, 1702, 1703, 1704, 1705, 1712, 1713, 1714, 1965, 1972];
 
+/*
 for meta in curvedPlatesDoubleIngots {
     var item = itemUtils.getItem("gtadditions:ga_meta_item", meta) as IItemStack;
     if(!isNull(item)) {
         mods.jei.JEI.hide(item);
     }
-}
+}*/
 
 
 /* Hide all of AE2's facades (can still be crafted, just hiding from JEI) */

@@ -39,7 +39,7 @@ assembler.recipeBuilder().inputs([<ore:plateIron> * 2]).notConsumable(gt.getCirc
 assembler.recipeBuilder().inputs([<ore:plateIron> * 7]).notConsumable(gt.getCirc(7)).outputs([<minecraft:cauldron>]).duration(70).EUt(16).buildAndRegister();
 
 // Assembly Line Casing
-assembler.recipeBuilder().inputs([<ore:plateSteel> * 4, <gregtech:meta_item_1:32654> * 2, <gregtech:frame_tungsten_steel>]).outputs([<gtadditions:ga_multiblock_casing:1> * 2]).duration(100).EUt(8000).buildAndRegister();
+assembler.recipeBuilder().inputs([<ore:plateSteel> * 4, <metaitem:robot.arm.iv> * 2, <ore:frameGtTungstenSteel>]).outputs([<gtadditions:ga_multiblock_casing:1> * 2]).duration(100).EUt(8000).buildAndRegister();
 
 
 /*
@@ -118,7 +118,7 @@ recipes.addShapeless(<gregtech:meta_item_1:2156>, [<thermalfoundation:material:7
 // Add solidifier block recipe
 solidifier.recipeBuilder()
     .fluidInputs([<liquid:moltencrystalmatrix> * 1296])
-    .notConsumable(<gregtech:meta_item_1:32308>)
+    .notConsumable(<metaitem:shape.mold.block>)
     .outputs([<avaritia:block_resource:2>])
     .duration(200).EUt(30).buildAndRegister();
 

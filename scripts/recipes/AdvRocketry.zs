@@ -1,12 +1,12 @@
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import scripts.CommonVars.makeShaped as makeShaped;
-import scripts.CommonVars.makeExtremeRecipe5 as makeExtremeRecipe5;
+//import scripts.CommonVars.craft.makeShaped as craft.makeShaped;
+//import scripts.CommonVars.craft.makeExtremeRecipe5 as craft.makeExtremeRecipe5;
 
 // Machine Structure
 recipes.remove(<libvulpes:structuremachine>);
-makeShaped("libvulpes_structure_machine",
+craft.makeShaped("libvulpes_structure_machine",
 	<libvulpes:structuremachine>, [
 		" P ",
 		"PMP",
@@ -37,7 +37,7 @@ recipes.addShapeless(<advancedrocketry:loader:5>, [<libvulpes:hatch:2>,<metaitem
 
 // Liquid Fueled Engine
 recipes.remove(<advancedrocketry:rocketmotor>);
-makeShaped("ar_liquid_engine",
+craft.makeShaped("ar_liquid_engine",
 	<advancedrocketry:rocketmotor>, [
 		" P ",
 		"PPP",
@@ -57,9 +57,9 @@ recipes.addShaped(<advancedrocketry:seat>, [
 // Structure Tower
 recipes.remove(<advancedrocketry:structuretower>);
 recipes.addShaped(<advancedrocketry:structuretower> * 3, [
-	[<gregtech:frame_stainless_steel>],
-	[<gregtech:frame_stainless_steel>],
-	[<gregtech:frame_stainless_steel>]
+	[<ore:frameGtStainlessSteel>],
+	[<ore:frameGtStainlessSteel>],
+	[<ore:frameGtStainlessSteel>]
 ]);
 
 /**
@@ -78,7 +78,7 @@ for pressureTank, thermalTank in arTanks {
 	counter = counter + 1;
 
 	recipes.remove(pressureTank);
-	makeShaped("ar_pressure_tank_" + (counter as string),
+	craft.makeShaped("ar_pressure_tank_" + (counter as string),
 		pressureTank, [
 			" M ",
 			"PTP",
@@ -216,38 +216,38 @@ recipes.remove(<metaitem:field.generator.ev>);
 recipes.remove(<metaitem:field.generator.iv>);
 recipes.remove(<metaitem:field.generator.luv>);
 
-makeShaped("gt_field_generator_lv",
+craft.makeShaped("gt_field_generator_lv",
 	<metaitem:field.generator.lv>, fieldGeneratorPattern, {
 		W: <ore:wireGtSingleConductiveIron>, // 1x Conductive Iron Wire
 		C: gt.getCirc("LV"),               // T1 Circuit
 		X: <minecraft:ender_pearl>,          // Ender Pearl
 	});
 
-makeShaped("gt_field_generator_mv",
+craft.makeShaped("gt_field_generator_mv",
 	<metaitem:field.generator.mv>, fieldGeneratorPattern, {
 		W: <ore:wireGtSingleEnergeticAlloy>, // 1x Energetic Alloy Wire
-		C: <ore:circuitGood>,                // T2 Circuit
+		C: gt.getCirc("MV"),                // T2 Circuit
 		X: <minecraft:ender_eye>,            // Ender Eye
 	});
 
-makeShaped("gt_field_generator_hv",
+craft.makeShaped("gt_field_generator_hv",
 	<metaitem:field.generator.hv>, fieldGeneratorPattern, {
 		W: <ore:wireGtSingleVibrantAlloy>, // 1x Vibrant Alloy Wire
-		C: <ore:circuitAdvanced>,          // T3 Circuit
+		C: gt.getCirc("HV"),          // T3 Circuit
 		X: <metaitem:quantumeye>,          // Quantum Eye
 	});
 
-makeShaped("gt_field_generator_ev",
+craft.makeShaped("gt_field_generator_ev",
 	<metaitem:field.generator.ev>, fieldGeneratorPattern, {
 		W: <ore:wireGtSingleEndSteel>, // 1x End Steel Wire
-		C: <ore:circuitExtreme>,       // T4 Circuit
+		C: gt.getCirc("EV"),       // T4 Circuit
 		X: <minecraft:nether_star>,    // Nether Star
 	});
 
-makeShaped("gt_field_generator_iv",
+craft.makeShaped("gt_field_generator_iv",
 	<metaitem:field.generator.iv>, fieldGeneratorPattern, {
 		W: <ore:wireGtSingleLumium>, // 1x Lumium Wire
-		C: <ore:circuitElite>,       // T5 Circuit
+		C: gt.getCirc("IV"),       // T5 Circuit
 		X: <metaitem:quantumstar>,   // Quantum Star
 	});
 
@@ -257,7 +257,7 @@ makeShaped("gt_field_generator_iv",
 
 // Package Component
 recipes.remove(<packagedauto:package_component>);
-makeShaped("pauto_package_component",
+craft.makeShaped("pauto_package_component",
 	<packagedauto:package_component>, [
 		"VTV",
 		"TXT",
@@ -269,7 +269,7 @@ makeShaped("pauto_package_component",
 	});
 
 recipes.remove(<packagedauto:recipe_holder>);
-makeShaped("pauto_recipe_holder",
+craft.makeShaped("pauto_recipe_holder",
 	<packagedauto:recipe_holder> * 3, [
 		"GPG",
 		"PBP",
@@ -283,7 +283,7 @@ makeShaped("pauto_recipe_holder",
 	});
 
 recipes.remove(<packagedauto:packager>);
-makeShaped("pauto_packager",
+craft.makeShaped("pauto_packager",
 	<packagedauto:packager>, [
 		"TMT",
 		"CXC",
@@ -292,12 +292,12 @@ makeShaped("pauto_packager",
 		M: <packagedauto:me_package_component>, // ME Packaging Component
 		I: <appliedenergistics2:part:240>,      // ME Import Bus
 		T: <ore:plateTitanium>,   // Titanium Plate
-		C: <ore:circuitExtreme>,  // T4 Circuit
+		C: gt.getCirc("EV"),  // T4 Circuit
 		X: <extrautils2:crafter>, // ExU2 Crafter
 	});
 
 recipes.remove(<packagedauto:unpackager>);
-makeShaped("pauto_unpackager",
+craft.makeShaped("pauto_unpackager",
 	<packagedauto:unpackager>, [
 		"TMT",
 		"CXC",
@@ -306,12 +306,12 @@ makeShaped("pauto_unpackager",
 		M: <packagedauto:me_package_component>, // ME Packaging Component
 		E: <appliedenergistics2:part:260>,      // ME Export Bus
 		T: <ore:plateTitanium>,   // Titanium Plate
-		C: <ore:circuitExtreme>,  // T4 Circuit
+		C: gt.getCirc("EV"),  // T4 Circuit
 		X: <extrautils2:crafter>, // ExU2 Crafter
 	});
 
 recipes.remove(<packagedauto:encoder>);
-makeShaped("pauto_encoder",
+craft.makeShaped("pauto_encoder",
 	<packagedauto:encoder>, [
 		"TMT",
 		"HXH",
@@ -320,12 +320,12 @@ makeShaped("pauto_encoder",
 		M: <packagedauto:me_package_component>, // ME Packaging Component
 		H: <packagedauto:recipe_holder>,        // Recipe Holder
 		T: <ore:plateTitanium>,   // Titanium Plate
-		C: <ore:circuitExtreme>,  // T4 Circuit
+		C: gt.getCirc("EV"),  // T4 Circuit
 		X: <ae2stuff:encoder>,    // AE2STuff Pattern Encoder
 	});
 
 recipes.remove(<ae2stuff:encoder>);
-makeShaped("ae2stuff_encoder",
+craft.makeShaped("ae2stuff_encoder",
 	<ae2stuff:encoder>, [
 		"STS",
 		"AXF",
@@ -336,13 +336,13 @@ makeShaped("ae2stuff_encoder",
 		F: <appliedenergistics2:material:43>, // Formation Core
 		A: <appliedenergistics2:material:44>, // Annihilation Core
 		M: <packagedauto:me_package_component>, // ME Packaging Component
-		C: <ore:circuitAdvanced>,               // T4 Circuit
+		C: gt.getCirc("HV"),               // T4 Circuit
 		X: <meta_tile_entity:gregtech:hull.hv>,              // HV Machine Hull
 	});
 
 
 recipes.remove(<packagedauto:me_package_component>);
-makeShaped("pauto_me_package_component",
+craft.makeShaped("pauto_me_package_component",
 	<packagedauto:me_package_component>, [
 		"PGP",
 		"AXF",
@@ -366,7 +366,7 @@ val extremeCrafterPattern as string[] = [
 
 // Advanced Crafter
 recipes.remove(<packagedexcrafting:advanced_crafter>);
-makeShaped("pexc_advanced_crafter",
+craft.makeShaped("pexc_advanced_crafter",
 	<packagedexcrafting:advanced_crafter>, extremeCrafterPattern, {
 		C: <extendedcrafting:material:15>,      // Advanced Catalyst
 		I: <extendedcrafting:interface>,        // Automation Interface
@@ -378,7 +378,7 @@ makeShaped("pexc_advanced_crafter",
 
 // Elite Crafter
 recipes.remove(<packagedexcrafting:elite_crafter>);
-makeShaped("pexc_elite_crafter",
+craft.makeShaped("pexc_elite_crafter",
 	<packagedexcrafting:elite_crafter>, extremeCrafterPattern, {
 		C: <extendedcrafting:material:16>,      // Elite Catalyst
 		I: <extendedcrafting:interface>,        // Automation Interface
@@ -390,7 +390,7 @@ makeShaped("pexc_elite_crafter",
 
 // Ultimate
 recipes.remove(<packagedexcrafting:ultimate_crafter>);
-makeShaped("pexc_ultimate_crafter",
+craft.makeShaped("pexc_ultimate_crafter",
 	<packagedexcrafting:ultimate_crafter>, extremeCrafterPattern, {
 		C: <extendedcrafting:material:17>,      // Ultimate Catalyst
 		I: <extendedcrafting:interface>,        // Automation Interface
@@ -413,7 +413,7 @@ alloy.recipeBuilder()
 
 // Suit Workstation
 recipes.remove(<advancedrocketry:suitworkstation>);
-makeShaped("ar_suit_workstation",
+craft.makeShaped("ar_suit_workstation",
 	<advancedrocketry:suitworkstation>, [
 		"RTR",
 		"CXC",
@@ -421,14 +421,14 @@ makeShaped("ar_suit_workstation",
 	], {
 		T: <avaritia:compressed_crafting_table>, // Compressed Crafting Table
 		R: <metaitem:robot.arm.mv>, // MV Robot Arm
-		C: <ore:circuitGood>,       // T2 Circuit
+		C: gt.getCirc("MV"),       // T2 Circuit
 		X: <meta_tile_entity:gregtech:hull.mv>,  // MV Machine Hull
 		W: <forestry:worktable>,    // Worktable
 	});
 
 // Gas Charger
 recipes.remove(<advancedrocketry:oxygencharger>);
-makeShaped("ar_oxygen_charger",
+craft.makeShaped("ar_oxygen_charger",
 	<advancedrocketry:oxygencharger>, [
 		"   ",
 		"SPS",
@@ -441,7 +441,7 @@ makeShaped("ar_oxygen_charger",
 	});
 
 // Cloth
-makeShaped("ctt_cloth",
+craft.makeShaped("ctt_cloth",
 	<contenttweaker:cloth> * 4, [
 		"SSS",
 		"SSS",
@@ -450,7 +450,7 @@ makeShaped("ctt_cloth",
 		S: <minecraft:string> // Ssssssssstring 🐍
 	});
 
-makeShaped("ctt_thermal_cloth",
+craft.makeShaped("ctt_thermal_cloth",
 	<contenttweaker:thermalcloth> * 3, [
 		"RRR",
 		"CCC",
@@ -468,28 +468,28 @@ var thermalCloth as IIngredient[string] = {
 	T: <contenttweaker:thermalcloth>,
 };
 
-makeShaped("ctt_unprepared_space_helmet",
+craft.makeShaped("ctt_unprepared_space_helmet",
 	<contenttweaker:unpreparedspacehelmet>, [
 		"TTT",
 		"T T",
 		"   ",
 	], thermalCloth);
 
-makeShaped("ctt_unprepared_space_chestpiece",
+craft.makeShaped("ctt_unprepared_space_chestpiece",
 	<contenttweaker:unpreparedspacechestpiece>, [
 		"T T",
 		"TTT",
 		"TTT",
 	], thermalCloth);
 
-makeShaped("ctt_unprepared_space_leggins",
+craft.makeShaped("ctt_unprepared_space_leggins",
 	<contenttweaker:unpreparedspaceleggings>, [
 		"TTT",
 		"T T",
 		"T T",
 	], thermalCloth);
 
-makeShaped("ctt_unprepared_space_boots",
+craft.makeShaped("ctt_unprepared_space_boots",
 	<contenttweaker:unpreparedspaceboots>, [
 		"   ",
 		"T T",
@@ -511,13 +511,13 @@ val spaceSuitLayerPattern as string[] = [
 	"CPC",
 ];
 
-makeShaped("ctt_pressure_layer",
+craft.makeShaped("ctt_pressure_layer",
 	<contenttweaker:pressurelayer>, spaceSuitLayerPattern, {
 		C: <contenttweaker:cloth>, // Cloth
 		P: <ore:plateBlackSteel>,  // Black Steel Plate
 	});
 
-makeShaped("ctt_radiation_layer",
+craft.makeShaped("ctt_radiation_layer",
 	<contenttweaker:radiationlayer>, spaceSuitLayerPattern, {
 		C: <contenttweaker:cloth>, // Cloth
 		P: <ore:plateLead>,        // Lead Plate
@@ -530,7 +530,7 @@ assembler.recipeBuilder()
 		<contenttweaker:pressurelayer> * 2,
 		<contenttweaker:radiationlayer> * 2,
 		<minecraft:glass_pane>,
-		<ore:circuitAdvanced>
+		gt.getCirc("HV")
 	])
 	.outputs([<advancedrocketry:spacehelmet>])
 	.duration(500)
@@ -577,7 +577,7 @@ assembler.recipeBuilder()
 
 // Liquid Fuel Tank
 recipes.remove(<advancedrocketry:fueltank>);
-makeShaped("ar_fuel_tank",
+craft.makeShaped("ar_fuel_tank",
 	<advancedrocketry:fueltank>, [
 		"PTP",
 		"PTP",
@@ -601,7 +601,7 @@ mixer.recipeBuilder()
 
 // Guidance Computer
 recipes.remove(<advancedrocketry:guidancecomputer>);
-makeExtremeRecipe5(<advancedrocketry:guidancecomputer>,
+craft.makeExtremeRecipe5(<advancedrocketry:guidancecomputer>,
 	[
 		"GPPPG",
 		"PSMEP",
@@ -614,13 +614,13 @@ makeExtremeRecipe5(<advancedrocketry:guidancecomputer>,
 		X: <libvulpes:structuremachine>,  // Machine Structure
 		S: <metaitem:sensor.hv>,  // HV Sensor
 		E: <metaitem:emitter.hv>, // HV Emitter
-		C: <ore:circuitAdvanced>, // T3 Circuit
+		C: gt.getCirc("HV"), // T3 Circuit
 		M: <extrautils2:screen>,  // ExU2 Screen
 	});
 
 // Rocket Assembling Machine
 recipes.remove(<advancedrocketry:rocketbuilder>);
-makeExtremeRecipe5(<advancedrocketry:rocketbuilder>,
+craft.makeExtremeRecipe5(<advancedrocketry:rocketbuilder>,
 	[
 		"RPEPR",
 		"PXMXP",
@@ -634,12 +634,12 @@ makeExtremeRecipe5(<advancedrocketry:rocketbuilder>,
 		A: <gregtech:machine:101>, // MV Assembling Machine
 		E: <metaitem:emitter.mv>,  // MV Emitter
 		M: <extrautils2:screen>,   // ExU2 Screen
-		C: <ore:circuitGood>,      // T2 Circuit
+		C: gt.getCirc("MV"),      // T2 Circuit
 	});
 
 // Planet ID Chip
 recipes.remove(<advancedrocketry:planetidchip>);
-makeShaped("ar_planet_id_chip", 
+craft.makeShaped("ar_planet_id_chip", 
 	<advancedrocketry:planetidchip>, [
 		"WPW",
 		"WCW",
@@ -647,7 +647,7 @@ makeShaped("ar_planet_id_chip",
 	], {
 		W: <ore:wireFineStainlessSteel>, // Fine Stainless Steel Wire
 		P: <ore:plateVibrantAlloy>, // Vibrant Alloy Plate
-		C: <ore:circuitGood>, // T2 Circuit
+		C: gt.getCirc("MV"), // T2 Circuit
 	});
 
 // Soul Powder
@@ -683,7 +683,7 @@ macerator.recipeBuilder()
 
 // Launch Pad
 recipes.remove(<advancedrocketry:launchpad>);
-makeShaped("ar_launchpad",
+craft.makeShaped("ar_launchpad",
 	<advancedrocketry:launchpad> * 9, [
 		"CCC",
 		"CCC",
@@ -694,7 +694,7 @@ makeShaped("ar_launchpad",
 
 //Linker
 recipes.remove(<libvulpes:linker>);
-makeShaped("ar_linker",
+craft.makeShaped("ar_linker",
 	<libvulpes:linker>, [
 		" E ",
 		"SCS",
@@ -702,7 +702,7 @@ makeShaped("ar_linker",
 	], {
 		S: <ore:plateStainlessSteel>, // Stainless Steel Plate
 		E: <metaitem:emitter.hv>,     // HV Emitter
-		C: <ore:circuitAdvanced>,     // T3 Circuit
+		C: gt.getCirc("HV"),     // T3 Circuit
 	});
 
 // Plant Fibers
@@ -710,7 +710,7 @@ recipes.addShapeless(<minecraft:string> * 3, [<hooked:microcrafting>,<hooked:mic
 
 // Fueling Station
 recipes.remove(<advancedrocketry:fuelingstation>);
-makeShaped("ar_fueling_station",
+craft.makeShaped("ar_fueling_station",
 	<advancedrocketry:fuelingstation>, [
 		"PMP",
 		"PXP",
@@ -743,7 +743,7 @@ autoclave.recipeBuilder()
 
 // Space Station Builder
 recipes.remove(<advancedrocketry:stationbuilder>);
-makeExtremeRecipe5(<advancedrocketry:stationbuilder>,
+craft.makeExtremeRecipe5(<advancedrocketry:stationbuilder>,
 	[
 		"RTETR",
 		"TXMXT",
@@ -756,13 +756,13 @@ makeExtremeRecipe5(<advancedrocketry:stationbuilder>,
 		R: <metaitem:robot.arm.ev>, // EV Robot Arm
 		E: <metaitem:emitter.ev>,   // EV Emitter
 		A: <gregtech:machine:103>,  // EV Assembling Machine
-		C: <ore:circuitExtreme>, // T4 Circuit
+		C: gt.getCirc("EV"), // T4 Circuit
 		M: <extrautils2:screen>, // ExU2 Screen
 	});
 
 // Station ID Chip
 recipes.remove(<advancedrocketry:spacestationchip>);
-makeShaped("ar_station_id_chip", 
+craft.makeShaped("ar_station_id_chip", 
 	<advancedrocketry:spacestationchip>, [
 		"WPW",
 		"WCW",
@@ -770,12 +770,12 @@ makeShaped("ar_station_id_chip",
 	], {
 		W: <ore:wireFineTitanium>, // Fine Titanium Wire
 		P: <ore:plateBlackSteel>,  // Black Steel Plate
-		C: <ore:circuitExtreme>,   // T4 Circuit
+		C: gt.getCirc("EV"),   // T4 Circuit
 	});
 
 // Warp Monitor
 recipes.remove(<advancedrocketry:warpmonitor>);
-makeShaped("ar_warp_monitor",
+craft.makeShaped("ar_warp_monitor",
 	<advancedrocketry:warpmonitor>, [
 		"SMS",
 		"CXC",
@@ -784,12 +784,12 @@ makeShaped("ar_warp_monitor",
 		X: <libvulpes:structuremachine>, // Machine Structure
 		S: <metaitem:sensor.ev>, // EV Sensor
 		M: <extrautils2:screen>, // ExU2 Screen
-		C: <ore:circuitExtreme>, // T4 Circuit
+		C: gt.getCirc("EV"), // T4 Circuit
 	});
 
 // Holo Projector
 recipes.remove(<libvulpes:holoprojector>);
-makeShaped("ar_holo_projector", 
+craft.makeShaped("ar_holo_projector", 
 	<libvulpes:holoprojector>, [
 		"   ",
 		"TOT",
@@ -801,7 +801,7 @@ makeShaped("ar_holo_projector",
 
 // Optical Sensor
 recipes.remove(<advancedrocketry:satelliteprimaryfunction>);
-makeShaped("ar_optical_sensor",
+craft.makeShaped("ar_optical_sensor",
 	<advancedrocketry:satelliteprimaryfunction>, [
 		"GGG",
 		"ISI",
@@ -814,7 +814,7 @@ makeShaped("ar_optical_sensor",
 
 // Warp Core
 recipes.remove(<advancedrocketry:warpcore>);
-makeShaped("ar_warp_core",
+craft.makeShaped("ar_warp_core",
 	<advancedrocketry:warpcore>, [
 		"LTL",
 		"TNT",
@@ -827,7 +827,7 @@ makeShaped("ar_warp_core",
 
 // Rocket Monitoring Station
 recipes.remove(<advancedrocketry:monitoringstation>);
-makeShaped("ar_rocket_monitoring_station", 
+craft.makeShaped("ar_rocket_monitoring_station", 
 	<advancedrocketry:monitoringstation>, [
 		"ROR",
 		"RXR",
@@ -836,12 +836,12 @@ makeShaped("ar_rocket_monitoring_station",
 		O: <advancedrocketry:satelliteprimaryfunction>, // Optical Sensor
 		X: <libvulpes:structuremachine>, // Machine Structure
 		R: <ore:stickCopper>, // Copper Rod
-		C: <ore:circuitGood>, // T2 Circuit
+		C: gt.getCirc("MV"), // T2 Circuit
 	});
 
 // Guidance Computer Access Hatch
 recipes.remove(<advancedrocketry:loader:6>);
-makeShaped("ar_guidance_computer_access_hatch",
+craft.makeShaped("ar_guidance_computer_access_hatch",
 	<advancedrocketry:loader:6>, [
 		" C ",
 		"RXR",
@@ -849,13 +849,13 @@ makeShaped("ar_guidance_computer_access_hatch",
 	], {
 		X: <libvulpes:structuremachine>, // Machine Structure
 		R: <ore:stickCopper>, // Copper Rod
-		C: <ore:circuitGood>, // T2 Circuit
+		C: gt.getCirc("MV"), // T2 Circuit
 	});
 
 // Station Docking Port
 recipes.remove(<advancedrocketry:stationmarker>);
 recipes.addShapeless(<advancedrocketry:stationmarker>, [
-	<actuallyadditions:item_battery>, <ore:circuitGood>, <libvulpes:structuremachine>
+	<actuallyadditions:item_battery>, gt.getCirc("MV"), <libvulpes:structuremachine>
 ]);
 
 // Station Gravity Controller
@@ -867,7 +867,7 @@ recipes.addShapeless(<advancedrocketry:gravitycontroller>, [
 // Altitude Controller
 recipes.remove(<advancedrocketry:altitudecontroller>);
 recipes.addShapeless(<advancedrocketry:altitudecontroller>, [
-	<libvulpes:structuremachine>, <extrautils2:screen>, <ore:circuitGood>
+	<libvulpes:structuremachine>, <extrautils2:screen>, gt.getCirc("MV")
 ]);
 
 // Orientation Controller
@@ -879,7 +879,7 @@ recipes.addShapeless(<advancedrocketry:orientationcontroller>, [
 // Docking Pad
 recipes.remove(<advancedrocketry:landingpad>);
 recipes.addShapeless(<advancedrocketry:landingpad>, [
-	<advancedrocketry:launchpad>, <ore:circuitGood>
+	<advancedrocketry:launchpad>, gt.getCirc("MV")
 ]);
 
 // Station Light
@@ -890,7 +890,7 @@ recipes.addShapeless(<advancedrocketry:circlelight>, [
 
 // Atmosphere Detector
 recipes.remove(<advancedrocketry:oxygendetection>);
-makeShaped("ar_atmosphere_detector", 
+craft.makeShaped("ar_atmosphere_detector", 
 	<advancedrocketry:oxygendetection>, [
 		"PMP",
 		"BXR",
@@ -900,13 +900,13 @@ makeShaped("ar_atmosphere_detector",
 		B: <minecraft:iron_bars>, // Vanilla Iron Bars
 		M: <extrautils2:screen>,  // ExU2 Screen
 		P: <ore:plateSteel>,  // Steel Plate
-		C: <ore:circuitGood>, // T2 Circuit
+		C: gt.getCirc("MV"), // T2 Circuit
 		R: <ore:rotorSteel>,  // Steel Rotor
 	});
 
 // Area Gravity Controller
 recipes.remove(<advancedrocketry:gravitymachine>);
-makeShaped("ar_gravity_machine",
+craft.makeShaped("ar_gravity_machine",
 	<advancedrocketry:gravitymachine>, [
 		" M ",
 		"TWT",
@@ -914,7 +914,7 @@ makeShaped("ar_gravity_machine",
 	], {
 		W: <advancedrocketry:warpcore>, // Warp Core
 		T: <ore:plateTitanium>,  // Titanium Plate
-		C: <ore:circuitExtreme>, // T4 Circuit
+		C: gt.getCirc("EV"), // T4 Circuit
 		M: <extrautils2:screen>, // ExU2 Screen
 	});
 
@@ -928,7 +928,7 @@ recipes.addShaped(<advancedrocketry:sealdetector>, [
 
 // HoverCraft
 recipes.remove(<advancedrocketry:hovercraft>);
-makeShaped("ar_hovercraft",
+craft.makeShaped("ar_hovercraft",
 	<advancedrocketry:hovercraft>, [
 		"CMC",
 		"DTD",
@@ -936,7 +936,7 @@ makeShaped("ar_hovercraft",
 	], {
 		T: <advancedrocketry:structuretower>, // Structure Tower
 		E: <advancedrocketry:rocketmotor>,    // Liquid Engine
-		C: <ore:circuitGood>,    // T2 Circuit
+		C: gt.getCirc("MV"),    // T2 Circuit
 		M: <extrautils2:screen>, // ExU2 Screen
 		D: <ore:gemDilithium>,   // Dilithium Crystal
 	});
@@ -944,13 +944,13 @@ makeShaped("ar_hovercraft",
 // Planet Selector
 recipes.remove(<advancedrocketry:planetselector>);
 recipes.addShaped(<advancedrocketry:planetselector>, [
-	[<ore:circuitGood>            , <advancedrocketry:planetidchip> , <ore:circuitGood>           ],
+	[gt.getCirc("MV")            , <advancedrocketry:planetidchip> , gt.getCirc("MV")           ],
 	[<libvulpes:structuremachine> , <libvulpes:structuremachine>    , <libvulpes:structuremachine>]
 ]);
 
 // Holographic Planet Selector
 recipes.remove(<advancedrocketry:planetholoselector>);
-makeShaped("ar_planetselector_holo",
+craft.makeShaped("ar_planetselector_holo",
 	<advancedrocketry:planetholoselector>, [
 		"CGC",
 		"XPX",
@@ -958,7 +958,7 @@ makeShaped("ar_planetselector_holo",
 	], {
 		P: <advancedrocketry:planetselector>,
 		X: <libvulpes:structuremachine>,
-		C: <ore:circuitGood>,
+		C: gt.getCirc("MV"),
 		G: <minecraft:glowstone>,
 		H: <libvulpes:holoprojector>,
 	});

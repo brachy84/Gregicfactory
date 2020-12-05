@@ -2,6 +2,8 @@
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gtadditions.recipe.GARecipeMaps as GT;
@@ -304,9 +306,9 @@ zenClass Gregtech {
 		return <metaitem:circuit.integrated>.withTag({Configuration: config});
 	}
 
-	function getCirc(tier as string) as IIngredient {
+	function getCirc(tier as string) as IOreDictEntry {
 		if(tier.toLowerCase == "lv") {
-			return gt.getCirc("LV");
+			return <ore:circuitBasic>;
 		}
 		if(tier.toLowerCase == "mv") {
 			return <ore:circuitGood>;

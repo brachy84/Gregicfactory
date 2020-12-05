@@ -6,11 +6,11 @@ import mods.modularmachinery.RecipePrimer;
 import mods.modularmachinery.RecipeBuilder;
 
 import mods.modularmachinery.RecipeBuilder.newBuilder as mmRecipe;
-import scripts.CommonVars.makeExtremeRecipe5 as makeExtremeRecipe5;
-import scripts.CommonVars.makeExtremeRecipe7 as makeExtremeRecipe7;
-import scripts.CommonVars.makeExtremeRecipe9 as makeExtremeRecipe9;
-import scripts.CommonVars.makeShaped as makeShaped;
-import scripts.CommonVars.makeShapeless3 as makeShapeless3;
+//import scripts.CommonVars.craft.makeExtremeRecipe5 as craft.makeExtremeRecipe5;
+//import scripts.CommonVars.craft.makeExtremeRecipe7 as craft.makeExtremeRecipe7;
+//import scripts.CommonVars.craft.makeExtremeRecipe9 as craft.makeExtremeRecipe9;
+//import scripts.CommonVars.craft.makeShaped as craft.makeShaped;
+//import scripts.CommonVars.makeShapeless3 as makeShapeless3;
 
 //////////////////////////////////////////////////////////////
 /////////////	    Modular Machinery	    //////////////////
@@ -18,11 +18,11 @@ import scripts.CommonVars.makeShapeless3 as makeShapeless3;
 
 // Controller
 recipes.remove(<modularmachinery:blockcontroller>);
-makeShaped("of_mm_blockcontroller", <modularmachinery:blockcontroller>,
+craft.makeShaped("of_mm_blockcontroller", <modularmachinery:blockcontroller>,
 	["CMC",
 	 "MSM",
 	 "CMC"],
-	{ C : <ore:circuitAdvanced>,
+	{ C : gt.getCirc("HV"),
 	  M : <modularmachinery:itemmodularium>,
 	  S : <extrautils2:screen> }
 );
@@ -31,7 +31,7 @@ makeShaped("of_mm_blockcontroller", <modularmachinery:blockcontroller>,
 // Item Inputs
 for meta in 2 .. 7 {
 	val item = "modularmachinery:blockinputbus";
-	makeShaped("of_mm_blockinputbus_" ~ meta,
+	craft.makeShaped("of_mm_blockinputbus_" ~ meta,
 		itemUtils.getItem(item, meta),
 		[" H ",
 		 "MAM",
@@ -46,7 +46,7 @@ for meta in 2 .. 7 {
 // Item Outputs
 for meta in 2 .. 7 {
 	val item = "modularmachinery:blockoutputbus";
-	makeShaped("of_mm_blockoutputbus_" ~ meta,
+	craft.makeShaped("of_mm_blockoutputbus_" ~ meta,
 		itemUtils.getItem(item, meta),
 		["CMC",
 		 "MAM",
@@ -61,7 +61,7 @@ for meta in 2 .. 7 {
 // Fluid Input Hatches
 for meta in 2 .. 8 { // Tiny -> Vacuum
 	val item = "modularmachinery:blockfluidinputhatch";
-	makeShaped("of_mm_blockfluidinputhatch_" ~ meta,
+	craft.makeShaped("of_mm_blockfluidinputhatch_" ~ meta,
 		itemUtils.getItem(item, meta),
 		[" H ",
 		 "MAM",
@@ -76,7 +76,7 @@ for meta in 2 .. 8 { // Tiny -> Vacuum
 // Fluid Output Hatches
 for meta in 2 .. 8 { // Tiny -> Vacuum
 	val item = "modularmachinery:blockfluidoutputhatch";
-	makeShaped("of_mm_blockfluidoutputhatch_" ~ meta,
+	craft.makeShaped("of_mm_blockfluidoutputhatch_" ~ meta,
 		itemUtils.getItem(item, meta),
 		["BMB",
 		 "MAM",
@@ -106,7 +106,7 @@ val energyInputHatches as IItemStack[] = [
 
 for meta,input in energyInputHatches {
 	val item as IItemStack = itemUtils.getItem("modularmachinery:blockenergyinputhatch", meta);
-	makeShaped("of_mm_blockenergyinputhatch_" ~ meta, item, 
+	craft.makeShaped("of_mm_blockenergyinputhatch_" ~ meta, item, 
 		[" M ",
 		 "MAM",
 		 " M "],
@@ -141,7 +141,7 @@ val energyOutputHatches as IItemStack[] = [
 ] as IItemStack[];
 
 for meta,input in energyOutputHatches {
-	makeShaped("of_mm_blockenergyoutputhatch_" ~ meta,
+	craft.makeShaped("of_mm_blockenergyoutputhatch_" ~ meta,
 		itemUtils.getItem("modularmachinery:blockenergyoutputhatch", meta),
 		[" M ",
 		 "MAM",
@@ -169,7 +169,7 @@ assembler.recipeBuilder()
 	.duration(200).EUt(30).buildAndRegister();
 
 // Machine Vent
-makeShaped("of_mm_machine_vent", <modularmachinery:blockcasing:1>,
+craft.makeShaped("of_mm_machine_vent", <modularmachinery:blockcasing:1>,
 	[" M ",
 	 "MCM",
 	 " M "],
@@ -179,7 +179,7 @@ makeShaped("of_mm_machine_vent", <modularmachinery:blockcasing:1>,
 
 /////////////	 Tier One Space Ship   	  //////////////////	200 ingots
 
-makeShaped("of_tieroneship", <contenttweaker:tieroneship>,
+craft.makeShaped("of_tieroneship", <contenttweaker:tieroneship>,
 	[" G ",
 	 "LAL",
 	 "TMT"],
@@ -195,17 +195,17 @@ makeShaped("of_tieroneship", <contenttweaker:tieroneship>,
 		format.white("Harvests Titanium and other light metals from asteroids in the microverse.")));
 
 // Tier 1 Guidance
-makeShaped("of_t1guidance", <contenttweaker:t1guidance>,
+craft.makeShaped("of_t1guidance", <contenttweaker:t1guidance>,
 	["GPG",
 	 "PCP",
 	 "CCC"],
-	{ C : <ore:circuitGood>,
+	{ C : gt.getCirc("MV"),
 	  G : <gregtech:meta_item_1:32690>,
 	  P : <contenttweaker:steelplating> }
 );
 
 // Tier 1 Laser
-makeShaped("of_t1laser", <contenttweaker:t1laser>,
+craft.makeShaped("of_t1laser", <contenttweaker:t1laser>,
 	[" R ",
 	 "QGQ",
 	 "QGQ"],
@@ -218,7 +218,7 @@ makeShaped("of_t1laser", <contenttweaker:t1laser>,
 
 /////////////	 Tier Two Space Ship  	  //////////////////
 
-makeExtremeRecipe5(<contenttweaker:tiertwoship>,
+craft.makeExtremeRecipe5(<contenttweaker:tiertwoship>,
 	["  G  ",
 	 " PAP ",
 	 "LBFBL",
@@ -241,7 +241,7 @@ makeExtremeRecipe5(<contenttweaker:tiertwoship>,
 
 /////////////	 Tier Three Space Ship  	  //////////////////
 
-makeExtremeRecipe7(<contenttweaker:tierthreeship>,
+craft.makeExtremeRecipe7(<contenttweaker:tierthreeship>,
 	["  G G  ",
 	 "  PPP  ",
 	 "  ABA  ",
@@ -260,7 +260,7 @@ makeExtremeRecipe7(<contenttweaker:tierthreeship>,
 );
 
 // Tier 2 Laser
-makeExtremeRecipe5(<contenttweaker:t2laser>,
+craft.makeExtremeRecipe5(<contenttweaker:t2laser>,
 	[" R R ",
 	 "GAGAG",
 	 "GAGAG",
@@ -268,7 +268,7 @@ makeExtremeRecipe5(<contenttweaker:t2laser>,
 	 "QCECQ"],
 	{ A : <contenttweaker:solidifiedargon>,
 	  B : <minecraft:quartz_block>,
-	  C : <ore:circuitAdvanced>,
+	  C : gt.getCirc("HV"),
 	  E : <enderio:block_cap_bank:1>,
 	  G : <ore:blockGlass>,
 	  Q : <minecraft:quartz>,
@@ -281,7 +281,7 @@ makeExtremeRecipe5(<contenttweaker:t2laser>,
 
 // Rocket Engine
 recipes.remove(<advancedrocketry:advrocketmotor>);
-makeShaped("of_ar_advrocketmotor", <advancedrocketry:advrocketmotor>,
+craft.makeShaped("of_ar_advrocketmotor", <advancedrocketry:advrocketmotor>,
 	[" P ",
 	 "PPP",
 	 "TTT"],
@@ -290,7 +290,7 @@ makeShaped("of_ar_advrocketmotor", <advancedrocketry:advrocketmotor>,
 );
 
 /////////////	 Tier Four Space Ship  	  //////////////////
-makeExtremeRecipe7(<contenttweaker:tierfourship>,
+craft.makeExtremeRecipe7(<contenttweaker:tierfourship>,
 	["   G   ",
 	 "  LWL  ",
 	 " SAWAS ",
@@ -311,18 +311,18 @@ makeExtremeRecipe7(<contenttweaker:tierfourship>,
 
 
 // Tier 2 Guidance
-makeShaped("of_t2guidance", <contenttweaker:t2guidance>,
+craft.makeShaped("of_t2guidance", <contenttweaker:t2guidance>,
 	["AWA",
 	 "WCW",
 	 "CCC"],
 	{ A : <gregtech:meta_item_1:32693>,
-	  C : <ore:circuitExtreme>,
+	  C : gt.getCirc("EV"),
 	  W : <contenttweaker:tungstencarbideplating> }
 );
 
 /////////////	 Tier Five Space Ship  	  //////////////////
 
-makeExtremeRecipe7(<contenttweaker:tierfiveship>,
+craft.makeExtremeRecipe7(<contenttweaker:tierfiveship>,
 	["  G G  ",
 	 "  I I  ",
 	 " SILIS ",
@@ -344,7 +344,7 @@ makeExtremeRecipe7(<contenttweaker:tierfiveship>,
 
 
 /////////////	 Tier Six Space Ship  	  //////////////////
-makeExtremeRecipe7(<contenttweaker:tiersixship>,
+craft.makeExtremeRecipe7(<contenttweaker:tiersixship>,
 	[" LG GL ",
 	 "LEE EEL",
 	 "EEEEEEE",
@@ -370,7 +370,7 @@ makeExtremeRecipe7(<contenttweaker:tiersixship>,
 
 /////////////	 Tier Seven Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiersevenship>, 
+craft.makeExtremeRecipe9(<contenttweaker:tiersevenship>, 
 	[" L  D  L ",
 	 " DDDGDDD ",
 	 "LDDDDDDDL",
@@ -389,7 +389,7 @@ makeExtremeRecipe9(<contenttweaker:tiersevenship>,
 	  W : <contenttweaker:warpengine> }
 );
 
-makeShaped("of_warpengine", <contenttweaker:warpengine>,
+craft.makeShaped("of_warpengine", <contenttweaker:warpengine>,
 	["PIP",
 	 "ABA",
 	 "CDC"],
@@ -404,7 +404,7 @@ makeShaped("of_warpengine", <contenttweaker:warpengine>,
 
 /////////////	 Tier Eight Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiereightship>, 
+craft.makeExtremeRecipe9(<contenttweaker:tiereightship>, 
 	[" G C C G ",
 	 " WCCLCCW ",
 	 " WCIIICW ",
@@ -415,7 +415,7 @@ makeExtremeRecipe9(<contenttweaker:tiereightship>,
 	 "WMWWIWWMW",
 	 " E     E "],
 	{ A : <gregtech:machine:1011>,
-	  B : <gregtech:meta_item_1:32676>,
+	  B : <metaitem:field.generator.zpm>,
 	  C : <contenttweaker:crystalmatrixplating>,
 	  D : <advancedrocketry:warpcore>,
 	  E : <contenttweaker:warpengine>,
@@ -430,7 +430,7 @@ makeExtremeRecipe9(<contenttweaker:tiereightship>,
 
 /////////////	 Tier Nine Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiernineship>,
+craft.makeExtremeRecipe9(<contenttweaker:tiernineship>,
 	["    Q    ",
 	 "   QQQ   ",
 	 "   QUQ   ",
@@ -440,7 +440,7 @@ makeExtremeRecipe9(<contenttweaker:tiernineship>,
 	 " QQQCQQQ ",
 	 " QQQQQQQ ",
 	 "QQ W W QQ"],
-	{ A : <gregtech:meta_item_1:32677>,
+	{ A : <metaitem:field.generator.uv>,
 	  B : <gregtech:machine:1012>,
 	  C : <draconicevolution:reactor_core>,
 	  Q : <contenttweaker:quantumfluxedeterniumplating>,
@@ -449,19 +449,19 @@ makeExtremeRecipe9(<contenttweaker:tiernineship>,
 	  W : <contenttweaker:warpengine> }
 );
 
-makeShaped("of_universalnavigator", <contenttweaker:universalnavigator>,
+craft.makeShaped("of_universalnavigator", <contenttweaker:universalnavigator>,
 	["ABA",
 	 "BCB",
 	 "ABA"],
 	{ A : <gregtech:meta_item_1:12308>,
-	  B : <gtadditions:ga_meta_item:32015>,
-	  C : <gregtech:meta_item_2:32501> }
+	  B : <metaitem:processor.neuro>,
+	  C : gt.getCirc("MAX") }
 );
 <contenttweaker:universalnavigator>.addTooltip(format.blue("See you later, navigator!"));
 
 /////////////	 Tier Ten Space Ship  	  //////////////////
 
-makeExtremeRecipe9(<contenttweaker:tiertenship>, 
+craft.makeExtremeRecipe9(<contenttweaker:tiertenship>, 
 	["  N   N  ",
 	 " NUN NUN ",
 	 " NNN NNN ",
@@ -496,6 +496,7 @@ makeExtremeRecipe9(<contenttweaker:tiertenship>,
 // Small Dimensional Projector Recipes
 
 // Tier 1 Steel Microminer: Mission 1 - Early Game Ores
+/*
 mmRecipe("small_microverse_steel_1", "small_microverse", 500)
 	.addEnergyPerTickInput(2000)
 	.addItemInput(<contenttweaker:tieroneship>)
@@ -582,8 +583,8 @@ mmRecipe("small_microverse_tungsten_1", "small_microverse", 700)
 	.addItemInput(<contenttweaker:quantumflux> * 4)
 	.addItemInput(<contenttweaker:gemsensor>)
 	.addFluidInput(<liquid:rocket_fuel> * 20000)
-	.addItemOutput(<gregtech:meta_item_2:25113> * 16)
-	.addItemOutput(<gregtech:meta_item_2:25113> * 16)
+	.addItemOutput(<ore:gemExquisiteEmerald> * 16)
+	.addItemOutput(<ore:gemExquisiteEmerald> * 16)
 	.addItemOutput(<gregtech:meta_item_2:25111> * 16)
 	.addItemOutput(<gregtech:meta_item_2:25111> * 16)
 	.addItemOutput(<gregtech:meta_item_2:25111> * 16)
@@ -788,11 +789,11 @@ mmRecipe("large_microverse_crystal_1", "large_microverse", 2000)
 	.addItemInput(<ore:gemDilithium>.firstItem * 64)
 	.addItemInput(<contenttweaker:witherrealmdata> * 64)
 	.addItemInput(<contenttweaker:witherrealmdata> * 64)
-	.addItemOutput(<metaitem.quantumstar> * 32)
+	.addItemOutput(<metaitem:quantumstar> * 32)
 	.addItemOutput(<metaitem:quantumeye> * 64)
 	.addItemOutput(<avaritia:resource:2> * 64)
 	.addItemOutput(<avaritia:resource:2> * 64)
-	.addItemOutput(<gregtech:meta_item_1:32726>)
+	.addItemOutput(<metaitem:gravistar>)
 	.build();
 
 // Tier 8: Crystal Microminer - Mission 2: Chaos Shards
@@ -851,23 +852,23 @@ mmRecipe("large_microverse_neutronium_1", "large_microverse", 6000)
 	.addItemInput(<draconicevolution:draconic_block> * 8)
 	.addItemOutput(<contenttweaker:heartofauniverse>)
 	.build();
-
+*/
 // Impossible Realm Data Recipes
-makeShaped("of_impossiblerealmdata_x1", <contenttweaker:impossiblerealmdata>,
+craft.makeShaped("of_impossiblerealmdata_x1", <contenttweaker:impossiblerealmdata>,
 	["OEO",
 	 "EOE",
 	 "OEO"],
 	{ E : <actuallyadditions:item_solidified_experience>,
 	  O : <deepmoblearning:living_matter_overworldian> });
 
-makeShaped("of_impossiblerealmdata_x2", <contenttweaker:impossiblerealmdata> * 2,
+craft.makeShaped("of_impossiblerealmdata_x2", <contenttweaker:impossiblerealmdata> * 2,
 	["HEH",
 	 "EHE",
 	 "HEH"],
 	{ E : <actuallyadditions:item_solidified_experience>,
 	  H : <deepmoblearning:living_matter_hellish> });
 
-makeShaped("of_impossiblerealmdata_x4", <contenttweaker:impossiblerealmdata> * 4,
+craft.makeShaped("of_impossiblerealmdata_x4", <contenttweaker:impossiblerealmdata> * 4,
 	["XEX",
 	 "EXE",
 	 "XEX"],
@@ -875,7 +876,7 @@ makeShaped("of_impossiblerealmdata_x4", <contenttweaker:impossiblerealmdata> * 4
 	  X : <deepmoblearning:living_matter_extraterrestrial> });
 
 // Dragon Lair Data
-makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>, 
+craft.makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>, 
 	["IHH",
 	 "HHH",
 	 "HHH"],
@@ -884,7 +885,7 @@ makeShapeless3("of_dragonlairdata", <contenttweaker:dragonlairdata>,
 );
 
 // Wither Realm Data
-makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>, 
+craft.makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>, 
 	["IXX",
 	 "XXX",
 	 "XXX"],
@@ -893,7 +894,7 @@ makeShapeless3("of_witherrealmdata", <contenttweaker:witherrealmdata>,
 );
 
 // Quantum Flux Recipes
-makeShaped("of_quantumflux_a", <contenttweaker:quantumflux>,
+craft.makeShaped("of_quantumflux_a", <contenttweaker:quantumflux>,
 	[" X",
 	 "XMX",
 	 " X"],
@@ -901,7 +902,7 @@ makeShaped("of_quantumflux_a", <contenttweaker:quantumflux>,
 	  X : <deepmoblearning:living_matter_extraterrestrial> }
 );
 
-makeShaped("of_quantumflux_b", <contenttweaker:quantumflux>,
+craft.makeShaped("of_quantumflux_b", <contenttweaker:quantumflux>,
 	[" M",
 	 "MDM",
 	 " M"],
@@ -912,7 +913,7 @@ makeShaped("of_quantumflux_b", <contenttweaker:quantumflux>,
 
 // AA Experience Solidifier
 recipes.remove(<actuallyadditions:block_xp_solidifier>);
-makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
+craft.makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
 	["AAA",
 	 "ABA",
 	 "AAA"],
@@ -946,7 +947,7 @@ makeShaped("of_aa_block_xp_solidifier", <actuallyadditions:block_xp_solidifier>,
 
 
 // Dense Hydrogen
-makeShaped("of_densehydrogen", <contenttweaker:densehydrogen>,
+craft.makeShaped("of_densehydrogen", <contenttweaker:densehydrogen>,
 	["HHH",
 	 "HHH",
 	 "HHH"],
@@ -957,7 +958,7 @@ makeShaped("of_densehydrogen", <contenttweaker:densehydrogen>,
 recipes.addShapeless(<contenttweaker:solidifiedhydrogen> * 9, [<contenttweaker:densehydrogen>]);
 
 // Ultra Dense Hydrogen
-makeShaped("of_ultradensehydrogen", <contenttweaker:ultradensehydrogen>,
+craft.makeShaped("of_ultradensehydrogen", <contenttweaker:ultradensehydrogen>,
 	["DDD",
 	 "DDD",
 	 "DDD"],
@@ -970,7 +971,7 @@ recipes.addShapeless(<contenttweaker:densehydrogen> * 9, [<contenttweaker:ultrad
 
 // Extraterrestrial Matter
 recipes.remove(<deepmoblearning:living_matter_extraterrestrial>);
-makeShaped("of_dml_living_matter_extraterrestrial",
+craft.makeShaped("of_dml_living_matter_extraterrestrial",
 	<deepmoblearning:living_matter_extraterrestrial>,
 	[" H ",
 	 "HEH",
@@ -979,6 +980,7 @@ makeShaped("of_dml_living_matter_extraterrestrial",
 	  E : <minecraft:ender_pearl> }
 );
 
+/*
 // Cryogenic Distillation Recipe 1: Liquid Air
 mmRecipe("cryogenicairdistillation_1", "cryogenicairdistillation", 125)
 	.addEnergyPerTickInput(2000)
@@ -1055,32 +1057,32 @@ mmRecipe("lunarminingstationb", "lunarminingstation", 12000)
 	.setChance(0.1)
 	.addFluidOutput(<liquid:helium3> * 48000)
 	.build();
-
+*/
 // Lunar Mining Station Rovers:
 
 
 // Helium3 Rover (Tritium)
-makeShaped("of_helium3rover", <contenttweaker:helium3rover> * 16,
+craft.makeShaped("of_helium3rover", <contenttweaker:helium3rover> * 16,
 	["SSA",
 	 "BCD",
 	 "E E"],
 	{ A : <gregtech:meta_item_1:32693>,
 	  B : <ore:plateTitanium>,
-	  C : <gregtech:machine:504>,
-	  D : <gregtech:meta_item_1:32653>,
-	  E : <gregtech:meta_item_1:32633>,
+	  C : <meta_tile_entity:gregtech:hull.ev>,
+	  D : <metaitem:robot.arm.ev>,
+	  E : <metaitem:conveyor.module.ev>,
 	  S : <solarflux:solar_panel_3> }
 );
 
 // Deuterium Rover
-makeShaped("of_deuteriumrover", <contenttweaker:deuteriumrover> * 16,
+craft.makeShaped("of_deuteriumrover", <contenttweaker:deuteriumrover> * 16,
 	["SSA",
 	 "BCD",
 	 "E E"],
 	{ A : <metaitem:sensor.hv>,
 	  B : <ore:plateStainlessSteel>,
-	  C : <gregtech:machine:503>,
-	  D : <gregtech:meta_item_1:32652>,
-	  E : <gregtech:meta_item_1:32632>,
+	  C : <meta_tile_entity:gregtech:hull.hv>,
+	  D : <metaitem:robot.arm.hv>,
+	  E : <metaitem:conveyor.module.hv>,
 	  S : <solarflux:solar_panel_2> }
 );
