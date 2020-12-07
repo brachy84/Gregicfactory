@@ -1,0 +1,28 @@
+{
+	title: "The End...?",
+	icon: "minecraft:skull 1 5",
+	x: 11.25d,
+	y: 27.0d,
+	text: [
+		"You may have noticed that The End portals in Strongholds are disabled.",
+		"",
+		"The only way to access The End is to... §ebake a cake§r. You can refill it with §6Eyes of Ender§r.",
+		"",
+		"Prepare some gear, eat a slice, and get ready for a fight!"
+	],
+	dependencies: [
+		"c0ba87cd"
+	],
+	tasks: [{
+		uid: "30e937fc",
+		type: "item",
+		items: [{
+			item: "dimensionaledibles:end_cake"
+		}]
+	}],
+	rewards: [{
+		uid: "94f0114c",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

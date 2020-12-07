@@ -1,0 +1,27 @@
+{
+	title: "LV Robot Arm",
+	icon: "gregtech:meta_item_1 1 32650",
+	x: -37.25d,
+	y: 7.25d,
+	shape: "square",
+	text: [
+		"Robot Arms are components of several powerful machines, and are also useful as a machine cover for precise item movement.",
+		"",
+		"One of the most expensive components, as it requires motors, pistons, and a circuit."
+	],
+	dependencies: [
+		"b42c2f03"
+	],
+	tasks: [{
+		uid: "f6f43da2",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32650"
+		}]
+	}],
+	rewards: [{
+		uid: "61e54231",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

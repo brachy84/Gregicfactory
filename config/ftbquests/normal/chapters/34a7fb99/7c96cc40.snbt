@@ -1,0 +1,26 @@
+{
+	title: "Draconic Fusion Injectors",
+	icon: "draconicevolution:crafting_injector 1 2",
+	x: 7.25d,
+	y: 7.75d,
+	text: [
+		"§6Draconic Fusion Crafting Injectors§r are the penultimate tier of injectors for fusion crafting.",
+		"",
+		"You'll need a fusion crafting setup with ten of these for the next tier of injector, and the next tier you'll also need ten injectors, so consider making 20 of these."
+	],
+	dependencies: [
+		"cf6c1bba"
+	],
+	tasks: [{
+		uid: "902bbf93",
+		type: "item",
+		items: [{
+			item: "draconicevolution:crafting_injector 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "2aa7d7a6",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

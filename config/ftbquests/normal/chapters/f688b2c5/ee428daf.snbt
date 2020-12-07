@@ -1,0 +1,27 @@
+{
+	title: "Infinite Water",
+	icon: "nuclearcraft:water_source",
+	x: -1.25d,
+	y: 8.5d,
+	text: [
+		"Feeding a §3Steam Dynamo§f with water by hand is a pretty silly idea.",
+		"",
+		"An §6Infinite Water Source§f will take care of that for you, albeit slowly."
+	],
+	dependencies: [
+		"08feae58"
+	],
+	tasks: [{
+		uid: "12fda30f",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:water_source"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f7a56d7d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

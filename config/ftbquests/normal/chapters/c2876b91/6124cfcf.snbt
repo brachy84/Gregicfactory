@@ -1,0 +1,30 @@
+{
+	title: "Blast Furnaces Galore",
+	icon: "gregtech:machine 1 511",
+	x: -8.25d,
+	y: 5.25d,
+	text: [
+		"As you continue to progress, crafting times for more advanced §3Electric Blast Furnace§r recipes will continue to increase. More advanced coils do not give speed bonuses, they just increase the operating temperature so you can smelt more advanced materials.",
+		"",
+		"To compensate, you'll need to get your infrastructure for smelting, as well as for power generation, up to snuff.",
+		"",
+		"You don't need to get all eight of these completed and running just yet, but plan to at some point in the future. Instead of upgrading existing EBFs, have them passively automating a stock of materials and build new EBFs with higher specifications for new materials."
+	],
+	dependencies: [
+		"b201831f"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "bcb00283",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 8 511"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "ecd8a5fe",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

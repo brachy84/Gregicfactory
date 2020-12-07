@@ -1,0 +1,78 @@
+{
+	title: "Automating Extended Crafting",
+	icon: "extendedcrafting:interface",
+	x: -13.875d,
+	y: 11.625d,
+	text: [
+		"Now that you have §6Osmium§r and §6Iridium§r from the §6Tier Four Micro Miner§r, you can begin automating §bExtended Crafting§r recipes. While it is possible to use §6Automation Interfaces§r for this task, you have access to something §nvastly§r better§r: §bPackagedExCrafting§r.",
+		"",
+		"To begin, you'll need to craft one of each extended §3Package Crafter§r listed on the right. Put an §3Unpackager§r on top of each one, and then a §3Packager§r on top of each Unpackager. These are all AE2 devices, so you'll need to connect them to an ME Network.",
+		"",
+		"Next, right-click the §3Package Recipe Encoder§r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You'll have to choose the appropriate table for the recipe you want to encode.",
+		"",
+		"§6Holders§r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press §6[+]§r in §bJEI§r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines.",
+		"",
+		"If you've done everything correctly, you should see the item appear as craftable in a Terminal.",
+		"",
+		"While it might seem that the crafting process is slow, §ePackagedAuto is excellent at parallelizing§r. You can surround an Unpackager with Crafters and it will use all of them. It's also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same."
+	],
+	dependencies: [
+		"0c670157",
+		"2f01eb55",
+		"1e0e9980",
+		"bc22b134",
+		"43911a06"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "0b7ffa59",
+		type: "item",
+		items: [{
+			item: "packagedexcrafting:advanced_crafter"
+		}]
+	},
+	{
+		uid: "584e1ba6",
+		type: "item",
+		items: [{
+			item: "packagedexcrafting:elite_crafter"
+		}]
+	},
+	{
+		uid: "499c8baf",
+		type: "item",
+		items: [{
+			item: "packagedexcrafting:ultimate_crafter"
+		}]
+	},
+	{
+		uid: "4fafa58a",
+		type: "item",
+		items: [{
+			item: "packagedauto:unpackager 3"
+		}],
+		count: 3L
+	},
+	{
+		uid: "a2a76d23",
+		type: "item",
+		items: [{
+			item: "packagedauto:packager 3"
+		}],
+		count: 3L
+	},
+	{
+		uid: "a421b553",
+		type: "item",
+		items: [{
+			item: "packagedauto:recipe_holder 6"
+		}],
+		count: 6L
+	}],
+	rewards: [{
+		uid: "6559420f",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 5
+	}]
+}

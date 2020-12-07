@@ -1,0 +1,29 @@
+{
+	title: "The First And Only Tier Nine Circuit",
+	icon: "gregtech:meta_item_2 1 32501",
+	x: -7.25d,
+	y: 16.0d,
+	text: [
+		"The final circuit.",
+		"",
+		"You'll need §6Tritanium§r for §6Tritanium Frames§r, which comes exclusively from the §3Fusion Reactor Mark 2§r or better reactor.",
+		"",
+		"The §6Duranium§r needed to make Tritanium comes from the §3Fusion Reactor Mark 1§r or better."
+	],
+	dependencies: [
+		"ae8e158c"
+	],
+	tasks: [{
+		uid: "53779c3d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32501"
+		}]
+	}],
+	rewards: [{
+		uid: "28cdcd87",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 10
+	}]
+}

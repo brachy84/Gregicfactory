@@ -1,0 +1,26 @@
+{
+	title: "Engineering Processor",
+	icon: "appliedenergistics2:material 1 24",
+	x: -9.25d,
+	y: 8.25d,
+	text: [
+		"§6Engineering Processors§r are made from a §6Diamond Plate§r, a §6Silicon Plate§r, and any tier one circuit.",
+		"",
+		"Run the plates through the respective §3Inscribers§r with §aPresses§r to make the printed plates, then combine the plates and circuit to form the Engineering Processor."
+	],
+	dependencies: [
+		"0cecf6e5"
+	],
+	tasks: [{
+		uid: "6e604571",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 24"
+		}]
+	}],
+	rewards: [{
+		uid: "7b9a6081",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

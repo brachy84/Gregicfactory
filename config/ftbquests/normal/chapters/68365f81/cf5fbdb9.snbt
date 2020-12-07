@@ -1,0 +1,25 @@
+{
+	title: "Element 020: Calcium",
+	icon: "gregtech:meta_item_1 1 10011",
+	x: -0.5d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"24e960a2"
+	],
+	tasks: [{
+		uid: "07603517",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10011"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "f9bdb423",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

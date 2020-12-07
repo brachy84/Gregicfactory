@@ -1,0 +1,25 @@
+{
+	title: "The Third Tier Two Circuits",
+	icon: "contenttweaker:refinedprocessor",
+	x: -19.5d,
+	y: 16.5d,
+	text: [
+		"Using SMD components (or leftover non-SMD versions), you can combine §6Refined Circuits§r into the third type of Tier Two circuit: the §6Refined Processor§r."
+	],
+	dependencies: [
+		"da5679a0",
+		"0b72194c"
+	],
+	tasks: [{
+		uid: "7ae36b05",
+		type: "item",
+		items: [{
+			item: "contenttweaker:refinedprocessor"
+		}]
+	}],
+	rewards: [{
+		uid: "51b17d1e",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

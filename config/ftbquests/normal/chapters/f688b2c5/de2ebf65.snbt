@@ -1,0 +1,69 @@
+{
+	title: "More Materials",
+	icon: "minecraft:redstone",
+	x: 0.0d,
+	y: 8.75d,
+	shape: "square",
+	text: [
+		"Before you continue, you'll need access to some more materials.",
+		"",
+		"§6Redstone§f: Found only deep in the world, in massive veins paired with §6Cinnabar§f and §6Ruby§f.",
+		"",
+		"§6Copper§f: Two primary sources. §6Tetrahedrite§f veins are higher up, while §6Chalcopyrite§f veins are lower, paired with some small amounts of §6Iron§f. You'll also find §6Malachite§f inside of Iron veins, this is another type of copper ore.",
+		"",
+		"§6Tin§f: Found essentially at ground level, and almost always detectable by §aScanner§f from the surface. §6Cassiterite§f is another type of tin ore, and they're always found together. If you cannot find a vein of tin, there are small amounts of tin inside veins of §6Aluminium§f and §6Rock Salt§f, which might be enough to hold you over until you find a proper tin vein.",
+		"",
+		"§6Coal§f: Found in relatively shallow depths. §6Lignite Coal§f is just a less pure and less effective form of Coal.",
+		"",
+		"§6Gold§f: Found inside of §6Magnetite§f veins, close to the surface."
+	],
+	dependencies: [
+		"08feae58"
+	],
+	tasks: [{
+		uid: "ed3e85da",
+		type: "item",
+		items: [{
+			item: "minecraft:redstone 24"
+		}],
+		count: 24L
+	},
+	{
+		uid: "f1ae7e62",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 12 10018"
+		}],
+		count: 12L
+	},
+	{
+		uid: "0f990c9f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 12 10071"
+		}],
+		count: 12L
+	},
+	{
+		uid: "aeebf6f4",
+		type: "item",
+		items: [{
+			item: "minecraft:coal 12"
+		}],
+		count: 12L
+	},
+	{
+		uid: "2419a28d",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_ingot 6"
+		}],
+		count: 6L
+	}],
+	rewards: [{
+		uid: "5aa1cc99",
+		type: "item",
+		item: "contenttweaker:omnicoin5",
+		count: 2
+	}]
+}

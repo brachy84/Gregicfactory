@@ -1,0 +1,27 @@
+{
+	title: "Rare Earth",
+	icon: "gregtech:meta_item_1 1 2326",
+	x: -16.5d,
+	y: 10.5d,
+	text: [
+		"§6Rare Earth§r comes from either centrifuging certain Impure Dusts, or processing those same Purified Dusts.",
+		"",
+		"The sources are essentially §6Redstone§r, and everything inside of §6Bastnasite§r veins."
+	],
+	dependencies: [
+		"47eb58e8"
+	],
+	tasks: [{
+		uid: "a3f09adb",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 9 326"
+		}],
+		count: 9L
+	}],
+	rewards: [{
+		uid: "7c4e374e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

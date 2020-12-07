@@ -1,0 +1,24 @@
+{
+	title: "Chrome",
+	icon: "gregtech:meta_item_1 1 2016",
+	x: -13.75d,
+	y: 6.0d,
+	text: [
+		"§6Chrome§r is obtained by electrolyzing §6Ruby Dust§r."
+	],
+	dependencies: [
+		"24e960a2"
+	],
+	tasks: [{
+		uid: "87078d17",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2016"
+		}]
+	}],
+	rewards: [{
+		uid: "c5412a10",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

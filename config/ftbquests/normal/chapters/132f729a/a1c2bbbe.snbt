@@ -1,0 +1,52 @@
+{
+	title: "Circuit Wafers",
+	icon: "gregtech:meta_item_2 1 32463",
+	x: -18.5d,
+	y: 7.5d,
+	text: [
+		"§6Circuit Wafers§r are batches of integrated circuits engraved onto a wafer of electronics-grade silicon.",
+		"",
+		"You need to run these through the §3Cutting Machine§r to dice the wafers into individual integrated circuits (called dies).",
+		"",
+		"These are important components and will be used for making more advanced Circuits."
+	],
+	dependencies: [
+		"d5ef8482",
+		"a194c3f3",
+		"ab5ebc39"
+	],
+	tasks: [{
+		uid: "1a875129",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32463"
+		}]
+	},
+	{
+		uid: "395f98fe",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32471"
+		}]
+	},
+	{
+		uid: "ec004ea7",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32477"
+		}]
+	},
+	{
+		uid: "96e466e3",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32485"
+		}]
+	}],
+	rewards: [{
+		uid: "5773548d",
+		type: "item",
+		item: "contenttweaker:omnicoin5",
+		count: 2
+	}]
+}

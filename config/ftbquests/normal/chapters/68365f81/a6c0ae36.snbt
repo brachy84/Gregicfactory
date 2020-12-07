@@ -1,0 +1,25 @@
+{
+	title: "Vibrant Alloy Ingots",
+	icon: "enderio:item_alloy_ingot 1 2",
+	x: -14.75d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"906e6c13"
+	],
+	tasks: [{
+		uid: "347411ae",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 64 2"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "551a2327",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

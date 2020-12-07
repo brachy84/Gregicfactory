@@ -1,0 +1,37 @@
+{
+	title: "Chloramine",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "chloramine",
+			Amount: 1000
+		}
+	},
+	x: 24.0d,
+	y: 19.0d,
+	text: [
+		"§9Hypochlorous Acid§r and §9Ammonia§r combine together to make §9Chloramine§r."
+	],
+	dependencies: [
+		"ff7b1d9f",
+		"555a2a94"
+	],
+	tasks: [{
+		uid: "e3322860",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "chloramine",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c6e84fa9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

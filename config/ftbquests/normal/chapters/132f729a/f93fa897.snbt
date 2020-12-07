@@ -1,0 +1,26 @@
+{
+	title: "Logic Processor",
+	icon: "appliedenergistics2:material 1 22",
+	x: -4.75d,
+	y: 8.25d,
+	text: [
+		"§6Logic Processors§r are made from a §6Gold Plate§r, a §6Silicon Plate§r, and any tier one circuit.",
+		"",
+		"Run the plates through the respective §3Inscribers§r with §aPresses§r to make the printed plates, then combine the plates and circuit to form the Logic Processor."
+	],
+	dependencies: [
+		"0cecf6e5"
+	],
+	tasks: [{
+		uid: "979c0035",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 22"
+		}]
+	}],
+	rewards: [{
+		uid: "01f05ccb",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

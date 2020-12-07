@@ -1,0 +1,25 @@
+{
+	title: "Magnalium Ingots",
+	icon: "gregtech:meta_item_1 1 10129",
+	x: -16.75d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e42bf607"
+	],
+	tasks: [{
+		uid: "ba633feb",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10129"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "5d8ee9b8",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

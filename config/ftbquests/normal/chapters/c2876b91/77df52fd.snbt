@@ -1,0 +1,28 @@
+{
+	title: "Tungsten",
+	icon: "gregtech:meta_item_1 1 10074",
+	x: -23.0d,
+	y: 6.5d,
+	text: [
+		"§6Tungsten§r is a material that requires an §3EV Electrolyzer§r and an §3Electric Blast Furnace§r with at least §6Nichrome Coils§r.",
+		"",
+		"It is only found from §6Tungstate§r, which is an abundant component of §6Tungstate Ore§r and §6Scheelite Ore§r sent through your ore processing. Tungstate is also obtainable in small quantities from centrifuging §6Endstone Dust§r or extremely small quantities from centrifuging §9Lava§r.",
+		"",
+		"Tungstate needs to be electrolyzed with §9Hydrogen§r to get to the Tungsten, which then needs to be cooked in the EBF for Tungsten ingots."
+	],
+	dependencies: [
+		"1b0484ec"
+	],
+	tasks: [{
+		uid: "4f91869d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10074"
+		}]
+	}],
+	rewards: [{
+		uid: "8c60919c",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "LV Chemical Reactor",
+	icon: "gregtech:machine 1 190",
+	x: -21.5d,
+	y: 2.5d,
+	text: [
+		"The place for your very first chemical reactions, namely making some improved substrates."
+	],
+	dependencies: [
+		"399fa177"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "60c4ca48",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 190"
+		}]
+	}],
+	rewards: [{
+		uid: "0e295378",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "Barium",
+	icon: "gregtech:meta_item_1 1 2006",
+	x: -15.25d,
+	y: 9.25d,
+	text: [
+		"§6Barium§r is an element found in §6Barite§r, which may be found as §6Barite Ore§r, inside §6Quartz§r veins.",
+		"",
+		"Barite can also be extracted from other Quartz ores via ore processing."
+	],
+	dependencies: [
+		"47eb58e8"
+	],
+	tasks: [{
+		uid: "6ad92bfc",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2006"
+		}]
+	}],
+	rewards: [{
+		uid: "7d21704f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Tritanium Ingot",
+	icon: "gregtech:meta_item_1 1 10311",
+	x: 3.0d,
+	y: 6.25d,
+	text: [
+		"Looks absolutely identical to Europium, but it's not the same thing, I promise.",
+		"",
+		"This is fused in a §3Mark 2 Fusion Reactor§r using molten §9Titanium§r and §9Duranium§r.",
+		"",
+		"§6Tritanium Frames§r are needed for the §6Wetware Processor Mainframe§r."
+	],
+	dependencies: [
+		"d8849587"
+	],
+	tasks: [{
+		uid: "ee179e8b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10311"
+		}]
+	}],
+	rewards: [{
+		uid: "4c20fd55",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "High Speed Steel Type E Ingot",
+	icon: "gregtech:meta_item_1 1 10303",
+	x: -15.75d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"36927365"
+	],
+	tasks: [{
+		uid: "0278e395",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10303"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "b2523d3d",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

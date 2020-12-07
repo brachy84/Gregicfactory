@@ -1,0 +1,60 @@
+{
+	title: "Phytogenic Insolator",
+	icon: {
+		id: "thermalexpansion:machine",
+		tag: {
+			RSControl: 0b,
+			Facing: 3b,
+			Energy: 0,
+			Level: 0b,
+			SideCache: [B;
+				3b,
+				1b,
+				2b,
+				2b,
+				2b,
+				2b
+			]
+		},
+		Damage: 4s
+	},
+	x: -36.0d,
+	y: 9.25d,
+	text: [
+		"Praise the sun. \\[T]/",
+		"",
+		"This machine uses various tiers of §6Phyto-Gro§r and §9Water§r to grow plants.",
+		"",
+		"It can be customized with various §aAugments§r."
+	],
+	dependencies: [
+		"c7e80488"
+	],
+	tasks: [{
+		uid: "4c2094d7",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:machine",
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				Level: 0b,
+				SideCache: [B;
+					3b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				]
+			},
+			Damage: 4s
+		}]
+	}],
+	rewards: [{
+		uid: "7242bddd",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

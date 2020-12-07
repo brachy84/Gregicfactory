@@ -1,0 +1,26 @@
+{
+	title: "Heart Of A Universe",
+	icon: "contenttweaker:heartofauniverse",
+	x: -12.0d,
+	y: -6.0d,
+	text: [
+		"No hypothetical aliens were harmed in the harvesting of this item.",
+		"",
+		"Probably.",
+		"",
+		"Melting the heart of a universe provides a rather useful liquid: §dMolten Creative Portable Tank§r."
+	],
+	dependencies: [
+		"0b1a3f0c"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "f777a3a7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:heartofauniverse"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

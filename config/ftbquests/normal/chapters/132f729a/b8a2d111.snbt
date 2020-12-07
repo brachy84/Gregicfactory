@@ -1,0 +1,30 @@
+{
+	title: "HV Power Storage",
+	icon: {
+		id: "gregtech:meta_item_1",
+		tag: {
+			Charge: 1600000L
+		},
+		Damage: 32538s
+	},
+	x: -15.5d,
+	y: 10.5d,
+	text: [
+		"HV Batteries function the same as LV and MV, only requiring more resources to craft."
+	],
+	dependencies: [
+		"237ea1ad"
+	],
+	tasks: [{
+		uid: "3c7eff59",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32502"
+		}]
+	}],
+	rewards: [{
+		uid: "90a0403b",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

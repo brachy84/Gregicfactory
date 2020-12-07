@@ -1,0 +1,25 @@
+{
+	title: "Superconducting Coil Block",
+	icon: "gregtech:wire_coil 1 7",
+	x: -3.25d,
+	y: 4.5d,
+	text: [
+		"§6Superconductor coils§r are the eighth coil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."
+	],
+	dependencies: [
+		"66c94a95"
+	],
+	tasks: [{
+		uid: "3e6592a2",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 16 7"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "07fe2a9b",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

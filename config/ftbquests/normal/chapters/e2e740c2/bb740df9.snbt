@@ -1,0 +1,40 @@
+{
+	title: "Ender Pump and Ender Tanks",
+	icon: "rangedpumps:pump",
+	x: -33.25d,
+	y: 3.0d,
+	text: [
+		"Great for gathering large amounts of lava, and later on, oil.",
+		"",
+		"Ender Pumps use RF to function.",
+		"",
+		"Ender Tanks do not require power, but rather simply store fluid. All Ender Tanks on the same 'channel' (denoted by the three colors on the top) have the same contents, essentially allowing for instant long range transfer of fluid.",
+		"",
+		"Try setting up one Ender Tank by an Ender Pump positioned over lava, and the other back up in your base. You'll have more lava than you know what to do with, without any boring bucketing.",
+		"",
+		"You'll need a way to power the Ender Pump though... maybe a Magmatic Dynamo on site?"
+	],
+	dependencies: [
+		"9638a321"
+	],
+	tasks: [{
+		uid: "d36d3605",
+		type: "item",
+		items: [{
+			item: "rangedpumps:pump"
+		}]
+	},
+	{
+		uid: "8be52582",
+		type: "item",
+		items: [{
+			item: "enderstorage:ender_storage 2 1"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "3f5682b3",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

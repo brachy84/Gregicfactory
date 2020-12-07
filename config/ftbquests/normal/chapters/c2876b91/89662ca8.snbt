@@ -1,0 +1,50 @@
+{
+	title: "Americium Fission",
+	icon: "nuclearcraft:fuel_americium",
+	x: -11.25d,
+	y: 10.5d,
+	text: [
+		"§6Americium 242§r and §6Americium 243§r are used to make §6LEA-242 Fuel§r.",
+		"",
+		"There's also §6Americium 241§r, but this is only useful for making RTGs (which produce small amounts of RF continuously) or decaying down into §6Neptunium§r.",
+		"",
+		"§6Depleted LEA 242 Fuels§r§r will return large amounts of §6Curium 246§r and small amounts of other isotopes."
+	],
+	dependencies: [
+		"2acfc6c8"
+	],
+	tasks: [{
+		uid: "1e360ae3",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:americium 1 4"
+		}]
+	},
+	{
+		uid: "f843710b",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:americium 8 8"
+		}],
+		count: 8L
+	},
+	{
+		uid: "3b3eb99c",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_americium"
+		}]
+	},
+	{
+		uid: "cf85d58f",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:depleted_fuel_americium"
+		}]
+	}],
+	rewards: [{
+		uid: "491c1e19",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

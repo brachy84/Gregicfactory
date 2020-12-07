@@ -1,0 +1,25 @@
+{
+	title: "Crystal Matrix Heavy Plating",
+	icon: "contenttweaker:crystalmatrixplating",
+	x: 3.0d,
+	y: 9.5d,
+	text: [
+		"Heavy plating used exclusively for the Tier Eight Micro Miner."
+	],
+	dependencies: [
+		"544a0c1c",
+		"1d2912ba"
+	],
+	tasks: [{
+		uid: "e30f5d4e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:crystalmatrixplating"
+		}]
+	}],
+	rewards: [{
+		uid: "ce8326aa",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

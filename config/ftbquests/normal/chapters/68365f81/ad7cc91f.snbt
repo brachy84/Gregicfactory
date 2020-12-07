@@ -1,0 +1,25 @@
+{
+	title: "Red Steel Ingots",
+	icon: "gregtech:meta_item_1 1 10232",
+	x: -13.75d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"5d34f8d4"
+	],
+	tasks: [{
+		uid: "b48ecbd9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10232"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "d6541e15",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

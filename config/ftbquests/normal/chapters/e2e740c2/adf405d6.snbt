@@ -1,0 +1,32 @@
+{
+	title: "Pulsating Mesh",
+	icon: "forestry:crafting_material 1 1",
+	x: -30.5d,
+	y: 4.25d,
+	shape: "square",
+	text: [
+		"String and Coal Dust can be baked together into a Carbon Mesh in an Alloy Furnace. Combine that with Pulsating Dust to get a Pulsating Mesh."
+	],
+	dependencies: [
+		"9c8bb401"
+	],
+	tasks: [{
+		uid: "4a7083b4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32505"
+		}]
+	},
+	{
+		uid: "9834f772",
+		type: "item",
+		items: [{
+			item: "forestry:crafting_material 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "54481129",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

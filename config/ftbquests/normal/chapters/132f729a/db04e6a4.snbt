@@ -1,0 +1,38 @@
+{
+	title: "Chlorine",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "chlorine",
+			Amount: 1000
+		}
+	},
+	x: -18.5d,
+	y: 13.5d,
+	text: [
+		"You'll need §9Chlorine§r at this point. It is an important ingredient in many chemical processes. You can get it from electrolyzing §6Salt§r, among other sources.",
+		"",
+		"Using a §3Mixer§r, you can create §9Salt Water§r and electrolyze that instead of plain Salt, which §edoubles the yield per Salt§r and provides you with useful §6Sodium Hydrodixe§r (NaOH)."
+	],
+	dependencies: [
+		"6faaf0be"
+	],
+	tasks: [{
+		uid: "5a4f929b",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "chlorine",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b04780b3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

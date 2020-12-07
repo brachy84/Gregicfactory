@@ -1,0 +1,27 @@
+{
+	title: "Naquadah Wires",
+	icon: "gregtech:cable 1 307",
+	x: -10.0d,
+	y: 7.25d,
+	text: [
+		"Wires made from §6Naquadah§r are ZPM tier.",
+		"",
+		"§6Naquadah Cables§r are needed, among other things, for §6ZPM Machine Hulls§r."
+	],
+	dependencies: [
+		"9d26d089"
+	],
+	tasks: [{
+		uid: "c9036877",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 1 307"
+		}]
+	}],
+	rewards: [{
+		uid: "4c07f31b",
+		type: "item",
+		item: "contenttweaker:omnicoin5",
+		count: 2
+	}]
+}

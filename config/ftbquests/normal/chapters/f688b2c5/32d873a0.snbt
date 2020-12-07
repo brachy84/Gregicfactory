@@ -1,0 +1,57 @@
+{
+	title: "Wrenches Galore",
+	icon: "enderio:item_yeta_wrench",
+	x: 0.75d,
+	y: 5.5d,
+	text: [
+		"Confused about all the Wrenches yet?",
+		"",
+		"The §aCrescent Hammer§r is for use on machines from §bThermal Expansion§f, but can be used for basic wrench interactions with blocks from almost every mod.",
+		"",
+		"The §aYeta Wrench§r is used with machines and conduits from §bEnderIO§f, and has several special display modes (§6sneak-mouse wheel§f to switch between them).",
+		"",
+		"The §aGregTech Wrench§r is used to rotate GregTech machines and redefine their output sides.",
+		"",
+		"You can see which mod a machine is from with the §9blue text§f at the bottom of its tooltip."
+	],
+	dependencies: [
+		"cb806892",
+		"08feae58"
+	],
+	tasks: [{
+		uid: "664a3228",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:wrench"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "74e3bb04",
+		type: "item",
+		items: [{
+			item: "enderio:item_yeta_wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3a675123",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					PrimaryMaterial: "darmstadtium"
+				}
+			},
+			Damage: 8s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ff18c2a2",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

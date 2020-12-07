@@ -1,0 +1,22 @@
+{
+	title: "Ultimate Boots",
+	icon: "armorplus:the_ultimate_boots",
+	x: -3.625d,
+	y: 12.5d,
+	text: [
+		"An ultimate pair of boots, forged from all manner of materials across dimensions and microverses."
+	],
+	dependencies: [
+		"8239c7bf"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "2667929e",
+		type: "item",
+		items: [{
+			item: "armorplus:the_ultimate_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

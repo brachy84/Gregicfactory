@@ -1,0 +1,25 @@
+{
+	title: "Element 003: Lithium",
+	icon: "gregtech:meta_item_1 1 10036",
+	x: -3.5d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"9c69b4f0"
+	],
+	tasks: [{
+		uid: "f5c51728",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10036"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "bab3887c",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

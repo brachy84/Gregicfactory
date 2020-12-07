@@ -1,0 +1,23 @@
+{
+	title: "Infinity Chestplate",
+	icon: "avaritia:infinity_chestplate",
+	x: -11.75d,
+	y: 14.625d,
+	text: [
+		"A chestplate to surpass the ultimate, forged with the hearts of stars and the raw fury of the universe."
+	],
+	dependencies: [
+		"84964166",
+		"0bb55ea0"
+	],
+	size: 2.5d,
+	tasks: [{
+		uid: "80b98bb4",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

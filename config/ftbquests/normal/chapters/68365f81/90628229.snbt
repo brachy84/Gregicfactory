@@ -1,0 +1,25 @@
+{
+	title: "Element 080: Mercury",
+	icon: "contenttweaker:solidifiedmercury",
+	x: -2.5d,
+	y: 9.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"24e960a2"
+	],
+	tasks: [{
+		uid: "7c9c09c5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedmercury 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "fc6d9fe4",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

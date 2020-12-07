@@ -1,0 +1,100 @@
+{
+	title: "Lunar Mining Station",
+	icon: "armorplus:btm_moon",
+	x: -23.5d,
+	y: 11.0d,
+	text: [
+		"The §3Lunar Mining Station§r is a large multiblock structure used for mining gases from the moon. It is an excellent (though not the only) source of §9Deuterium§r or §9Helium-3§r, depending on what kind of §6Rover§r you use.",
+		"",
+		"Rovers only have a 10% chance to break while mining, so a stack of them will last quite a while.",
+		"",
+		"Because this structure must be placed on the Moon, it is a good idea to use mechanisms like §aEnder Tanks§r or a §6Quantum Link Chamber§r for teleporting the fluids back to your base.",
+		"",
+		"Make sure to keep it chunk-loaded!"
+	],
+	dependencies: [
+		"ad3c11c6"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "92e6f21e",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "86e91701",
+		type: "item",
+		items: [{
+			item: "gregtech:machine_casing 56 6"
+		}],
+		count: 56L
+	},
+	{
+		uid: "124325b6",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_misc 17 9"
+		}],
+		count: 17L
+	},
+	{
+		uid: "49e704cd",
+		type: "item",
+		items: [{
+			item: "enderio:block_alloy_endergy 12 5"
+		}],
+		count: 12L
+	},
+	{
+		uid: "14d6543e",
+		type: "item",
+		items: [{
+			item: "enderio:block_alloy_endergy 9 3"
+		}],
+		count: 9L
+	},
+	{
+		uid: "e2d103f5",
+		type: "item",
+		items: [{
+			item: "extrautils2:ineffableglass 4 3"
+		}],
+		count: 4L
+	},
+	{
+		uid: "a86e0739",
+		type: "item",
+		items: [{
+			item: "minecraft:beacon"
+		}]
+	},
+	{
+		uid: "629f8725",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockfluidoutputhatch 1 2"
+		}]
+	},
+	{
+		uid: "d19f472b",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus"
+		}]
+	},
+	{
+		uid: "424c0ad0",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockenergyinputhatch 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "c295a571",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

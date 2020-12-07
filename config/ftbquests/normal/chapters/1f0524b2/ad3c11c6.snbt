@@ -1,0 +1,42 @@
+{
+	title: "Fly To The Moon",
+	icon: "armorplus:btm_moon",
+	x: 22.0d,
+	y: 22.5d,
+	text: [
+		"With your Rocket built, fuel loaded, and destination set, it's time for the prelaunch checklist.",
+		"",
+		"- §eMake sure you're wearing your Space Suit§r (all four pieces) and that it has a full tank of Oxygen. If you plan to stay on the Moon a while, maybe bring a gas charging pad and Ender Tank (being filled with Oxygen) with you.",
+		"",
+		"Teleportation:",
+		"",
+		"- If you decided to go with §aDislocators§r, make sure you take two with you: one bound to the Overworld, the other ready to bind to the Moon. Also bring along a Pedestal to put the Overworld one on the Moon surface.",
+		"",
+		"- If you decided to go with §aTelepads§r, make sure you've constructed a Telepad in the Overworld and that you're carrying coordinates that lead to it. Make sure to bring your Coordinate Selector, blank Paper, and materials for the second Telepad setup. Bring Dew of the Void and RF power (like a §6Solar Panel§r and a §6Capacitor Bank§r).",
+		"",
+		"In either case, as soon as you land you will need to prepare the other half of the teleportation route, and chunkload it.",
+		"",
+		"When you're sure you're prepared, sit in your rocket and press §eSpace§r.",
+		"",
+		"Liftoff!"
+	],
+	dependencies: [
+		"4ee66f67",
+		"fbda1be4",
+		"9d4d99da",
+		"a44713c8"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "a9430b3e",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:moonturf"
+		}]
+	}],
+	rewards: [{
+		uid: "b45a76cf",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

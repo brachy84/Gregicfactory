@@ -1,0 +1,26 @@
+{
+	title: "Small Coils",
+	icon: "gregtech:meta_item_2 1 32456",
+	x: -29.5d,
+	y: 6.0d,
+	text: [
+		"Another electronic component.",
+		"",
+		"Making it inside an §3Assembling Machine§r is much, much cheaper than by hand, and using §6Nickel Zinc Ferrite§r bolts gives even better returns."
+	],
+	dependencies: [
+		"237ea1ad"
+	],
+	tasks: [{
+		uid: "b050cef8",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32456"
+		}]
+	}],
+	rewards: [{
+		uid: "3e4364f3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "Breaking Some Eggs",
+	icon: "minecraft:dragon_egg",
+	x: -9.0d,
+	y: 12.25d,
+	text: [
+		"\"§6Dragon Eggs§r?\" You might ask. Yep.",
+		"",
+		"The final circuit theme, Wetware, will require a lot of them.",
+		"",
+		"Tier Six Micro Miners can get some eggs (enough for this quest, as it happens), but Tier Seven miners are a better long-term solution for building up your supply, as they also give §6Dragon Hearts§r.",
+		"",
+		"Later, you'll also get substantial quantities from Tier Eight Micro Miners, while you are accumulating §6Chaos Shards§r."
+	],
+	dependencies: [
+		"7ee8be78"
+	],
+	tasks: [{
+		uid: "b81ea7a0",
+		type: "item",
+		items: [{
+			item: "minecraft:dragon_egg 32"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "3f908971",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

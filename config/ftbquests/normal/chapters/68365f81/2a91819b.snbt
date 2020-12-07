@@ -1,0 +1,25 @@
+{
+	title: "Element 097: Berkelium",
+	icon: "contenttweaker:stabilizedberkelium",
+	x: -1.5d,
+	y: 10.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"28e9da18"
+	],
+	tasks: [{
+		uid: "4b215c2b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizedberkelium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "f740ba5e",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

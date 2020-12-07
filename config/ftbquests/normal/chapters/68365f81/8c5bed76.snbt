@@ -1,0 +1,25 @@
+{
+	title: "Modularium Ingots",
+	icon: "modularmachinery:itemmodularium",
+	x: -14.75d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"d000b2b8"
+	],
+	tasks: [{
+		uid: "201af730",
+		type: "item",
+		items: [{
+			item: "modularmachinery:itemmodularium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "a7e1380c",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

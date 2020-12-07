@@ -1,0 +1,26 @@
+{
+	title: "Nichrome Ingots",
+	icon: "gregtech:meta_item_1 1 10133",
+	x: -23.0d,
+	y: 3.75d,
+	text: [
+		"§6Nichrome§r is an alloy of §6Nickel§r and §6Chrome§r.",
+		"",
+		"This alloy is cooked in an §3Electric Blast Furnace§r and cooled in a §3Vacuum Freezer§r."
+	],
+	dependencies: [
+		"81bac9ec"
+	],
+	tasks: [{
+		uid: "911b23c9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10133"
+		}]
+	}],
+	rewards: [{
+		uid: "7368b86e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

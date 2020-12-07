@@ -1,0 +1,24 @@
+{
+	title: "IV Machine Hulls",
+	icon: "gregtech:machine 1 505",
+	x: -20.25d,
+	y: 8.0d,
+	text: [
+		"With §6Tungstensteel§r achieved, you can now make hulls for Insane Voltage (IV) §bGregTech§r machines."
+	],
+	dependencies: [
+		"c17ebb53"
+	],
+	tasks: [{
+		uid: "08b26856",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 505"
+		}]
+	}],
+	rewards: [{
+		uid: "71caa3f1",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

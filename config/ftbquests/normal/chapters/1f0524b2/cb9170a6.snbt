@@ -1,0 +1,39 @@
+{
+	title: "Thinking with Dislocators",
+	icon: "draconicevolution:dislocator",
+	x: 19.25d,
+	y: 24.25d,
+	text: [
+		"§6Dislocator Pedestals§f are a very simple way of inter-dimensional transport.",
+		"",
+		"Hold a §6Dislocator§f in your hand and §6sneak-right click§f to bind it to your position. Now, place it inside a Pedestal so you can travel to the bound spot anytime you want.",
+		"",
+		"Before going to the Moon, you'll need §etwo Dislocators§f and §etwo Pedestals§f.",
+		"",
+		"Bind one Dislocator to a location in the Overworld, then take it with you to the Moon and put it down on a Pedestal.",
+		"",
+		"Bind the other Dislocator to a location on the Moon, then use the first Pedestal to return home. Place the second Dislocator on the second Pedestal, then you can warp between the two locations at will. Neat!",
+		"",
+		"§aTip: Dislocators don't lose durability on use when placed in a Pedestal!"
+	],
+	dependencies: [
+		"ba1d1f0d"
+	],
+	tasks: [{
+		uid: "a2c9a864",
+		type: "item",
+		items: [{
+			item: "draconicevolution:dislocator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c2ae0b14",
+		type: "item",
+		items: [{
+			item: "draconicevolution:dislocator_pedestal"
+		}],
+		ignore_nbt: 1b
+	}]
+}

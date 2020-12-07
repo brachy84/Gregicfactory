@@ -1,0 +1,30 @@
+{
+	title: "Tier Seven Micro Miner",
+	icon: "contenttweaker:tiersevenship",
+	x: -1.3333333333333333d,
+	y: 11.333333333333334d,
+	text: [
+		"The Seventh Micro Miner.",
+		"",
+		"The source of §6Dragon Hearts§r and the valuable §6Lair of The Chaos Guardian Data§r.",
+		"",
+		"As a bonus, brings §6Dragon Eggs, Dragon's Breath, Ender Dragon Scales§r and a plenty of different precious metals and gems."
+	],
+	dependencies: [
+		"4f6575d7",
+		"fef77208"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "0f25b26d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tiersevenship"
+		}]
+	}],
+	rewards: [{
+		uid: "3465541e",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

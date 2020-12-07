@@ -1,0 +1,28 @@
+{
+	title: "Signalum",
+	icon: "thermalfoundation:material 1 165",
+	x: -22.75d,
+	y: 10.5d,
+	text: [
+		"Not glowing.",
+		"",
+		"This one takes a significant amount of time to cook, so make sure to have it going constantly.",
+		"",
+		"§6Signalum§r is noteworthy as the long-awaited next tier upgrade for your §bThermal Expansion§r machines and dynamos following \"Reinforced\" back in MV."
+	],
+	dependencies: [
+		"66c726fd"
+	],
+	tasks: [{
+		uid: "9ce025cb",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 165"
+		}]
+	}],
+	rewards: [{
+		uid: "f8b82c16",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

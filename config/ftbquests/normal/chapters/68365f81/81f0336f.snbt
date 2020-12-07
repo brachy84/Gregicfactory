@@ -1,0 +1,25 @@
+{
+	title: "Nichrome Ingots",
+	icon: "gregtech:meta_item_1 1 10133",
+	x: -16.75d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"5adba393"
+	],
+	tasks: [{
+		uid: "49d3c179",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10133"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "0dc9270e",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Element 012: Magnesium",
+	icon: "gregtech:meta_item_1 1 10038",
+	x: -1.5d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e2f5be08"
+	],
+	tasks: [{
+		uid: "859d53fe",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10038"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "9fa869cb",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

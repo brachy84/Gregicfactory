@@ -1,0 +1,25 @@
+{
+	title: "LuV Compressor",
+	icon: "gregtech:machine 1 2069",
+	x: -12.75d,
+	y: 6.0d,
+	text: [
+		"This compressor is needed for making §6Iridium Heavy Plating§r and §6Enderium Heavy Plating§r."
+	],
+	dependencies: [
+		"4ec0e1fa",
+		"8e76496d"
+	],
+	tasks: [{
+		uid: "00f76ca0",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2069"
+		}]
+	}],
+	rewards: [{
+		uid: "3824ccd3",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

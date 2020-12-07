@@ -1,0 +1,32 @@
+{
+	title: "Digital Storage For Days",
+	icon: "appliedenergistics2:drive",
+	x: -25.0d,
+	y: 14.5d,
+	text: [
+		"*Slaps §6ME Drive§r* this bad boy can fit so many §6Storage Cells§r in it!",
+		"",
+		"With ten slots for Storage Cells, you can store a huge amount of items inside this single block, and search through them all with a §6Terminal§r. You just gotta make all those Storage Cells.",
+		"",
+		"If you somehow run out of room, you can make another ME Drive for even more slots! So many cells, so many items!"
+	],
+	dependencies: [
+		"43c8e0d8",
+		"cd85d224",
+		"b8b7af75",
+		"e42bf607"
+	],
+	tasks: [{
+		uid: "c7cd4b4f",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:drive"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "83627269",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

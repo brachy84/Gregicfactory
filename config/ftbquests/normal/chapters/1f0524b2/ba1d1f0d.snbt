@@ -1,0 +1,41 @@
+{
+	title: "The Outer Islands",
+	icon: "minecraft:chorus_flower",
+	x: 19.25d,
+	y: 27.0d,
+	text: [
+		"Now that you've dealt with the dragon, seek the bedrock structure floating mid-air around the edge of the main island.",
+		"",
+		"Carefully throw an §6Ender Pearl§r inside one (where there's a portal-looking texture) to teleport to a distant island.",
+		"",
+		"Once there, gather some §6Chorus Flowers§r. You'll have to smash the flower itself to get it: simply breaking the stem of a plant will not drop the flower.",
+		"",
+		"And finally, obtain some §6Draconium Dust§r. Its ore spawns in small quantities, but should be everywhere.",
+		"",
+		"To get back to the main island, throw an Ender Pearl into another bedrock portal structure."
+	],
+	dependencies: [
+		"98cbb7c2"
+	],
+	tasks: [{
+		uid: "07bc24bb",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconium_dust 8"
+		}],
+		count: 8L
+	},
+	{
+		uid: "c4d03803",
+		type: "item",
+		items: [{
+			item: "minecraft:chorus_flower 3"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "22701de9",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Dark Soularium Ingots",
+	icon: "simplyjetpacks:metaitemmods 1 3",
+	x: -15.75d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"350e9b2b"
+	],
+	tasks: [{
+		uid: "4b789efb",
+		type: "item",
+		items: [{
+			item: "simplyjetpacks:metaitemmods 64 3"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "41495b2d",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

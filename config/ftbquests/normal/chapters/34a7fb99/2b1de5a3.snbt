@@ -1,0 +1,27 @@
+{
+	title: "Crystal Processing Unit",
+	icon: "gregtech:meta_item_2 1 32474",
+	x: -21.75d,
+	y: 11.75d,
+	text: [
+		"§6Crystal CPUs§r are the cores of §6Crystal Circuits§r.",
+		"",
+		"You'll need an §3IV Precision Laser Engraver§r to craft this."
+	],
+	dependencies: [
+		"3d17c78e",
+		"d3c6e921"
+	],
+	tasks: [{
+		uid: "f15b201a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32474"
+		}]
+	}],
+	rewards: [{
+		uid: "6d1fb079",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

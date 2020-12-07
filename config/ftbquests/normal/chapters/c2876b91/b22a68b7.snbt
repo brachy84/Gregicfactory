@@ -1,0 +1,25 @@
+{
+	title: "Blaze Powder",
+	icon: "contenttweaker:blazepowder",
+	x: -37.25d,
+	y: 1.75d,
+	text: [
+		"Bits of a §6Blaze Rod§r. Using a §3Macerator§r doubles your yield."
+	],
+	dependencies: [
+		"1afe02e2",
+		"ce20731a"
+	],
+	tasks: [{
+		uid: "d40d0834",
+		type: "item",
+		items: [{
+			item: "minecraft:blaze_powder"
+		}]
+	}],
+	rewards: [{
+		uid: "8ec5ef0a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

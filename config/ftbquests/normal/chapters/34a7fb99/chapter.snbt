@@ -1,0 +1,16 @@
+{
+	title: "Late Game",
+	icon: "gregtech:machine 1 2504",
+	description: [
+		"GregTech LuV, ZPM, and UV tiers:",
+		"",
+		"Build §3Assembly Lines§r, §3Fusion Reactors§r, and more!",
+		"",
+		"Automate in style with §bPackagedAuto§r. Climb the tiers of §6Micro Miners§r.",
+		"",
+		"§bDraconic Evolution§r for fusion crafting and energy storage."
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

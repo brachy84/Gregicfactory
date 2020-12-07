@@ -1,0 +1,27 @@
+{
+	title: "MV Electrolyzer",
+	icon: "gregtech:machine 1 241",
+	x: -13.75d,
+	y: 4.5d,
+	text: [
+		"An §3MV Electrolyzer§r allows you to process recipes that require up to 128 EU/t, and can optionally overclock recipes costing at most 32 EU/t.",
+		"",
+		"This means you can split more kinds of things for useful products."
+	],
+	dependencies: [
+		"c303a083",
+		"cd85d224"
+	],
+	tasks: [{
+		uid: "4d50a7a7",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 241"
+		}]
+	}],
+	rewards: [{
+		uid: "21bb6687",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

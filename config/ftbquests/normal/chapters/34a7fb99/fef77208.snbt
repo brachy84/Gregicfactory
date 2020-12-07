@@ -1,0 +1,25 @@
+{
+	title: "Draconium Heavy Plating",
+	icon: "contenttweaker:draconiumplating",
+	x: -1.25d,
+	y: 9.5d,
+	text: [
+		"Heavy plating used exclusively for the Tier Seven Micro Miner."
+	],
+	dependencies: [
+		"3f261428",
+		"544a0c1c"
+	],
+	tasks: [{
+		uid: "62f1617a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:draconiumplating"
+		}]
+	}],
+	rewards: [{
+		uid: "859626c0",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

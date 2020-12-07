@@ -1,0 +1,42 @@
+{
+	title: "Centrifuge",
+	icon: "gregtech:machine 1 150",
+	x: -18.0d,
+	y: 2.75d,
+	text: [
+		"Note: this quest accepts an LV, MV or HV Centrifuge.",
+		"",
+		"§3Centrifuges§r provide you with 3 tiny piles of additional materials when processing ore dusts (§e9 tiny piles = 1 dust§r). Sometimes it's the main dust, but often it's a different useful material that is otherwise unobtainable.",
+		"",
+		"Instead of washing §6impure dusts§r (made from macerating or hammering ores) in a cauldron, you can get more out of each dust by centrifuging it. The same is true of §6pure dusts§r, when you eventually make a §3Washer§r or §3Chemical Bath§r. Note however that pure and impure dusts will usually give different byproducts (always check in §bJEI§r).",
+		"",
+		"Centrifuges also have other uses like unmixing compound dusts and fluids, or getting §6Rubber Pulp§r, which can be chemically reacted with §6Sulfur§r to efficiently make §9liquid Rubber§r."
+	],
+	dependencies: [
+		"5876c22c",
+		"15b5a756"
+	],
+	tasks: [{
+		uid: "e19f1d91",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "questbookCentrifuge",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any questbookCentrifuge"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "c3e55b2d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

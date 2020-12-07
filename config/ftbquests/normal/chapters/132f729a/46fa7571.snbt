@@ -1,0 +1,30 @@
+{
+	title: "Ender Fluid Conduits",
+	icon: "enderio:item_liquid_conduit 1 2",
+	x: -14.25d,
+	y: 15.5d,
+	text: [
+		"§aEnder Fluid Conduits§r are the most powerful fluid transportation mechanism offered by §bEnderIO§r.",
+		"",
+		"Not only are these faster than §aPressurized Fluid Conduits§r, but because they teleport fluids instead of flowing them in the conduits, it possible to have a large number of fluids moving through a single line.",
+		"",
+		"In addition to §aFilters§r they also have multiple channels which can be used to direct fluids through the same conduits to various destinations.",
+		"",
+		"If you don't want to (or haven't unlocked access to) routing fluids through §bAE§r, these are your best alternative."
+	],
+	dependencies: [
+		"906e6c13"
+	],
+	tasks: [{
+		uid: "a35de140",
+		type: "item",
+		items: [{
+			item: "enderio:item_liquid_conduit 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "1a3f1eaa",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

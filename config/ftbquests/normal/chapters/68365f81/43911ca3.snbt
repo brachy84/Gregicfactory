@@ -1,0 +1,25 @@
+{
+	title: "Element 095: Americium",
+	icon: "contenttweaker:stabilizedamericium",
+	x: -3.5d,
+	y: 10.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"89662ca8"
+	],
+	tasks: [{
+		uid: "7c918b20",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizedamericium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "2e00bfcd",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

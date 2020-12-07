@@ -1,0 +1,92 @@
+{
+	title: "Crystal Growth Chamber",
+	icon: "ae2stuff:grower",
+	x: -20.75d,
+	y: 16.5d,
+	text: [
+		"The §3Crystal Growth Chamber§r allows you to perform §bApplied Energistics§r's world crafting recipes inside of a machine. Hooray, you never have to drop more things in water again!",
+		"",
+		"It is used for growing §6Crystal Seeds§r into §6Pure Crystals§r, and also for creating §6Fluix Crystals§r.",
+		"",
+		"JEI doesn't show the Chamber's recipes directly, so we'll explain it here:",
+		"",
+		"Seeds are made by pulverizing any of the three crystal types and mixing the dust with sand. A seed grows into the corresponding Pure Crystal, which is substitutable for the original crystal in most recipes. Using Pure Crystals lets you effectively double your material efficiency, which is nice. And no, you can't grind down Pure Crystals to further multiply your resources. Sorry.",
+		"",
+		"Fluix Crystals you've already had to make in a pool of water by now, and it's the same ingredients here: insert one each of a §6Redstone Dust§r, §6Charged Certus Quartz Crystal§r, and a §6Nether Quartz§r to produce one Fluix Crystal."
+	],
+	dependencies: [
+		"43c8e0d8"
+	],
+	tasks: [{
+		uid: "acef8c1c",
+		type: "item",
+		items: [{
+			item: "ae2stuff:grower"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9943cd14",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 0
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8e0f246b",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 600
+			},
+			Damage: 600s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cbbb0fa5",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 1200
+			},
+			Damage: 1200s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "12e97052",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 10"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d62777ca",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 11"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "362dfe3c",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 12"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "92395316",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

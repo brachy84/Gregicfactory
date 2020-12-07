@@ -1,0 +1,26 @@
+{
+	title: "Tungstensteel",
+	icon: "gregtech:meta_item_1 1 10235",
+	x: -23.0d,
+	y: 8.0d,
+	text: [
+		"§6Tungstensteel§r is an alloy of §6Tungsten§r and §6Steel§r.",
+		"",
+		"This alloy is cooked in an §3Electric Blast Furnace§r and cooled in a §3Vacuum Freezer§r."
+	],
+	dependencies: [
+		"77df52fd"
+	],
+	tasks: [{
+		uid: "0585109f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10235"
+		}]
+	}],
+	rewards: [{
+		uid: "90a694c1",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

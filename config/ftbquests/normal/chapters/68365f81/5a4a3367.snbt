@@ -1,0 +1,25 @@
+{
+	title: "Element 078: Platinum",
+	icon: "gregtech:meta_item_1 1 10051",
+	x: -4.5d,
+	y: 9.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e72d4674"
+	],
+	tasks: [{
+		uid: "6f30f7ba",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10051"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "ff626f77",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

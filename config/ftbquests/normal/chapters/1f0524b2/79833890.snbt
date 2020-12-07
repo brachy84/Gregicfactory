@@ -1,0 +1,27 @@
+{
+	title: "Ultimate Component",
+	icon: "extendedcrafting:material 1 17",
+	x: 12.75d,
+	y: 24.25d,
+	text: [
+		"Used for Ultimate tier §bExtended Crafting§r.",
+		"",
+		"Don't worry if you can't make these for a while. You'll probably get to them around IV power."
+	],
+	dependencies: [
+		"153583f1",
+		"c0ba87cd"
+	],
+	tasks: [{
+		uid: "42e2d678",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 17"
+		}]
+	}],
+	rewards: [{
+		uid: "e1e87679",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

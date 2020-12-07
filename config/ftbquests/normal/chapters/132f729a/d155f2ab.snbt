@@ -1,0 +1,25 @@
+{
+	title: "The Second Tier Two Circuits",
+	icon: "contenttweaker:electronicprocessor",
+	x: -21.5d,
+	y: 7.5d,
+	text: [
+		"Three §6Electronic Circuits§r and various other components will create an §6Electronic Processor§r."
+	],
+	dependencies: [
+		"f7c4923c",
+		"cc1f2b60"
+	],
+	tasks: [{
+		uid: "25679ac7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:electronicprocessor"
+		}]
+	}],
+	rewards: [{
+		uid: "527565e0",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

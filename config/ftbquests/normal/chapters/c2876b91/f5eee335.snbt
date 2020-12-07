@@ -1,0 +1,26 @@
+{
+	title: "Titanium Heavy Plating",
+	icon: "contenttweaker:titaniumplating",
+	x: -32.25d,
+	y: 7.0d,
+	text: [
+		"Heavy: avoid dropping it on your foot.",
+		"",
+		"This special plating is used for two things-- Tier Two Micro Miners and the Space Station Assembler."
+	],
+	dependencies: [
+		"fb55c41e"
+	],
+	tasks: [{
+		uid: "76f72ddb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:titaniumplating"
+		}]
+	}],
+	rewards: [{
+		uid: "3dbcec2c",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

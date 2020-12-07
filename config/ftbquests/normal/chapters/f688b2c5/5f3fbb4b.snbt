@@ -1,0 +1,29 @@
+{
+	title: "Glider",
+	icon: "openglider:hang_glider_basic",
+	x: -5.25d,
+	y: 6.75d,
+	text: [
+		"The §aHang Glider§f is a great way to cross long distances, if you're so inclined.",
+		"",
+		"If you don't want to go exploring for Cows, just buy a pair of \"§6Spawn Cow§f\" eggs and breed them. Seriously, spend your §dcoins§f!"
+	],
+	dependencies: [
+		"ae527e17",
+		"08feae58"
+	],
+	tasks: [{
+		uid: "dd8f0717",
+		type: "item",
+		items: [{
+			item: "openglider:hang_glider_basic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9342d870",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

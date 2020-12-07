@@ -1,0 +1,24 @@
+{
+	title: "Petrotheum",
+	icon: "thermalfoundation:material 1 1027",
+	x: -36.0d,
+	y: 3.0d,
+	text: [
+		"§6§6Redstone§r, §6Obsidian Dust§r, and §6Basalz Powder§r creates §6Petrotheum Dust§r, a mixture imbued with potent elemental earth."
+	],
+	dependencies: [
+		"c7ac872e"
+	],
+	tasks: [{
+		uid: "110ef346",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 1027"
+		}]
+	}],
+	rewards: [{
+		uid: "34b85eaf",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

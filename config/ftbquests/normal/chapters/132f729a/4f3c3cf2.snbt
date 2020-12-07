@@ -1,0 +1,36 @@
+{
+	title: "Stainless Steel",
+	icon: "gregtech:meta_item_1 1 12183",
+	x: -13.75d,
+	y: 9.0d,
+	text: [
+		"§6Stainless Steel§r will be your primary material for HV, in the same way that §6Aluminium§r was for MV and §6Wrought Iron§r was for LV.",
+		"",
+		"§6Manganese§r comes from electrolyzing §6Tantalite§r, §6Pyrolusite§r, or §6Spessartine Dusts§r. You already have §6Chrome§r.",
+		"",
+		"Mix up a bunch of the dust in a §3Mixer§r and begin processing it through the §3Electric Blast Furnace§r. This may be a good time to reevaluate your power generation and storage infrastructure."
+	],
+	dependencies: [
+		"fafe4cde"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "cab341e2",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2183"
+		}]
+	},
+	{
+		uid: "4f8d1870",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10183"
+		}]
+	}],
+	rewards: [{
+		uid: "d7ef821b",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

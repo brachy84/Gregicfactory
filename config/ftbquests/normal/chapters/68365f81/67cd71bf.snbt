@@ -1,0 +1,25 @@
+{
+	title: "Element 019: Potassium",
+	icon: "gregtech:meta_item_1 1 10054",
+	x: -1.5d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"24e960a2"
+	],
+	tasks: [{
+		uid: "eb18e5ab",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10054"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "2ab22a83",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

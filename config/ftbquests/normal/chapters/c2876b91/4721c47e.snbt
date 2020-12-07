@@ -1,0 +1,51 @@
+{
+	title: "Curium Fission",
+	icon: "nuclearcraft:fuel_curium",
+	x: -12.5d,
+	y: 11.75d,
+	text: [
+		"Low-Enriched Curium 243, or §6LECm-243§r, is made from §6Curium-243§r and §6Curium-246§r.",
+		"",
+		"§6Depleted LECm-243 Fuel§r gives mostly Curium-246 back, but also small quantities of §6Berkelium§r and §6Californium§r isotopes.",
+		"",
+		"§6HECm-247§r is a better alternative for strictly Califronium, if your reactor can withstand the heat."
+	],
+	dependencies: [
+		"a3c53e75",
+		"89662ca8"
+	],
+	tasks: [{
+		uid: "420ff4a9",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:curium"
+		}]
+	},
+	{
+		uid: "5b9bb820",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:curium 8 8"
+		}],
+		count: 8L
+	},
+	{
+		uid: "fcf09793",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_curium"
+		}]
+	},
+	{
+		uid: "b6199aa5",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:depleted_fuel_curium"
+		}]
+	}],
+	rewards: [{
+		uid: "5b859c7f",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

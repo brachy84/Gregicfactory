@@ -1,0 +1,43 @@
+{
+	title: "Molds",
+	icon: "gregtech:meta_item_1 1 32303",
+	x: -31.75d,
+	y: 5.5d,
+	text: [
+		"§aMolds§r are used in a §3Fluid Solidifier§r or §3Alloy Smelter§r to form materials into specific shapes. These are not consumed or damaged during crafting, so you can leave them in a machine to dedicate it to that shape.",
+		"",
+		"The Fluid Solidifier tends to be the more efficient option: for example, you can use §e8 ingots§r to make one §6Gear§r in an Alloy Smelter, but with a Fluid Extractor and Solidifier you can accomplish the same result with §e4 ingots§r.",
+		"",
+		"Be careful not to accidentally make §aExtruder Shapes§r. Those are for a machine you will get access to later. The two molds in this quest are ones you will find useful right away."
+	],
+	dependencies: [
+		"344445c4"
+	],
+	tasks: [{
+		uid: "8613895f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 2 32300"
+		}],
+		count: 2L
+	},
+	{
+		uid: "096780d6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32308"
+		}]
+	},
+	{
+		uid: "d289de0f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32303"
+		}]
+	}],
+	rewards: [{
+		uid: "e84146b8",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

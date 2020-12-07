@@ -1,0 +1,25 @@
+{
+	title: "Energetic Alloy Ingots",
+	icon: "enderio:item_alloy_ingot 1 1",
+	x: -13.75d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"da5679a0"
+	],
+	tasks: [{
+		uid: "a882e6ea",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 64 1"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "842810f8",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,43 @@
+{
+	title: "Thorium Fission",
+	icon: "nuclearcraft:fuel_thorium",
+	x: -12.5d,
+	y: 9.25d,
+	text: [
+		"Thorium is another basic fissile material that can be used to get into the fissile chain. Thorium comes from §6Pitchblende Ore§r, §6Thorium Ore§r, and even §6Granite§r (with a few processing steps).",
+		"",
+		"Thorium-Bred Uranium, or §6TBU§r for short, is made from nine clumps of §6Thorium 232§r enriched in a §3Thermal Centrifuge§r.",
+		"",
+		"The depleted fuel provides tiny clumps of §6Uranium 233§r, §6Uranium 235§r, §6§6Neptunium 236§r, and §6Neptunium 237§r."
+	],
+	dependencies: [
+		"8eb6bd8f"
+	],
+	tasks: [{
+		uid: "e143442c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 9 2069"
+		}],
+		count: 9L
+	},
+	{
+		uid: "09c6fcc3",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_thorium"
+		}]
+	},
+	{
+		uid: "e6c99250",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:depleted_fuel_thorium"
+		}]
+	}],
+	rewards: [{
+		uid: "35cf76a5",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

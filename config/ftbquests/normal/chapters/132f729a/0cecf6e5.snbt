@@ -1,0 +1,27 @@
+{
+	title: "Inscriber",
+	icon: "appliedenergistics2:inscriber",
+	x: -7.0d,
+	y: 6.5d,
+	text: [
+		"§3Inscribers§r are machines used to make §6inscribed circuits§r for §bApplied Energistics§r."
+	],
+	dependencies: [
+		"d0f760d3",
+		"43c8e0d8",
+		"47eb58e8"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "f7f544be",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:inscriber"
+		}]
+	}],
+	rewards: [{
+		uid: "60806ec5",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

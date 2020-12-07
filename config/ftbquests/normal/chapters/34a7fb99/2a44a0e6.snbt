@@ -1,0 +1,33 @@
+{
+	title: "Neutronium Solar Panel",
+	icon: "solarflux:solar_panel_neutronium",
+	x: 5.5d,
+	y: 16.5d,
+	text: [
+		"How much do you think these solar panels weigh? ",
+		"",
+		"These are quite expensive and two of them are required for each Tier Ten Micro Miner.",
+		"",
+		"§6Neutronium Solar Panels§r generate an enormous amount of RF power in sunlight, so once you get your tank it's also a good choice for compact power generation.",
+		"",
+		"Protip: it's always daytime in space."
+	],
+	dependencies: [
+		"c8bc3f10",
+		"2f994f68"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "fb25e8be",
+		type: "item",
+		items: [{
+			item: "solarflux:solar_panel_neutronium 2"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "3a41fde0",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

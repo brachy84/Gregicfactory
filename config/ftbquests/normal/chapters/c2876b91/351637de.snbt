@@ -1,0 +1,27 @@
+{
+	title: "Epoxy",
+	icon: "gregtech:meta_item_1 1 12142",
+	x: -18.75d,
+	y: 5.5d,
+	text: [
+		"Finally, §6Epoxy Resin Sheets§r.",
+		"",
+		"These can be made into circuit boards as a substrate for advanced circuits."
+	],
+	dependencies: [
+		"89940341",
+		"37b9191b"
+	],
+	tasks: [{
+		uid: "ebb19e07",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 12142"
+		}]
+	}],
+	rewards: [{
+		uid: "6a6fbb0c",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

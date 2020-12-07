@@ -1,0 +1,38 @@
+{
+	title: "Elemental Reduction Fluid",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "elementalreduction",
+			Amount: 1000
+		}
+	},
+	x: -36.0d,
+	y: 0.5d,
+	text: [
+		"If you don't feel like searching for a Thermal Elemental, or can't because you're playing on Peaceful, you will need to make §eone§r batch of §9Elemental Reduction Fluid§r.",
+		"",
+		"This will bootstrap being able to craft a §aThermal Elemental Model§r for DML, and you can get all of the rods from §6Thermal Elemental Pristine Matter§r going forward."
+	],
+	dependencies: [
+		"1efd8ae4"
+	],
+	tasks: [{
+		uid: "1eb8184a",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "elementalreduction",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4226e035",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

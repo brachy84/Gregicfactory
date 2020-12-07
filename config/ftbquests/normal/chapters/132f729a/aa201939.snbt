@@ -1,0 +1,28 @@
+{
+	title: "Meteorite Hunter",
+	icon: "appliedenergistics2:sky_compass",
+	x: -10.75d,
+	y: 9.0d,
+	text: [
+		"§bApplied Energistics§r uses §aPresses§r found in chests at the heart of meteors as templates for §3Inscribers§r to make §6inscribed circuits§r.",
+		"",
+		"This compass will lead you to the nearest meteor impact. Use your favorite mining tools to smash through the §6Skystone§r shell and get to the juicy center where the §6Skystone Chest§r with the plate is found.",
+		"",
+		"Please note that while they're often in a big crater, the meteors might be buried underground; when the compass is spinning wildly, you're right on top of one."
+	],
+	dependencies: [
+		"70b43203"
+	],
+	tasks: [{
+		uid: "fa7741c3",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:sky_compass"
+		}]
+	}],
+	rewards: [{
+		uid: "e471c996",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,37 @@
+{
+	title: "Boilers and Turbines",
+	icon: "thermalexpansion:augment 1 640",
+	x: -30.5d,
+	y: 10.0d,
+	text: [
+		"Using plain §3Steam Dynamos§f is pretty inefficient.",
+		"",
+		"It's strongly recommended to make §aaugments§r. With these, you can turn one Steam Dynamo into a §3steam boiler§f, and two other Steam Dynamos into §3steam turbines§f. The ratio is always §a1:2§r if all Dynamos are equally upgraded.",
+		"",
+		"This greatly increases the overall efficiency and the amount of power produced, from §a40 RF/t§r per basic steam dynamo to §a320 RF/t§r per set of three augmented dynamos."
+	],
+	dependencies: [
+		"ed2a8868",
+		"60bef9c1"
+	],
+	tasks: [{
+		uid: "e491a294",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 1 576"
+		}]
+	},
+	{
+		uid: "98b988c7",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 2 640"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "44f109a7",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

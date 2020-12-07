@@ -1,0 +1,27 @@
+{
+	title: "Double Capacitor",
+	icon: "enderio:item_basic_capacitor 1 1",
+	x: -11.75d,
+	y: 15.5d,
+	text: [
+		"Combining §6Basic RF Capacitors§r with some §6Coal Dust§r and §6Energetic Alloy§r produces a §6Double-Layer RF Capacitor§r.",
+		"",
+		"This is a tier two capacitor. Higher tier RF Capacitors will make §bEnderIO§r machines process faster and depending on the machine will expand their capabilities further (like area of effect)."
+	],
+	dependencies: [
+		"cfafa8fa",
+		"da5679a0"
+	],
+	tasks: [{
+		uid: "325407f6",
+		type: "item",
+		items: [{
+			item: "enderio:item_basic_capacitor 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "c5fd3776",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

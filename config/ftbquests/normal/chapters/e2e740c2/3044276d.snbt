@@ -1,0 +1,25 @@
+{
+	title: "Extraterrestrial Matter",
+	icon: "deepmoblearning:living_matter_extraterrestrial",
+	x: -24.5d,
+	y: 4.25d,
+	shape: "square",
+	text: [
+		"§6Hellish Matter§r and §6Ender Pearl§r can be crafted into Extraterrestrial Matter."
+	],
+	dependencies: [
+		"87ff6bdc"
+	],
+	tasks: [{
+		uid: "9fb2f231",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:living_matter_extraterrestrial"
+		}]
+	}],
+	rewards: [{
+		uid: "3793bf81",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

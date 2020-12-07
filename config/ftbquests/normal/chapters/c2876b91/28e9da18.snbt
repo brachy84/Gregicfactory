@@ -1,0 +1,46 @@
+{
+	title: "Berkelium Fission",
+	icon: "nuclearcraft:fuel_berkelium",
+	x: -13.75d,
+	y: 11.75d,
+	text: [
+		"§6Depleted LEB-248 Fuel§r results in several different isotopes of §6§6Californium§r."
+	],
+	dependencies: [
+		"4721c47e"
+	],
+	tasks: [{
+		uid: "dff3df76",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:berkelium 1 4"
+		}]
+	},
+	{
+		uid: "1eba4540",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:berkelium 8"
+		}],
+		count: 8L
+	},
+	{
+		uid: "076d5b1b",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_berkelium"
+		}]
+	},
+	{
+		uid: "7ce57920",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:depleted_fuel_berkelium"
+		}]
+	}],
+	rewards: [{
+		uid: "865a1798",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

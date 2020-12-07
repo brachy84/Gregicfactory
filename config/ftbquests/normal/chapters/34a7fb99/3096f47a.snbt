@@ -1,0 +1,26 @@
+{
+	title: "Draconic Evolution Information Tablet",
+	icon: "draconicevolution:info_tablet",
+	x: -3.25d,
+	y: 6.25d,
+	text: [
+		"The §aDraconic Evolution Information Tablet§r contains useful information about the mod as well as diagrams for valid Fusion Crafting block placement.",
+		"",
+		"You might also be interested in the §oDraconic Evolution Fusion Core Automation§r guide linked to in §9#omnicompendium§r in the official §5Omnifactory§r Discord server."
+	],
+	dependencies: [
+		"a7c6585d"
+	],
+	tasks: [{
+		uid: "a6371c6b",
+		type: "item",
+		items: [{
+			item: "draconicevolution:info_tablet"
+		}]
+	}],
+	rewards: [{
+		uid: "bee22a19",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

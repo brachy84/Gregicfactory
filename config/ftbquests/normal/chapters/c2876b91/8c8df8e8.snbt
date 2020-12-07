@@ -1,0 +1,26 @@
+{
+	title: "Soul Binder",
+	icon: "enderio:block_soul_binder",
+	x: -24.25d,
+	y: 9.25d,
+	text: [
+		"The §3Soul Binder§r is an §bEnderIO§r machine which uses §aSoul Vials§r and Experience to enhance specific items.",
+		"",
+		"It may be prudent to store §9Liquid XP§r in an adjacent §3Obelisk§r, which the Soul Binder can draw from directly, or you can insert it using other standard means of fluid routing."
+	],
+	dependencies: [
+		"c17ebb53"
+	],
+	tasks: [{
+		uid: "bcc878e4",
+		type: "item",
+		items: [{
+			item: "enderio:block_soul_binder"
+		}]
+	}],
+	rewards: [{
+		uid: "8899dbe1",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

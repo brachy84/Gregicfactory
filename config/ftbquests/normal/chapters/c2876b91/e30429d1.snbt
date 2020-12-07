@@ -1,0 +1,38 @@
+{
+	title: "Naphtha",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "naphtha",
+			Amount: 1000
+		}
+	},
+	x: -12.5d,
+	y: 1.75d,
+	text: [
+		"§9Naphtha§r is used in the simple (but highly inefficient) Naphtha route for making §9Epoxy§r, but is best utilized for Steam-Cracking and distilling for its constituents.",
+		"",
+		"Notably it contains §9Light Fuel§r and §9Heavy Fuel§r for making more §9Diesel§r, as well as many other useful chemicals for a variety of purposes."
+	],
+	dependencies: [
+		"b6fb8ad8"
+	],
+	tasks: [{
+		uid: "1542f8d3",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "naphtha",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9cc8b68d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Compacting Drawers",
+	icon: "storagedrawers:compdrawers",
+	x: -34.75d,
+	y: 8.5d,
+	text: [
+		"Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things."
+	],
+	dependencies: [
+		"b42c2f03"
+	],
+	tasks: [{
+		uid: "46e9bb23",
+		type: "item",
+		items: [{
+			item: "storagedrawers:compdrawers"
+		}]
+	}],
+	rewards: [{
+		uid: "6fac6b67",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

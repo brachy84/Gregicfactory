@@ -1,0 +1,41 @@
+{
+	title: "Bio Diesel and Glycerol",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "glycerol",
+			Amount: 1000
+		}
+	},
+	x: -16.5d,
+	y: 4.25d,
+	text: [
+		"The reaction that produces §9Bio Diesel§r is also the only source of §9Glycerol§r, which is an easy way to make §9Epichlorohydrin§r, an important ingredient of §9Epoxy§r.",
+		"",
+		"Even if you're otherwise going all in on petrochemistry for Epoxy, you'll probably end up with some Bio Diesel as a result of making Glycerol.",
+		"",
+		"Bio Diesel can be used for power, but is probably better to convert to §9Cetane Diesel§r§r."
+	],
+	dependencies: [
+		"7809f3d4",
+		"0c697622"
+	],
+	tasks: [{
+		uid: "9c102508",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "glycerol",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "dc90b549",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,94 @@
+{
+	title: "Small Microverse Projector",
+	icon: "modularmachinery:blockcontroller",
+	x: 20.75d,
+	y: 25.5d,
+	text: [
+		"This is your first §aMicroverse Projector§r.",
+		"",
+		"In this modpack, Microverse Projectors are used to launch §6Micro Miners§r to obtain valuable loot, which includes but isn't not limited to §6ore, §6gems, various dusts and otherwise unobtainable items§r like Radium Salt or Naquadah Dust.",
+		"",
+		"Unlike GregTech multiblocks, Modular Machines must be constructed exactly as dictated by the blueprint. Make sure the Quantum Compressor is facing the controller, too.",
+		"",
+		"This quest calls for an §6HV Energy Input§r. Make sure to §nalways check the energy requirement§r before launching Micro Miners! Not checking the requirement (and not upgrading the energy input hatch) will result in complete loss of input items: the Energy Input Hatch must match or be higher than the §aFE/t§r value of the recipe. Hover over different energy inputs to see how much power they can accept.",
+		"",
+		"Search \"Microverse Projector\" in JEI to see blueprints, left-click a blueprint to see the multiblock preview and press U over the blueprint to see all recipes.",
+		"",
+		"Yes, Micro Miners are single-use."
+	],
+	dependencies: [
+		"d000b2b8",
+		"57b5de21",
+		"87bc9319"
+	],
+	tasks: [{
+		uid: "b9c3692c",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 16"
+		}],
+		count: 16L
+	},
+	{
+		uid: "1391de15",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:compressor"
+		}]
+	},
+	{
+		uid: "4061f44a",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus 1 1"
+		}]
+	},
+	{
+		uid: "f7cc6f9f",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 1 1"
+		}]
+	},
+	{
+		uid: "3372206e",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "ffd9684d",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockfluidinputhatch 1 1"
+		}]
+	},
+	{
+		uid: "cb24d193",
+		type: "item",
+		items: [{
+			item: "extrautils2:ineffableglass 4 2"
+		}],
+		count: 4L
+	},
+	{
+		uid: "9bb4e313",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockenergyinputhatch 1 2"
+		}]
+	},
+	{
+		uid: "160fd3a6",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockoutputbus 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "e0c31fb0",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

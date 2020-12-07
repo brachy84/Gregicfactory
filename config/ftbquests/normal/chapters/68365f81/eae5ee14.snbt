@@ -1,0 +1,25 @@
+{
+	title: "Element 011: Sodium",
+	icon: "gregtech:meta_item_1 1 10063",
+	x: -2.5d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"9c69b4f0"
+	],
+	tasks: [{
+		uid: "9b3d8a7e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10063"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "20a9bfca",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

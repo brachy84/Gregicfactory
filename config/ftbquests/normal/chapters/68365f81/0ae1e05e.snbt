@@ -1,0 +1,23 @@
+{
+	title: "Infinity Helmet",
+	icon: "avaritia:infinity_helmet",
+	x: -14.25d,
+	y: 14.625d,
+	text: [
+		"A helmet to surpass the ultimate, forged with the hearts of stars and the raw fury of the universe."
+	],
+	dependencies: [
+		"384f5087",
+		"0bb55ea0"
+	],
+	size: 2.5d,
+	tasks: [{
+		uid: "4d0bd80a",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

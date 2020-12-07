@@ -1,0 +1,27 @@
+{
+	title: "Further Adventures In Fission",
+	icon: "gregtech:warning_sign 1 2",
+	x: -12.5d,
+	y: 13.5d,
+	text: [
+		"Now that you have all the basic building blocks of nuclear fission, you'll need to start creating breeding chains to mass produced stabilized versions of each element, for the synthesis of §dOmnium§r.",
+		"",
+		"Experiment around with larger breeder reactors that can handle highly enriched fuels.",
+		"",
+		"You'll probably want to build multiple reactors to make all the fissile elements in any reasonable amount of time."
+	],
+	dependencies: [
+		"28e9da18",
+		"e5493987"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "b963afd2",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "51b04f30",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

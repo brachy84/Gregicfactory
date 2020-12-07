@@ -1,0 +1,51 @@
+{
+	title: "Telepad",
+	icon: "enderio:block_tele_pad",
+	x: 19.25d,
+	y: 21.0d,
+	text: [
+		"Before you travel to the Moon, you'll want to set up a way to easily return.",
+		"",
+		"Lay out nine of the §6Telepad Blocks§r in a 3x3 pattern. They should turn into a multiblock. While having some §6Paper§r in your inventory, use the §aCoordinate Selector§r to create a §6Location Printout§r of an area near the Telepad. Keep track of this Printout and make sure to bring it with you to the Moon!",
+		"",
+		"Make sure the Telepad on the Overworld is ready to go. It needs power, a tank of §9Dew of the Void§r, and the chunk it's in needs to be §eChunkloaded§r. Bring the other nine Telepad Blocks with you when you go to the Moon, and once there, set up a similar layout. The one on the Moon will also need power, Dew of the Void and its chunk loaded. Consider making a solar panel and a capacitor bank to keep it powered.",
+		"",
+		"Once your Moon Telepad is up and running, put your Overworld coordinates into it. Then record your current location on the Moon with the Coordinate Selector. Teleport home, and put those coordinates into the Overworld Telepad. Now you can travel back and forth easily!",
+		"",
+		"You might consider building a room dedicated to Telepad transit, both on the Overworld and to other Planets, and label them. You'll be visiting many other worlds soon enough."
+	],
+	dependencies: [
+		"3bd37138",
+		"b0c8faaf"
+	],
+	tasks: [{
+		uid: "15731a29",
+		type: "item",
+		items: [{
+			item: "enderio:item_coord_selector"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "330ff0d1",
+		type: "item",
+		items: [{
+			item: "minecraft:paper 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "e09eef2f",
+		type: "item",
+		items: [{
+			item: "enderio:block_tele_pad 18"
+		}],
+		count: 18L
+	}],
+	rewards: [{
+		uid: "7e37acc1",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

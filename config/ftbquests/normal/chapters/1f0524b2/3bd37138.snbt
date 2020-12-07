@@ -1,0 +1,52 @@
+{
+	title: "Dew Of The Void",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "ender_distillation",
+			Amount: 1000
+		}
+	},
+	x: 18.75d,
+	y: 18.75d,
+	text: [
+		"Mix together these two crushed gems along with §9Resonant Ender§r to make §9Dew of the Void§r, the fluid that will power §bEnderIO§r interdimensional teleportation.",
+		"",
+		"Please note that Dew of the Void goes great with Doritos."
+	],
+	dependencies: [
+		"e6b8b1e0"
+	],
+	tasks: [{
+		uid: "0f41ca27",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 36"
+		}]
+	},
+	{
+		uid: "93d618e7",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 35"
+		}]
+	},
+	{
+		uid: "cc6c2ccd",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ender_distillation",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b85e07ef",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

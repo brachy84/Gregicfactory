@@ -1,0 +1,24 @@
+{
+	title: "Furnace v5.0",
+	icon: "morefurnaces:furnaceblock 1 1",
+	x: 5.75d,
+	y: 8.25d,
+	text: [
+		"§3Gold Furnaces§f are yet another step up in speed, taking only §a40 ticks§f to smelt an item."
+	],
+	dependencies: [
+		"7820e24f"
+	],
+	tasks: [{
+		uid: "a41abb78",
+		type: "item",
+		items: [{
+			item: "morefurnaces:furnaceblock 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "c67455b8",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

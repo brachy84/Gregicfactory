@@ -1,0 +1,24 @@
+{
+	title: "HV Chemical Reactor",
+	icon: "gregtech:machine 1 192",
+	x: -30.25d,
+	y: 1.75d,
+	text: [
+		"You'll need an §3HV Chemical Reactor§r for processing §6Titanium§r."
+	],
+	dependencies: [
+		"237ea1ad"
+	],
+	tasks: [{
+		uid: "54b6446a",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 192"
+		}]
+	}],
+	rewards: [{
+		uid: "f13771c6",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Element 010: Neon",
+	icon: "contenttweaker:solidifiedneon",
+	x: -3.5d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"11564de3"
+	],
+	tasks: [{
+		uid: "35499ae5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedneon 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "9140cb03",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

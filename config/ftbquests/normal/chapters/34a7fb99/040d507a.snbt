@@ -1,0 +1,27 @@
+{
+	title: "Draconic Cores",
+	icon: "draconicevolution:draconic_core",
+	x: -1.25d,
+	y: 6.25d,
+	text: [
+		"§6Draconic Cores§r are the first crafting step into §bDraconic Evolution§r.",
+		"",
+		"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via §eFusion Crafting§r."
+	],
+	dependencies: [
+		"3096f47a",
+		"3f261428"
+	],
+	tasks: [{
+		uid: "d053bebd",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconic_core"
+		}]
+	}],
+	rewards: [{
+		uid: "47ef68ef",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

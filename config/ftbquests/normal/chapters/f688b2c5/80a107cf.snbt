@@ -1,0 +1,61 @@
+{
+	title: "Your First Circuit",
+	icon: "gregtech:meta_item_2 1 32487",
+	x: 2.75d,
+	y: 11.25d,
+	text: [
+		"With all of the components made, it's time to craft a §6Primitive Circuit§r.",
+		"",
+		"This is where your §3Worktable§f setups will really shine! With the patterns encoded into a Worktable (well, really over §omany§r Worktables), you'll be able to §ebatch craft circuits quickly§f.",
+		"",
+		"You'll be making a LOT§r of circuits, so take advantage of the improved crafting efficiency."
+	],
+	dependencies: [
+		"0e7884e6",
+		"bd343f53",
+		"9c59e106"
+	],
+	tasks: [{
+		uid: "d5b47af7",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 2 32455"
+		}],
+		count: 2L
+	},
+	{
+		uid: "d5de19b1",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 2 32450"
+		}],
+		count: 2L
+	},
+	{
+		uid: "c87b47c2",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32443"
+		}]
+	},
+	{
+		uid: "dad3d63f",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 3 5237"
+		}],
+		count: 3L
+	},
+	{
+		uid: "90807ee9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 12197"
+		}]
+	}],
+	rewards: [{
+		uid: "c8efc6e2",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

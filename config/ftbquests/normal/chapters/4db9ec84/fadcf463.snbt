@@ -1,0 +1,18 @@
+{
+	title: "EV Circuits",
+	icon: "gregtech:machine_casing 1 4",
+	x: -5.208333333333334d,
+	y: 10.0d,
+	text: [
+		"Circuits along this line are EV, and can all be substituted in recipes.",
+		"",
+		"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+	],
+	dependencies: [
+		"75b50e3c",
+		"08fc5d0d",
+		"3a41006a",
+		"45f5a3bb"
+	],
+	size: 0.8333333333333334d
+}

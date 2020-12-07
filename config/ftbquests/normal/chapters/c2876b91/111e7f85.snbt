@@ -1,0 +1,27 @@
+{
+	title: "Yttrium Barium Cuprate",
+	icon: "gregtech:meta_item_1 1 10200",
+	x: -15.25d,
+	y: 8.0d,
+	text: [
+		"§6Yttrium Barium Cuprate§r (more accurately, Yttrium Barium Copper Oxide, or YBCO) is, among other things, a high-temperature superconductor material.",
+		"",
+		"This is used as plates in §bNuclearCraft§r, and will become an important cable material for later tiers of §bGregTech§r components."
+	],
+	dependencies: [
+		"26b6f0cb",
+		"00ece6c6"
+	],
+	tasks: [{
+		uid: "ab046daa",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10200"
+		}]
+	}],
+	rewards: [{
+		uid: "f476e527",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

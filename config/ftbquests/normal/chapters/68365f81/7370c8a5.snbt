@@ -1,0 +1,22 @@
+{
+	title: "Neutronium Heavy Plating",
+	icon: "contenttweaker:neutroniumplating",
+	x: -16.0d,
+	y: -4.5d,
+	text: [
+		"Kind of redundant, really.",
+		"",
+		"This plating is used exclusively for the Tier Ten Micro Miner. You need some serious protection from forces when harvesting a whole microverse."
+	],
+	dependencies: [
+		"c8bc3f10"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "3f9f1169",
+		type: "item",
+		items: [{
+			item: "contenttweaker:neutroniumplating"
+		}]
+	}]
+}

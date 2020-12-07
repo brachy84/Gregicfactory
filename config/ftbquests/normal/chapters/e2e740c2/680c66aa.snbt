@@ -1,0 +1,26 @@
+{
+	title: "ME Conduit",
+	icon: "enderio:item_me_conduit",
+	x: -23.0d,
+	y: 12.5d,
+	text: [
+		"§6ME Conduits§r have the advantage of being able to share a block space with other conduit types. Oh, and they're relatively cheaper to make.",
+		"",
+		"The only downside is that §ethey will not connect to §bApplied Energistics§r §emicroparts§r like slab-form §6Interfaces§r or §6Level Emitters§r, so you have to use AE cables like §6Fluix Cable§r for those."
+	],
+	dependencies: [
+		"43c8e0d8"
+	],
+	tasks: [{
+		uid: "6b8d49bb",
+		type: "item",
+		items: [{
+			item: "enderio:item_me_conduit"
+		}]
+	}],
+	rewards: [{
+		uid: "7025dc77",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

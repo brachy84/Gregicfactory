@@ -1,0 +1,27 @@
+{
+	title: "HV Assembling Machine",
+	icon: "gregtech:machine 1 102",
+	x: -28.75d,
+	y: 2.5d,
+	text: [
+		"The §3HV Assembling Machine§r unlocks §6Microcircuits§r, as well as handling crafting recipes up to 512 EU/t.",
+		"",
+		"It can also optionally overclock recipes up to 128 EU/t, gaining additional speed for relatively more power."
+	],
+	dependencies: [
+		"45f5a3bb"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "07acb435",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 102"
+		}]
+	}],
+	rewards: [{
+		uid: "5285744f",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

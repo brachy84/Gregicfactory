@@ -1,0 +1,56 @@
+{
+	title: "LV Electrolyzer",
+	icon: "gregtech:machine 1 240",
+	x: -28.0d,
+	y: 10.5d,
+	shape: "square",
+	text: [
+		"§3Electrolyzers§r use electricity to separate items into their more basic components.",
+		"",
+		"For example, you can break down Water into §9Hydrogen Gas§r and §9Oxygen Gas§r, or break down §6Clay Dust§r into §6Sodium Dust§r, §6Silicon Dust§r, §6Lithium Dust§r, and §6Aluminium Dust§r."
+	],
+	dependencies: [
+		"5876c22c"
+	],
+	tasks: [{
+		uid: "1e384334",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 240"
+		}]
+	},
+	{
+		uid: "33f770ac",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 7 2105"
+		}],
+		count: 7L
+	},
+	{
+		uid: "e3b7434f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2001"
+		}]
+	},
+	{
+		uid: "e8706ad3",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2036"
+		}]
+	},
+	{
+		uid: "093c0b23",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2061"
+		}]
+	}],
+	rewards: [{
+		uid: "aa1b74ac",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

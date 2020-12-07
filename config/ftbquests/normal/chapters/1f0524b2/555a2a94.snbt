@@ -1,0 +1,38 @@
+{
+	title: "Ammonia",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "ammonia",
+			Amount: 1000
+		}
+	},
+	x: 24.75d,
+	y: 17.75d,
+	text: [
+		"§9Hydrogen§r and §9Nitrogen§r combine together to make §9Ammonia§r.",
+		"",
+		"An easy way to get Nitrogen is to centrifuge §9Air§r, which will require you to build an §3Air Collector§r. You could also electrolyze §6Saltpeter§r, distill §9Fermented Biomass§r in a §3Distillation Tower§r, or get huge amounts from a §3Cryogenic Air Distillation§r Tower§r."
+	],
+	dependencies: [
+		"1efd8ae4"
+	],
+	tasks: [{
+		uid: "14233d38",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ammonia",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0c1c23fe",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

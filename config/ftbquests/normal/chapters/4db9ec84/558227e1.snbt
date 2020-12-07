@@ -1,0 +1,35 @@
+{
+	title: "Basic Satchel",
+	icon: {
+		id: "thermalexpansion:satchel",
+		tag: {
+			Accessible: 1b
+		}
+	},
+	x: 4.0d,
+	y: 5.0d,
+	text: [
+		"Useful to carry more stuff.",
+		"",
+		"What more explanation are you expecting?"
+	],
+	dependencies: [
+		"de2ebf65"
+	],
+	tasks: [{
+		uid: "1d63f612",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:satchel",
+			tag: {
+				Accessible: 1b
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9e3fa6b0",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

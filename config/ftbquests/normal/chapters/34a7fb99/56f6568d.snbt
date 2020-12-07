@@ -1,0 +1,41 @@
+{
+	title: "Multi-Layer Fiber-Reinforced Epoxy Substrate",
+	icon: "gregtech:meta_item_2 1 32446",
+	x: -18.0d,
+	y: 5.75d,
+	text: [
+		"That's a lot of foil.",
+		"",
+		"These boards are required for §6Quantum§r and §6Crystal Circuits§r, as well as the future basis of §6Wetware Lifesupport Circuit Boards§r. These will get you from tier four to tier eight."
+	],
+	dependencies: [
+		"0fbb94a3"
+	],
+	tasks: [{
+		uid: "fab03421",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 16 19112"
+		}],
+		count: 16L
+	},
+	{
+		uid: "0265cf31",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32446"
+		}]
+	},
+	{
+		uid: "00f486f2",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32034"
+		}]
+	}],
+	rewards: [{
+		uid: "88072c06",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

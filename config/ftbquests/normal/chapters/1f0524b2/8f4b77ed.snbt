@@ -1,0 +1,24 @@
+{
+	title: "Advanced Catalyst",
+	icon: "extendedcrafting:material 1 9",
+	x: 12.75d,
+	y: 20.25d,
+	text: [
+		"Combine several components into a catalyst."
+	],
+	dependencies: [
+		"bfe15562"
+	],
+	tasks: [{
+		uid: "931ee44c",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 9"
+		}]
+	}],
+	rewards: [{
+		uid: "d83d6c74",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

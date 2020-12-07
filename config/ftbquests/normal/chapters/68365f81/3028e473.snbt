@@ -1,0 +1,25 @@
+{
+	title: "Element 046: Palladium",
+	icon: "gregtech:meta_item_1 1 10049",
+	x: -0.5d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e72d4674"
+	],
+	tasks: [{
+		uid: "f878d8ea",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10049"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "7043ca93",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

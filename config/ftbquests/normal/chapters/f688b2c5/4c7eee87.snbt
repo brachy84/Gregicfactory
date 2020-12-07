@@ -1,0 +1,25 @@
+{
+	title: "End Game Tab",
+	icon: "extendedcrafting:singularity_ultimate",
+	x: -4.25d,
+	y: 4.5d,
+	text: [
+		"Take a peek at The §eEnd Game quest book tab§f. This might seem a bit premature to suggest, but it has a reason.",
+		"",
+		"These are quests for a full stack of many of the materials in the game. Those are the materials you'll need to synthesize §5Omnium§r, the basic end game resource. Its the pack's way of letting you know what materials you should be prepared to mass produce as you approach the end.",
+		"",
+		"Of course, its not necessary or even advisable to try to finish up all of these quests the moment they become available. Some will be incredibly easy (like §6Iron§f and §6Copper§f), others will be brutally grindy at early tech levels. The rewards are all the same: §d25 Omnicoins each§f, so use your best judgement on which ones to complete and which to ignore for later."
+	],
+	dependencies: [
+		"cb806892"
+	],
+	tasks: [{
+		uid: "975ce7c5",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "f5c73e1a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	title: "Atomic Reconstructor",
+	icon: "actuallyadditions:block_atomic_reconstructor",
+	x: -12.25d,
+	y: 7.5d,
+	text: [
+		"The §3Atomic Reconstructor§r is the cornerstone of §bActually Additions§r, using Crystal Flux (which automatically converts 1:1 with RF) to change items into other items.",
+		"",
+		"This machine fires a laser out of the front that reconstructs standard materials into special variants.",
+		"",
+		"The machine itself will give you further instructions on how to configure it."
+	],
+	dependencies: [
+		"cdf287fc"
+	],
+	tasks: [{
+		uid: "eb1f7bc5",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_atomic_reconstructor"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f26fbe0f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

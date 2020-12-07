@@ -1,0 +1,28 @@
+{
+	title: "Fluid Terminal",
+	icon: "appliedenergistics2:part 1 520",
+	x: -2.25d,
+	y: 8.25d,
+	text: [
+		"This terminal allows you to interact with fluid storage on your ME Network, like §aFluid Storage Disks§r.",
+		"",
+		"Put fluids in or remove fluids via this terminal with any GUI-compatible container, by clicking on a fluid to fill it, or an empty space to drain into the network.",
+		"",
+		"It's a micropart, so you need to place it on §6ME Cable§r (not a conduit)."
+	],
+	dependencies: [
+		"f93fa897"
+	],
+	tasks: [{
+		uid: "479fa229",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 520"
+		}]
+	}],
+	rewards: [{
+		uid: "e394be23",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

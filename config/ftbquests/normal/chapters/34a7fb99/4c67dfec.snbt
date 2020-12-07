@@ -1,0 +1,28 @@
+{
+	title: "Europium Ingot",
+	icon: "gregtech:meta_item_1 1 10022",
+	x: 0.5d,
+	y: 6.25d,
+	text: [
+		"With a §3Fusion Reactor§r, you can make Europium!",
+		"",
+		"This element is needed for making things in §bDraconic Evolution§r§r, as well as the §6Fusion Reactor Computer Mark 2§r and §6Wetware Processor Arrays§r§r.",
+		"",
+		"You make it by fusing molten §9§9Neodymium§r§r and §9Hydrogen§r."
+	],
+	dependencies: [
+		"b6faaed0"
+	],
+	tasks: [{
+		uid: "e4a784b0",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10022"
+		}]
+	}],
+	rewards: [{
+		uid: "91999e6a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

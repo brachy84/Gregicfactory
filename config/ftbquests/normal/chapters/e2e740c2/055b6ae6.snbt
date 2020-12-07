@@ -1,0 +1,26 @@
+{
+	title: "Item Conduits",
+	icon: "enderio:item_item_conduit",
+	x: -30.5d,
+	y: 3.0d,
+	text: [
+		"Item conduits are useful for moving items between inventories over moderate distances.",
+		"",
+		"Crafting them in an Assembling Machine instead of by hand gives twice as many conduits."
+	],
+	dependencies: [
+		"0782d4be"
+	],
+	tasks: [{
+		uid: "b66e8a42",
+		type: "item",
+		items: [{
+			item: "enderio:item_item_conduit"
+		}]
+	}],
+	rewards: [{
+		uid: "e3f8ceeb",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Advanced Component",
+	icon: "extendedcrafting:material 1 15",
+	x: 12.75d,
+	y: 22.75d,
+	text: [
+		"A common component used by §bExtended Crafting§r."
+	],
+	dependencies: [
+		"153583f1",
+		"c0ba87cd"
+	],
+	tasks: [{
+		uid: "75e90b63",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 15"
+		}]
+	}],
+	rewards: [{
+		uid: "40c24469",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	title: "Ultimate Helmet",
+	icon: "armorplus:the_ultimate_helmet",
+	x: -14.5d,
+	y: 12.5d,
+	text: [
+		"An ultimate helmet, forged from all manner of materials across dimensions and microverses."
+	],
+	dependencies: [
+		"8239c7bf"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "4eb0821f",
+		type: "item",
+		items: [{
+			item: "armorplus:the_ultimate_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

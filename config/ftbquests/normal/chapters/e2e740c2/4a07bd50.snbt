@@ -1,0 +1,25 @@
+{
+	title: "Simulated Mobs",
+	icon: "deepmoblearning:data_model_blank",
+	x: -29.0d,
+	y: 4.25d,
+	text: [
+		"You can combine various items with a §6Blank Data Model§r for a completed §6Data Model§r that you can run inside the §3Simulation Chamber§r."
+	],
+	dependencies: [
+		"5dd236f1"
+	],
+	tasks: [{
+		uid: "3ca2dbd5",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_blank"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b5140558",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

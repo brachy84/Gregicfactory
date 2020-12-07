@@ -1,0 +1,14 @@
+{
+	title: "Early Game",
+	icon: "gregtech:machine 1 515",
+	description: [
+		"Gregtech Medium Voltage Tier: new machines and rudimentary ore processing.",
+		"",
+		"Organic Chemistry for §6Plastics§r, and build a §3Distillation Tower§r.",
+		"",
+		"§bApplied Energistics 2§r automation. Explore §bActually Additions§r."
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

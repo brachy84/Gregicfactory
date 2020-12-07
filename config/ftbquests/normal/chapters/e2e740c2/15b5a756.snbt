@@ -1,0 +1,36 @@
+{
+	title: "Ore Processing for Byproducts",
+	icon: "gregtech:meta_item_1 1 3",
+	x: -28.0d,
+	y: 11.75d,
+	text: [
+		"When you first started the pack, we told you that ore doubling can wait, and that's true... But you will need to start doing some rudimentary ore processing for §ebyproducts§r.",
+		"",
+		"Byproducts are additional materials that can only be obtained from processing ores in certain machines. For example, there is no \"Gallium Ore\". You get §6Gallium§r as a byproduct from processing other ores.",
+		"",
+		"Ores have various means of processing, and eventually you'll use machine pipelines to process ores in specific ways to optimize what byproducts you gain. You can walk through JEI to figure out the path you want for each ore (always look for machine sources of small and tiny piles too).",
+		"",
+		"The relevant machines are as follows:",
+		" ",
+		"- §3Macerator§r: turns ores into §6Crushed Ores§r, Crushed Ores into §6Impure Dusts§r, and §6Purified Crushed Ores§r into §6Pure Dusts§r. Higher tiers of macerators have byproduct slots and gain a chance to get a full pile of byproduct from ores and both types of crushed ores.",
+		"",
+		"- §3Washer§r: cleans Crushed Ores with §9Water§r, making Purified Crushed Ores§r, and a guaranteed 3 tiny piles of byproduct. Using §9Distilled Water§r makes them go faster. This is an improved alternative to dropping dusts in a Cauldron.",
+		"",
+		"- §3Chemical Bath§r: similar to a washer, but uses chemicals to purify the crushed ores. Has a chance to give a full pile of byproducts, often different than what the Washer would give.",
+		"",
+		"- §3§3Centrifuge§r: separates Pure or Impure dusts into the final material, producing a guaranteed 3 tiny piles of byproduct.",
+		"",
+		"- §3Electrolyzer§r: uses power to split compounds into individual elements, sometimes gaining useful byproducts in the proces.",
+		"",
+		"The §3Thermal Centrifuge§r, not to be confused with the regular Centrifuge, can be used for alternative ore processing but is §edreadfully slow and power-hungry§r. No LV form exists, and its primary use is for §bNuclearCraft§r fission fuels.",
+		"",
+		"Your first forays into ore processing for byproducts will be the Electrolyzer and the Centrifuge."
+	],
+	dependencies: [
+		"6faaf0be"
+	],
+	tasks: [{
+		uid: "d39c11d0",
+		type: "checkmark"
+	}]
+}

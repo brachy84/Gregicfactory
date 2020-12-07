@@ -1,0 +1,28 @@
+{
+	title: "Epoxy Production",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "epoxid",
+			Amount: 1000
+		}
+	},
+	x: -18.75d,
+	y: 4.25d,
+	text: [
+		"There are two primary approaches to producing §9Epoxy§r: §9Bisphenol A§r (BPA) and §9Naphtha§r. Both approaches requre §9Epichlorohydrin§r, which itself has a few possible approaches.",
+		"",
+		"Naphtha is the simplest approach, where it is mixed with §9Nitrogen Dioxide§r and Epichlorohydrin to yield Epoxy. This approach is easier but yields less Epoxy. You also forego making more diesel and getting distillation byproducts from Naphtha. If you have an extremely robust §9Oil§r drilling and petrochemistry infrastructure in place, this might be an acceptable choice.",
+		"",
+		"BPA can be produced using petrochemistry distillation products, or via distilling §9Charcoal Byproducts§r from your §3Pyrolyse Oven§r into useful components. Alternatively, you can get §9Phenol§r from §6Coal§r pyrolysis. §9Fermented Biomass§r is also useful to distill as it provides many useful products. Epoxy made from BPA is more complex to set up initially, but also far more efficient.",
+		"",
+		"The final decision is down to you make. Check out recipes in §bJEI§r."
+	],
+	dependencies: [
+		"37b9191b"
+	],
+	tasks: [{
+		uid: "29683bfc",
+		type: "checkmark"
+	}]
+}

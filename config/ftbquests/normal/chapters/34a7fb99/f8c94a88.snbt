@@ -1,0 +1,40 @@
+{
+	title: "Radon",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "radon",
+			Amount: 1000
+		}
+	},
+	x: -23.5d,
+	y: 4.25d,
+	text: [
+		"§9Radon§r will be needed in large quantities.",
+		"",
+		"For now, you'll need to obtain it from Tier Two Micro Miner missions, in the form of §6Radium Salt§r. Electrolyze it for Radon and §6Rock Salt§r.",
+		"",
+		"Later it will be possible to make Radon using a §bGregTech§r §3Fusion Reactor§r."
+	],
+	dependencies: [
+		"2d6ec97a"
+	],
+	tasks: [{
+		uid: "3bacb2ad",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "radon",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3f978271",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Conflux Catalyst",
+	icon: "extendedcrafting:material 1 13",
+	x: 15.5d,
+	y: 24.25d,
+	text: [
+		"An advanced ingredient used for the §aUltimate Extended Crafting Table§r and other late-game recipes."
+	],
+	dependencies: [
+		"57b5de21",
+		"127ed67f"
+	],
+	tasks: [{
+		uid: "e8d6ca86",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 13"
+		}]
+	}],
+	rewards: [{
+		uid: "3c232cc0",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

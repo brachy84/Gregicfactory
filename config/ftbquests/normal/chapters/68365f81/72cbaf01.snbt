@@ -1,0 +1,25 @@
+{
+	title: "Element 006: Carbon",
+	icon: "advancedrocketry:misc 1 1",
+	x: -0.5d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"6faaf0be"
+	],
+	tasks: [{
+		uid: "88cae87c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10012"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "f9671e25",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

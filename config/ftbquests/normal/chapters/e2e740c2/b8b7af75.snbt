@@ -1,0 +1,29 @@
+{
+	title: "ME Chest",
+	icon: "appliedenergistics2:chest",
+	x: -25.0d,
+	y: 16.5d,
+	text: [
+		"The §aME Chest§r is somewhat impractical to use on its own, but it's a necessary ingredient for the much more useful §6ME Drive§r.",
+		"",
+		"This is a rudimentary digital item storage device. By placing a §6Storage Cell§r inside it, you can access the contents as though you were looking through a chest. You can carry the disk to another location and place it down in a different ME Chest if you want, and the items will come with it.",
+		"",
+		"§cDon't put Storage Cells inside other portable mod inventories like a Satchel, (or vice-versa) as you risk corrupting the contents of the Satchel and the Storage Cell.§r There's technical reasons why this happens (NBT overflow), and it's not unique to these items, but that's not really worth going into."
+	],
+	dependencies: [
+		"43c8e0d8",
+		"69941d9f"
+	],
+	tasks: [{
+		uid: "66d522c3",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:chest"
+		}]
+	}],
+	rewards: [{
+		uid: "d93455eb",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

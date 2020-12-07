@@ -1,0 +1,25 @@
+{
+	title: "Battery Buffers",
+	icon: "gregtech:machine 1 617",
+	x: -1.25d,
+	y: 14.25d,
+	text: [
+		"§3Battery Buffers§r are §bGregTech machines§r which can be filled with §aEU Batteries§r to provide §eone amp of power per battery they contain§r. These come in 1§r, 4§r, 9§r, and 16-slot§r variations."
+	],
+	dependencies: [
+		"52cb4227",
+		"9c69b4f0"
+	],
+	tasks: [{
+		uid: "f7812542",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 617"
+		}]
+	}],
+	rewards: [{
+		uid: "ee1cac32",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

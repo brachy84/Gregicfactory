@@ -1,0 +1,24 @@
+{
+	title: "Annealed Copper",
+	icon: "gregtech:meta_item_1 1 10087",
+	x: -23.25d,
+	y: 13.5d,
+	text: [
+		"§6Annealed Copper§r is made in the §3EBF§r by treating §6Copper§r with §9Oxygen§r. It has less power loss than regular Copper when used as a cable, and is also required for more advanced electronic components."
+	],
+	dependencies: [
+		"5d34f8d4"
+	],
+	tasks: [{
+		uid: "c650603c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10087"
+		}]
+	}],
+	rewards: [{
+		uid: "fc7ada1a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

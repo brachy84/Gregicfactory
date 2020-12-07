@@ -1,0 +1,35 @@
+{
+	title: "Neutronium Ingot",
+	icon: "avaritia:resource 1 4",
+	x: 5.5d,
+	y: 11.5d,
+	text: [
+		"§6Neutronium§r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the sun.",
+		"",
+		"Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much.",
+		"",
+		"Neutronium is made from fusing molten §9Naquadria§r, a super-enriched form of §6Naquadah§r, with molten §9Americium§r. These bad boys require a LOT of time to fuse.",
+		"",
+		"Parallelizing fluid crafting is tricky business (and Mark 3 reactors are expensive), but several could be used to speed up the processing. Try to minimize your reactor's downtime and be very careful about supplying your reactors with stable power.",
+		"",
+		"After getting §6Chaotic Fusion Injectors§r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
+	],
+	dependencies: [
+		"c3c474a0",
+		"d3ef1fb8"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "f33a9a00",
+		type: "item",
+		items: [{
+			item: "avaritia:resource 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "749ebfab",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 5
+	}]
+}

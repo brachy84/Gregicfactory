@@ -1,0 +1,74 @@
+{
+	title: "Warp Core",
+	icon: "advancedrocketry:warpcore",
+	x: -32.25d,
+	y: 12.0d,
+	text: [
+		"The §3Warp Core§r is a multiblock structure that you can build on the space station. Use the Holo-Projector for a building guide.",
+		"",
+		"While it's not required for the progression, you can spend some resources to travel to distant planets, either to explore them or just to change the background of your space station.",
+		"",
+		"The Input Hatch must be filled with §6Dilithium§r."
+	],
+	dependencies: [
+		"e93e0ec4",
+		"a4dc0517"
+	],
+	tasks: [{
+		uid: "0303f123",
+		type: "item",
+		items: [{
+			item: "libvulpes:holoprojector"
+		}]
+	},
+	{
+		uid: "b5c32ab0",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:warpmonitor"
+		}]
+	},
+	{
+		uid: "a908118b",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:warpcore"
+		}]
+	},
+	{
+		uid: "11ed5eab",
+		type: "item",
+		items: [{
+			item: "gregtech:compressed_3 15 10"
+		}],
+		count: 15L
+	},
+	{
+		uid: "01d76a3b",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_block 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "a7a9c1fc",
+		type: "item",
+		items: [{
+			item: "libvulpes:structuremachine 4"
+		}],
+		count: 4L
+	},
+	{
+		uid: "7cd5e7aa",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch"
+		}]
+	}],
+	rewards: [{
+		uid: "05c9e7ec",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

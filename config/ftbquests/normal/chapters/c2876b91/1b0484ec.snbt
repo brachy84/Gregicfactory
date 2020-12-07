@@ -1,0 +1,25 @@
+{
+	title: "Nichrome Coil Blocks",
+	icon: "gregtech:wire_coil 1 2",
+	x: -23.0d,
+	y: 5.0d,
+	text: [
+		"§6Nichrome§r is the third coil material available, increasing your EBF's operating temperature to 3600K so it can process more advanced materials."
+	],
+	dependencies: [
+		"5adba393"
+	],
+	tasks: [{
+		uid: "7e5ee159",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 16 2"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "22aaa408",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

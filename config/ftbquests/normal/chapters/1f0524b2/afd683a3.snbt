@@ -1,0 +1,29 @@
+{
+	title: "Quantum Flux",
+	icon: "contenttweaker:quantumflux",
+	x: 23.25d,
+	y: 25.5d,
+	text: [
+		"Very fluxy.",
+		"",
+		"A reagent used in the majority of §6Micro Miner§r missions.",
+		"",
+		"There are several ways to produce §6Quantum Flux§r. All are viable, so figure out which one works best for you."
+	],
+	dependencies: [
+		"d000b2b8",
+		"3044276d"
+	],
+	tasks: [{
+		uid: "ea0c0997",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quantumflux"
+		}]
+	}],
+	rewards: [{
+		uid: "b38392f7",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

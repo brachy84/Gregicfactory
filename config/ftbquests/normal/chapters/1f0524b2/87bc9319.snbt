@@ -1,0 +1,38 @@
+{
+	title: "I Don't Like Space",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "deuterium",
+			Amount: 1000
+		}
+	},
+	x: 20.75d,
+	y: 24.25d,
+	text: [
+		"Space exploration isn't mandatory in this pack, so if you don't feel like exploring space with §bAdvanced Rocketry§r, then you can centrifuge §9Hydrogen§r for §eDeuterium§r instead.",
+		"",
+		"Just keep in mind that it's much less rewarding to skip this and you'll need lots of Hydrogen to compensate, although you won't need too much for the first §3Microverse Projector§r."
+	],
+	dependencies: [
+		"7d634f43"
+	],
+	tasks: [{
+		uid: "ace3cbe6",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "deuterium",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e68ab13b",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

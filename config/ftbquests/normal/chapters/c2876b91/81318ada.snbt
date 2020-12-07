@@ -1,0 +1,28 @@
+{
+	title: "Canola Press",
+	icon: "actuallyadditions:block_canola_press",
+	x: -16.0d,
+	y: 1.5d,
+	text: [
+		"The §3Canola Press§r is a machine that uses RF power to extract §9Canola Oil§r from §6Canola§r.",
+		"",
+		"Canola Oil can be turned into §9Glycerol§r and §9Bio Diesel§r in a §3Chemical Reactor§r.",
+		"",
+		"Refining, Crystallizing, or Empowering the Canola Oil first allows you to make Glycerol and Bio Diesel more efficiently."
+	],
+	dependencies: [
+		"851649b0"
+	],
+	tasks: [{
+		uid: "0bc4e80c",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_canola_press"
+		}]
+	}],
+	rewards: [{
+		uid: "90220eb0",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

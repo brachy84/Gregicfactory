@@ -1,0 +1,26 @@
+{
+	title: "64k Item Storage",
+	icon: "appliedenergistics2:material 1 38",
+	x: -3.5d,
+	y: 12.75d,
+	text: [
+		"The ultimate item storage component in §bApplied Energistics§r.",
+		"",
+		"Used for storing really big amounts of things, like in a §664k ME Storage Cell§r."
+	],
+	dependencies: [
+		"6cb60a9c"
+	],
+	tasks: [{
+		uid: "7ae8dc2b",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 38"
+		}]
+	}],
+	rewards: [{
+		uid: "fcfad571",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

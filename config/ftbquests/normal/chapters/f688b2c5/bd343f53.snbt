@@ -1,0 +1,45 @@
+{
+	title: "Electronics Subcomponents",
+	icon: "gregtech:meta_item_2 1 32455",
+	x: 1.25d,
+	y: 11.25d,
+	shape: "square",
+	text: [
+		"A \"§esubstrate§f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. §6Wood§r coated in §6Sticky Resin§r is a primitive but effective material to use as your first substrate.",
+		"",
+		"You'll also need to make §6Vacuum Tubes§f, as well as some primitive §6Resistors§r. §6Paper§r will work as a material for these, for now.",
+		"",
+		"Make sure to code these recipes into a §3Worktable§r... you'll be making a LOT of these things."
+	],
+	dependencies: [
+		"dbdc0ac3"
+	],
+	tasks: [{
+		uid: "04bb84fd",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 2 32455"
+		}],
+		count: 2L
+	},
+	{
+		uid: "401a173b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 2 32450"
+		}],
+		count: 2L
+	},
+	{
+		uid: "f512c46b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32443"
+		}]
+	}],
+	rewards: [{
+		uid: "1c9a1faa",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

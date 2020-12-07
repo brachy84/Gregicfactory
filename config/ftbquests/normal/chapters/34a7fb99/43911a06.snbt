@@ -1,0 +1,27 @@
+{
+	title: "Ultimate Extended Crafting Table",
+	icon: "extendedcrafting:table_ultimate",
+	x: -16.125d,
+	y: 11.625d,
+	text: [
+		"This is the largest Extended Crafting Table, capable of handling 9x9 recipes."
+	],
+	dependencies: [
+		"d86859f4",
+		"2f01eb55",
+		"0c670157"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "5153d7cc",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:table_ultimate"
+		}]
+	}],
+	rewards: [{
+		uid: "3e454997",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

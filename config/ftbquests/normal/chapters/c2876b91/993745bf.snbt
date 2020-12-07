@@ -1,0 +1,34 @@
+{
+	title: "Mana Infused Ingot",
+	icon: "thermalfoundation:material 1 136",
+	x: -36.0d,
+	y: 5.5d,
+	text: [
+		"Mixing §6Titanium§r with §6Mana Dust§r creates §6Mana Infused Metal Dust§r. This can be smelted into ingots in an §3Electric Blast Furnace§r equipped with §6Kanthal Coils§r or better.",
+		"",
+		"Mana Infused Metal is the basis of §bThermal Expansion§r device casings, and is used for many advanced §aAugments§r."
+	],
+	dependencies: [
+		"5fece526",
+		"fb55c41e"
+	],
+	tasks: [{
+		uid: "e154ddba",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 72"
+		}]
+	},
+	{
+		uid: "54aee763",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 136"
+		}]
+	}],
+	rewards: [{
+		uid: "de90cfb1",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

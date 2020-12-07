@@ -1,0 +1,24 @@
+{
+	title: "Claim Your Chunks and Invite Teammates!",
+	icon: "extrautils2:chunkloader",
+	x: -7.75d,
+	y: 7.25d,
+	text: [
+		"You might be wondering what chunkloading options there are in the pack.",
+		"",
+		"Open your inventory and look at the top-left corner of the screen. Click the map-looking icon called §eClaimed Chunks§r.",
+		"",
+		"§6Click a chunk§r to claim it as yours. This will prevent unwanted creeper explosions and other players from interacting with your base.",
+		"",
+		"§6Shift-left click a claimed chunk§r to load it. This will ensure that the chunk is loaded at all times, even when you're not there. Alternatively, there are §achunk-loading wards§f from §bExtra Utilities§f.",
+		"",
+		"§eIf you're playing on a server with custom settings, ask the server owner what methods are available§f.",
+		"",
+		"To invite players to your §bFTB Utils§f party, look for a corresponding button in the same corner. Parties share claimed chunks with each other. You can configure permissions for your party's claimed chunks in the party settings menu."
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "9ca7fa8e",
+		type: "checkmark"
+	}]
+}

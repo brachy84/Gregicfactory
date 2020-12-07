@@ -1,0 +1,25 @@
+{
+	title: "Basalz Powder",
+	icon: "thermalfoundation:material 1 2053",
+	x: -36.0d,
+	y: 1.75d,
+	text: [
+		"Bits of a §6Basalz Rod§r. Using a §3Macerator§r doubles your yield."
+	],
+	dependencies: [
+		"1afe02e2",
+		"ce20731a"
+	],
+	tasks: [{
+		uid: "2ea4a525",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 2053"
+		}]
+	}],
+	rewards: [{
+		uid: "59a0ee90",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

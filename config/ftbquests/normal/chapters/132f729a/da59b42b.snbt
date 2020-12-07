@@ -1,0 +1,25 @@
+{
+	title: "The Second Tier Three Circuits",
+	icon: "contenttweaker:refinedprocessorarray",
+	x: -18.0d,
+	y: 16.5d,
+	text: [
+		"Marginally cheaper to make than §6Electronic Processor Arrays§r, and also the only way to make §6Refined Processor Mainframes§r, which is the first Tier Four circuit."
+	],
+	dependencies: [
+		"906e6c13",
+		"6c67f55a"
+	],
+	tasks: [{
+		uid: "19edbb71",
+		type: "item",
+		items: [{
+			item: "contenttweaker:refinedprocessorarray"
+		}]
+	}],
+	rewards: [{
+		uid: "fa4901d8",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Furnace v3.0",
+	icon: "morefurnaces:furnaceblock 1 5",
+	x: 5.75d,
+	y: 5.0d,
+	text: [
+		"§3Copper Furnaces§f are another step up in speed, taking §a100 ticks§f to smelt an item."
+	],
+	dependencies: [
+		"6eebdc21"
+	],
+	tasks: [{
+		uid: "5e3427e5",
+		type: "item",
+		items: [{
+			item: "morefurnaces:furnaceblock 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "a9fba839",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Machine Block",
+	icon: "extrautils2:machine",
+	x: -12.25d,
+	y: 4.5d,
+	text: [
+		"The §6Machine Block§r is the first step into a mod called §bExtra Utilities 2§r."
+	],
+	dependencies: [
+		"24e960a2"
+	],
+	tasks: [{
+		uid: "a1ad9a12",
+		type: "item",
+		items: [{
+			item: "extrautils2:machine"
+		}]
+	}],
+	rewards: [{
+		uid: "8976852a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

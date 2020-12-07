@@ -1,0 +1,25 @@
+{
+	title: "Enderium Ingots",
+	icon: "thermalfoundation:material 1 167",
+	x: -13.75d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e3c1255f"
+	],
+	tasks: [{
+		uid: "9e1a4df6",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 64 167"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "c9530626",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

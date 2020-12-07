@@ -1,0 +1,38 @@
+{
+	title: "Ethenone",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "ethenone",
+			Amount: 1000
+		}
+	},
+	x: -13.75d,
+	y: 1.75d,
+	text: [
+		"§9Acetic Acid§r and §9Sulfuric Acid§r make §9Ethenone§r.",
+		"",
+		"Or you can heat §9Acetone§r, or a few other approaches. Check out §bJEI§r for the various options."
+	],
+	dependencies: [
+		"3b715a81"
+	],
+	tasks: [{
+		uid: "9a761302",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ethenone",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9b7fdc1d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

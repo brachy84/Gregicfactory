@@ -1,0 +1,26 @@
+{
+	title: "Fine Copper Wire",
+	icon: "gregtech:meta_item_2 1 16018",
+	x: -36.0d,
+	y: 11.75d,
+	text: [
+		"Now that you have a §3Wiremill§r, you can turn one §6Copper Wire§r into four §6Fine Copper Wire§r. The recipes for §6Resistors§r, §6LV Motors§r and §6Vacuum Tubes§r all accept either type, so doing this extra processing step will make your §6Copper Ingots§r go §efour times further§r when making circuits.",
+		"",
+		"You'll be making a lot more circuits from here on out, so its definitely worthwhile to save your copper!"
+	],
+	dependencies: [
+		"5876c22c"
+	],
+	tasks: [{
+		uid: "03ef809c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 16018"
+		}]
+	}],
+	rewards: [{
+		uid: "8397d150",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

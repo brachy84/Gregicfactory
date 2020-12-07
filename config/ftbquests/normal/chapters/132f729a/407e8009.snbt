@@ -1,0 +1,40 @@
+{
+	title: "Soldering Alloy",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "soldering_alloy",
+			Amount: 1000
+		}
+	},
+	x: -19.25d,
+	y: 2.75d,
+	text: [
+		"When making circuits, you'll need either molten §9Tin§r, or molten §9Soldering Alloy§r§r§r in the §3Assembling Machine§r. Soldering Alloy is made in the §3Alloy Smelter§r with a 9:1 ratio of §6Tin Ingots§r to §6Antimony Dust§r. You then process it in a §3Fluid Extractor §rfor the usual 144mB of fluid per ingot.",
+		"",
+		"The Assembling Machine will only consume half as much Soldering Alloy as it would have consumed molten Tin per craft (72mB vs 144mB), so it's very efficient to use this stuff.",
+		"",
+		"Put your §3Centrifuge§r to work for the §6Antimony§r you'll need, which comes in tiny piles from processing §6Tetrahedrite Ore§r and §6Stibnite Ore§r."
+	],
+	dependencies: [
+		"7d634f43"
+	],
+	tasks: [{
+		uid: "cab62acb",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "soldering_alloy",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2a3a8783",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "Infinity Leggings",
+	icon: "avaritia:infinity_pants",
+	x: -6.125d,
+	y: 14.625d,
+	text: [
+		"Leggings to surpass the ultimate, forged with the hearts of stars and the raw fury of the universe."
+	],
+	dependencies: [
+		"dd140658",
+		"0bb55ea0"
+	],
+	size: 2.5d,
+	tasks: [{
+		uid: "34671bba",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_pants"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

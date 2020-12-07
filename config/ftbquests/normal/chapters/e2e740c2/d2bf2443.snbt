@@ -1,0 +1,27 @@
+{
+	title: "LV Fluid Extractor",
+	icon: "gregtech:machine 1 320",
+	x: -34.75d,
+	y: 7.25d,
+	text: [
+		"§3Fluid Extractors§r are useful for melting things into liquids. For example, you can melt down ingots into molten metals, or §6Rubber Sheets§r into liquid §9Rubber§r.",
+		"",
+		"When you have access to §6Steel§r, you can make molds and use §3Fluid Solidifiers§r to form various components more efficiently from fluids, like §6Gears§r."
+	],
+	dependencies: [
+		"399fa177",
+		"b42c2f03"
+	],
+	tasks: [{
+		uid: "f923c5de",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 300"
+		}]
+	}],
+	rewards: [{
+		uid: "ccf02e52",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	title: "Reinforced Jetpack",
+	icon: {
+		id: "simplyjetpacks:itemjetpack",
+		tag: {
+			Energy: 0,
+			JetpackParticleType: 0
+		},
+		Damage: 12s
+	},
+	x: -29.25d,
+	y: 11.5d,
+	text: [
+		"Even better flying.",
+		"",
+		"You're not getting up to Resonant for a long time, just FYI."
+	],
+	dependencies: [
+		"83bb5c4f"
+	],
+	tasks: [{
+		uid: "5de8c49c",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			tag: {
+				Energy: 0,
+				JetpackParticleType: 0
+			},
+			Damage: 12s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f1fb3ad2",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

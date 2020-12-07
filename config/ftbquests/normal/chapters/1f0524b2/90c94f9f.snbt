@@ -1,0 +1,25 @@
+{
+	title: "Elite Component",
+	icon: "extendedcrafting:material 1 16",
+	x: 12.75d,
+	y: 25.5d,
+	text: [
+		"A component used for more advanced items related to §bExtended Crafting§r."
+	],
+	dependencies: [
+		"153583f1",
+		"c0ba87cd"
+	],
+	tasks: [{
+		uid: "e05314b2",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 16"
+		}]
+	}],
+	rewards: [{
+		uid: "5b431146",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

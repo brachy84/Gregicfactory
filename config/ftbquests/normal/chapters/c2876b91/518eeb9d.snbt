@@ -1,0 +1,29 @@
+{
+	title: "Basic Reactor Plating",
+	icon: "nuclearcraft:part",
+	x: -18.75d,
+	y: 6.5d,
+	text: [
+		"§6Steel Heavy Plating§r can be augmented with §6Tungsten Plates§r and §6Tough Alloy§r to make §6Basic Reactor Plating§r.",
+		"",
+		"That's right-- it's time to get into §bNuclearCraft§r.",
+		"",
+		"Tough Alloy is a couple steps to get to, but nothing too serious. Check §bJEI§r for more details."
+	],
+	dependencies: [
+		"77df52fd",
+		"b3fb6135"
+	],
+	tasks: [{
+		uid: "55b7daaf",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:part"
+		}]
+	}],
+	rewards: [{
+		uid: "677ef6a0",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

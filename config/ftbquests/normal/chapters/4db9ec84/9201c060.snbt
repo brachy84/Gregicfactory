@@ -1,0 +1,15 @@
+{
+	title: "UHV Circuit...s?",
+	icon: "gregtech:machine_casing 1 9",
+	x: 1.0416666666666667d,
+	y: 16.25d,
+	text: [
+		"Congratulations! You've reached the end of the circuit progression.",
+		"",
+		"The only UHV circuit is the §6Wetware Mainframe§r, which is used for crafting high-tier micro miners among some endgame stuff."
+	],
+	dependencies: [
+		"25b6083d"
+	],
+	size: 0.8333333333333334d
+}

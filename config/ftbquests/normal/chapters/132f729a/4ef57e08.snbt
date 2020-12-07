@@ -1,0 +1,25 @@
+{
+	title: "Octadic Capacitor",
+	icon: "enderio:item_basic_capacitor 1 2",
+	x: -11.75d,
+	y: 16.75d,
+	text: [
+		"A pair of §6Double-Layer RF Capacitors§r combined with some §6Vibrant Alloy§r and §6Glowstone§r creates an §6Octadic RF Capacitor§r, which is a tier three §bEnderIO§r capacitor."
+	],
+	dependencies: [
+		"906e6c13",
+		"7a456b90"
+	],
+	tasks: [{
+		uid: "dae01bf2",
+		type: "item",
+		items: [{
+			item: "enderio:item_basic_capacitor 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "f0ff5fce",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

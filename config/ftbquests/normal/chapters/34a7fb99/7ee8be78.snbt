@@ -1,0 +1,32 @@
+{
+	title: "Tier Six Micro Miner",
+	icon: "contenttweaker:tiersixship",
+	x: -9.0d,
+	y: 11.0d,
+	text: [
+		"The Sixth Micro Miner.",
+		"",
+		"The first decent source of §6Dragon Eggs§r and §6Stabilized Einsteinium§r.",
+		"",
+		"Is also useful for:",
+		"§6* Uranium 238 Ore",
+		"* Iridium Ore",
+		"* Osmium Ore"
+	],
+	dependencies: [
+		"e9f407a4"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "4ca52f16",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tiersixship"
+		}]
+	}],
+	rewards: [{
+		uid: "cf6e0e97",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Carbon Fibers",
+	icon: "gregtech:meta_item_2 1 32504",
+	x: -30.0d,
+	y: 13.0d,
+	text: [
+		"§6Carbon Fibers§r are useful for a variety of things.",
+		"",
+		"To make them, you should use an §3HV Autoclave§r or better to ensure a 100% chance of producing them, as they are a chanced output with a base success rate of 85% at MV.",
+		"",
+		"Because they are a chanced output, you also need to §etake care not to let this machine's output fill up: it will continue to process, §cvoiding any outputs §ethere isn't room for!"
+	],
+	dependencies: [
+		"e72d4674"
+	],
+	tasks: [{
+		uid: "8bc298c3",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32504"
+		}]
+	}],
+	rewards: [{
+		uid: "515d5ba5",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Energetic Alloy",
+	icon: "enderio:item_alloy_ingot 1 1",
+	x: -31.75d,
+	y: 16.5d,
+	shape: "square",
+	text: [
+		"An §bEnderIO§r alloy, made from §6Energetic Blend§r and a §6Gold Ingot§r in your new §3Electric Blast Furnace§r.",
+		"",
+		"Throw both ingredients into the input bus and in twenty seconds your §6Energetic Alloy Ingot§r will be in the output bus."
+	],
+	dependencies: [
+		"5d34f8d4",
+		"aa8d3d75"
+	],
+	tasks: [{
+		uid: "bc851d11",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "e86c4091",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

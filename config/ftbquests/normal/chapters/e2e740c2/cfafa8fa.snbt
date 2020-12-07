@@ -1,0 +1,27 @@
+{
+	title: "Basic Capacitors",
+	icon: "enderio:item_basic_capacitor",
+	x: -26.75d,
+	y: 9.25d,
+	shape: "square",
+	text: [
+		"The first tier of §6capacitors§r. These (or stronger versions) are required to make §bEnderIO§r machines run. They're also used as components in a variety of recipes.",
+		"",
+		"Higher tier capacitors will significantly increase the speed at which these machines operate, among other machine-specific properties."
+	],
+	dependencies: [
+		"e0c73d4f"
+	],
+	tasks: [{
+		uid: "7bc7069e",
+		type: "item",
+		items: [{
+			item: "enderio:item_basic_capacitor"
+		}]
+	}],
+	rewards: [{
+		uid: "f1374eb0",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,41 @@
+{
+	title: "Rubber Soft Hammer",
+	icon: {
+		id: "gregtech:meta_tool",
+		tag: {
+			GT.ToolStats: {
+				PrimaryMaterial: "darmstadtium",
+				HandleMaterial: "darmstadtium"
+			}
+		},
+		Damage: 7s
+	},
+	x: 4.0d,
+	y: 6.75d,
+	text: [
+		"A §aRubber Soft Hammer§f can be used to temporarily stop a machine from functioning. This is useful when you have two machines running and both are unable to keep going because of a lack of power... let one finish then turn the other one back on with a second hit from the hammer."
+	],
+	dependencies: [
+		"9f7f4a71"
+	],
+	tasks: [{
+		uid: "e39cb50a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 6 12152"
+		}],
+		count: 6L
+	},
+	{
+		uid: "50eb8ad2",
+		type: "item",
+		items: [{
+			item: "minecraft:stick"
+		}]
+	}],
+	rewards: [{
+		uid: "e0c1524d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

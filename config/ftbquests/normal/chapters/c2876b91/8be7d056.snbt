@@ -1,0 +1,70 @@
+{
+	title: "Cryogenic Air Distillation",
+	icon: "modularmachinery:blockcontroller",
+	x: -20.5d,
+	y: 2.5d,
+	text: [
+		"§9Air§r can be sent into the §3Vacuum Freezer§r to turn it into §9Liquid Air§r.",
+		"",
+		"Liquid Air can be sent into a §3Cryogenic Distillation Tower§r to break it down into its components. Keep in mind that Modular Machines output fluids into the first Fluid Hatch possible, so expect outputs appearing in different hatches every time.",
+		"",
+		"Note that despite accepting EU power, §nModular Machines will not overclock§r.",
+		"",
+		"It's also highly advised to feed the tower FE (RF) instead of EU due to Modular Machines having issues with disconnecting from EU cables sometimes."
+	],
+	dependencies: [
+		"7d99a4cf",
+		"36927365"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "aeed3838",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "93e0567d",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 52 3"
+		}],
+		count: 52L
+	},
+	{
+		uid: "b3be2c05",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 84 4"
+		}],
+		count: 84L
+	},
+	{
+		uid: "b84e94f8",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockfluidoutputhatch 5 3"
+		}],
+		count: 5L
+	},
+	{
+		uid: "2489c503",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockenergyinputhatch 1 2"
+		}]
+	},
+	{
+		uid: "e5e4d1b7",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockfluidinputhatch 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "44d3cf43",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

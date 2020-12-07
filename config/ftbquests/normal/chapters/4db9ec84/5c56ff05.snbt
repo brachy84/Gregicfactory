@@ -1,0 +1,15 @@
+{
+	title: "What is This?",
+	icon: "minecraft:book",
+	x: -7.75d,
+	y: 4.25d,
+	text: [
+		"The Progression tab was added so you can keep track of the important bits of the pack.",
+		"",
+		"Circuits are the baseline of the entire Omnifactory progression, so keep climbing!"
+	],
+	tasks: [{
+		uid: "3e1f0822",
+		type: "checkmark"
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "Hot Titanium",
+	icon: "gregtech:meta_item_1 1 11072",
+	x: -32.25d,
+	y: 4.25d,
+	text: [
+		"Combining §9Titanium Tetrachloride§r with §6Magnesium§r in an §3Electric Blast Furnace§r (approximating the Kroll process) will net you your first Titanium.",
+		"",
+		"Unfortunately, it is super hot. You'll need to cool it in a §3Vacuum Freezer§r for it to be usable.",
+		"",
+		"If you are autocrafting on-demand, it's better to not have your ME network know about this intermediate state. Outputting the §6Hot Titanium Ingot§r directly into a Vacuum Freezer avoids extra computations and item types.",
+		"",
+		"If you absolutely insist on putting hot ingots in your network, you'll have to manually encode the §aPattern§r with an ingot that §cdamages you while you hold it§r. Your call."
+	],
+	dependencies: [
+		"d09cd658"
+	],
+	tasks: [{
+		uid: "72ae64cf",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "958e0fd1",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

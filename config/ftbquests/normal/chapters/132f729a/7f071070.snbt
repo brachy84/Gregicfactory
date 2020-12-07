@@ -1,0 +1,37 @@
+{
+	title: "Keeping Stuff In Stock",
+	icon: "appliedenergistics2:part 1 220",
+	x: -5.75d,
+	y: 11.5d,
+	text: [
+		"If you didn't know, you can have stacks of items stored inside of an §aME Interface§r. Placing a §aStorage Bus§r onto the ME Interface lets you access and use those items in recipes. Putting a §aCrafting Card§r inside the Interface will let the Interface automatically place autocraft orders for items it should stock but you don't have.",
+		"",
+		"This approach can be used for autocrafting to some extent, but proceed with caution as crafting cards can produce a great deal of lag on larger ME Networks. AE calculates the full crafting tree of these items every time a request is made, even if you have enough items already in stock.",
+		"",
+		"Thus, it is strongly recommended to limit Crafting Cards to simple recipes (ones without many dependent recipes) and ideally on smaller purpose-built networks. ",
+		"",
+		"Prefer passive autocrafting methods on your main network, or if things are gonna get complicated."
+	],
+	dependencies: [
+		"333269ca"
+	],
+	tasks: [{
+		uid: "db96c39e",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 220"
+		}]
+	},
+	{
+		uid: "69262886",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 53"
+		}]
+	}],
+	rewards: [{
+		uid: "41218af4",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

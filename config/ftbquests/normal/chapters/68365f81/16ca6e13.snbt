@@ -1,0 +1,25 @@
+{
+	title: "Element 015: Phosphorus",
+	icon: "gregtech:meta_item_1 1 2050",
+	x: -5.5d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"efbd3ce5"
+	],
+	tasks: [{
+		uid: "e4a56589",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 2050"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "f8ea0631",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

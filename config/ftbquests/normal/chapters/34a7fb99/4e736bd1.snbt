@@ -1,0 +1,40 @@
+{
+	title: "Sterilized Growth Medium",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "raw_growth_medium",
+			Amount: 1000
+		}
+	},
+	x: -9.0d,
+	y: 13.5d,
+	text: [
+		"§9Sterilized Growth Medium§r is needed for §6Wetware Circuits§r.",
+		"",
+		"You'll need to mix §6Mincemeat§r, §6Sugar§r, and §6Tiny piles of Salt§r with water in a mixer to make §9Raw Growth Medium§r, then use a §3Fluid Heater§r to sterilize it.",
+		"",
+		"Mincemeat comes from pulverizing any kind of animal meat. A §aPowered Spawner§r might be useful for this endeavor."
+	],
+	dependencies: [
+		"37b61998"
+	],
+	tasks: [{
+		uid: "8b422a54",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sterilized_growth_medium",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0244f207",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

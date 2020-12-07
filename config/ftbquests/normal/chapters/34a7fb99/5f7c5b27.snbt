@@ -1,0 +1,40 @@
+{
+	title: "Exquisite Gems",
+	icon: "gregtech:meta_item_2 1 25113",
+	x: -21.75d,
+	y: 8.5d,
+	text: [
+		"§6Exquisite Gems§r are mostly needed for crafting special materials.",
+		"",
+		"If you don't need them for that though, they can be cut through two cycles in a §3Cutting Machine§r into eight of the basic version of that gem."
+	],
+	dependencies: [
+		"b33f944e"
+	],
+	tasks: [{
+		uid: "98aba9ff",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 25113"
+		}]
+	},
+	{
+		uid: "383c7429",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 25111"
+		}]
+	},
+	{
+		uid: "f730697b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 25154"
+		}]
+	}],
+	rewards: [{
+		uid: "8d7bc5a9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

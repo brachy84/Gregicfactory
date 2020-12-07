@@ -1,0 +1,40 @@
+{
+	title: "MV Lossless Cables",
+	icon: "gregtech:cable 1 701",
+	x: -14.0d,
+	y: 2.75d,
+	text: [
+		"§bEnderIO§r and §bThermal§r alloys are a bit more expensive than the normal wires, but they come with the huge advantage of being §elossless§r. Lossy cables like §6Tin§r and §6Copper§r will bleed out energy for every block they travel, but lossless ones do not.",
+		"",
+		"The lossless cables for each tier are:",
+		"",
+		"LV - Conductive Iron Cables",
+		"MV - Energetic Alloy Cables",
+		"HV - Vibrant Alloy Cables",
+		"EV - End Steel Cables",
+		"IV - Lumium Cables",
+		"LuV   - Signalum Cables",
+		"ZPMV - Enderium Cables",
+		"UV     - Draconium Cables",
+		"MaxV - Omnium Cables",
+		"",
+		"MV and higher cables are made in an §3Assembling Machine§r. They're made with liquid §9Rubber§r and §6Wires§r, plus a reusable §6Programmed Circuit§r that tells it what thickness of wire to make.",
+		"",
+		"You can use Wires, and for these materials they'll conduct just as well as if they were covered. But they'll §ckill you if you touch them while power is passing through§r, so... yeah. Your call."
+	],
+	dependencies: [
+		"da5679a0"
+	],
+	tasks: [{
+		uid: "46daabb3",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 1 701"
+		}]
+	}],
+	rewards: [{
+		uid: "1249655c",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	title: "GP Generation",
+	icon: "extrautils2:passivegenerator 1 5",
+	x: 8.5d,
+	y: 25.5d,
+	text: [
+		"§6Stoneburnt§r is a key ingredient in crafting many things from Extra Utilities.",
+		"",
+		"Besides the Manual Mill, there are multiple ways to generate GP. Look up \"Mill\" in JEI for all possible mills.",
+		"",
+		"Note that the individual generators have been balanced differently than normal, so take that into account before building 16 Water Mills. It is a good idea to use several different kinds due to §bExtra Utilities§r implementing diminishing returns to prevent spamming one kind of Mill."
+	],
+	dependencies: [
+		"c0dfa945"
+	],
+	tasks: [{
+		uid: "03580c53",
+		type: "item",
+		items: [{
+			item: "extrautils2:decorativesolid 4 3"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "6cf1fb15",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

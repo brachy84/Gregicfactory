@@ -1,0 +1,25 @@
+{
+	title: "High Speed Steel Type S Ingots",
+	icon: "gregtech:meta_item_1 1 10304",
+	x: -13.75d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"36927365"
+	],
+	tasks: [{
+		uid: "729e2527",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10304"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "1d593187",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

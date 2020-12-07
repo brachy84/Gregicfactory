@@ -1,0 +1,34 @@
+{
+	title: "Crafting Units",
+	icon: "appliedenergistics2:crafting_unit",
+	x: -7.0d,
+	y: 11.5d,
+	text: [
+		"Autocrafting at last.",
+		"",
+		"Well, you need patterns too I guess."
+	],
+	dependencies: [
+		"f93fa897",
+		"1dca041d"
+	],
+	tasks: [{
+		uid: "51f69ddd",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:molecular_assembler"
+		}]
+	},
+	{
+		uid: "4fd2237a",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:crafting_unit"
+		}]
+	}],
+	rewards: [{
+		uid: "221386cc",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	title: "HV Circuits",
+	icon: "gregtech:machine_casing 1 3",
+	x: -6.458333333333334d,
+	y: 8.75d,
+	text: [
+		"Circuits along this line are HV, and can all be substituted in recipes.",
+		"",
+		"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+	],
+	dependencies: [
+		"6e367d6f",
+		"da59b42b",
+		"b33f8563",
+		"65abd144"
+	],
+	size: 0.8333333333333334d
+}

@@ -1,0 +1,28 @@
+{
+	title: "Experience Obelisk",
+	icon: "enderio:block_experience_obelisk",
+	x: -23.0d,
+	y: 9.25d,
+	text: [
+		"The §3Experience Obelisk§r is a mass storage device for player experience in the form of §9Liquid XP§r.",
+		"",
+		"Via the GUI you can insert or extract levels as needed, as well as configure interactions with neighboring blocks (as is typical of §bEnderIO§r machines).",
+		"",
+		"Liquid XP can also be pumped in directly from your automation such as §3Fluid Extractors§r."
+	],
+	dependencies: [
+		"c17ebb53"
+	],
+	tasks: [{
+		uid: "d0a550ff",
+		type: "item",
+		items: [{
+			item: "enderio:block_experience_obelisk"
+		}]
+	}],
+	rewards: [{
+		uid: "97e0e4de",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

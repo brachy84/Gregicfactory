@@ -1,0 +1,29 @@
+{
+	title: "Sodium Hydroxide",
+	icon: "gregtech:meta_item_1 1 2373",
+	x: -17.5d,
+	y: 3.5d,
+	text: [
+		"§6Sodium Hydroxide§r is an ingredient in §9Bio Diesel§r.",
+		"",
+		"The primary sources are:",
+		"",
+		"- Combining §9Water§r and §6Sodium§r in a §3Chemical Reactor§r (also a good source of §9Hydrogen§r)",
+		"- Splitting §9Salt Water§r in an §3Electrolyzer§r (also the best source of §9Chlorine§r)."
+	],
+	dependencies: [
+		"28f8483e"
+	],
+	tasks: [{
+		uid: "0f992553",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2373"
+		}]
+	}],
+	rewards: [{
+		uid: "4a9812ee",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

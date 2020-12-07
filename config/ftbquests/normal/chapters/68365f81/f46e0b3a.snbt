@@ -1,0 +1,25 @@
+{
+	title: "Blue Steel Ingots",
+	icon: "gregtech:meta_item_1 1 10233",
+	x: -12.75d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"5d34f8d4"
+	],
+	tasks: [{
+		uid: "d6d8e89a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10233"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "bcf4b8c1",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

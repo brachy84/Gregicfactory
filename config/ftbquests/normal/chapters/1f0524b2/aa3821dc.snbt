@@ -1,0 +1,37 @@
+{
+	title: "Phosphoric Acid",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "phosphoric_acid",
+			Amount: 1000
+		}
+	},
+	x: 11.25d,
+	y: 21.25d,
+	text: [
+		"§9Phosphorus§r, §9Oxygen§r, and §9Water§r combine together into §9Phosphoric Acid§r."
+	],
+	dependencies: [
+		"efbd3ce5"
+	],
+	tasks: [{
+		uid: "c2585ee7",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "phosphoric_acid",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "18944540",
+		type: "item",
+		item: "contenttweaker:omnicoin5",
+		count: 2
+	}]
+}

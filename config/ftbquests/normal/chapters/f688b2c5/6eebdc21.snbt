@@ -1,0 +1,24 @@
+{
+	title: "Furnace v2.0",
+	icon: "morefurnaces:furnaceblock",
+	x: 5.75d,
+	y: 3.5d,
+	text: [
+		"§3Iron Furnaces§f can smelt an item in §a150 ticks§f, which is somewhat faster than a vanilla §6Furnace§f, which takes §a200 ticks§f. The fuel efficiency remains the same for all furnaces."
+	],
+	dependencies: [
+		"cb806892"
+	],
+	tasks: [{
+		uid: "301da06e",
+		type: "item",
+		items: [{
+			item: "morefurnaces:furnaceblock"
+		}]
+	}],
+	rewards: [{
+		uid: "33e0b1ba",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

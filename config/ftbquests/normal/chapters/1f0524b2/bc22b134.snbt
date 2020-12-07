@@ -1,0 +1,26 @@
+{
+	title: "Advanced Extended Crafting Table",
+	icon: "extendedcrafting:table_advanced",
+	x: 17.0d,
+	y: 20.25d,
+	text: [
+		"With the Extended Crafting Table, you can now craft 5x5 recipes."
+	],
+	dependencies: [
+		"8f4b77ed"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "dee789ef",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:table_advanced"
+		}]
+	}],
+	rewards: [{
+		uid: "61112389",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

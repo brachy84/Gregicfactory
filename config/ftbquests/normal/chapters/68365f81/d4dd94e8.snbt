@@ -1,0 +1,25 @@
+{
+	title: "Element 050: Tin",
+	icon: "gregtech:meta_item_1 1 10071",
+	x: -4.5d,
+	y: 8.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"de2ebf65"
+	],
+	tasks: [{
+		uid: "57586be9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10071"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "4080bc48",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

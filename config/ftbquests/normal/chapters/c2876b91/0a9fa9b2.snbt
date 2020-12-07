@@ -1,0 +1,31 @@
+{
+	title: "Captain... Marvel? IDK",
+	icon: "extrautils2:angelring",
+	x: -24.25d,
+	y: 11.75d,
+	text: [
+		"I'm running out of MCU puns.",
+		"",
+		"The §aAngel Ring§r is actually slower than a jetpack, but it grants creative flight and requires no fuel (except a bit of GP).",
+		"",
+		"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in the next jetpack, so if you want that you'll need to make one eventually."
+	],
+	dependencies: [
+		"965055a4",
+		"e7bd1a4f"
+	],
+	tasks: [{
+		uid: "0dfd1ef4",
+		type: "item",
+		items: [{
+			item: "extrautils2:angelring"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "786847b8",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

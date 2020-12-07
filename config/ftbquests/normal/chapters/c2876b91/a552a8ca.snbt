@@ -1,0 +1,26 @@
+{
+	title: "Gearworking Die",
+	icon: "thermalexpansion:augment 1 337",
+	x: -34.75d,
+	y: 10.5d,
+	text: [
+		"A §3Compactor§r§r§r specialized to a §aGear Press§r is a very power efficient way to make gears. It is slower than its overclocking GTCE counterparts, but is required for some gears, most notably the crystal and gemstone ones.",
+		"",
+		"Like all §aAugments§r, the Gear Press specialization takes up an upgrade slot, but you can still use the rest of the slots for other ones like speed upgrades."
+	],
+	dependencies: [
+		"d2caa927"
+	],
+	tasks: [{
+		uid: "05697a49",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 1 337"
+		}]
+	}],
+	rewards: [{
+		uid: "b828b691",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

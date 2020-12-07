@@ -1,0 +1,29 @@
+{
+	title: "Glowstone Doped Silicon Boule",
+	icon: "gregtech:meta_item_2 1 32437",
+	x: -21.75d,
+	y: 5.0d,
+	text: [
+		"A more advanced type of §6Silicon Boule§r, formed by doping the §6Silicon§r crystal lattice with §6Glowstone§r.",
+		"",
+		"These are made in an §3EBF§r with §6Nichrome§r or better coils, and need §9Argon§r for the process. It needs twice as much Silicon as the basic boules, but also results in twice as many doped Silicon Wafers when sliced.",
+		"",
+		"Circuit Wafers can be made far more efficiently with these doped Silicon Wafers, but they are also needed for some more advanced types of Circuit Wafers that can't be engraved onto the basic ones."
+	],
+	dependencies: [
+		"1b0484ec",
+		"11564de3"
+	],
+	tasks: [{
+		uid: "988f5f9d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32437"
+		}]
+	}],
+	rewards: [{
+		uid: "4790bdb9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

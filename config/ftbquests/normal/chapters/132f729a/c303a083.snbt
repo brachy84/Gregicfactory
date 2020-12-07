@@ -1,0 +1,32 @@
+{
+	title: "MV Energy Input And MV CEF",
+	icon: "gregtech:machine 1 10673",
+	x: -15.5d,
+	y: 4.5d,
+	text: [
+		"With §6Aluminium§r, you can replace the two §aLV Energy Input Hatches§r on your Electric Blast Furnace with a single MV one, if you want. When you're ready to move on to HV recipes in the EBF, you'll want to move up to HV Energy Input Hatches, and so on.",
+		"",
+		"However, remember to keep the MV area seperate from your LV area. §eHooking up an LV machine to MV current will result in the machine being destroyed! Also LV cables will burn up if you put MV current through them§r. That's why its probably best to keep the areas separate until you're comfortable and confident with voltages. Eventually you can use transformers to switch voltages within a single setup, but don't feel forced to try that until you've got a grasp on the basics.",
+		"",
+		"All RF power is the same (it has no voltages), so you can use RF conduits to route power from wherever you're generating and storing it to §3CEFs§r for each voltage. You don't have to use this setup, but its the most foolproof one for a beginner. And if you're an expert, well... you don't need my advice.",
+		"",
+		"For your MV cables, you can use §6Copper§r to start with. §6Energetic Alloy cables§r are lossless though, so consider them if you're able to mass produce those ingots."
+	],
+	dependencies: [
+		"d25b8c6f",
+		"47eb58e8"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "b260a7f4",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 724"
+		}]
+	}],
+	rewards: [{
+		uid: "3d6d41a0",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

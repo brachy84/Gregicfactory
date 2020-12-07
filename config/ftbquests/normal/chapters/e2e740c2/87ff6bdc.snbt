@@ -1,0 +1,26 @@
+{
+	title: "Hellish Matter",
+	icon: "deepmoblearning:living_matter_hellish",
+	x: -26.0d,
+	y: 4.25d,
+	text: [
+		"§6Overworldian Matter§r and §6Netherrack§r can be crafted into §6Hellish Matter§r.",
+		"",
+		"Netherrack can be obtained by combining a §6Dust Block§r and §cLava§r in a §3Chemical Reactor§r."
+	],
+	dependencies: [
+		"917e9bdd"
+	],
+	tasks: [{
+		uid: "8f77bde6",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:living_matter_hellish"
+		}]
+	}],
+	rewards: [{
+		uid: "2885ed55",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

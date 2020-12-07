@@ -1,0 +1,28 @@
+{
+	title: "Screwdrive Output Sides!",
+	icon: {
+		id: "gregtech:meta_tool",
+		tag: {
+			GT.ToolStats: {
+				Material: "wrought_iron"
+			}
+		},
+		Damage: 11s
+	},
+	x: -35.979166666666664d,
+	y: 2.25d,
+	text: [
+		"All GregTech machines have one dedicated output side, which can be set by right-clicking a side with a §aGregTech Wrench§f. This is used for ejecting items into an adjacent inventory.",
+		"",
+		"To enable auto-output, open the machine GUI and click one of the buttons in the bottom-left corner: §6orange§r is items and §9blue§r is fluids.",
+		"",
+		"If you want to also be able to insert items into the output side, you'll have to right-click the output side with a §aGregTech Screwdriver§r.",
+		"",
+		"These features can be used to chain machines together to make processing pipelines and facilitate crafting automation with §bApplied Energistics 2§f."
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "1617afb2",
+		type: "checkmark"
+	}]
+}

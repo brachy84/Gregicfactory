@@ -1,0 +1,23 @@
+{
+	title: "Infinity Boots",
+	icon: "avaritia:infinity_boots",
+	x: -3.625d,
+	y: 14.625d,
+	text: [
+		"Boots to surpass the ultimate, forged with the hearts of stars and the raw fury of the universe."
+	],
+	dependencies: [
+		"0bb55ea0",
+		"e384132e"
+	],
+	size: 2.5d,
+	tasks: [{
+		uid: "5ff5c19a",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

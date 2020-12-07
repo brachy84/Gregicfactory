@@ -1,0 +1,27 @@
+{
+	title: "Draconic Reactor Core",
+	icon: "draconicevolution:reactor_core",
+	x: 2.0d,
+	y: 16.0d,
+	text: [
+		"§6Awakened Draconium§r, §6Chaos Shards§r, and §6Stabilized Einsteinium§r can be used in a Draconic Tier fusion crafting setup to create a §6Draconic Reactor Core§r.",
+		"",
+		"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some Endgame items."
+	],
+	dependencies: [
+		"d86859f4",
+		"11be926e"
+	],
+	tasks: [{
+		uid: "17000fc9",
+		type: "item",
+		items: [{
+			item: "draconicevolution:reactor_core"
+		}]
+	}],
+	rewards: [{
+		uid: "00a91281",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

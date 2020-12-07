@@ -1,0 +1,32 @@
+{
+	title: "Tier Nine Micro Miner",
+	icon: "contenttweaker:tiernineship",
+	x: -3.25d,
+	y: 16.0d,
+	text: [
+		"The Ninth Micro Miner.",
+		"",
+		"Combines §bStellar Creation Data§r into the §dUniverse Creation Data§r, which is a crucial component for the Tier Ten Micro Miner mission.",
+		"",
+		"The alternate mission brings a decent quantity of §6Neutronium§r, but you have to bootstrap it with some Neutronium from the §3Fusion Reactor Mark 3§r anyway. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
+	],
+	dependencies: [
+		"11be926e",
+		"43446f06",
+		"25b6083d",
+		"dfc57213"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "abf1d2be",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tiernineship"
+		}]
+	}],
+	rewards: [{
+		uid: "7d3af619",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

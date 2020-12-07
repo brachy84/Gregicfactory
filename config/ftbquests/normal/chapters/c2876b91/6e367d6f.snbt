@@ -1,0 +1,29 @@
+{
+	title: "The Fourth And Final Tier Three Circuits",
+	icon: "gregtech:meta_item_2 1 32492",
+	x: -28.75d,
+	y: 11.75d,
+	text: [
+		"With your new §6Fiber-Reinforced Epoxy Circuit Boards§r, §6Nano CPUs§r, and some standard components, you can make the final type of Tier Three Circuit: the §6Nanocircuit§r.",
+		"",
+		"As the best form of Tier Three circuit, these should be automated and stockpiled. As with the Final Tier Two circuits, the §6System-on-Chip§r variant recipes won't be available for a while."
+	],
+	dependencies: [
+		"0fbb94a3",
+		"c4abf60a",
+		"e13b05d9"
+	],
+	tasks: [{
+		uid: "3662fe7d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32492"
+		}]
+	}],
+	rewards: [{
+		uid: "600fdb81",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

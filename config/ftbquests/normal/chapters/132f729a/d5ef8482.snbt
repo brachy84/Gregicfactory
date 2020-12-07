@@ -1,0 +1,26 @@
+{
+	title: "MV Precision Laser Engraver",
+	icon: "gregtech:machine 1 431",
+	x: -17.0d,
+	y: 6.0d,
+	text: [
+		"A §3Precision Laser Engraver§r is used to engrave circuits onto §6Wafers§r.",
+		"",
+		"The type of circuit will depend on the kind of wafer used and which §aLens§r is in the machine."
+	],
+	dependencies: [
+		"c303a083"
+	],
+	tasks: [{
+		uid: "19406c5a",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 431"
+		}]
+	}],
+	rewards: [{
+		uid: "08fae890",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

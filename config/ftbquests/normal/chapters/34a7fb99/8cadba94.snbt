@@ -1,0 +1,65 @@
+{
+	title: "Naquadah Reactor Mk1",
+	icon: "appliedenergistics2:spatial_pylon",
+	x: -7.5d,
+	y: 17.5d,
+	text: [
+		"The §3Naquadah Reactor Mk1§r is a structure used to generate considerable amounts of RF power from decaying §6Enriched Naquadah§r or §6Naquadria§r into §6Lead§r.",
+		"",
+		"§eKnown issue: Modular Machine energy output hatches cause a lot of lag by scanning a large region around it for the presence of a Draconic Evolution Energy Core to output into. This will hopefully be addressed in a future update."
+	],
+	dependencies: [
+		"cf432c21"
+	],
+	tasks: [{
+		uid: "80bb22e1",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "c27bd1dd",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:trimmed 3 5"
+		}],
+		count: 3L
+	},
+	{
+		uid: "616c530c",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:spatial_pylon 12"
+		}],
+		count: 12L
+	},
+	{
+		uid: "48444813",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:reactor_casing_transparent 12"
+		}],
+		count: 12L
+	},
+	{
+		uid: "60533e60",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 14"
+		}],
+		count: 14L
+	},
+	{
+		uid: "d7f614bf",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockenergyoutputhatch 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "ed5b4b68",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

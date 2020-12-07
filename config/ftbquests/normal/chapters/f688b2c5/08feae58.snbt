@@ -1,0 +1,167 @@
+{
+	title: "Some Starter Tools",
+	icon: {
+		id: "gregtech:meta_tool",
+		tag: {
+			GT.ToolStats: {
+				PrimaryMaterial: "darmstadtium"
+			}
+		},
+		Damage: 13s
+	},
+	x: 0.0d,
+	y: 6.75d,
+	shape: "square",
+	text: [
+		"One of the eccentricities of the pack you'll need to get used to is the way the tools are displayed. Most tools can be made out of nearly any metal, and §bJEI§f will display a huge number of options... every combination of every tool with every material. However, the pattern to make the tool is always identical, so §ejust arrange the plates and ingots in the same manner as the examples, ignoring whatever material it says§f. Rods where rods go, plates where plates, etc. The only restriction is that tools §emust be made from all of the same material§f... you cannot mix and match different metals in a single item.",
+		"",
+		"Recipes will default to showing a \"§6Darmstadtium§f\" tool (or sometimes §6Aluminium§f) of the appropriate type if a tool is required, but the correct type of tool made out of any metal will work. So just ignore the tool's material in the recipes, it can be whatever you'd like.",
+		"",
+		"For now, make a §aHammer§f (not a §aMining Hammer§f, mind you... six ingots, not five). Hammers can be used to turn §etwo ingots into one plate§f. §6Plates§f can make a §aFile§f, Files can make §6Rods§f, etc. Use JEI to work your way down the list of tools.",
+		"",
+		"§6Wrought Iron§f is probably your best bet for a tool material right now, but better materials will become available as you progress."
+	],
+	dependencies: [
+		"cb806892"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "a268c460",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolHardHammer",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolHardHammer"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5940bd08",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolFile",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolFile"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d1e67b25",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolSaw",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolSaw"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7185d7db",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolWrench",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolWrench"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "eec0aa37",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolScrewdriver",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolScrewdriver"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1e2ece5a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolWireCutter",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolWireCutter"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "043a43fe",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolMortar",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolMortar"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "098e9270",
+		type: "item",
+		item: "contenttweaker:omnicoin5",
+		count: 2
+	}]
+}

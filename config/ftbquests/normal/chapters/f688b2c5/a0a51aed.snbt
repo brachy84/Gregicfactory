@@ -1,0 +1,27 @@
+{
+	title: "Mining Hammers",
+	icon: "thermalfoundation:tool.hammer_iron",
+	x: -3.25d,
+	y: 5.25d,
+	text: [
+		"§aMining Hammers§r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 of blocks and mine quickly, so they're absolutely worth investing your first few ingots of metal into§..",
+		"",
+		"§6Stone§f is the cheapest Mining Hammer, but naturally it breaks quickly. Since you have some §6Iron§f already, consider using those on your first few mining expeditions.",
+		"",
+		"The best Mining Hammers are §6Diamond§f and §6Platinum§f. Other Mining Hammers are also good but wear out more quickly.",
+		"",
+		"§c§nNEVER break GregTech machines with mining hammers!§r"
+	],
+	dependencies: [
+		"cb806892"
+	],
+	tasks: [{
+		uid: "3a54ee5f",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "d301a885",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

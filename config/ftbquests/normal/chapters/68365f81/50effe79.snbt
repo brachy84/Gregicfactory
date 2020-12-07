@@ -1,0 +1,25 @@
+{
+	title: "Element 079: Gold",
+	icon: "minecraft:gold_ingot",
+	x: -3.5d,
+	y: 9.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"de2ebf65"
+	],
+	tasks: [{
+		uid: "0068a9ca",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_ingot 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "78b2cb0f",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "Creative RF Source",
+	icon: "draconicevolution:creative_rf_source",
+	x: -9.0d,
+	y: 3.75d,
+	shape: "diamond",
+	text: [
+		"A single-block solution to all your power needs.",
+		"",
+		"This baby pushes out 2.14 GRF/t per side."
+	],
+	dependencies: [
+		"64d43d53"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "669f25c7",
+		type: "item",
+		items: [{
+			item: "draconicevolution:creative_rf_source"
+		}]
+	}]
+}

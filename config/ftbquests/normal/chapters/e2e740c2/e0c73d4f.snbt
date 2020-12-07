@@ -1,0 +1,27 @@
+{
+	title: "Electrical Steel",
+	icon: "enderio:item_alloy_ingot",
+	x: -28.0d,
+	y: 9.25d,
+	text: [
+		"An §bEnderIO§r alloy, made from §6Silicon Dust§r and a §6Steel Ingot§r.",
+		"",
+		"This material is frequently used in electronics and digital equipment."
+	],
+	dependencies: [
+		"344445c4",
+		"6faaf0be"
+	],
+	tasks: [{
+		uid: "493a61b8",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "37b379b3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

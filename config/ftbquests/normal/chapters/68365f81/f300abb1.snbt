@@ -1,0 +1,22 @@
+{
+	title: "Empowered Emeradic Gear",
+	icon: "moreplates:empowered_emeradic_gear",
+	x: -2.5d,
+	y: -5.6875d,
+	text: [
+		"A gear forged from §6Empowered Emeradic Crystal§r.",
+		"",
+		"While you can empower gears directly, it makes much more sense to solidify them."
+	],
+	dependencies: [
+		"ced2c146"
+	],
+	size: 1.75d,
+	tasks: [{
+		uid: "7b238b8e",
+		type: "item",
+		items: [{
+			item: "moreplates:empowered_emeradic_gear"
+		}]
+	}]
+}

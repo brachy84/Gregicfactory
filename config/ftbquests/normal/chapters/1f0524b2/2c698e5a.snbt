@@ -1,0 +1,23 @@
+{
+	title: "Explore Extra Utilities 2",
+	icon: "extrautils2:angelring 1 4",
+	x: 8.5d,
+	y: 23.0d,
+	text: [
+		"There's a great deal of interesting content within §bExtra Utilities 2§r, and although most of it is not required for progression, you should still look through what it offers and build what interests you.",
+		"",
+		"In particular, the §aAngel Ring§r bauble offers creative flight, and although some of the RF generators are not particularly good, others are quite competitive with the Dynamos. And of course, you can aim for the all powerful §aRainbow Generator§r as you work towards endgame. All that and much more await, so explore away!"
+	],
+	dependencies: [
+		"929b7606"
+	],
+	tasks: [{
+		uid: "07861424",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "34bc5aec",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,41 @@
+{
+	title: "Rocket Fuel",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "rocket_fuel",
+			Amount: 1000
+		}
+	},
+	x: 22.0d,
+	y: 17.75d,
+	text: [
+		"Mix §9Oxygen§r and §91,1-Dimethylhydrazine§r together to make §9Rocket Fuel§r.",
+		"",
+		"Awesome!",
+		"",
+		"When you have stable sourcing for Nitrogen and Oxygen, you can make and use §9Dinitrogen Tetroxide§r in the recipe instead of Oxygen. It doubles the efficiency of your Hydrazine when making Rocket Fuel."
+	],
+	dependencies: [
+		"2d3bec55"
+	],
+	tasks: [{
+		uid: "07c2ef2c",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "rocket_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6693cc0c",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

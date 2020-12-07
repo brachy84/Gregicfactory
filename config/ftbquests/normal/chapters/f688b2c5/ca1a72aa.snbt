@@ -1,0 +1,41 @@
+{
+	title: "Leadstone Jetpack",
+	icon: {
+		id: "simplyjetpacks:itemjetpack",
+		tag: {
+			Energy: 0,
+			JetpackParticleType: 0
+		},
+		Damage: 10s
+	},
+	x: 1.25d,
+	y: 14.25d,
+	text: [
+		"Being able to fly is pretty sick. Its also pretty expensive.",
+		"",
+		"Its probably a bit premature to consider a §6jetpack§r at this point, but if you really want to craft this bad boy, I won't stop you.",
+		"",
+		"There's also a quest chain for §bEnderIO§r Jetpacks (starting with the §6Conductive Iron Jetpack§r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
+	],
+	dependencies: [
+		"a55cbb84"
+	],
+	tasks: [{
+		uid: "3714ba60",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			tag: {
+				Energy: 0,
+				JetpackParticleType: 0
+			},
+			Damage: 10s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4bbd7a64",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

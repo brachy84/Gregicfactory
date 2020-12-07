@@ -1,0 +1,22 @@
+{
+	title: "Empowered Enori Gear",
+	icon: "moreplates:empowered_enori_gear",
+	x: -1.0d,
+	y: -5.25d,
+	text: [
+		"A gear forged from §6Empowered Enori Crystal§r.",
+		"",
+		"While you can empower gears directly, it makes much more sense to solidify them."
+	],
+	dependencies: [
+		"ced2c146"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "7d99289c",
+		type: "item",
+		items: [{
+			item: "moreplates:empowered_enori_gear"
+		}]
+	}]
+}

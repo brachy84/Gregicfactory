@@ -1,0 +1,37 @@
+{
+	title: "Gallium",
+	icon: "gregtech:meta_item_1 1 25",
+	x: -28.0d,
+	y: 13.0d,
+	shape: "square",
+	text: [
+		"Throwing §6Impure Piles of Sphalerite§r into Cauldrons is the first way of obtaining §6Sphalerite§r, which can be electrolyzed as a good source of §6Gallium§r. The §6Zinc§r and §6Sulfur§r you get from doing this will be quite useful as well. Sphalerite Ore§r spawns in §6Zinc§r veins. ",
+		"",
+		"A §3Centrifuge§r instead of a Cauldron is slower and requires power, but it gets you more Gallium while separating the impure dust into Sphalerite.",
+		"",
+		"If you're having trouble getting the quest to complete, check to see if you are holding §6small piles§r instead of §6tiny piles§r. If so, combine four small piles into a regular dust, then split that into tiny piles. A §3Worktable§r can help you quickly convert between pile types."
+	],
+	dependencies: [
+		"15b5a756"
+	],
+	tasks: [{
+		uid: "2d7e7384",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 2 2182"
+		}],
+		count: 2L
+	},
+	{
+		uid: "c3e8f834",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 25"
+		}]
+	}],
+	rewards: [{
+		uid: "c032669a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

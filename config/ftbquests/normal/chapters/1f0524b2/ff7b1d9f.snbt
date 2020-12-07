@@ -1,0 +1,40 @@
+{
+	title: "Hypochlorous Acid",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "hypochlorous_acid",
+			Amount: 1000
+		}
+	},
+	x: 25.5d,
+	y: 19.0d,
+	text: [
+		"§9Water§r and §9Chlorine§r can be combined to make §9Hypochlorous Acid§r. If you add §9Mercury§r to catalyze the reaction, the yield is much better.",
+		"",
+		"§ePlease note that Hypochlorous Acid and Hydrochloric Acid are different things.§r",
+		"",
+		"You're already familiar with Chlorine production from your forays into Plastics, but a great source of Mercury is electrolyzing §6Redstone§r."
+	],
+	dependencies: [
+		"1efd8ae4"
+	],
+	tasks: [{
+		uid: "a0076bf6",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "hypochlorous_acid",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e772daea",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

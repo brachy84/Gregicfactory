@@ -1,0 +1,32 @@
+{
+	title: "ME Interfaces",
+	icon: "appliedenergistics2:interface",
+	x: -4.75d,
+	y: 11.5d,
+	text: [
+		"§aME Interfaces§r are extremely important for automation. You'll be making a lot of these, if you're playing the pack right.",
+		"",
+		"These can be filled with encoded §aPatterns§r to perform on-demand autocrafting, and can be configured to stock up to 9 stacks of items for passive autocrafting, Any item pushed into an ME Interface is digitized and placed in your ME Network storage.",
+		"",
+		"When adjacent to one or more §aMolecular Assemblers§r, crafting table patterns can be crafted. It will use as many adjacent Molecular Assemblers as possible, restricted by availability and number of §aCo-processors§r in your crafting CPU multiblock.",
+		"",
+		"When adjacent to any other block, you can use processing patterns with a machine to insert items into the machine. Processing patterns require that the finished item is inserted back into the ME Network by way of an ME Interface (though it doesn't need to be the same ME Interface the Pattern is in).",
+		"",
+		"ME Interfaces can be wrenched to ensure they only communicate with a particular adjacent block, or can be crafted into a micropart form to fit multiple in the same block space (each micropart only interacting with the adjacent block face)."
+	],
+	dependencies: [
+		"f93fa897"
+	],
+	tasks: [{
+		uid: "8aa33fad",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:interface"
+		}]
+	}],
+	rewards: [{
+		uid: "28a98fa9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

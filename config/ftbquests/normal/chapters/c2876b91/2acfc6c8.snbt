@@ -1,0 +1,52 @@
+{
+	title: "Neptunium Fission",
+	icon: "nuclearcraft:fuel_neptunium",
+	x: -11.25d,
+	y: 9.25d,
+	text: [
+		"Low-Enriched Neptunium 236, or §6LEN-236§r, is the next step in the fissile material fuel chain.",
+		"",
+		"This fuel requires an 8:1 ratio of §6Neptunium 237§r to §6Neptunium 236§r. Using only the results from Thorium fission, it will take two batches of §6Depleted TBU Fuel§r to make your first LEN fuel.",
+		"",
+		"Of course, higher order reactions also will result in small amounts of Neptunium that you can work with as well.",
+		"",
+		"§6Depleted LEN 236§r gives a small bit of Neptunium 237 back, but principally provides §6Plutonium§r and §6Americium§r isotopes."
+	],
+	dependencies: [
+		"48cbaf1d"
+	],
+	tasks: [{
+		uid: "5e946fcf",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:neptunium"
+		}]
+	},
+	{
+		uid: "be08f5ae",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:neptunium 8 4"
+		}],
+		count: 8L
+	},
+	{
+		uid: "fdaabb3d",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_neptunium"
+		}]
+	},
+	{
+		uid: "13ede38b",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:depleted_fuel_neptunium"
+		}]
+	}],
+	rewards: [{
+		uid: "3c58d260",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

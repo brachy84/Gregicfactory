@@ -1,0 +1,27 @@
+{
+	title: "Phenol Coated Substrate",
+	icon: "gregtech:meta_item_2 1 32447",
+	x: -21.5d,
+	y: 4.5d,
+	text: [
+		"§9Phenol§r is produced as a byproduct from making §6Coal Coke§r in a §3Pyrolyse Oven§r.",
+		"",
+		"These boards will enable a much cheaper method of circuit production."
+	],
+	dependencies: [
+		"ff5e0a9a",
+		"28f8483e"
+	],
+	tasks: [{
+		uid: "64493531",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32447"
+		}]
+	}],
+	rewards: [{
+		uid: "71ebe412",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

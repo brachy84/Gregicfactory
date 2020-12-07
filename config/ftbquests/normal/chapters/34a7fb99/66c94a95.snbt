@@ -1,0 +1,28 @@
+{
+	title: "Superconductor Wire",
+	icon: "gregtech:cable 1 354",
+	x: -5.75d,
+	y: 4.5d,
+	text: [
+		"Coating §6Draconium Wire§r with §9Molten Nether Star§r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy.",
+		"",
+		"These wires losslessly transmit \"MAX\" tier, which is effectively infinite transfer rate. This means they will work for any tier of power. 1x wires handle 4 amps, meaning 4x wires can handle 16 amps.",
+		"",
+		"These can also be made into RF conduits that can transmit a whopping 134 Million RF/t."
+	],
+	dependencies: [
+		"3f261428"
+	],
+	tasks: [{
+		uid: "dd85de07",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 1 354"
+		}]
+	}],
+	rewards: [{
+		uid: "38302a84",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	title: "Brewery",
+	icon: "gregtech:machine 1 130",
+	x: -20.0d,
+	y: 11.0d,
+	text: [
+		"Note: this quest accepts both LV and MV Brewery.",
+		"",
+		"You can turn §6Plant Balls§r and other various §6sugary crops§r into §9Biomass§r with a §3Brewery§r. Biomass is the first step towards making Plastic in the form of §9Polyethylene§r.",
+		"",
+		"The Brewery is a very very slow machine, but it requires almost no power. Building higher tier Breweries, or many LV ones, is necessary to brew enough Biomass for plastics."
+	],
+	dependencies: [
+		"399fa177"
+	],
+	tasks: [{
+		uid: "814337b5",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "questbookBrewery",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any questbookBrewery"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "44917965",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

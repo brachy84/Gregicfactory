@@ -1,0 +1,29 @@
+{
+	title: "The Third And Final Tier One Circuits",
+	icon: "contenttweaker:refinedcircuit",
+	x: -21.5d,
+	y: 16.5d,
+	text: [
+		"With all the SMD components ready, you can start to churn out §6Refined Circuits§r. These are the best kind of Tier One circuits you can make, and you won't unlock the better recipes for quite a while.",
+		"",
+		"You should absolutely automate the production of these circuits, and §ekeep a stockpile automatically crafted§r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
+	],
+	dependencies: [
+		"aabb0031",
+		"19632eed",
+		"3801832a"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "65a13697",
+		type: "item",
+		items: [{
+			item: "contenttweaker:refinedcircuit"
+		}]
+	}],
+	rewards: [{
+		uid: "0cb168be",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

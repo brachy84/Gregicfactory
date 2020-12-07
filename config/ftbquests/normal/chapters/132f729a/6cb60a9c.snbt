@@ -1,0 +1,24 @@
+{
+	title: "16k Item Storage",
+	icon: "appliedenergistics2:material 1 37",
+	x: -3.5d,
+	y: 11.0d,
+	text: [
+		"The penultimate component for AE item §6Storage Cells§r."
+	],
+	dependencies: [
+		"ce0a059c"
+	],
+	tasks: [{
+		uid: "42d63a4e",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 37"
+		}]
+	}],
+	rewards: [{
+		uid: "12587ad2",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

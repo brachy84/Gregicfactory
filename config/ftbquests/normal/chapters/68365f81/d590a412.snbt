@@ -1,0 +1,25 @@
+{
+	title: "Element 086: Radon",
+	icon: "contenttweaker:solidifiedradon",
+	x: -1.5d,
+	y: 9.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"f8c94a88"
+	],
+	tasks: [{
+		uid: "f4a961bc",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedradon 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "0cfa002f",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

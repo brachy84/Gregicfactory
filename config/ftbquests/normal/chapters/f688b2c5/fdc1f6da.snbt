@@ -1,0 +1,33 @@
+{
+	title: "Drawers",
+	icon: "storagedrawers:framingtable",
+	x: 2.0d,
+	y: 1.75d,
+	text: [
+		"§bStorage Drawers§f provide a huge amount of storage for a single item type. Use them for things you have a lot of, such as stone, dirt and ores.",
+		"",
+		"If the default appearances aren't your style, the §3Framing Table§f is useful for making custom drawers out of §6Framed Drawers§f and up to three additional items which define how the resulting drawer will look."
+	],
+	dependencies: [
+		"a557bd1e"
+	],
+	tasks: [{
+		uid: "5580fef1",
+		type: "item",
+		items: [{
+			item: "storagedrawers:framingtable"
+		}]
+	},
+	{
+		uid: "504547de",
+		type: "item",
+		items: [{
+			item: "storagedrawers:customdrawers"
+		}]
+	}],
+	rewards: [{
+		uid: "c4efd077",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	title: "Crafting Calculator",
+	icon: "jecalculation:item_calculator",
+	x: -7.75d,
+	y: 9.0d,
+	text: [
+		"This modpack has §aCrafting Calculators§r. It has a steep learning curve, but once you manage to learn how to use it, it's going to be your trusty companion in calculating recipe costs.",
+		"",
+		"Craft yourself one and hit the book button in the top-left corner for a quick overview of how it works."
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "2ba18e89",
+		type: "item",
+		items: [{
+			item: "jecalculation:item_calculator"
+		}],
+		ignore_nbt: 1b
+	}]
+}

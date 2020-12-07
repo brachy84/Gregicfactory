@@ -1,0 +1,45 @@
+{
+	title: "Tier Three Micro Miner",
+	icon: "contenttweaker:tierthreeship",
+	x: -26.0d,
+	y: 10.0d,
+	text: [
+		"The Third Micro Miner.",
+		"",
+		"This one can get you:",
+		"§6* Tetrahedrite Ore",
+		"* Cassiterite Ore",
+		"* Tungstate Ore",
+		"* Scheelite Ore",
+		"* Redstone Ore",
+		"* Quartz Ore",
+		"* Vanadium Magnetite Ore",
+		"* Rutile Ore",
+		"* Tin Ore",
+		"* Sapphire Ore§r",
+		"",
+		"When equipped with Gemstone Sensor:",
+		"§6* Exquisite Emeralds",
+		"* Exquisite Diamonds",
+		"* Exquisite Rubies",
+		"* Silver Ore",
+		"* Gold Ore",
+		"* Almandine Ore§r"
+	],
+	dependencies: [
+		"bf623940"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "2fac0676",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tierthreeship"
+		}]
+	}],
+	rewards: [{
+		uid: "07086b3a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

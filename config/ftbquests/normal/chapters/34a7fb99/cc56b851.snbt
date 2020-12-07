@@ -1,0 +1,25 @@
+{
+	title: "Dragon Hearts",
+	icon: "draconicevolution:dragon_heart",
+	x: -1.25d,
+	y: 13.25d,
+	text: [
+		"§6Dragon Hearts§r are needed for both §6Awoken Draconium§r and §6The Ultimate Material§r."
+	],
+	dependencies: [
+		"2125025a"
+	],
+	tasks: [{
+		uid: "78b61fe4",
+		type: "item",
+		items: [{
+			item: "draconicevolution:dragon_heart 32"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "3b7347b8",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,43 @@
+{
+	title: "LV Wiremill",
+	icon: "gregtech:machine 1 470",
+	x: -33.25d,
+	y: 10.5d,
+	shape: "square",
+	text: [
+		"The §3Wiremill§r is a major efficiency boost, giving you a much greater yield of §6wires§r for your ingots. But first, you'll need to make some §6Motors§r.",
+		"",
+		"§bGregTech§r machines are built from a number of components, many of which are shared between the machines. Motors§r are used in a great number of recipes, even including other components.",
+		"",
+		"Make sure to encode the recipes needed for motors into a §3Worktable§r. You'll need quite a lot of them.",
+		"",
+		"After you make the Wiremill, §econsider making a few stacks§r of LV motors. This might sound extreme, but §ebatch crafting§r in this manner is an important habit to pick up. This way you won't have to craft more for a while, and you §owill §ruse all those motors eventually, so you're not wasting materials.",
+		"",
+		"As you get access to more machinery you will no longer need to craft things manually. Instead, you will engineer factories to automate the production for you. It is useful to keep a stockpile of frequently used things like circuits and components crafted so you don't have to wait for them when you need them."
+	],
+	dependencies: [
+		"83ca4129"
+	],
+	size: 1.9d,
+	tasks: [{
+		uid: "edbcec23",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 4 32600"
+		}],
+		count: 4L
+	},
+	{
+		uid: "517edffe",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 470"
+		}]
+	}],
+	rewards: [{
+		uid: "4361db97",
+		type: "item",
+		item: "contenttweaker:omnicoin5",
+		count: 2
+	}]
+}

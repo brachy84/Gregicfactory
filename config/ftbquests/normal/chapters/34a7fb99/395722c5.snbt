@@ -1,0 +1,38 @@
+{
+	title: "Basic Fusion Injectors",
+	icon: "draconicevolution:crafting_injector",
+	x: -1.25d,
+	y: 7.75d,
+	text: [
+		"§bDraconic Evolution§r features §eFusion Crafting§r, which requires a §6Fusion Crafting Core§r and up to ten injectors of the appropriate tier.",
+		"",
+		"You'll need eight §6Basic Fusion Crafting Injectors§r to upgrade any additional injectors you make to Wyvern Tier.",
+		"",
+		"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
+	],
+	dependencies: [
+		"ced2c146",
+		"4c67dfec",
+		"040d507a"
+	],
+	tasks: [{
+		uid: "38130dad",
+		type: "item",
+		items: [{
+			item: "draconicevolution:crafting_injector 8"
+		}],
+		count: 8L
+	},
+	{
+		uid: "41cffcd8",
+		type: "item",
+		items: [{
+			item: "draconicevolution:fusion_crafting_core"
+		}]
+	}],
+	rewards: [{
+		uid: "e0890f22",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

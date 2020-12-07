@@ -1,0 +1,25 @@
+{
+	title: "Element 094: Plutonium",
+	icon: "contenttweaker:stabilizedplutonium",
+	x: -4.5d,
+	y: 10.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"a3c53e75"
+	],
+	tasks: [{
+		uid: "08dad3f3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizedplutonium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "d3ed900e",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

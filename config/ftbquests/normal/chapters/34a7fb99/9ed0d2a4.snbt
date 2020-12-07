@@ -1,0 +1,31 @@
+{
+	title: "Resonant Upgrade Kit",
+	icon: "thermalfoundation:upgrade 1 3",
+	x: -8.0d,
+	y: 8.25d,
+	text: [
+		"Provides more augment slots to machines and dynamos.",
+		"",
+		"Dynamos operate at §a1000% of base power and fuel burn rate§r.",
+		"",
+		"Portable Tanks hold §a1250 buckets§r.",
+		"",
+		"Machines operate at §a600% of base speed§r."
+	],
+	dependencies: [
+		"e3c1255f",
+		"bd27d8a8"
+	],
+	tasks: [{
+		uid: "1c67d3aa",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:upgrade 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "5887a166",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

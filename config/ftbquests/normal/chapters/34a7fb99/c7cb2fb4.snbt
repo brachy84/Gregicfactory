@@ -1,0 +1,27 @@
+{
+	title: "Naquadah Reactor Mk2",
+	icon: "extendedcrafting:storage 1 4",
+	x: -6.0d,
+	y: 17.5d,
+	text: [
+		"The §3Naquadah Reactor Mk2§r is an upgraded reactor that can generate immense amounts of RF energy from the same types of fuels as the Mk1.",
+		"",
+		"This is a pretty expensive structure though, as it needs blocks of §dOmnium§r. Maybe wait until after you get the §dCreative Portable Tank§r?"
+	],
+	dependencies: [
+		"8cadba94"
+	],
+	tasks: [{
+		uid: "f827c92b",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:storage 5 4"
+		}],
+		count: 5L
+	}],
+	rewards: [{
+		uid: "0b66582d",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

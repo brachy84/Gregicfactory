@@ -1,0 +1,33 @@
+{
+	title: "Navigating Petrochem",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "oil_medium",
+			Amount: 1000
+		}
+	},
+	x: -12.5d,
+	y: 0.5d,
+	text: [
+		"Petrochemistry is the category of organic chemistry pertaining to petroleum, otherwise known as §9Oil§r.",
+		"",
+		"§bGregTech§r's petrochemistry may seem daunting at first, given the sheer number of chemicals and processing options, but it's actually easier to get into than you think.",
+		"",
+		"Oil is the starting point, and can be found in several variants which you can pump from finite natural wells on the Overworld, as well as coming renewably from §6Oilsands Ore§r and directly in liquid form from an §3Oil Drilling Rig§r. The variant simply called \"Oil\" is the standard ratio of distillation products and is what you will always get from the latter two sources. §9Light Oil§r and §9Heavy Oil§r are effectively the same as Oil, but with different ratios of distillation products.",
+		"",
+		"The upcoming quests will guide you through the basics of petrochemistry. Once you've mastered that, feel free to explore further."
+	],
+	dependencies: [
+		"f906e77c"
+	],
+	tasks: [{
+		uid: "8ee5d0f8",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "6fc10cf1",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "Thermal Machine Frame",
+	icon: "thermalexpansion:frame",
+	x: -36.0d,
+	y: 8.0d,
+	text: [
+		"§6Thermal Device Casings§r are upgradable to a §6Machine Frame§r with some §6Stainless Steel Plates§r.",
+		"",
+		"These frames form the basis of §bThermal Expansion§r's more advanced machinery."
+	],
+	dependencies: [
+		"ea3ff9e8"
+	],
+	tasks: [{
+		uid: "46e8ab00",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame"
+		}]
+	}],
+	rewards: [{
+		uid: "2cf148da",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

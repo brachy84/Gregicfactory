@@ -1,0 +1,18 @@
+{
+	title: "IV Circuits",
+	icon: "gregtech:machine_casing 1 5",
+	x: -4.166666666666667d,
+	y: 11.25d,
+	text: [
+		"Circuits along this line are IV, and can all be substituted in recipes.",
+		"",
+		"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+	],
+	dependencies: [
+		"472364a2",
+		"8374b5af",
+		"5ec56a1e",
+		"085f1c70"
+	],
+	size: 0.8333333333333334d
+}

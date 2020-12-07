@@ -1,0 +1,25 @@
+{
+	title: "Element 036: Krypton",
+	icon: "contenttweaker:solidifiedkrypton",
+	x: -2.5d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"11564de3"
+	],
+	tasks: [{
+		uid: "dc294ef6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedkrypton 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "54c42957",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

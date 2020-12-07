@@ -1,0 +1,26 @@
+{
+	title: "The Third and Final Tier Seven Circuits",
+	icon: "gregtech:meta_item_2 1 32499",
+	x: -7.25d,
+	y: 13.5d,
+	text: [
+		"§6Wetware Processors§r are made in an §3Assembly Line§r on ZPM power.",
+		"",
+		"Among the usual kinds of parts, these require §6Frank'N'Zombies§r from a §3Soul Binder§r and §6Silicone Rubber Foils§r."
+	],
+	dependencies: [
+		"8bdc0568"
+	],
+	tasks: [{
+		uid: "c04004c6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32499"
+		}]
+	}],
+	rewards: [{
+		uid: "58dd992d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

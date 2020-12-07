@@ -1,0 +1,27 @@
+{
+	title: "Nano CPUs",
+	icon: "gregtech:meta_item_2 1 32481",
+	x: -30.0d,
+	y: 11.75d,
+	text: [
+		"§6Nano CPUs§r are advanced §6Circuit Wafers§r made from infusing a §6CPU Wafer§r with §6Carbon Fibers§r and §9Energized Glowstone§r in a §3Chemical Reactor§r.",
+		"",
+		"Then, cut the resulting wafer into dies using a §3Cutting Machine§r."
+	],
+	dependencies: [
+		"7f4297f6",
+		"0fe49dfb"
+	],
+	tasks: [{
+		uid: "fc46a180",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32481"
+		}]
+	}],
+	rewards: [{
+		uid: "6ebeee58",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "Indium",
+	icon: "gregtech:meta_item_1 1 2031",
+	x: -23.5d,
+	y: 7.25d,
+	text: [
+		"§6Indium§r is a rare material requiring specialized bulk ore processing to acquire. It is useful for making §6Indium Gallium Phosphide§r (InGaP).",
+		"",
+		"If you were enterprising enough to discover and make §6Platinum Group Sludge Dust§r for early §6Osmium§r and §6Iridium§r, you'll be familiar with the general process.",
+		"",
+		"You will need to purify (with a §3Washer§r or §3Chemical Bath§r) §6Galena§r and §6Sphalerite§r to get §6Crushed Purified§r dusts. These need to be placed together in a §3Chemical Reactor§r along with §9Sulfuric Acid§r, which will result in §9Indium Concentrate§r.",
+		"",
+		"This in turn needs to be reacted with §6Aluminium§r in another Chemical Reactor, to create §6Tiny piles of Indium Dust§r and §9Lead-Zinc Solution§r. The latter can be electrolyzed into various useful materials, and the Indium piles can be combined into full dusts."
+	],
+	dependencies: [
+		"2d6ec97a"
+	],
+	tasks: [{
+		uid: "ab592338",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 9 31"
+		}],
+		count: 9L
+	}],
+	rewards: [{
+		uid: "3a1f8106",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

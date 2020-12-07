@@ -1,0 +1,41 @@
+{
+	title: "Diesel",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "fuel",
+			Amount: 1000
+		}
+	},
+	x: -10.5d,
+	y: 3.0d,
+	text: [
+		"§9Diesel§r is a mixture of §9Light Fuel§r and §9Heavy Fuel§r.",
+		"",
+		"While it can be used as a fuel, the performance of §3Diesel Generators§r is middling compared to the alternatives.",
+		"",
+		"The primary use is for making §9Cetane Diesel§r, which you will want to stockpile in large quantities for the later production of §6Draconium§r."
+	],
+	dependencies: [
+		"66169717",
+		"55163989"
+	],
+	tasks: [{
+		uid: "d893c4ca",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "adfff5c1",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Element 093: Neptunium",
+	icon: "contenttweaker:stabilizedneptunium",
+	x: -5.5d,
+	y: 10.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"2acfc6c8"
+	],
+	tasks: [{
+		uid: "4b5c4686",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizedneptunium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "7c8c5adf",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Fluxed Phyto-Gro",
+	icon: "thermalfoundation:fertilizer 1 2",
+	x: -37.25d,
+	y: 10.5d,
+	text: [
+		"§6Rich Phyto-Gro§r can be further enhanced by infusing it with Redstone Flux in the §3Energetic Infuser§r."
+	],
+	dependencies: [
+		"b3b4bc12"
+	],
+	tasks: [{
+		uid: "04a44314",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:fertilizer 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "fa493ef7",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

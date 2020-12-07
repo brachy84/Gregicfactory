@@ -1,0 +1,25 @@
+{
+	title: "End Steel Ingots",
+	icon: "enderio:item_alloy_ingot 1 8",
+	x: -13.75d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"7102c512"
+	],
+	tasks: [{
+		uid: "e2691ac9",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 64 8"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "4d90c273",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Storage Drawer Controller",
+	icon: "storagedrawers:controller",
+	x: 4.0d,
+	y: 11.25d,
+	text: [
+		"§aStorage Drawer Controllers§r are the central hub of any good storage system. They can pull from any drawers they are connected to (via other drawers, or drawer trims) within a 12 block cubic radius. This leads to a potential 25x25x25 area to connect drawers, centered on the controller.",
+		"",
+		"§aController Slaves§r do not extend the range, but rather act as another access point to that controller - allowing you to push/pull from any of the drawers within range of the local Drawer Controller.",
+		"",
+		"Connecting an §6ME Storage Bus§f to a controller exposes all of the drawers to §bApplied Energistics§f. Particularly large networks can be laggy though, so keep your drawer networks a manageable size."
+	],
+	dependencies: [
+		"80a107cf"
+	],
+	tasks: [{
+		uid: "53cde737",
+		type: "item",
+		items: [{
+			item: "storagedrawers:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "22c4649f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

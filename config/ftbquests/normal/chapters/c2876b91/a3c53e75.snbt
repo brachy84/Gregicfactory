@@ -1,0 +1,51 @@
+{
+	title: "Plutonium Fission",
+	icon: "nuclearcraft:fuel_plutonium",
+	x: -13.75d,
+	y: 10.5d,
+	text: [
+		"Low-Enriched Plutonium 239, or §6LEP-239§r, is made from the usual 8:1 ratio of two isotopes of §6Plutonium§r acquired from earlier depleted fuels.",
+		"",
+		"§6Depleted LEP-239§r will give you some §6Curium§r for further enrichment.",
+		"",
+		"High-Enriched Plutonium fuels will give better results, but §cgenerate a lot more heat§r. Make sure your reactor cooling is up to the task."
+	],
+	dependencies: [
+		"cc151bbc",
+		"53fe66b8"
+	],
+	tasks: [{
+		uid: "c3630e03",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:plutonium 1 4"
+		}]
+	},
+	{
+		uid: "cf3892da",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:plutonium 8 12"
+		}],
+		count: 8L
+	},
+	{
+		uid: "998d9dca",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_plutonium"
+		}]
+	},
+	{
+		uid: "90b6e312",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:depleted_fuel_plutonium"
+		}]
+	}],
+	rewards: [{
+		uid: "61e63038",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

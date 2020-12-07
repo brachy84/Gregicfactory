@@ -1,0 +1,38 @@
+{
+	title: "Heavy Fuel",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "heavy_fuel",
+			Amount: 1000
+		}
+	},
+	x: -11.25d,
+	y: 1.75d,
+	text: [
+		"§9Heavy Fuel§r is mixed with §9Light Fuel§r to create §9Diesel§r.",
+		"",
+		"Since Diesel requires more Light than Heavy fuel, you should consider Steam-cracking and distilling the excess quantity of Heavy Fuel for its useful constituents."
+	],
+	dependencies: [
+		"b6fb8ad8"
+	],
+	tasks: [{
+		uid: "111f490a",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "heavy_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c376983c",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "Flightplan To The Moon",
+	icon: "advancedrocketry:planetidchip",
+	x: 21.0d,
+	y: 21.25d,
+	text: [
+		"You'll need this to set the §aGuidance Computer's§r destination to the Moon (Luna).",
+		"",
+		"In your assembled Rocket, press the Rocket GUI Hotkey (default is §eC§r but you may need to rebind it). Click the little square that says \"Guidance Computer\" to pull up the Guidance Computer inventory. Then, place the blank chip into the Guidance Computer. Back out of this menu (§eEsc§r or §eE§r) to get back to the main Rocket GUI.",
+		"",
+		"Click the §cSelect Dst§r button, choose Luna, and click the Select button to assign the destination to the chip.",
+		"",
+		"§eNote: if you want to return your rocket to Earth, you will need to change the destination in this manner again to Earth before launching.§r"
+	],
+	dependencies: [
+		"e543d90e"
+	],
+	tasks: [{
+		uid: "620cd5dc",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:planetidchip"
+		}]
+	}],
+	rewards: [{
+		uid: "b76f6133",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

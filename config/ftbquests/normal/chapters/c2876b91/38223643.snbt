@@ -1,0 +1,26 @@
+{
+	title: "Tungsten Carbide",
+	icon: "gregtech:meta_item_1 1 10300",
+	x: -26.0d,
+	y: 6.5d,
+	text: [
+		"An alloy of equal parts §6Tungsten§r and §6Carbon Dust§r.",
+		"",
+		"§6Tungsten Carbide§r is a very dense, sturdy, and heat-resistant material useful for a variety of applications."
+	],
+	dependencies: [
+		"77df52fd"
+	],
+	tasks: [{
+		uid: "8183bd64",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10300"
+		}]
+	}],
+	rewards: [{
+		uid: "27ae66ac",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

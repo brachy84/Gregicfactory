@@ -1,0 +1,24 @@
+{
+	title: "16k Fluid Storage",
+	icon: "appliedenergistics2:material 1 56",
+	x: -2.25d,
+	y: 11.583333333333334d,
+	text: [
+		"The third fluid storage component, used for §a16k Fluid Storage Cells§r."
+	],
+	dependencies: [
+		"d2709efe"
+	],
+	tasks: [{
+		uid: "f2fbb88f",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 56"
+		}]
+	}],
+	rewards: [{
+		uid: "f386b4fa",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,41 @@
+{
+	title: "Nitrogen",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "nitrogen",
+			Amount: 1000
+		}
+	},
+	x: -18.75d,
+	y: 2.5d,
+	text: [
+		"§9Nitrogen§r comprises 78% of the atmosphere. Because of this, after the first few processes of §9Liquid Air§r in a §3Cryogenic Distillation Tower§r, you'll probably have more Nitrogen than you know what to do with.",
+		"",
+		"If you got here centrifuging air, then it's gonna take you longer to get to that point.",
+		"",
+		"Even so, don't void it unless you have secured a very large stockpile. Storage is cheap and Nitrogen is used in sizeable quantities for several notable things, one of which you'll be needing very soon."
+	],
+	dependencies: [
+		"82284a88",
+		"8be7d056"
+	],
+	tasks: [{
+		uid: "0778cbbc",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "nitrogen",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "723b917e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

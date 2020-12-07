@@ -1,0 +1,30 @@
+{
+	title: "Fluid Interface",
+	icon: "appliedenergistics2:fluid_interface",
+	x: -3.75d,
+	y: 7.0d,
+	text: [
+		"This is the fluid counterpart to the standard §aME Interface§r.",
+		"",
+		"Fluids inserted into it are automatically digitized into the network, though it does have internal storage that can back up if you run out of space.",
+		"",
+		"You can configure the interface to stock up to six different fluids (or for faster throughput later on, several tanks of the same fluid). You can use §aPump covers§r on §bGregTech§r machines to pull fluids from or extract fluids into an interface. This is useful for routing fluids if you're already using the output side for items or a different fluid.",
+		"",
+		"It is also far more performant and scales better without lag than §aFluid Import/Export Buses§r."
+	],
+	dependencies: [
+		"f93fa897"
+	],
+	tasks: [{
+		uid: "3d8a8590",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:fluid_interface"
+		}]
+	}],
+	rewards: [{
+		uid: "4452b3a6",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,48 @@
+{
+	title: "First Foray Into The Microverse",
+	icon: "contenttweaker:tieroneship",
+	x: 22.0d,
+	y: 27.0d,
+	text: [
+		"This is your first Micro Miner ever.",
+		"Yes, not the last: these things aren't reusable.",
+		"",
+		"This one can get you:",
+		"§6* Cassiterite Ore",
+		"* Dense Iron Ore",
+		"* Uraninite Ore",
+		"* Redstone Ore",
+		"* Nickel Ore",
+		"* Rutile Ore",
+		"* Galena Ore",
+		"* Moon Turf",
+		"* Dilithium",
+		"* Salt Ore§r",
+		"",
+		"When equipped with a Gemstone Sensor (which may currently not be available to you yet):",
+		"§6* Exquisite Diamond",
+		"* Apatite Ore",
+		"* Phosphor Ore",
+		"* Quartzite Ore§r",
+		"",
+		"Can also be used to bring §bStellar Creation Data§r, but less efficiently than the Tier Two."
+	],
+	dependencies: [
+		"afd683a3",
+		"ec5202d8",
+		"b822aba1"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "867fe5e0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tieroneship"
+		}]
+	}],
+	rewards: [{
+		uid: "8620672e",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

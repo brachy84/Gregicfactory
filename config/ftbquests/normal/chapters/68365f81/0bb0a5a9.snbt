@@ -1,0 +1,25 @@
+{
+	title: "Element 054: Xenon",
+	icon: "contenttweaker:solidifiedxenon",
+	x: -2.5d,
+	y: 8.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"11564de3"
+	],
+	tasks: [{
+		uid: "8da49765",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedxenon 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "42292fc5",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

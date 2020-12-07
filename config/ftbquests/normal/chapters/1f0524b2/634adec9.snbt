@@ -1,0 +1,55 @@
+{
+	title: "Fire Water",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "fire_water",
+			Amount: 1000
+		}
+	},
+	x: 17.25d,
+	y: 18.75d,
+	text: [
+		"§9Fire Water§r is a great way of producing §6Grains of Infinity§r. Spill a bucket over a patch of bare bedrock and watch it drop grains every so often. There's a 2% chance per random tick for one to be generated on each block of bedrock the Fire Water is flowing on.",
+		"",
+		"Make sure to chunkload the area."
+	],
+	dependencies: [
+		"e6b8b1e0"
+	],
+	tasks: [{
+		uid: "a04a9026",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "fire_water",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fe391a5f",
+		type: "item",
+		items: [{
+			item: "enderstorage:ender_storage 2"
+		}],
+		count: 2L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9f1d668e",
+		type: "item",
+		items: [{
+			item: "enderio:block_vacuum_chest"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5ff4c263",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

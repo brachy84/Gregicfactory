@@ -1,0 +1,23 @@
+{
+	title: "Ore Doubling?",
+	icon: "gregtech:meta_item_1 1 5215",
+	x: -7.75d,
+	y: 5.5d,
+	text: [
+		"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up.",
+		"",
+		"§eYou shouldn't feel any pressure to do that in Omnifactory, though§f. Ore veins are massive, and mining is extremely fast with §aMining Hammers§f. What's more, even once you get access to §3Macerators§f, they initially process ore slowly and require power to operate.",
+		"",
+		"Obvious exceptions would be rare materials or anything you buy with §dOmnicoins §fbecause you can't find it. Those are worth doubling, if possible.",
+		"",
+		"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! §eOre doubling can be safely ignored until you have Medium Voltage machines or even later.§r"
+	],
+	dependencies: [
+		"ae527e17"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "cd21d21c",
+		type: "checkmark"
+	}]
+}

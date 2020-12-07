@@ -1,0 +1,25 @@
+{
+	title: "Knightslime Ingots",
+	icon: "contenttweaker:knightslimeingot",
+	x: -14.75d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"0fe49dfb"
+	],
+	tasks: [{
+		uid: "df059b18",
+		type: "item",
+		items: [{
+			item: "contenttweaker:knightslimeingot 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "d8890ee2",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

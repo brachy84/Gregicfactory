@@ -1,0 +1,40 @@
+{
+	title: "NITRO DIESEL!!",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "nitro_fuel",
+			Amount: 1000
+		}
+	},
+	x: -12.5d,
+	y: 4.5d,
+	text: [
+		"Mixing §9Diesel§r (or less efficiently, §9Bio Diesel§r) with §9Tetranitromethane§r in an §3HV Mixer§r produces §9Cetane-Boosted Diesel§r, an extremely potent fuel needed later for §6Draconium§r production.",
+		"",
+		"If you have a very robust petrochemical infrastructure and can afford to burn it, this fuel along with proper oxygenation maximizes the potential of multiblock §3Diesel Generators§r, producing 720 EU/mB of fuel."
+	],
+	dependencies: [
+		"a05b598a",
+		"cdd481b7"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "1bc5f497",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "nitro_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3528e4d7",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

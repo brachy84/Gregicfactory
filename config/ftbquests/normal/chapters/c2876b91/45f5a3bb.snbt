@@ -1,0 +1,30 @@
+{
+	title: "The First Tier Four Circuits",
+	icon: "contenttweaker:refinedprocessormainframe",
+	x: -27.75d,
+	y: 0.5d,
+	text: [
+		"This is the first Tier Four circuit, which is used for EV-tier machinery.",
+		"",
+		"This is the first kind of mainframe you'll have made, and as you can see it's extraordinarily expensive. Fortunately, you don't have to make too many of these.",
+		"",
+		"Invest in the §3HV Assembling Machine§r to unlock the next theme of circuits, which use Epoxy substrates and span tiers two through five."
+	],
+	dependencies: [
+		"da59b42b",
+		"76a16867"
+	],
+	tasks: [{
+		uid: "160e1d05",
+		type: "item",
+		items: [{
+			item: "contenttweaker:refinedprocessormainframe"
+		}]
+	}],
+	rewards: [{
+		uid: "2300a7c5",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

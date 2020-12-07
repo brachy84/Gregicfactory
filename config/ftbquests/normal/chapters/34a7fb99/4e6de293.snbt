@@ -1,0 +1,27 @@
+{
+	title: "Naquadah Coil Blocks",
+	icon: "gregtech:wire_coil 1 5",
+	x: -9.0d,
+	y: 6.25d,
+	text: [
+		"§6Naquadah§r is the sixth coil material available, increasing your EBF's operating temperature to 7200K so it can process more advanced materials.",
+		"",
+		"While it's also possible to make §6Naquadah Alloy Coils§r, you can skip them and go directly to §6Superconducting Coils§r."
+	],
+	dependencies: [
+		"9d26d089"
+	],
+	tasks: [{
+		uid: "2a2a8fc8",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 16 5"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "a5c52120",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

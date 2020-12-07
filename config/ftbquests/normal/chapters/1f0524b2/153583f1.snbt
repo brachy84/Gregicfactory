@@ -1,0 +1,25 @@
+{
+	title: "Luminessence",
+	icon: "extendedcrafting:material 1 7",
+	x: 11.25d,
+	y: 22.875d,
+	text: [
+		"§6Luminessence§r is used in a number of things, but right now, it will be a component in your §aExtended Crafting Tables§r."
+	],
+	dependencies: [
+		"aa3821dc"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "9d60166a",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "f8c45a87",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

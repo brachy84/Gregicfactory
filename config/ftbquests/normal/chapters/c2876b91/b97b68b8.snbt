@@ -1,0 +1,25 @@
+{
+	title: "Blitz Powder",
+	icon: "thermalfoundation:material 1 2051",
+	x: -34.75d,
+	y: 1.75d,
+	text: [
+		"Bits of a §6Blitz Rod§r. Using a §3Macerator§r doubles your yield."
+	],
+	dependencies: [
+		"1afe02e2",
+		"ce20731a"
+	],
+	tasks: [{
+		uid: "a4e2f71f",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 2051"
+		}]
+	}],
+	rewards: [{
+		uid: "9606311e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

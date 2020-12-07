@@ -1,0 +1,31 @@
+{
+	title: "The First Tier Seven Circuits",
+	icon: "contenttweaker:quantumprocessormainframe",
+	x: -19.5d,
+	y: 9.25d,
+	text: [
+		"Now that you have an §3Assembly Line§r you can craft the §6Quantum Processor Mainframe§r, the first Tier Seven circuit.",
+		"",
+		"These are required for crafting the Ludicrous Voltage (LuV) §3Assembling Machine§r.",
+		"",
+		"This recipe requires some §6Quantum Stars§r, which are made in a §3Chemical Bath§r with a §6Nether Star§r and §9Radon§r. It also needs some §6HSS-G Frames§r and significant quantities of §6SMD Components§r."
+	],
+	dependencies: [
+		"dc57b1b2",
+		"4ec0e1fa",
+		"1d2912ba"
+	],
+	tasks: [{
+		uid: "64236cf5",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32218"
+		}]
+	}],
+	rewards: [{
+		uid: "9827dfa6",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

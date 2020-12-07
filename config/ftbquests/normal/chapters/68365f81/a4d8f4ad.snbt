@@ -1,0 +1,25 @@
+{
+	title: "Vanadium Steel Ingots",
+	icon: "gregtech:meta_item_1 1 10301",
+	x: -12.75d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"fafe4cde"
+	],
+	tasks: [{
+		uid: "8f1fd760",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10301"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "80588f91",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

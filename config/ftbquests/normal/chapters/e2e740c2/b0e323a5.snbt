@@ -1,0 +1,83 @@
+{
+	title: "Overworldian Mobs",
+	icon: "deepmoblearning:data_model_zombie",
+	x: -27.5d,
+	y: 3.0d,
+	text: [
+		"There's no rush to get these all done and leveled up, but they do provide a good source of some of the basic resources in exchange for RF.",
+		"",
+		"Look at what the §6Pristine Matter§r for each mob provides, and set up simulators for all the ones you're interested in. If you your power can handle it, it can even be advantageous to run several of the same model."
+	],
+	dependencies: [
+		"917e9bdd"
+	],
+	tasks: [{
+		uid: "0ca632ae",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_zombie"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e4e9f772",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_creeper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "72b54dca",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_witch"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "68bd066e",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_skeleton"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "55e47bdc",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_spider"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d9804565",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_guardian"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "98726e6b",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_thermal_elemental"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9cc80b46",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 10
+	}]
+}

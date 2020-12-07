@@ -1,0 +1,45 @@
+{
+	title: "Staff of Traveling",
+	icon: {
+		id: "enderio:item_travel_staff",
+		tag: {
+			enderio.darksteel.upgrade.energyUpgrade: {
+				level: 3,
+				energy: 1000000
+			}
+		}
+	},
+	x: -13.0d,
+	y: 15.5d,
+	text: [
+		"Holding one of these reveals §aTravel Anchors§r and §aTelepads§r in range.",
+		"",
+		"Shift + right-click after aiming to warp to one, or point it anywhere to teleport forward a short distance (works through walls).",
+		"",
+		"These are powered with RF, and can be further enchanted through §bEnderIO§r's enchanting mechanics.",
+		"",
+		"The §6Vibrant Crystal§r will require an §3Autoclave§r."
+	],
+	dependencies: [
+		"906e6c13"
+	],
+	tasks: [{
+		uid: "ccbbe5a3",
+		type: "item",
+		items: [{
+			id: "enderio:item_travel_staff",
+			tag: {
+				enderio.darksteel.upgrade.energyUpgrade: {
+					level: 3,
+					energy: 1000000
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f06f081b",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

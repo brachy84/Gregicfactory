@@ -1,0 +1,34 @@
+{
+	title: "Synthesizing Your First Omnium",
+	icon: "extendedcrafting:singularity_ultimate",
+	x: -9.0d,
+	y: 17.5d,
+	text: [
+		"With the §6Stabilized Einsteinium§r you harvested from a microverse, you should now have access to everything you need to synthesize your first §dMote of Omnium§r.",
+		"",
+		"You're gonna need to make a lot of these as you push into the End Game, so make sure your §eautomation is supplying you with a stock of all of the ingredients§r. That's what those quests in the End Game tab have been about about all along!"
+	],
+	dependencies: [
+		"7ee8be78"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "1b1399d8",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizedeinsteinium"
+		}]
+	},
+	{
+		uid: "fbd5550d",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity_ultimate"
+		}]
+	}],
+	rewards: [{
+		uid: "bbb6b4d8",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

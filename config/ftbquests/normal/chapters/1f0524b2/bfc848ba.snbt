@@ -1,0 +1,28 @@
+{
+	title: "Red Coal",
+	icon: "extrautils2:ingredients 1 4",
+	x: 9.75d,
+	y: 25.5d,
+	text: [
+		"§6Red Coal§r is an important ingredient for §6Black Steel Dust§r.",
+		"",
+		"Careful with making an AE2 pattern with this one; due to the way §bExtra Utilities§r item generation works, you'll have to craft a piece of Red Coal to put into relevant §aPatterns§r manually."
+	],
+	dependencies: [
+		"b1d8b4e9",
+		"c0dfa945"
+	],
+	tasks: [{
+		uid: "f1dd72cc",
+		type: "item",
+		items: [{
+			item: "extrautils2:ingredients 1 4"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2f6ef91f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

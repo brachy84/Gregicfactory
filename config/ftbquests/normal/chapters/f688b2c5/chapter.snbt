@@ -1,0 +1,10 @@
+{
+	title: "Genesis",
+	icon: "minecraft:book",
+	description: [
+		"Welcome to §5Omnifactory§r, I'll be your guide."
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

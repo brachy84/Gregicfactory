@@ -1,0 +1,25 @@
+{
+	title: "Signalum Ingots",
+	icon: "thermalfoundation:material 1 165",
+	x: -14.75d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"8c6a7a09"
+	],
+	tasks: [{
+		uid: "68b1dc1e",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 64 165"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "33365611",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

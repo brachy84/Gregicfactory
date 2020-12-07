@@ -1,0 +1,27 @@
+{
+	title: "Alloy Smelter",
+	icon: "gregtech:machine 1 70",
+	x: -31.75d,
+	y: 8.75d,
+	shape: "square",
+	text: [
+		"Alloy Smelters are used to create alloys by melting and reforming items together.",
+		"",
+		"Now you won't need to grind up metals into dusts and mix them for alloy dusts! Plus, many of the more complex alloys you couldn't make that way are now possible."
+	],
+	dependencies: [
+		"5876c22c"
+	],
+	tasks: [{
+		uid: "0a88a264",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 70"
+		}]
+	}],
+	rewards: [{
+		uid: "a4169258",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

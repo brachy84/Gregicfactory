@@ -1,0 +1,37 @@
+{
+	title: "Infiniter Water",
+	icon: "enderio:block_reservoir",
+	x: -30.5d,
+	y: 8.75d,
+	text: [
+		"Endervoirs are blocks that generate water much faster than basic NuclearCraft infinite water sources.",
+		"",
+		"Endervoirs are multiblocks formed by at least three Endervoir blocks. You can right-click a block with a wrench to make it output into adjacent machines.",
+		"",
+		"The maximum transfer rate of an Endervoir is one bucket per second."
+	],
+	dependencies: [
+		"ed2a8868"
+	],
+	tasks: [{
+		uid: "f236f1c1",
+		type: "item",
+		items: [{
+			item: "enderio:block_fused_quartz 8"
+		}],
+		count: 8L
+	},
+	{
+		uid: "5baa3a09",
+		type: "item",
+		items: [{
+			item: "enderio:block_reservoir 4"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "286bc67a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

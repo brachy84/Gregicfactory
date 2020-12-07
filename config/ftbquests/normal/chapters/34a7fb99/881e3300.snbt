@@ -1,0 +1,37 @@
+{
+	title: "Combination Package Crafter",
+	icon: "packagedexcrafting:combination_crafter",
+	x: -5.75d,
+	y: 7.25d,
+	text: [
+		"A much more efficient version of the §3Empowerer§r.",
+		"",
+		"This is a digital upgrade to the §3Crafting Core§r, allowing you to craft Empowerer recipes directly through §bPackagedAuto§r.",
+		"",
+		"The §aMarked Pedestals§r can be placed freely within three blocks distance of the Crafting block, as long as they are on the same Y-level."
+	],
+	dependencies: [
+		"ced2c146",
+		"3f261428"
+	],
+	tasks: [{
+		uid: "d6dcd12d",
+		type: "item",
+		items: [{
+			item: "packagedexcrafting:combination_crafter"
+		}]
+	},
+	{
+		uid: "d643656d",
+		type: "item",
+		items: [{
+			item: "packagedexcrafting:marked_pedestal 4"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "3dbbe02a",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

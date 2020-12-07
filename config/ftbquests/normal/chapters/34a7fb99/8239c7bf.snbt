@@ -1,0 +1,26 @@
+{
+	title: "The Ultimate Material",
+	icon: "armorplus:material 1 4",
+	x: -1.25d,
+	y: 14.5d,
+	text: [
+		"You don't need it just yet, but you can make it now.",
+		"",
+		"This is a critical material for the Endgame."
+	],
+	dependencies: [
+		"cc56b851"
+	],
+	tasks: [{
+		uid: "49377f30",
+		type: "item",
+		items: [{
+			item: "armorplus:material 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "711196ca",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

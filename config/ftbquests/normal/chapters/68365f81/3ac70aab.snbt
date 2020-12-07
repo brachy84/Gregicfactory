@@ -1,0 +1,25 @@
+{
+	title: "Element 028: Nickel",
+	icon: "gregtech:meta_item_1 1 10044",
+	x: -0.5d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"2391499a"
+	],
+	tasks: [{
+		uid: "41fb42ad",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10044"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "26ac6436",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

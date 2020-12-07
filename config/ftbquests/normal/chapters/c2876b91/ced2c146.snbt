@@ -1,0 +1,41 @@
+{
+	title: "Empowerer",
+	icon: "actuallyadditions:block_empowerer",
+	x: -25.25d,
+	y: 8.0d,
+	text: [
+		"§3The Empowerer§r is a machine from §bActually Additions§r used to convert its special crystalline materials into empowered variants.",
+		"",
+		"The Empowerer is placed in the center of a flat 7x7 region. The four §aDisplay Stands§r are placed with a two-block gap from the Empowerer, one in each cardinal direction.",
+		"",
+		"Recipes require specific items to be placed on the Display Stands and the main item on the Empowerer itself. The items on the Display Stands are consumed and the central item is Empowered.",
+		"",
+		"RF power needs to be fed into the Display Stands to infuse the center item with power. The Display Stands have a low per-side power transfer rate so it takes a while. Consider putting energy conduits on multiple sides of each display stand to speed it up a bit.",
+		"",
+		"This thing's a bit of a pain. It's slow, takes up a large space, and it's cumbersome to automate. Don't worry, you'll get access to the §3Crafting Core§r after you get §6Draconium§r, which is vastly faster, more compact, and easier to automate. Even better, that's pretty much immediately craftable into the §3Combination Package Crafter§r, which can do the Empowerer recipes directly through §bPackagedAuto§r and §bAE2§r."
+	],
+	dependencies: [
+		"38223643"
+	],
+	tasks: [{
+		uid: "efe59510",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_empowerer"
+		}]
+	},
+	{
+		uid: "175d1916",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_display_stand 4"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "7347fa60",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

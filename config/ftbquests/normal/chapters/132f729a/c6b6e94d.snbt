@@ -1,0 +1,42 @@
+{
+	title: "Ethylene and Polyethylene",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "ethylene",
+			Amount: 1000
+		}
+	},
+	x: -18.5d,
+	y: 12.0d,
+	text: [
+		"§9Ethylene§r is a hydrocarbon made from dehydrating §9Ethanol§r with §9Sulfuric Acid§r in a §3Chemical Reactor§r. It is an extremely important chemical in the production of plastics.",
+		"",
+		"§9Polyethylene§r is the most common category of plastic, made from polymers of §9Ethylene§r. Adding §9Oxygen§r in a §3Chemical Reactor§r recreates (with some artistic license) early accidental synthesis of Polyethylene.",
+		"",
+		"When you have large amounts of §6Rutile§r and §6Bauxite§r (probably after you visit the Moon) you can consider using §9Titanium Tetrachloride§r as a catalyst to improve your Polyethylene yields. For now it's not a great idea, as in addition to its Overworld rarity, you need it for §6Titanium§r."
+	],
+	dependencies: [
+		"23e25bf5",
+		"afe1dbea"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "5a30d535",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "plastic",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "40e2f1e1",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

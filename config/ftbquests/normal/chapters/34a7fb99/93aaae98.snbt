@@ -1,0 +1,26 @@
+{
+	title: "Wyvern Core",
+	icon: "draconicevolution:wyvern_core",
+	x: 0.5d,
+	y: 7.75d,
+	text: [
+		"§6Wyvern Cores§r are the second tier of cores, used for intermediate crafting recipes.",
+		"",
+		"Each Wyvern Core is made via fusion crafting and the setup needs eight §6Basic Fusion Crafting Injectors§r."
+	],
+	dependencies: [
+		"395722c5"
+	],
+	tasks: [{
+		uid: "aa8f31f5",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_core"
+		}]
+	}],
+	rewards: [{
+		uid: "82d3095a",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

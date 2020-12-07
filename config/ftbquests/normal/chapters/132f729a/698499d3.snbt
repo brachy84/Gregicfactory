@@ -1,0 +1,27 @@
+{
+	title: "Pattern Terminal",
+	icon: "appliedenergistics2:part 1 360",
+	x: -9.25d,
+	y: 11.5d,
+	text: [
+		"As the name suggests, this terminal lets you encode recipes onto §aBlank Patterns§r.",
+		"",
+		"It's a micropart, so you need to place it on §6ME Cable§r (not a conduit)."
+	],
+	dependencies: [
+		"addbb213",
+		"d466eb44"
+	],
+	tasks: [{
+		uid: "3c994f20",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 340"
+		}]
+	}],
+	rewards: [{
+		uid: "6933508a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

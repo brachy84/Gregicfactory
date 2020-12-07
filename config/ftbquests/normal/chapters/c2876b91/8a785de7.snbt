@@ -1,0 +1,24 @@
+{
+	title: "Aerotheum",
+	icon: "thermalfoundation:material 1 1026",
+	x: -34.75d,
+	y: 3.0d,
+	text: [
+		"§6§6Redstone§r, §6Saltpeter§r, and §6Blitz Powder§r creates §6Aerotheum Dust§r, a mixture imbued with potent elemental air."
+	],
+	dependencies: [
+		"b97b68b8"
+	],
+	tasks: [{
+		uid: "c1713089",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 1026"
+		}]
+	}],
+	rewards: [{
+		uid: "7529be27",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

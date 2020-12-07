@@ -1,0 +1,33 @@
+{
+	title: "Basic Capacitor Bank",
+	icon: {
+		id: "enderio:block_cap_bank",
+		tag: {
+			"enderio:energy": 1000000
+		},
+		Damage: 1s
+	},
+	x: -25.5d,
+	y: 10.5d,
+	text: [
+		"Expandable multi-block storage for RF power.",
+		"",
+		"This first tier isn't much, but you can upgrade them over time to hold substantial amounts of power."
+	],
+	dependencies: [
+		"cfafa8fa"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "2cfb3aa4",
+		type: "item",
+		items: [{
+			item: "enderio:block_cap_bank 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "e15f2d77",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

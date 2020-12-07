@@ -1,0 +1,27 @@
+{
+	title: "The First Tier Five Circuit",
+	icon: "contenttweaker:microprocessormainframe",
+	x: -28.75d,
+	y: 8.5d,
+	text: [
+		"The second Mainframe you'll have to contend with.",
+		"",
+		"This is the first Tier Five circuit available, and consequently the most expensive to make. as always, invest in the next circuit theme to get to cheaper recipes as soon as possible."
+	],
+	dependencies: [
+		"3a41006a"
+	],
+	tasks: [{
+		uid: "0bd79e9a",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32208"
+		}]
+	}],
+	rewards: [{
+		uid: "551483a3",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

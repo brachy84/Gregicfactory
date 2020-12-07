@@ -1,0 +1,25 @@
+{
+	title: "Element 017: Chlorine",
+	icon: "contenttweaker:solidifiedchlorine",
+	x: -3.5d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"28e3427a"
+	],
+	tasks: [{
+		uid: "ee6f4257",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedchlorine 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "5267c041",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	title: "The First Tier Three Circuits",
+	icon: "contenttweaker:electronicprocessorarray",
+	x: -21.5d,
+	y: 9.0d,
+	text: [
+		"Your first tier three circuit, formed from four §6Electronic Processors§r and §6Transistors§r, among other ingredients.",
+		"",
+		"As you'll realize is the pattern, it is expensive and unwieldy to make the first forms of each tier of circuits. Fortunately, you don't have to make many of them.",
+		"",
+		"Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each tier through six will have a circuit recipe instead of requiring processors, arrays, or mainframes."
+	],
+	dependencies: [
+		"a1c2bbbe",
+		"d155f2ab"
+	],
+	tasks: [{
+		uid: "ab9f11dc",
+		type: "item",
+		items: [{
+			item: "contenttweaker:electronicprocessorarray"
+		}]
+	}],
+	rewards: [{
+		uid: "9ab569c0",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

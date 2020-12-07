@@ -1,0 +1,27 @@
+{
+	title: "Early Rutile",
+	icon: "gregtech:meta_item_1 1 2122",
+	x: -32.25d,
+	y: 1.75d,
+	text: [
+		"§6Rutile§r is a §6Titanium§r precursor found in §6Ilmenite Ore§r and §6Bauxite Ore§r, which spawn uncommonly in the Overworld.",
+		"",
+		"§6Rutile Ore§r (the richest source), as well as larger quantities of Ilmenite and Bauxite, may be found on the Moon and other planets."
+	],
+	dependencies: [
+		"ad3c11c6",
+		"237ea1ad"
+	],
+	tasks: [{
+		uid: "00d3cd7a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2122"
+		}]
+	}],
+	rewards: [{
+		uid: "6db647fb",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

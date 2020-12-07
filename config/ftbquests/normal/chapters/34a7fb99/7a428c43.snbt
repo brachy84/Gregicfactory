@@ -1,0 +1,26 @@
+{
+	title: "Signalum Heavy Plating",
+	icon: "contenttweaker:signalumplating",
+	x: -15.0d,
+	y: 8.5d,
+	text: [
+		"A heavy plating material required for the next two tiers of Micro Miners."
+	],
+	dependencies: [
+		"914042f8",
+		"66c726fd",
+		"8c6a7a09"
+	],
+	tasks: [{
+		uid: "4426f189",
+		type: "item",
+		items: [{
+			item: "contenttweaker:signalumplating"
+		}]
+	}],
+	rewards: [{
+		uid: "e5bc1395",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Eternal Catalyst",
+	icon: "contenttweaker:eternalcatalyst",
+	x: -2.25d,
+	y: -2.25d,
+	shape: "diamond",
+	text: [
+		"A catalyst forged from §dOmnium§r, §6Empowered Gears§r, various enhanced §6Nether Stars§r, and a core made of §6The Ultimate Material§r."
+	],
+	dependencies: [
+		"f50e518f",
+		"f300abb1",
+		"5db12b90",
+		"c1939720",
+		"8239c7bf",
+		"f52807b1",
+		"790c5b06",
+		"d86859f4"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "bd31a555",
+		type: "item",
+		items: [{
+			item: "contenttweaker:eternalcatalyst"
+		}]
+	}]
+}

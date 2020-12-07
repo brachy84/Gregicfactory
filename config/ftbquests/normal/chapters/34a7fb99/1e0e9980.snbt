@@ -1,0 +1,58 @@
+{
+	title: "PackagedAuto",
+	icon: "packagedauto:package",
+	x: -11.625d,
+	y: 11.625d,
+	text: [
+		"§bPackagedAuto§r is an addon for §bApplied Energistics 2§r. Its main purpose in §5Omnifactory§r is to allow you to automate extended crafting recipes.",
+		"",
+		"Applied Energistics 2 stores recipes in §aPatterns§r, but they are limited to at most 9 stacks of items (a standard 3x3 crafting grid). PackagedAuto stores recipes in §aPackage Recipe Holders§r, which don't have this limitation. Additionally, each Holder can store up to §e20 different recipes§r. Holders must be encoded in the §3Package Recipe Encoder§r.",
+		"",
+		"In the vast majority of situations you'll need two identically-encoded Holders, as the following machines work together.",
+		"",
+		"The §3Packager§r is a machine that compresses ingredients for a specific recipe into a set of §6Recipe Packages§r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks).",
+		"",
+		"The §3Unpackager§r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if §eall packages in a set are present§r.",
+		"",
+		"When both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your §aTerminal§r."
+	],
+	dependencies: [
+		"45f5a3bb",
+		"fb55c41e"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "f2f21a4b",
+		type: "item",
+		items: [{
+			item: "packagedauto:packager"
+		}]
+	},
+	{
+		uid: "3396daee",
+		type: "item",
+		items: [{
+			item: "packagedauto:unpackager"
+		}]
+	},
+	{
+		uid: "57cffbc8",
+		type: "item",
+		items: [{
+			item: "packagedauto:recipe_holder 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "fb55c4c0",
+		type: "item",
+		items: [{
+			item: "packagedauto:encoder"
+		}]
+	}],
+	rewards: [{
+		uid: "4f680d2f",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

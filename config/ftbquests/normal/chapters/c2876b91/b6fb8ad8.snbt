@@ -1,0 +1,81 @@
+{
+	title: "Sulfuric Heavy, Light, Naphtha and Gas",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "sulfuric_heavy_fuel",
+			Amount: 1000
+		}
+	},
+	x: -10.5d,
+	y: 0.5d,
+	text: [
+		"First, you need some §9Oil§r. Pick your favorite method: you should engineer a renewable automated source, as you will need large quantities.",
+		"",
+		"Start off by running the Oil through the §3Distillation Tower§r. This will result in §9Sulfuric Heavy Fuel§r, §9Sulfuric Light Fuel§r, §9Sulfuric Naphtha§r, and §9Sulfuric Gas§r.",
+		"",
+		"These will all need to be hydrodesulfurized using §9Hydrogen§r in a §3Chemical Reactor§r, which produces the non-Sulfuric versions.",
+		"",
+		"All of these products are useful, so figure out how you want to store the variety and large quantities of fluids."
+	],
+	dependencies: [
+		"61b179ca"
+	],
+	tasks: [{
+		uid: "cd3881d4",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sulfuric_heavy_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1660284e",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sulfuric_light_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "eb8d816e",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sulfuric_naphtha",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "13f0f6e8",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sulfuric_gas",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8e3ed8bd",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

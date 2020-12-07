@@ -1,0 +1,26 @@
+{
+	title: "Element 051: Antimony",
+	icon: "gregtech:meta_item_1 1 10003",
+	x: -3.5d,
+	y: 8.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"6ff89559",
+		"407e8009"
+	],
+	tasks: [{
+		uid: "4a0ce098",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10003"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "63dbd853",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

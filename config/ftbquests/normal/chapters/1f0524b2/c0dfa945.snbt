@@ -1,0 +1,25 @@
+{
+	title: "Resonator",
+	icon: "extrautils2:resonator",
+	x: 8.5d,
+	y: 24.25d,
+	text: [
+		"The §3Resonator§r is one of the primary crafting machines from §bExtra Utilties 2§r. It requires Grid Power in order to function, and produces special items like §6Stoneburnt§r and §6Red Coal§r."
+	],
+	dependencies: [
+		"2c698e5a"
+	],
+	tasks: [{
+		uid: "d8682ec4",
+		type: "item",
+		items: [{
+			item: "extrautils2:resonator"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a1e489b1",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

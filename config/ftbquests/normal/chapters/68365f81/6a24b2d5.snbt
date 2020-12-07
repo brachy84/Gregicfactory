@@ -1,0 +1,25 @@
+{
+	title: "Element 033: Arsenic",
+	icon: "gregtech:meta_item_1 1 2005",
+	x: -3.5d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"1c2d688b"
+	],
+	tasks: [{
+		uid: "ce9b69d5",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 2005"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "519750e2",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

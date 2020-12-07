@@ -1,0 +1,26 @@
+{
+	title: "LV Cluster Mill",
+	icon: "gregtech:machine 1 2008",
+	x: -20.0d,
+	y: 6.0d,
+	text: [
+		"Before you get access to easier circuits, you will need to be able to make §6Foils§r.",
+		"",
+		"That's the purpose of the §3Cluster Mill§r."
+	],
+	dependencies: [
+		"5876c22c"
+	],
+	tasks: [{
+		uid: "aaaf4a8e",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2008"
+		}]
+	}],
+	rewards: [{
+		uid: "0be4a0e9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

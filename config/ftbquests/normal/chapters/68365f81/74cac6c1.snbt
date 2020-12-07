@@ -1,0 +1,25 @@
+{
+	title: "Lumium Ingots",
+	icon: "thermalfoundation:material 1 166",
+	x: -15.75d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"f61d76f1"
+	],
+	tasks: [{
+		uid: "959a44ff",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 64 166"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "b29a06ed",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

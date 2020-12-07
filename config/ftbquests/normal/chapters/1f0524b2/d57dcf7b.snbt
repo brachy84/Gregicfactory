@@ -1,0 +1,31 @@
+{
+	title: "Steel Heavy Plates",
+	icon: "contenttweaker:steelplating",
+	x: 22.0d,
+	y: 19.0d,
+	text: [
+		"Even simple rockets demand §6Heavy Plates§r for their construction. In this case, made out of §6Steel§r."
+	],
+	dependencies: [
+		"344445c4"
+	],
+	tasks: [{
+		uid: "636c02a1",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 211"
+		}]
+	},
+	{
+		uid: "a366dc32",
+		type: "item",
+		items: [{
+			item: "contenttweaker:steelplating"
+		}]
+	}],
+	rewards: [{
+		uid: "e72bece3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

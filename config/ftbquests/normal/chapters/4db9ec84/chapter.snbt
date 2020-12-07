@@ -1,0 +1,14 @@
+{
+	title: "Progression",
+	icon: "gtadditions:ga_meta_item 1 32206",
+	description: [
+		"It's always rewarding to take a step forward.",
+		"",
+		"This tab outlines the progression of various things in §5Omnifactory§r.",
+		"",
+		"Circuits are the primary measure of your progress."
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

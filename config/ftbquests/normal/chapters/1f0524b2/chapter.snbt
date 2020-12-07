@@ -1,0 +1,16 @@
+{
+	title: "Into The Microverse",
+	icon: "armorplus:btm_moon",
+	description: [
+		"Get your feet wet with §bExtra Utilities§r and §bExtended Crafting§r.",
+		"",
+		"Conquer The End or invest in §bEnderIO §rfor teleportation technologies.",
+		"",
+		"Build a rocket and go to the Moon (or don't, but it's fun).",
+		"",
+		"Either way, it's time to start mining §emicroverses§r."
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

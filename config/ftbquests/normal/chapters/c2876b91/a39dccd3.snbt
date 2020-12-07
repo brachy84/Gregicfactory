@@ -1,0 +1,24 @@
+{
+	title: "Ferroboron",
+	icon: "nuclearcraft:alloy 1 6",
+	x: -18.75d,
+	y: 9.25d,
+	text: [
+		"An alloy of §6Steel§r and §6Boron§r. Pretty simple."
+	],
+	dependencies: [
+		"79ed420e"
+	],
+	tasks: [{
+		uid: "8361413f",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:alloy 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "23e75c62",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

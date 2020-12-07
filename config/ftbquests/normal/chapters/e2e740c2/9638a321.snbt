@@ -1,0 +1,32 @@
+{
+	title: "Obsidian",
+	icon: "minecraft:obsidian",
+	x: -33.25d,
+	y: 4.25d,
+	text: [
+		"You'll need Obsidian to make Dark Steel. Most of the tools you can make cannot mine Obsidian, but you do have a few potential options for ones that will work. The options you're most likely to have access to at this point are:",
+		"",
+		"1) A Diamond Pickaxe or Diamond Mining Hammer.",
+		"",
+		"2) A Platinum Mining Hammer (not pickaxe though).",
+		"",
+		"3) A Cobalt Pickaxe (smelted from Cobaltite)."
+	],
+	dependencies: [
+		"d18f4bb6",
+		"a7b6b388"
+	],
+	tasks: [{
+		uid: "117d6896",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian 12"
+		}],
+		count: 12L
+	}],
+	rewards: [{
+		uid: "a75f5d3a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

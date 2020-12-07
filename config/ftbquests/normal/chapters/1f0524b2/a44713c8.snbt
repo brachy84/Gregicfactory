@@ -1,0 +1,18 @@
+{
+	title: "Interdimensional Transport",
+	icon: "minecraft:ender_pearl",
+	x: 19.25d,
+	y: 22.5d,
+	text: [
+		"Now that you have §einterdimensional teleportation§r, you can travel to and from the Moon without launching a rocket each way."
+	],
+	dependencies: [
+		"dc21d68c",
+		"cb9170a6"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "f08f7bc5",
+		type: "checkmark"
+	}]
+}

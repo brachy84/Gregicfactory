@@ -1,0 +1,27 @@
+{
+	title: "Gemstone Sensor",
+	icon: "contenttweaker:gemsensor",
+	x: -21.75d,
+	y: 7.25d,
+	text: [
+		"Some Micro Miner missions use a §6Gemstone Sensor§r to scout out gems instead of ores.",
+		"",
+		"Several materials like §6Exquisite Gems§r can only be obtained from such missions."
+	],
+	dependencies: [
+		"0d1f883f",
+		"472364a2"
+	],
+	tasks: [{
+		uid: "8c854985",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gemsensor"
+		}]
+	}],
+	rewards: [{
+		uid: "2993dd3c",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

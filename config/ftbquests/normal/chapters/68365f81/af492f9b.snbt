@@ -1,0 +1,26 @@
+{
+	title: "Chaotic Cores",
+	icon: "draconicevolution:chaotic_core",
+	x: -15.0d,
+	y: -2.25d,
+	shape: "diamond",
+	text: [
+		"The culmination of so much effort.",
+		"",
+		"§6Chaotic Cores§r are the ultimate tier of §bDraconic Evolution§r core, used for the most powerful and advanced items."
+	],
+	dependencies: [
+		"c8bc3f10",
+		"2f994f68",
+		"f52807b1"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "8d071e04",
+		type: "item",
+		items: [{
+			item: "draconicevolution:chaotic_core 4"
+		}],
+		count: 4L
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "Wyvern Fusion Injectors",
+	icon: "draconicevolution:crafting_injector 1 1",
+	x: 2.0d,
+	y: 7.75d,
+	text: [
+		"§6Basic Fusion Crafting Injectors§r can be upgraded to Wyvern Tier via fusion crafting.",
+		"",
+		"Technically you only need six of these to start making the next tier of injectors, but some recipes will need more than that. Plan on making at least twenty-six of these."
+	],
+	dependencies: [
+		"93aaae98"
+	],
+	tasks: [{
+		uid: "2e4421a7",
+		type: "item",
+		items: [{
+			item: "draconicevolution:crafting_injector 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "9e09b9e6",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

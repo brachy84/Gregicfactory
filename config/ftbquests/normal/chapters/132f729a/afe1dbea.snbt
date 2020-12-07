@@ -1,0 +1,41 @@
+{
+	title: "Ethanol",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "bio.ethanol",
+			Amount: 1000
+		}
+	},
+	x: -18.5d,
+	y: 10.5d,
+	text: [
+		"§9Ethanol§r is alcohol, which you can first produce from distilling §9Biomass§r.",
+		"",
+		"Boiling §6Sugar Cane§r in a §3Brewery§r is a great way to get Biomass, but you can also get it from other crops and saplings if you want.",
+		"",
+		"Once you have a hefty starting stock of Ethanol, consider making and distilling §9Fermented Biomass§r in a §3Distillation Tower§r for extra chemicals."
+	],
+	dependencies: [
+		"41d90795",
+		"f906e77c"
+	],
+	tasks: [{
+		uid: "d7ed4fd3",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "bio.ethanol",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "29601d60",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

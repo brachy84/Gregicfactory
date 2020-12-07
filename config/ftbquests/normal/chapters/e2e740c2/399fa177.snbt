@@ -1,0 +1,27 @@
+{
+	title: "LV Pumps",
+	icon: "gregtech:meta_item_1 1 32610",
+	x: -33.25d,
+	y: 7.25d,
+	shape: "square",
+	text: [
+		"Another common component of any machine that uses fluids. Also usable as a cover for moving fluids between GregTech machines and adjacent tanks or machines.",
+		"",
+		"You can use Paper Rings or Rubber Rings, but both will require a Knife to craft. A stick and a piece of flint will make a Knife with low durability, or check the recipe for metal ones."
+	],
+	dependencies: [
+		"5876c22c"
+	],
+	tasks: [{
+		uid: "42f30c8c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32610"
+		}]
+	}],
+	rewards: [{
+		uid: "bb7efb2b",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

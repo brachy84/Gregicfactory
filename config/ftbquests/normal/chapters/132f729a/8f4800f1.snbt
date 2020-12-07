@@ -1,0 +1,36 @@
+{
+	title: "Ironman 3",
+	icon: {
+		id: "simplyjetpacks:itemjetpack",
+		tag: {
+			Energy: 0,
+			JetpackParticleType: 0
+		},
+		Damage: 3s
+	},
+	x: -9.25d,
+	y: 16.75d,
+	text: [
+		"Flying faster, even nicer."
+	],
+	dependencies: [
+		"f5935e0b",
+		"4ef57e08",
+		"b5b43e1f"
+	],
+	tasks: [{
+		uid: "803f053d",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			tag: {},
+			Damage: 3s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9355e88b",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

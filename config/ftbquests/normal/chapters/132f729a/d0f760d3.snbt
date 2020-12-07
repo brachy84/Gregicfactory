@@ -1,0 +1,47 @@
+{
+	title: "Inscription Plates",
+	icon: "appliedenergistics2:material 1 13",
+	x: -7.0d,
+	y: 4.958333333333334d,
+	text: [
+		"§aPresses§r are needed for §3Inscribers§r.",
+		"",
+		"If you like exploring you can find them in meteors with a §aMeteor Compass§r.",
+		"",
+		"If you don't want to do that, or are having trouble finding one you need, feel free to etch them yourself with a §3Precision Laser Engraver§r."
+	],
+	size: 1.1666666666666667d,
+	tasks: [{
+		uid: "2650f112",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 13"
+		}]
+	},
+	{
+		uid: "33486756",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 14"
+		}]
+	},
+	{
+		uid: "c49d2fec",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 15"
+		}]
+	},
+	{
+		uid: "fba3f4e6",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 19"
+		}]
+	}],
+	rewards: [{
+		uid: "6cc29cab",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

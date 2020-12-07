@@ -1,0 +1,26 @@
+{
+	title: "Fluid Logistics",
+	icon: "gregtech:meta_item_1 1 32611",
+	x: -10.75d,
+	y: 1.75d,
+	text: [
+		"Your §3Chemical Reactors§r will be making a lot of different fluids. You'll need to manage the logistics of routing and storing all the different fluids you're automating.",
+		"",
+		"Wherever possible, having one Chemical Reactor output directly into another machine that needs its output chemical saves you from having to figure out additional storage and routing. §aFluid Filters§r and §aPump covers§r are very useful for moving fluids around a compact processing pipeline.",
+		"",
+		"But what about the final output fluids that you need elsewhere?",
+		"",
+		"One option is to use the output tanks of the Chemical Reactors as a small storage buffer, letting it back up and stop crafting automatically. A §aFluid Storage Bus§r on the machine will expose the fluid to your ME Network. Whenever you need some of this fluid, your AE2 system will pull the needed fluid out and the machine will resume processing.",
+		"",
+		"There's some catches with this approach though. First is that the inaccessible input tanks will also show up in AE but you won't be able to access them. You will want to set the Storage Bus to §eExport Only§r so AE doesn't try to store random fluids in the Chemical Reactor, and you may want to §ereduce the priority§r of the Storage Bus as well: this will signal to AE that you want it to remove fluids from that location first. Also, if multiple fluids are produced, §ethe machine will not resume processing if it doesn't have room for all fluid outputs§r.",
+		"",
+		"When you get access to them, it's probably just better to use single-fluid-formatted §aFluid Storage Cells§r and dump outputs into AE via Fluid Interfaces. You can fill up the cells, then pull the fluids out wherever else you need them."
+	],
+	dependencies: [
+		"1efd8ae4"
+	],
+	tasks: [{
+		uid: "3121b763",
+		type: "checkmark"
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	title: "Hardened Jetpack",
+	icon: {
+		id: "simplyjetpacks:itemjetpack",
+		tag: {
+			Energy: 0,
+			JetpackParticleType: 0
+		},
+		Damage: 11s
+	},
+	x: -30.5d,
+	y: 11.5d,
+	text: [
+		"Better flying."
+	],
+	dependencies: [
+		"ca1a72aa",
+		"2391499a"
+	],
+	tasks: [{
+		uid: "8c990e08",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			tag: {
+				Energy: 0,
+				JetpackParticleType: 0
+			},
+			Damage: 11s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ec90ef5a",
+		type: "item",
+		item: "contenttweaker:omnicoin5",
+		count: 2
+	}]
+}

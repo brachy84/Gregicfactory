@@ -1,0 +1,29 @@
+{
+	title: "Aluminium Ingots",
+	icon: "gregtech:meta_item_1 1 10001",
+	x: -27.5d,
+	y: 14.5d,
+	shape: "square",
+	text: [
+		"With your EBF running, start to create a supply of §6Aluminium Ingots§r. These are crucial ingredients for MV machines, including §bApplied Energistics§r.",
+		"",
+		"If you find your power supply is faltering, you may want to make additional dynamos and turn them into steam boilers and turbines. Upgrading your dynamos is also advisable.",
+		"",
+		"However, you're also about to reach MV. You're bound to discover a better power source than steam before long."
+	],
+	dependencies: [
+		"5d34f8d4"
+	],
+	tasks: [{
+		uid: "f4f9152d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10001"
+		}]
+	}],
+	rewards: [{
+		uid: "3bf54ea9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

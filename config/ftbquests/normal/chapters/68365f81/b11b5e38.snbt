@@ -1,0 +1,25 @@
+{
+	title: "Element 090: Thorium",
+	icon: "contenttweaker:stabilizedthorium",
+	x: -0.5d,
+	y: 9.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"d18f4bb6"
+	],
+	tasks: [{
+		uid: "9ea9b9aa",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizedthorium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "46774f67",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "Terminal",
+	icon: "appliedenergistics2:part 1 180",
+	x: -23.0d,
+	y: 16.5d,
+	text: [
+		"Access all of your items on a single screen. Soon, anyway.",
+		"",
+		"Please note that all four variants of §6ME Terminals§r are §emicroparts§r, which means they need to be attached to an §6ME Cable§r (not conduit) to function."
+	],
+	dependencies: [
+		"43c8e0d8"
+	],
+	tasks: [{
+		uid: "d44c0432",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 380"
+		}]
+	}],
+	rewards: [{
+		uid: "0aee012d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

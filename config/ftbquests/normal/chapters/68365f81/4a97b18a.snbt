@@ -1,0 +1,25 @@
+{
+	title: "Element 057: Lanthanum",
+	icon: "gregtech:meta_item_1 1 10060",
+	x: -1.5d,
+	y: 8.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"fca49e4f"
+	],
+	tasks: [{
+		uid: "c1730d30",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10034"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "b812d94c",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

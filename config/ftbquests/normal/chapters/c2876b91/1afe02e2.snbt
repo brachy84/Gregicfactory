@@ -1,0 +1,25 @@
+{
+	title: "I Don't Like Chemistry",
+	icon: "thermalfoundation:material 1 2048",
+	x: -34.75d,
+	y: 0.5d,
+	text: [
+		"...or, well, you might just do some exploration and kill a wild thermal elemental for a rod.",
+		"",
+		"Use it to craft a §aThermal Elemental Model§r. The rest of the dusts can be crafted from pristine matter.",
+		"",
+		"Saves you from having to make a bucket of §9Elemental Reduction Fluid§r if you're not playing on Peaceful."
+	],
+	dependencies: [
+		"6de7730d"
+	],
+	tasks: [{
+		uid: "3ea4c587",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "c332e21c",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

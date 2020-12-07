@@ -1,0 +1,40 @@
+{
+	title: "Multi Smelter",
+	icon: "gregtech:machine 1 516",
+	x: -23.25d,
+	y: 9.0d,
+	text: [
+		"The §3Multi Smelter§r is an absolute smelting unit, and is most likely the best furnace added by a mod.",
+		"",
+		"It's a 3x3x3 multiblock machine capable of §esmelting huge amounts of items per second§r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second.",
+		"",
+		"Hover over different coil blocks: the higher the §elevel§r, the more items a Multi Smelter can smelt per operation: §e16 items per level§r. The most basic Multi Smelter essentially does 16 items in the same time as a furnace does one. With a set of level 4 coil blocks, that jumps to 64 items per operation.",
+		"",
+		"This quest doesn't ask for coils, hatches or buses: feel free to choose whatever combination you want. You'll need §a8 coil blocks§r, §a1 input bus§r, §a1 output bus§r and at least §a1 energy hatch§r of any tier."
+	],
+	dependencies: [
+		"b33f8563"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "135e95ee",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 516"
+		}]
+	},
+	{
+		uid: "99f62ec9",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 14 2"
+		}],
+		count: 14L
+	}],
+	rewards: [{
+		uid: "103f1ea8",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

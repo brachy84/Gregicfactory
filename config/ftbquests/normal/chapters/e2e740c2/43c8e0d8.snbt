@@ -1,0 +1,33 @@
+{
+	title: "Energy Acceptor",
+	icon: "appliedenergistics2:energy_acceptor",
+	x: -23.0d,
+	y: 14.5d,
+	text: [
+		"Fluix is initially made via in-world crafting, by dropping §6Redstone Dust§r, §6Nether Quartz§r, and a §6Charged Certus Quartz Crystal§r in the same block of §9Water§r. You'll see some sparks then the items will merge into a §6Fluix Crystal§r. Be sure to turn off any nearby item magnets/collectors or they might interrupt this crafting process.",
+		"",
+		"The §3Energy Acceptor§r converts RF power into AE power that Applied Energistics uses, in a 2 RF to 1 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected §6ME Cables§r, §6ME Conduits§r, and §6Quartz Fiber§r. ",
+		"",
+		"Quartz Fiber are §emicroparts§r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "0fb700bb",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 7"
+		}]
+	},
+	{
+		uid: "8088ed7a",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:energy_acceptor"
+		}]
+	}],
+	rewards: [{
+		uid: "bf3256bb",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

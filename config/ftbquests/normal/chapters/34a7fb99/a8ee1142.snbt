@@ -1,0 +1,26 @@
+{
+	title: "Draconic Stem Cells",
+	icon: "contenttweaker:draconicstemcells",
+	x: -9.0d,
+	y: 14.75d,
+	text: [
+		"Just ignore the protesters outside your base.",
+		"",
+		"Each craft in an §3LuV Chemical Reactor§r takes five minutes, so it's probably a good idea to have more than one machine running this recipe. At least you get a whole stack from a single egg."
+	],
+	dependencies: [
+		"4e736bd1"
+	],
+	tasks: [{
+		uid: "dbe3a764",
+		type: "item",
+		items: [{
+			item: "contenttweaker:draconicstemcells"
+		}]
+	}],
+	rewards: [{
+		uid: "fbab8d9d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Cake Based Dimensional Transit",
+	icon: "dimensionaledibles:overworld_cake",
+	x: -2.0d,
+	y: 1.75d,
+	text: [
+		"This quest is repeatable once per hour and gives you a free cake to the Void World or Overworld. You can also refill your cakes with the items indicated in their tooltips.",
+		"",
+		"§dNote: Travel to the Void World appears to be bugged for many players. The issue is being worked on. If you can't get the Void Cake to work right, you can simply play in Lost Cities or Overworld instead without issue... lack of access to the Void World will not block your progression in any way."
+	],
+	can_repeat: true,
+	dependencies: [
+		"a557bd1e"
+	],
+	tasks: [{
+		uid: "0d410eeb",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "9d203086",
+		type: "choice",
+		table: 0
+	}]
+}

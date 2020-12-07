@@ -1,0 +1,26 @@
+{
+	title: "Element 007: Nitrogen",
+	icon: "contenttweaker:solidifiednitrogen",
+	x: 0.5d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"7d634f43",
+		"d18f4bb6"
+	],
+	tasks: [{
+		uid: "9b54323e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiednitrogen 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "1065deed",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

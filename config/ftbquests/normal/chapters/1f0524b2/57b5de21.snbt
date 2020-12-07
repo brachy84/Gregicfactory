@@ -1,0 +1,24 @@
+{
+	title: "Elite Catalyst",
+	icon: "extendedcrafting:material 1 10",
+	x: 17.0d,
+	y: 25.5d,
+	text: [
+		"Again, combining a few Components will make a Catalyst."
+	],
+	dependencies: [
+		"90c94f9f"
+	],
+	tasks: [{
+		uid: "d1acf672",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 10"
+		}]
+	}],
+	rewards: [{
+		uid: "cf93d445",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

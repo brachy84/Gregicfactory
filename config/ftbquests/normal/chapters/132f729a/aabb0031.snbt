@@ -1,0 +1,27 @@
+{
+	title: "Plastic Substrate",
+	icon: "gregtech:meta_item_2 1 32448",
+	x: -18.5d,
+	y: 15.0d,
+	text: [
+		"Better substrates. Using §6Polyvinyl Chloride§r (PVC) instead of §6Polyethylene§r (PE) doubles your yield.",
+		"",
+		"The third material option is much more difficult to make and probably not worth considering for now."
+	],
+	dependencies: [
+		"01b8125c",
+		"28e3427a"
+	],
+	tasks: [{
+		uid: "8c4cbeeb",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32448"
+		}]
+	}],
+	rewards: [{
+		uid: "274beb8f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

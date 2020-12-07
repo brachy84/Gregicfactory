@@ -1,0 +1,16 @@
+{
+	title: "The Beginning",
+	icon: "gregtech:meta_item_1 1 32600",
+	description: [
+		"Gregtech Low Voltage Tier: start building a factory!",
+		"",
+		"Generate resources with §bDeep Mob Learning§r.",
+		"",
+		"Build an §3Electric Blast Furnace§r for smelting advanced materials and alloys.",
+		"",
+		"Early §bEnderIO§r tech and §bApplied Energistics 2§r Digital Storage."
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

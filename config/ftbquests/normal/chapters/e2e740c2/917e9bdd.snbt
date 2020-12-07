@@ -1,0 +1,26 @@
+{
+	title: "Overworldian Matter",
+	icon: "deepmoblearning:living_matter_overworldian",
+	x: -27.5d,
+	y: 4.25d,
+	text: [
+		"Provide your §3Simulation Chamber§r with RF power and §6Pulsating Polymer Clay§r. Then insert a §6Data Model§r of your choice. The Simulation Chamber will consume Polymer Clay and a decent amount of power to begin simulating mob kills. This will generate §6Overworldian Matter§r and may occasionally provide you with §6Pristine Matter§r.",
+		"",
+		"§6Overworldian Matter§r can be eaten to gain experience, or can be combined with other materials to obtain drops from Overworld mobs. With these drops, you can then create Data Models for other mob types as well."
+	],
+	dependencies: [
+		"4a07bd50"
+	],
+	tasks: [{
+		uid: "2ade0cfe",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:living_matter_overworldian"
+		}]
+	}],
+	rewards: [{
+		uid: "20b90715",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

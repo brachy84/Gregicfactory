@@ -1,0 +1,26 @@
+{
+	title: "Crafting Terminal",
+	icon: "appliedenergistics2:part 1 360",
+	x: -8.25d,
+	y: 10.5d,
+	text: [
+		"Crafting in a digital grid is heaven after using primitive wooden tables for so long.",
+		"",
+		"It's a micropart, so you need to place it on §6ME Cable§r (not a conduit)."
+	],
+	dependencies: [
+		"1dca041d"
+	],
+	tasks: [{
+		uid: "6fd530e1",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 360"
+		}]
+	}],
+	rewards: [{
+		uid: "9a4b7820",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

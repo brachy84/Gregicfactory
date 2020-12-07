@@ -1,0 +1,25 @@
+{
+	title: "Mana Infused Ingots",
+	icon: "thermalfoundation:material 1 136",
+	x: -15.75d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"993745bf"
+	],
+	tasks: [{
+		uid: "86ae61ac",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 64 136"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "af3c47a4",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

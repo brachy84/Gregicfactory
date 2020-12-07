@@ -1,0 +1,33 @@
+{
+	title: "EV Power Storage",
+	icon: {
+		id: "gregtech:meta_item_2",
+		tag: {
+			Charge: 4000000L
+		},
+		Damage: 32213s
+	},
+	x: -30.75d,
+	y: 8.25d,
+	text: [
+		"The Extreme Voltage tier §bGregTech§r battery. These are upgrades to the High Voltage tier battery, augmenting the §aEnergy Crystal§r with circuits and plates made of §6Lapis§r, §6Lazurite§r, or §6Sodalite§r.",
+		"",
+		"Chances are by now you're not really using anything that needs GregTech batteries. You can safely ignore this quest until much later in the pack if you don't specifically need them."
+	],
+	dependencies: [
+		"42a425bb"
+	],
+	tasks: [{
+		uid: "95677237",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32213"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "156ce368",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

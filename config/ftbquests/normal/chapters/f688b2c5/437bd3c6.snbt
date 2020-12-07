@@ -1,0 +1,24 @@
+{
+	title: "Furnace v6.0",
+	icon: "morefurnaces:furnaceblock 1 2",
+	x: 5.75d,
+	y: 9.75d,
+	text: [
+		"§3Diamond Furnaces§f are the fastest available, taking only §a25 ticks§f to smelt an item."
+	],
+	dependencies: [
+		"7927b97a"
+	],
+	tasks: [{
+		uid: "d6b38477",
+		type: "item",
+		items: [{
+			item: "morefurnaces:furnaceblock 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "8fae1fbe",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

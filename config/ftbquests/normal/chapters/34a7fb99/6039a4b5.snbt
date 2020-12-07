@@ -1,0 +1,56 @@
+{
+	title: "Resonant Satchel",
+	icon: {
+		id: "thermalexpansion:satchel",
+		tag: {
+			Accessible: 1b
+		},
+		Damage: 4s
+	},
+	x: -10.0d,
+	y: 8.25d,
+	text: [
+		"Carry the most stuff.",
+		"",
+		"If you need more space than this, enchant it with §aHolding IV§r."
+	],
+	dependencies: [
+		"e3c1255f",
+		"8a6868b7"
+	],
+	tasks: [{
+		uid: "22dbf0d0",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:satchel",
+			tag: {
+				Accessible: 1b
+			},
+			Damage: 4s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c72ccca8",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 2 167"
+		}],
+		count: 2L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6f786008",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 3 229"
+		}],
+		count: 3L,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "16c4c1c7",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

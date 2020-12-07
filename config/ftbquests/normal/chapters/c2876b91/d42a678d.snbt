@@ -1,0 +1,56 @@
+{
+	title: "Infinitest Water",
+	icon: {
+		id: "thermalexpansion:device",
+		tag: {
+			RSControl: 0b,
+			Facing: 3b,
+			Energy: 0,
+			SideCache: [B;
+				0b,
+				1b,
+				0b,
+				0b,
+				0b,
+				0b
+			]
+		}
+	},
+	x: -34.75d,
+	y: 8.0d,
+	text: [
+		"§3Aqueous Accumulators§r in §5Omnifactory§r are infinite water sources; they §l§ndo not§r require any water blocks nearby.",
+		"",
+		"This machine can produce §9Water§r as fast as you can extract it (the only downside being that it makes some annoying noises).",
+		"",
+		"Friendship with §aEndervoirs§r ended."
+	],
+	dependencies: [
+		"ea3ff9e8"
+	],
+	tasks: [{
+		uid: "6b951a4c",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:device",
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				SideCache: [B;
+					0b,
+					1b,
+					0b,
+					0b,
+					0b,
+					0b
+				]
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "a807ea3b",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "LV Fluid Solidifier",
+	icon: "gregtech:machine 1 320",
+	x: -33.25d,
+	y: 5.5d,
+	text: [
+		"If you don't want to mine Obsidian by hand, consider using a Fluid Solidifier to turn §cLava§r into §6Obsidian Blocks§r for you. The process is slow and energy intensive, though.",
+		"",
+		"§3Fluid Solidifiers§r are useful for lots of other things too, of course. Look through the various molds to see what you can make with one."
+	],
+	dependencies: [
+		"399fa177",
+		"a7b6b388"
+	],
+	tasks: [{
+		uid: "b9efcde4",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 320"
+		}]
+	}],
+	rewards: [{
+		uid: "f8a033c2",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

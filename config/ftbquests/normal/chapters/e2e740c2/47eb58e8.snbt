@@ -1,0 +1,28 @@
+{
+	title: "MV Machine Hulls",
+	icon: "gregtech:machine 1 502",
+	x: -27.5d,
+	y: 16.25d,
+	shape: "square",
+	text: [
+		"Your first MV hull is as good of a place as any to consider yourself graduated from LV.",
+		"",
+		"You might notice that these hulls can be made more cheaply in an §3Assembling Machine§r, but you don't have that weird fluid. Don't worry, you'll be able to make that soon."
+	],
+	dependencies: [
+		"e42bf607"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "01aef360",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 502"
+		}]
+	}],
+	rewards: [{
+		uid: "b4af07a3",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

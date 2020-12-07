@@ -1,0 +1,28 @@
+{
+	title: "HV Machine Hulls",
+	icon: "gregtech:machine 1 503",
+	x: -15.5d,
+	y: 12.0d,
+	text: [
+		"With §6HV Machine Hulls§r made, you've made your first step towards §eHigh Voltage (HV)§r power machinery!",
+		"",
+		"While you can make these in a crafting table with §6Polyethylene Sheets§r, liquid §9Polyethylene§r can be used to craft these directly in an §3Assembling Machine§r."
+	],
+	dependencies: [
+		"4f3c3cf2",
+		"c6b6e94d"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "e8420305",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 503"
+		}]
+	}],
+	rewards: [{
+		uid: "1216277a",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

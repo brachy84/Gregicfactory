@@ -1,0 +1,30 @@
+{
+	title: "Veinmining Trees?",
+	icon: "lumberjack:iron_lumberaxe",
+	x: 3.25d,
+	y: 5.25d,
+	text: [
+		"§aLumberaxes§f are tools that cut all connected blocks of the same kind (usually referred to as \"§eveinmining§f\") that require an axe. These are primarily intended to §echop down entire trees§f, but you can use them to veinmine other wooden blocks too.",
+		"",
+		"§l§c§lKeep in mind that the veinmining feature doesn't get disabled when sneaking!§r",
+		"",
+		"Please be careful to not veinmine your entire Storage Drawers network; this WILL end in tears."
+	],
+	dependencies: [
+		"cb806892"
+	],
+	tasks: [{
+		uid: "945fcde7",
+		type: "item",
+		items: [{
+			item: "lumberjack:iron_lumberaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "40554db0",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

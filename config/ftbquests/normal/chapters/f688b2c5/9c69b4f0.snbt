@@ -1,0 +1,31 @@
+{
+	title: "LV Power Storage",
+	icon: "gregtech:meta_item_1 1 32500",
+	x: -1.25d,
+	y: 13.0d,
+	text: [
+		"§6Batteries§r are §bGregTech §rpower storage for §aEU§r energy.",
+		"",
+		"Although there are several types of rechargeable batteries you can make, §6Cadmium Batteries§r are the best ones, as they have the most storage capacity. §6Lithium§r is second best, and §6Sodium§r is third.",
+		"",
+		"§6Lithium§r is possible to find inside of §6Tungsten§r veins, however, they are fairly rare. Consider \"buying\" some Lithium with §dOmnicoins§r.",
+		"",
+		"§6Cadmium§r is so tough to get at this point, its not even worth considering. However, §6Sodium§r is plentiful. You can get Sodium by smelting §6Salt§r, with other options becoming available later."
+	],
+	dependencies: [
+		"734188d7"
+	],
+	tasks: [{
+		uid: "e91baa13",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 4 32500"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "e34da8f8",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

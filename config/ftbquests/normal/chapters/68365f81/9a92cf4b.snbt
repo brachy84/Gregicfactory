@@ -1,0 +1,25 @@
+{
+	title: "Element 026: Iron",
+	icon: "minecraft:iron_ingot",
+	x: -2.5d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"cb806892"
+	],
+	tasks: [{
+		uid: "e7c28b5a",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ingot 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "03602e81",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

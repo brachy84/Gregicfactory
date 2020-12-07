@@ -1,0 +1,26 @@
+{
+	title: "The Second And Final Tier Eight Circuits",
+	icon: "gregtech:meta_item_2 1 32500",
+	x: -7.25d,
+	y: 14.75d,
+	text: [
+		"§6Wetware Processor Arrays§r are made in an §3Assembly Line§r at ZPM or better power.",
+		"",
+		"You'll need §6Sentient Ender§r from §3Soul Binders§r and §6Europium§r from the §3Fusion Reactor§r to craft these."
+	],
+	dependencies: [
+		"42838f06"
+	],
+	tasks: [{
+		uid: "1ac5a2c0",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32500"
+		}]
+	}],
+	rewards: [{
+		uid: "d4edd2f1",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

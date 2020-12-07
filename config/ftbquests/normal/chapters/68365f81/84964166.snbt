@@ -1,0 +1,22 @@
+{
+	title: "Ultimate Chestplate",
+	icon: "armorplus:the_ultimate_chestplate",
+	x: -10.0d,
+	y: 12.5d,
+	text: [
+		"An ultimate chestplate, forged from all manner of materials across dimensions and microverses."
+	],
+	dependencies: [
+		"8239c7bf"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "543d264a",
+		type: "item",
+		items: [{
+			item: "armorplus:the_ultimate_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

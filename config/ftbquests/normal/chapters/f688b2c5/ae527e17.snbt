@@ -1,0 +1,23 @@
+{
+	title: "Spend Your Coins!",
+	icon: "contenttweaker:omnicoin",
+	x: -7.75d,
+	y: 3.75d,
+	text: [
+		"While there are no types of veins that are extremely rare, you're likely to struggle with finding at least one of the less common vein types. This isn't really avoidable.",
+		"",
+		"You will accumulate a lot of §dOmnicoins§f from quest turn-ins while playing Omnifactory. Do not be hesitant to spend them on things you need! ",
+		"",
+		"Search for various ores (generally the first one listed in §bJEI§f) to find the coin recipes for them. Alternatively, hover your cursor over a coin and press §6U§f to see what you can buy with it.",
+		"",
+		"§aDon't be a hoarder!"
+	],
+	dependencies: [
+		"cb806892"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "58bfe46d",
+		type: "checkmark"
+	}]
+}

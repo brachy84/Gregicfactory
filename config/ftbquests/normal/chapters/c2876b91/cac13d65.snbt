@@ -1,0 +1,26 @@
+{
+	title: "IV Power Storage",
+	icon: "gregtech:meta_item_1 1 32597",
+	x: -20.25d,
+	y: 9.25d,
+	text: [
+		"An Insane Voltage tier §bGregTech§r battery.",
+		"",
+		"You're unlikely to be using EU batteries so it's safe to skip this for now and do it later, though some of the infrastructure used for these batteries is also used for other things."
+	],
+	dependencies: [
+		"d3c6e921"
+	],
+	tasks: [{
+		uid: "f413edf3",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32597"
+		}]
+	}],
+	rewards: [{
+		uid: "fd4530f7",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

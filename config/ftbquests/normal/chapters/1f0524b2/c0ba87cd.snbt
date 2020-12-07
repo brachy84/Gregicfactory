@@ -1,0 +1,26 @@
+{
+	title: "Black Steel",
+	icon: "gregtech:meta_item_1 1 2231",
+	x: 11.25d,
+	y: 25.5d,
+	text: [
+		"§6Black Steel§r will be used to make various items from §bExtended Crafting§r. It will also be the basis of other Steel types later on."
+	],
+	dependencies: [
+		"bfc848ba",
+		"70b43203"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "5755bdd8",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2231"
+		}]
+	}],
+	rewards: [{
+		uid: "7cbe1eac",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

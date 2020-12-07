@@ -1,0 +1,29 @@
+{
+	title: "Titanium",
+	icon: "gregtech:meta_item_1 1 10072",
+	x: -32.375d,
+	y: 5.625d,
+	text: [
+		"A perfect material for making chopsticks.",
+		"",
+		"Also the tier material for Extreme Voltage (EV)."
+	],
+	dependencies: [
+		"e2f5be08",
+		"81bac9ec",
+		"36927365"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "529c4f0d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10072"
+		}]
+	}],
+	rewards: [{
+		uid: "8fad2c82",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

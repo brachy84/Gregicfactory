@@ -1,0 +1,25 @@
+{
+	title: "Kanthal Coil Blocks",
+	icon: "gregtech:wire_coil 1 1",
+	x: -24.25d,
+	y: 5.0d,
+	text: [
+		"§6Kanthal§r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
+	],
+	dependencies: [
+		"6f2c6a07"
+	],
+	tasks: [{
+		uid: "ddd85c27",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 16 1"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "4f7b2c09",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

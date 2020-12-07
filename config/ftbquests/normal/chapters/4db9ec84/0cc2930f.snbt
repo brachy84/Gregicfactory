@@ -1,0 +1,18 @@
+{
+	title: "MV Circuits",
+	icon: "gregtech:machine_casing 1 2",
+	x: -7.5d,
+	y: 7.5d,
+	text: [
+		"Circuits along this line are MV, and can all be substituted in recipes.",
+		"",
+		"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+	],
+	dependencies: [
+		"cd85d224",
+		"a9e23cd9",
+		"6c67f55a",
+		"d155f2ab"
+	],
+	size: 0.8333333333333334d
+}

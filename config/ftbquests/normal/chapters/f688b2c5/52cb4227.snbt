@@ -1,0 +1,21 @@
+{
+	title: "A Primer on Power",
+	icon: "gregtech:meta_item_2 1 32469",
+	x: 0.0d,
+	y: 14.25d,
+	shape: "square",
+	text: [
+		"Unlike §aRF power§r, which is safe to transport in any §6conduit§r, §aEU power §r§erequires caution§r. The key is to always §amatch or exceed§r the §eVoltage §rand §eAmperage§r of your power source with your §6cables§r and machines.",
+		"",
+		"§o§4§cNEVER §rhook up your CEF§r to a cable that has fewer §eAmps§r than your CEF or Battery Buffer§r generates. For example, you must use §64x cable§r for a 4x CEF§r, and §616x cable§r for a filled 16-slot Battery Buffer§r. Cables with insufficient amperage rating will §cburn and be destroyed§r. Similarly, your cable must match or exceed the §eVoltage§r of your machines, or they will §cburn and be destroyed§r.",
+		"",
+		"§cNEVER§r connect a machine to excessive §eVoltage§r or it will §cvaporize§r. Touching a §6wire§r with connected §aEU power§r will §cinjure or kill you§r, so for your safety, §euse §6cables§e instead§r!"
+	],
+	dependencies: [
+		"734188d7"
+	],
+	tasks: [{
+		uid: "ca5c86bd",
+		type: "checkmark"
+	}]
+}

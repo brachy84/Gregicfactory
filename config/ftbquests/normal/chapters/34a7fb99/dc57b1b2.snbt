@@ -1,0 +1,27 @@
+{
+	title: "The Second Tier Six Circuits",
+	icon: "contenttweaker:quantumprocessorarray",
+	x: -19.5d,
+	y: 8.25d,
+	text: [
+		"§6Power IC Wafer§r may be new if you skipped some of the battery quests, but it is now relevant. ",
+		"",
+		"Using these wafers, some §6Chrome Plates§r, a §6Quantum Eye§r, and §6Signalum Wire§r, several §6Quantum Processors§r may be upgraded into a §6Quantum Processor Array§r."
+	],
+	dependencies: [
+		"472364a2"
+	],
+	tasks: [{
+		uid: "6b9b4fe6",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32217"
+		}]
+	}],
+	rewards: [{
+		uid: "72d4b532",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

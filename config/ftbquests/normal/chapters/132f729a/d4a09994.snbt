@@ -1,0 +1,26 @@
+{
+	title: "Farmer",
+	icon: "actuallyadditions:block_farmer",
+	x: -13.25d,
+	y: 12.75d,
+	text: [
+		"The §3Farmer§r can be used to automate the planting and gathering crops, including §6Potatoes§r, §6Canola§r, §6Carrots§r, and §6Beetroot§r.",
+		"",
+		"Doesn't do trees, though."
+	],
+	dependencies: [
+		"2ce819b9"
+	],
+	tasks: [{
+		uid: "b8364520",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_farmer"
+		}]
+	}],
+	rewards: [{
+		uid: "5173d9b3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

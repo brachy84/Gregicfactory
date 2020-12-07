@@ -1,0 +1,34 @@
+{
+	title: "Hardened Upgrade Kit",
+	icon: "thermalfoundation:upgrade",
+	x: -29.25d,
+	y: 9.25d,
+	text: [
+		"What?!",
+		"§6STEAM DYNAMO§r is evolving!",
+		"",
+		"Upgrade kits can be applied to Thermal Expansion Dynamos, machines, and even Portable Tanks. Machines and dynamos get additional augment slots.",
+		"",
+		"When applied to a dynamo, it increases the §apower generation and fuel burn rate to 150%§r.",
+		"",
+		"Increases the base capacity of Portable Tanks to §a200 buckets§r.",
+		"",
+		"Allows machines operate at §a150% of base power per tick§r. The more power a machine can use, the faster it works."
+	],
+	dependencies: [
+		"e0c73d4f"
+	],
+	tasks: [{
+		uid: "5bcb5b21",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:upgrade"
+		}]
+	}],
+	rewards: [{
+		uid: "3d4b70ca",
+		type: "item",
+		item: "contenttweaker:omnicoin5",
+		count: 4
+	}]
+}

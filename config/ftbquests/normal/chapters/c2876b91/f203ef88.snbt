@@ -1,0 +1,29 @@
+{
+	title: "Mana Dust",
+	icon: "thermalfoundation:material 1 1028",
+	x: -34.75d,
+	y: 4.25d,
+	text: [
+		"ASSEMBLE!",
+		"",
+		"§6Mana Dust§r is an important material. It is needed for a variety of materials related to §bThermal Expansion§r."
+	],
+	dependencies: [
+		"a6f1798d",
+		"bd8cceea",
+		"8a785de7",
+		"ffd9c936"
+	],
+	tasks: [{
+		uid: "5c0d51ba",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 1028"
+		}]
+	}],
+	rewards: [{
+		uid: "c50a1d5d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

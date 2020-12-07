@@ -1,0 +1,43 @@
+{
+	title: "Genesis",
+	icon: "minecraft:crafting_table",
+	x: 0.0d,
+	y: 1.75d,
+	shape: "square",
+	text: [
+		"Welcome to §5Omnifactory§f!",
+		"",
+		"This pack is intended to be played in a §bLost Cities / Overworld dimension§f.",
+		"",
+		"If you're playing with friends, don't forget to invite them to the §equestbook party§f.",
+		"",
+		"§fIf you wish to build your base in a skyblock world, place the §6Void World Cake§f down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities / Overworld dimension to mine, but you can freely build in complete safety in the §eVoid World§f."
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "a78e6bd1",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "c06a2dac",
+		type: "item",
+		item: "thermalfoundation:tool.hammer_diamond",
+		count: 4
+	},
+	{
+		uid: "6729ad8b",
+		type: "item",
+		item: {
+			id: "dimensionaledibles:custom_cake",
+			tag: {
+				dimID: 119,
+				cakeName: "Void World"
+			}
+		}
+	},
+	{
+		uid: "4473f48c",
+		type: "item",
+		item: "dimensionaledibles:overworld_cake"
+	}]
+}

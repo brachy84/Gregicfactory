@@ -1,0 +1,55 @@
+{
+	title: "Fusion Reactor MK2",
+	icon: "gregtech:machine 1 2504",
+	x: 3.0d,
+	y: 4.5d,
+	text: [
+		"Upgrade time! ",
+		"...or building a new one, which is probably better.",
+		"",
+		"Yet again this quest asks for the minimal amount of casings. Make an extra 28 if you don't want more than §a2 Fluid Inputs§r§r and §a1 Fluid Output§r.",
+		"",
+		"If you insist on upgrading instead of making a new one, don't dismantle the current one before you're sure you've got everything you need to upgrade it, or you might end up having to rebuild the §3Mark 1 Fusion Reactor§r again."
+	],
+	dependencies: [
+		"4c67dfec"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "7af78159",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2505"
+		}]
+	},
+	{
+		uid: "e6bb413f",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 16 784"
+		}],
+		count: 16L
+	},
+	{
+		uid: "1c44221d",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 32 8"
+		}],
+		count: 32L
+	},
+	{
+		uid: "2dbfb4a7",
+		type: "item",
+		items: [{
+			item: "gregtech:multiblock_casing 80 3"
+		}],
+		count: 80L
+	}],
+	rewards: [{
+		uid: "19e6306a",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 10
+	}]
+}

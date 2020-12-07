@@ -1,0 +1,25 @@
+{
+	title: "Kanthal Ingots",
+	icon: "gregtech:meta_item_1 1 10127",
+	x: -16.75d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"6f2c6a07"
+	],
+	tasks: [{
+		uid: "a306bdde",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10127"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "47d7291c",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

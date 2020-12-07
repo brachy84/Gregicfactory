@@ -1,0 +1,26 @@
+{
+	title: "Quantum Eyes",
+	icon: "gregtech:meta_item_1 1 32724",
+	x: -23.5d,
+	y: 5.75d,
+	text: [
+		"When §6Ender Eyes§r just aren't creepy enough.",
+		"",
+		"You'll need an HV or better §3Chemical Bath§r to make these. The recipe is quite slow, so invest in the highest tier Chemical Baths you can and consider parallelizing the recipe."
+	],
+	dependencies: [
+		"f8c94a88"
+	],
+	tasks: [{
+		uid: "bda55c1b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32724"
+		}]
+	}],
+	rewards: [{
+		uid: "8b89f787",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

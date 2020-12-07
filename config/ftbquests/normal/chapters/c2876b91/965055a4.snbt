@@ -1,0 +1,39 @@
+{
+	title: "Infinity War",
+	icon: {
+		id: "simplyjetpacks:itemjetpack",
+		tag: {
+			Energy: 0,
+			JetpackParticleType: 0
+		},
+		Damage: 4s
+	},
+	x: -24.25d,
+	y: 10.5d,
+	text: [
+		"Give me a little juice, FRIDAY!"
+	],
+	dependencies: [
+		"8f4800f1",
+		"8c8df8e8"
+	],
+	tasks: [{
+		uid: "da7fc7c4",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			tag: {
+				Energy: 0,
+				JetpackParticleType: 0
+			},
+			Damage: 4s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9277658a",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "Vanadium Gallium",
+	icon: "gregtech:meta_item_1 1 10195",
+	x: -20.25d,
+	y: 10.5d,
+	text: [
+		"§6Vanadium-Gallium§r is an alloy made in the §3Electric Blast Furnace§r. It is a Ludicrous Voltage (LuV) cable material needed for certain recipes.",
+		"",
+		"§6Vanadium§r is an element acquired by processing §6Vanadium Magnetite Ore§r."
+	],
+	dependencies: [
+		"66c726fd"
+	],
+	tasks: [{
+		uid: "bb5f60d6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10195"
+		}]
+	}],
+	rewards: [{
+		uid: "724b3d1d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

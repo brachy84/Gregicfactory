@@ -1,0 +1,40 @@
+{
+	title: "Noble Gasses",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "argon",
+			Amount: 1000
+		}
+	},
+	x: -20.5d,
+	y: 5.0d,
+	text: [
+		"Breaking down §9Noble Gasses§r into their components will require 53 iterations of distilling §9Liquid Air§r to acquire the buckets needed for one batch. Running multiple towers (if you can generate Liquid Air fast enough) is not a bad idea.",
+		"",
+		"You'll be needing large quantities of the various Noble Gasses so you should get this automated and running continuously. ",
+		"",
+		"§9Aargon§r, for example, is important for production of advanced §6Silicon Boules§r."
+	],
+	dependencies: [
+		"8be7d056"
+	],
+	tasks: [{
+		uid: "bc1ac14c",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "argon",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4e2cc0a3",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

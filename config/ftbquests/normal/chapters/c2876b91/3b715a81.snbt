@@ -1,0 +1,38 @@
+{
+	title: "Acetic Acid",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "acetone",
+			Amount: 1000
+		}
+	},
+	x: -13.75d,
+	y: 0.5d,
+	text: [
+		"There are several paths to §9Acetic Acid§r... probably the simplest is combining §9Oxygen§r, §9Hydrogen§r, and §6Carbon§r, but one of the several other methods may appeal to you more.",
+		"",
+		"Look through §bJEI§r for the various options."
+	],
+	dependencies: [
+		"1efd8ae4"
+	],
+	tasks: [{
+		uid: "26193dde",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "acetic_acid",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3a9716d3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

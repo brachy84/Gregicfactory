@@ -1,0 +1,28 @@
+{
+	title: "Iridium",
+	icon: "gregtech:meta_item_1 1 10032",
+	x: -12.75d,
+	y: 7.25d,
+	text: [
+		"§6Iridium§r is an advanced material used for Micro Miner plating, §6ZPM Machine Hulls§r, and for alloying with §6Osmium§r into §6Osmiridium§r.",
+		"",
+		"§6Iridium Ore§r is available renewably from the Tier Four and Tier Six micro miners.",
+		"",
+		"It can also be reliably obtained from purifying §6Platinum§r or Osmium§r in a §3Chemical Bath§r, as well as from ore processing Osmium generally."
+	],
+	dependencies: [
+		"0c670157"
+	],
+	tasks: [{
+		uid: "2f3818ea",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10032"
+		}]
+	}],
+	rewards: [{
+		uid: "582a20e6",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

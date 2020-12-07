@@ -1,0 +1,26 @@
+{
+	title: "LV Conveyor",
+	icon: "gregtech:meta_item_1 1 32630",
+	x: -36.0d,
+	y: 10.5d,
+	text: [
+		"Not as common a component, but used in a number of critical machines.",
+		"",
+		"Also useful as a machine cover for continuously moving items."
+	],
+	dependencies: [
+		"5876c22c"
+	],
+	tasks: [{
+		uid: "2d005a3d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32630"
+		}]
+	}],
+	rewards: [{
+		uid: "daa4cde4",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

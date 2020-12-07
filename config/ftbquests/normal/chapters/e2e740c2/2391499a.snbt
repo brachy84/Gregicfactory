@@ -1,0 +1,41 @@
+{
+	title: "Copper... Nickel... Cupronickel?",
+	icon: "gregtech:meta_item_1 1 10044",
+	x: -31.75d,
+	y: 12.75d,
+	shape: "square",
+	text: [
+		"Nickel comes from several different ores, including Pentlandite and Garnierite, but they're all found in the same vein.",
+		"",
+		"Nickel is used mostly for several very important alloys, including Invar and Cupronickel."
+	],
+	dependencies: [
+		"ed2a8868"
+	],
+	tasks: [{
+		uid: "efc66b4c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10044"
+		}]
+	},
+	{
+		uid: "6db1a0a5",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10126"
+		}]
+	},
+	{
+		uid: "d3f908c8",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10109"
+		}]
+	}],
+	rewards: [{
+		uid: "54dd98c7",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

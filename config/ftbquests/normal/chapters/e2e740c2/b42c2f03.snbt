@@ -1,0 +1,28 @@
+{
+	title: "LV Pistons",
+	icon: "gregtech:meta_item_1 1 32640",
+	x: -36.0d,
+	y: 8.5d,
+	shape: "square",
+	text: [
+		"A piston is a specialized motor, which is needed to make certain machines.",
+		"",
+		"One of the more intricate components, as it is made using a motor."
+	],
+	dependencies: [
+		"5876c22c"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "fa39ce16",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32640"
+		}]
+	}],
+	rewards: [{
+		uid: "73754e23",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

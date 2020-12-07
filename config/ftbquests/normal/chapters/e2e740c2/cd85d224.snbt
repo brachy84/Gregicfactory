@@ -1,0 +1,27 @@
+{
+	title: "The First Tier Two Circuits",
+	icon: "gtadditions:ga_meta_item 1 32200",
+	x: -25.0d,
+	y: 13.0d,
+	text: [
+		"Your first §6Tier Two Circuits§r will require four §6Tier One Circuits§r plus a §6Diode§r made with §6Gallium§r to craft.",
+		"",
+		"These are rather expensive... Always be on the lookout for a cheaper way to make your circuits- new sets of recipes become available each time you make a new tier of §3Assembling Machine§r."
+	],
+	dependencies: [
+		"1cd2fe72"
+	],
+	size: 1.4d,
+	tasks: [{
+		uid: "546bba2b",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32200"
+		}]
+	}],
+	rewards: [{
+		uid: "c32fb259",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

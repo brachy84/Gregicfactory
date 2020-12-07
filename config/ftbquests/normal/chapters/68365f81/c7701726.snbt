@@ -1,0 +1,25 @@
+{
+	title: "Element 025: Manganese",
+	icon: "gregtech:meta_item_1 1 10039",
+	x: -3.5d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"4f3c3cf2"
+	],
+	tasks: [{
+		uid: "8371ef2e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10039"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "526717a4",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

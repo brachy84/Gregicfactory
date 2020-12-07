@@ -1,0 +1,66 @@
+{
+	title: "Craftable Nether Stars",
+	icon: "minecraft:nether_star",
+	x: -36.0d,
+	y: 4.25d,
+	text: [
+		"ASSEMBLE... TOO!",
+		"",
+		"Yeah you get to craft §6Nether Stars§r. Cool huh?",
+		"",
+		"Over the course of the pack, Nether Stars are going to be needed in quantities that far exceed a reasonable player's ability to farm Withers. §eCraft them, don't bother trying to farm them."
+	],
+	dependencies: [
+		"a6f1798d",
+		"bd8cceea",
+		"ffd9c936",
+		"8a785de7"
+	],
+	tasks: [{
+		uid: "f2754d5f",
+		type: "item",
+		items: [{
+			item: "cns:star_fragment"
+		}]
+	},
+	{
+		uid: "e9927b34",
+		type: "item",
+		items: [{
+			item: "contenttweaker:netherstarwest"
+		}]
+	},
+	{
+		uid: "5176a80c",
+		type: "item",
+		items: [{
+			item: "cns:star_core"
+		}]
+	},
+	{
+		uid: "4bf1adec",
+		type: "item",
+		items: [{
+			item: "contenttweaker:netherstareast"
+		}]
+	},
+	{
+		uid: "938305b5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:netherstarsouth"
+		}]
+	},
+	{
+		uid: "11b8bd34",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_star"
+		}]
+	}],
+	rewards: [{
+		uid: "f02b7e5d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

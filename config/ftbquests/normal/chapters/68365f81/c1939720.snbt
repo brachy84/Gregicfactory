@@ -1,0 +1,22 @@
+{
+	title: "Empowered Void Gear",
+	icon: "moreplates:empowered_void_gear",
+	x: -0.375d,
+	y: -3.75d,
+	text: [
+		"A gear forged from §6Empowered Void Crystal§r.",
+		"",
+		"While you can empower gears directly, it makes much more sense to solidify them."
+	],
+	dependencies: [
+		"ced2c146"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "a9edcdad",
+		type: "item",
+		items: [{
+			item: "moreplates:empowered_void_gear"
+		}]
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "SMD Diodes",
+	icon: "gregtech:meta_item_2 1 32457",
+	x: -25.75d,
+	y: 0.5d,
+	text: [
+		"Next up are §6SMD Diodes§r, which are fairly simple.",
+		"",
+		"A §6Small Pile of Gallium Dust§r and four §6Fine Electrum Wire§r net you half a stack."
+	],
+	dependencies: [
+		"3801832a",
+		"c6b6e94d"
+	],
+	tasks: [{
+		uid: "f70656b5",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32457"
+		}]
+	}],
+	rewards: [{
+		uid: "cd961d5f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

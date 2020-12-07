@@ -1,0 +1,68 @@
+{
+	title: "Plasma Turbine",
+	icon: "gregtech:machine 1 520",
+	x: -1.5d,
+	y: 2.75d,
+	text: [
+		"§3Large Plasma Turbines§r are a powerful late game method of generating power. One Large Plasma Turbine can produce nearly 41800 EU/t when using an §aLuV Rotor Holder§r and equipped with §a100% efficiency§r rotor.",
+		"",
+		"One §3Mark 1 Fusion Reactor§r dedicated to producing §bOxygen Plasma§r can provide suffient fuel for continuously operating 16 Large Plasma Turbines, resulting in a combined production of roughly 670000 EU/t. Granted, this is a decent amount of infrastructure.",
+		"",
+		"Don't rely on §bJEI§r too much when looking for the best plasma: fuels are displayed in a very misleading manner. A Large Plasma Turbine consumes up to nearly 16 buckets of plasma to run a cycle for the duration specified in JEI, and takes some time to spin up to full power."
+	],
+	dependencies: [
+		"b6faaed0"
+	],
+	tasks: [{
+		uid: "cf24e4a6",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 520"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "543af7a5",
+		type: "item",
+		items: [{
+			item: "gregtech:turbine_casing 30 6"
+		}],
+		count: 30L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d1fbcfd9",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 712"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5c4313e8",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 818"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "750d0745",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_item_2",
+			tag: {
+				GT.PartStats: {
+					Material: "osmium"
+				}
+			},
+			Damage: 32508s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a5c82f9b",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

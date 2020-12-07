@@ -1,0 +1,45 @@
+{
+	title: "Hellish Mobs",
+	icon: "deepmoblearning:data_model_blaze",
+	x: -26.0d,
+	y: 3.0d,
+	text: [
+		"Just as with Overworldian mob data, there's no huge rush or need to focus on these. Just run them while you work on other projects."
+	],
+	dependencies: [
+		"87ff6bdc"
+	],
+	tasks: [{
+		uid: "faea54f9",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_blaze"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4ed90545",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_wither_skeleton"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3f56f0ff",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_ghast"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7d1020d3",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 10
+	}]
+}

@@ -1,0 +1,35 @@
+{
+	title: "Autocrafting Patterns",
+	icon: "appliedenergistics2:material 1 52",
+	x: -7.0d,
+	y: 13.5d,
+	text: [
+		"§aPatterns§r are used to encode a single crafting table or processing recipe for on-demand automation with §bApplied Energistics§r.",
+		"",
+		"Encode them in a §aPattern Terminal§r.",
+		"",
+		"Note that recipes encoded with Substitutions on will use existing equivalent items, but §ewill only automatically craft the exact item specified in the recipe.§r",
+		"",
+		"It is also a §cvery bad idea§r to encode recipes that require GregTech hand tools (even worse with Substitutions on). They are not handled gracefully, causing your crafting computations to explode in complexity and memory requirement.",
+		"",
+		"Use recipes that use machines instead!"
+	],
+	dependencies: [
+		"01b8125c",
+		"333269ca",
+		"a58a1f17"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "dd8933d1",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 52"
+		}]
+	}],
+	rewards: [{
+		uid: "01a87ad8",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

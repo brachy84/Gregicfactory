@@ -1,0 +1,39 @@
+{
+	title: "Proper Tool Care",
+	icon: "minecraft:anvil",
+	x: 1.25d,
+	y: 7.75d,
+	text: [
+		"§3Anvils§f can be used to repair §bGregTech tools§f!",
+		"",
+		"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils§f spawn abundantly in §bLost Cities§f buildings, so go and snatch one!",
+		"",
+		"Put a damaged tool inside and put some material it's made of. For example, you'll need to put §6Wrought Iron Ingots§f to repair tools made of §6Wrought Iron§f."
+	],
+	dependencies: [
+		"08feae58"
+	],
+	tasks: [{
+		uid: "909995c2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingAnvil",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingAnvil"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "c266b0b3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

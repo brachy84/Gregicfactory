@@ -1,0 +1,27 @@
+{
+	title: "Infinity Catalyst",
+	icon: "avaritia:resource 1 5",
+	x: -9.0d,
+	y: -2.25d,
+	shape: "diamond",
+	text: [
+		"Are you ready to go infinite?",
+		"",
+		"Reinforcing §6Heart of a Universe§r with §6Chaotic Cores§r, many §6Piles of Neutrons§r, and a bunch of §6Eternal Catalysts§r produces an §cInfinity Catalyst§r.",
+		"",
+		"This material is the core of most creative-tier crafting recipes."
+	],
+	dependencies: [
+		"e1dbee19",
+		"af492f9b",
+		"ddb6201d"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "692e0c53",
+		type: "item",
+		items: [{
+			item: "avaritia:resource 1 5"
+		}]
+	}]
+}

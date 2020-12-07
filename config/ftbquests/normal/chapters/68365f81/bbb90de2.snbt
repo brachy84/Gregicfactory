@@ -1,0 +1,26 @@
+{
+	title: "Element 008: Oxygen",
+	icon: "contenttweaker:solidifiedoxygen",
+	x: -5.5d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"7d634f43",
+		"d18f4bb6"
+	],
+	tasks: [{
+		uid: "e2044846",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedoxygen 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "820173ef",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,10 @@
+{
+	title: "Internal",
+	description: [
+		"This chapter contains internal or \"orphaned\" quests,",
+		"which are quests in Better Questing that do not have a chapter associated with them"
+	],
+	always_invisible: true,
+	group: 0,
+	default_quest_shape: ""
+}

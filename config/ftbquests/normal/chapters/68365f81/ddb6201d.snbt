@@ -1,0 +1,45 @@
+{
+	title: "Creative Tank",
+	icon: {
+		id: "thermalexpansion:tank",
+		tag: {
+			RSControl: 0b,
+			Creative: 1b,
+			Level: 4b
+		}
+	},
+	x: -9.0d,
+	y: -6.0d,
+	text: [
+		"§oNow this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning.§r",
+		"",
+		"The §d§dCreative Portable Tank§r is a major milestone. Great work!",
+		"",
+		"This tank is your first proper creative item, which can be set to a fluid and then provides an infinite quantity of that fluid. The first fluid you should do this with is §dMolten Creative Portable Tank§r, so you can make as many more tanks as you want! You get exactly enough from a §6Heart of a Universe§r to do this.",
+		"",
+		"From there you can set up tanks with infinite quantities of every fluid you can think of.  §3Fluid Solidifiers§r can be used to make infinite of every element you can melt and solidify.",
+		"",
+		"This is quite a game-changer as far as infrastructure goes. You'll find that many machines won't need to be used for their original purpose anymore. Some major base redesign is in order. Have you considered moving to space?",
+		"",
+		"All that said, §ethe pack will still be challenging to complete§r. Infinite resources and power is nice, but it's not everything. There are plenty of materials you can't melt, and creative items will push your factory automation engineering skills to their limits.",
+		"",
+		"Onward to the final challenge: the §dCreative Vending Upgrade§r!"
+	],
+	dependencies: [
+		"c1f58812"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "7e725f58",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:tank",
+			tag: {
+				RSControl: 0b,
+				Creative: 1b,
+				Level: 4b
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

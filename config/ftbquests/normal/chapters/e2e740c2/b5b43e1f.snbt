@@ -1,0 +1,28 @@
+{
+	title: "Energetic Alloy Energy Conduits",
+	icon: "enderio:item_power_conduit 1 1",
+	x: -33.0d,
+	y: 17.75d,
+	text: [
+		"Now that you have §6Energetic Alloy§r, it's time to make some better conduits!",
+		"",
+		"Each time you upgrade your conduits, you'll also get more of them. Neat!",
+		"",
+		"If you don't have an §3Assembling Machine§r, you'll have to make them by hand. This method isn't as efficient as the machine, but you'll make one soon enough."
+	],
+	dependencies: [
+		"da5679a0"
+	],
+	tasks: [{
+		uid: "b2247bbc",
+		type: "item",
+		items: [{
+			item: "enderio:item_power_conduit 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "c8df2b1e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

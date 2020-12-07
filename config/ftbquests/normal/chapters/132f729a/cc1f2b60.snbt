@@ -1,0 +1,26 @@
+{
+	title: "Transistor",
+	icon: "gregtech:meta_item_2 1 32461",
+	x: -20.0d,
+	y: 7.5d,
+	text: [
+		"§6Transistors§r are semiconductors that can amplify or switch electrical signals and power. They're probably one of the most important inventions of the 20th century.",
+		"",
+		"You're going to use them as a component for better circuits. This one is a bit pricey, requiring §6Aluminium Foil§r and §6Fine Silver Wire§r."
+	],
+	dependencies: [
+		"9643c88c"
+	],
+	tasks: [{
+		uid: "9bacb495",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32461"
+		}]
+	}],
+	rewards: [{
+		uid: "b43d2b63",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	title: "Epichlorohydrin",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "epichlorhydrin",
+			Amount: 1000
+		}
+	},
+	x: -16.5d,
+	y: 5.5d,
+	text: [
+		"A colorless liquid with a pungent, garlic-like odor. It's needed in the production of §9Epoxy§r."
+	],
+	dependencies: [
+		"9f9559db"
+	],
+	tasks: [{
+		uid: "c8cecf31",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "epichlorhydrin",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "14c2e14e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

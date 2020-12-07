@@ -1,0 +1,27 @@
+{
+	title: "Conductive Iron Energy Conduits",
+	icon: "enderio:item_power_conduit",
+	x: 0.0d,
+	y: 11.25d,
+	shape: "square",
+	text: [
+		"The most basic tier of §aRF§r energy conduits from §bEnderIO§r.",
+		"",
+		"These can be used to transport energy from your §3Steam Dynamos§r to various destinations."
+	],
+	dependencies: [
+		"dbdc0ac3"
+	],
+	tasks: [{
+		uid: "f556da26",
+		type: "item",
+		items: [{
+			item: "enderio:item_power_conduit"
+		}]
+	}],
+	rewards: [{
+		uid: "3e2de84f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

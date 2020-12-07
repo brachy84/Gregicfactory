@@ -1,0 +1,22 @@
+{
+	title: "Empowered Palis Gear",
+	icon: "moreplates:empowered_palis_gear",
+	x: -4.125d,
+	y: -5.25d,
+	text: [
+		"A gear forged from §6Empowered Palis Crystal§r.",
+		"",
+		"While you can empower gears directly, it makes much more sense to solidify them."
+	],
+	dependencies: [
+		"ced2c146"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "e3c68c07",
+		type: "item",
+		items: [{
+			item: "moreplates:empowered_palis_gear"
+		}]
+	}]
+}

@@ -1,0 +1,33 @@
+{
+	title: "Fiber Reinforced Epoxy Substrate",
+	icon: "gregtech:meta_item_2 1 32445",
+	x: -27.5d,
+	y: 11.75d,
+	text: [
+		"A §6Fiber-Reinforced Epoxy Resin Sheet§r is made in a §3Chemical Bath§r, not a §3Chemical Reactor§r. The board itself is made in a Chemical Reactor though.",
+		"",
+		"Other than that, it's very similar to the other substrates you've made so far. This board type unlocks §6Nanocircuits§r, which span tiers three through six."
+	],
+	dependencies: [
+		"48fb8a6a"
+	],
+	tasks: [{
+		uid: "b6e774b2",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 12470"
+		}]
+	},
+	{
+		uid: "be7b9ac0",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32445"
+		}]
+	}],
+	rewards: [{
+		uid: "982382e4",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Boron",
+	icon: "gregtech:meta_item_1 1 2009",
+	x: -18.75d,
+	y: 10.5d,
+	text: [
+		"§6Boron§r is currently obtainable by doing ore processing on §6Lepidolite Ore§r and §6Salt Ore§r (via §6Borax§r)."
+	],
+	dependencies: [
+		"237ea1ad"
+	],
+	tasks: [{
+		uid: "e7ea6d6e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2009"
+		}]
+	}],
+	rewards: [{
+		uid: "e2d5fb55",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

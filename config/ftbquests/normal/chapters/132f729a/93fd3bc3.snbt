@@ -1,0 +1,31 @@
+{
+	title: "MV Power Storage",
+	icon: {
+		id: "gregtech:meta_item_1",
+		tag: {
+			Charge: 400000L
+		},
+		Damage: 32528s
+	},
+	x: -15.5d,
+	y: 2.75d,
+	text: [
+		"§aMV Batteries§r function essentially the same as §aLV Batteries§r, only stronger. They also need to be put into an §3MV CEF§r or §3MV Battery Buffer§r."
+	],
+	dependencies: [
+		"c303a083",
+		"6ff89559"
+	],
+	tasks: [{
+		uid: "3dcb37cb",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32501"
+		}]
+	}],
+	rewards: [{
+		uid: "99732d3b",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

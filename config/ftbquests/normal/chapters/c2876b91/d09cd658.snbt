@@ -1,0 +1,39 @@
+{
+	title: "Titanium Tetrachloride",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "titanium_tetrachloride",
+			Amount: 1000
+		}
+	},
+	x: -32.25d,
+	y: 3.0d,
+	text: [
+		"§6Rutile§r, §6Carbon§r, and §9Chlorine§r may be chemically reacted to form §9Titanium Tetrachloride§r.",
+		"",
+		"This fluid is a precursor for metallic §6Titanium§r, as well as a titanium halide useful for catalyzing various polymer reactions (like plastics) for greater yields."
+	],
+	dependencies: [
+		"505ccb2e",
+		"0fe49dfb"
+	],
+	tasks: [{
+		uid: "ecb17b86",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "titanium_tetrachloride",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c33eafa5",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

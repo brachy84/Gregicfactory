@@ -1,0 +1,25 @@
+{
+	title: "Element 024: Chromium",
+	icon: "gregtech:meta_item_1 1 10016",
+	x: -4.5d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"fafe4cde"
+	],
+	tasks: [{
+		uid: "bb055331",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10016"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "5c2da49a",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

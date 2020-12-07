@@ -1,0 +1,25 @@
+{
+	title: "Blizz Powder",
+	icon: "thermalfoundation:material 1 2049",
+	x: -33.5d,
+	y: 1.75d,
+	text: [
+		"Bits of a §6Blizz Rod§r. Using a §3Macerator§r doubles your yield."
+	],
+	dependencies: [
+		"1afe02e2",
+		"ce20731a"
+	],
+	tasks: [{
+		uid: "727ea7bc",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 2049"
+		}]
+	}],
+	rewards: [{
+		uid: "6c9a9bf7",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

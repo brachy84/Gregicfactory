@@ -1,0 +1,25 @@
+{
+	title: "The Third Tier Five Circuit",
+	icon: "contenttweaker:quantumprocessor",
+	x: -19.5d,
+	y: 7.25d,
+	text: [
+		"Nothing new here, just use more standard circuit stuff and you can upgrade several §6Quantum Circuits§r into a §6Quantum Processor§r."
+	],
+	dependencies: [
+		"75b50e3c"
+	],
+	tasks: [{
+		uid: "862ba387",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32216"
+		}]
+	}],
+	rewards: [{
+		uid: "d1b5886c",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

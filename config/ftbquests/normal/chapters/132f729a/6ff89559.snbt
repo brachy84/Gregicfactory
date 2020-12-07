@@ -1,0 +1,53 @@
+{
+	title: "Canning Machine and Assorted Stuff",
+	icon: "gregtech:machine 1 140",
+	x: -16.75d,
+	y: 2.75d,
+	text: [
+		"Note: this quest accepts both LV and MV Canning Machines.",
+		"",
+		"§aLV Batteries§r were very simple to make, but more effective forms of power storage will be more complex to build, so we'll need to lay the groundwork now.",
+		"",
+		"Put your §3Centrifuge§r to work for the §6Antimony§r you'll need, which comes in tiny piles from processing §6Tetrahedrite Ore§r and §6Stibnite Ore§r."
+	],
+	dependencies: [
+		"7d634f43"
+	],
+	tasks: [{
+		uid: "4c338787",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "questbookCanning",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any questbookCanning"
+				}
+			}
+		}]
+	},
+	{
+		uid: "dce32c8e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2003"
+		}]
+	},
+	{
+		uid: "16c6aa37",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10091"
+		}]
+	}],
+	rewards: [{
+		uid: "65a2dab4",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

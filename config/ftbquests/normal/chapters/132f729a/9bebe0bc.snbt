@@ -1,0 +1,27 @@
+{
+	title: "1k Fluid Storage",
+	icon: "appliedenergistics2:material 1 54",
+	x: -2.25d,
+	y: 9.25d,
+	text: [
+		"The first digital fluid storage component, used to make §a1k Fluid Storage Cells§r.",
+		"",
+		"Fluid cells can store up to five fluid types, but it's better to format all your disks to a single fluid each. This avoids the scenario where one fluid fills up a cell, preventing the other fluids from being stocked. Extra types also use up a chunk of storage, resulting in less overall storage per cell."
+	],
+	dependencies: [
+		"ba808170",
+		"64215a05"
+	],
+	tasks: [{
+		uid: "555d882b",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 54"
+		}]
+	}],
+	rewards: [{
+		uid: "f60ceb81",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

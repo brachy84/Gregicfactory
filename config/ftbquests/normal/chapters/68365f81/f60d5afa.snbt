@@ -1,0 +1,25 @@
+{
+	title: "Element 030: Zinc",
+	icon: "gregtech:meta_item_1 1 10079",
+	x: -5.5d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"1cd2fe72"
+	],
+	tasks: [{
+		uid: "13b113b8",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10079"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "342d909b",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

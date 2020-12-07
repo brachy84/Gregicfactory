@@ -1,0 +1,25 @@
+{
+	title: "Element 023: Vanadium",
+	icon: "gregtech:meta_item_1 1 10077",
+	x: -5.5d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"a401dd3a"
+	],
+	tasks: [{
+		uid: "d96a2e5a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10077"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "66813333",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Crystal Matrix Ingots",
+	icon: "avaritia:resource 1 1",
+	x: -12.75d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"43911a06"
+	],
+	tasks: [{
+		uid: "6254fe9f",
+		type: "item",
+		items: [{
+			item: "avaritia:resource 64 1"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "9c157181",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,54 @@
+{
+	title: "Extraterrestrial Mobs",
+	icon: "deepmoblearning:data_model_enderman",
+	x: -24.5d,
+	y: 3.0d,
+	text: [
+		"Some of these simulations will start to consume tremendous amounts of power at this point, so if you're finding it a struggle, don't be afraid to hold off on progressing through these data models until a later time."
+	],
+	dependencies: [
+		"3044276d"
+	],
+	tasks: [{
+		uid: "398c1913",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_enderman"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cf21ad59",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_shulker"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "17d78f6a",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_wither"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f761db6b",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_dragon"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8acc9460",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 10
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	title: "Cake Based Dimensional Transit",
+	loot_size: 1,
+	rewards: [{
+		item: "dimensionaledibles:overworld_cake"
+	},
+	{
+		item: {
+			id: "dimensionaledibles:custom_cake",
+			tag: {
+				dimID: 119,
+				cakeName: "Void World"
+			}
+		}
+	}]
+}

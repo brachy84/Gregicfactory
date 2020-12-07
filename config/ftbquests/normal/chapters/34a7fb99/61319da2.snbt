@@ -1,0 +1,25 @@
+{
+	title: "Iridium Heavy Plating",
+	icon: "contenttweaker:iridiumalloyplating",
+	x: -12.75d,
+	y: 8.5d,
+	text: [
+		"Heavy plating made from §6Iridium§r for Tier Five and Tier Eight Micro Miners."
+	],
+	dependencies: [
+		"32079103",
+		"beb03a1f"
+	],
+	tasks: [{
+		uid: "35e99a1b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:iridiumalloyplating"
+		}]
+	}],
+	rewards: [{
+		uid: "bea92989",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

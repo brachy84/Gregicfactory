@@ -1,0 +1,50 @@
+{
+	title: "Apollo Program",
+	icon: "advancedrocketry:rocketmotor",
+	x: 22.0d,
+	y: 20.0d,
+	text: [
+		"This is one of the simpler rockets you can build. The specifics of the shape don't really matter, as long as the rocket engines are on the bottom and all the parts are added. It also needs to be inside the edges of the Launch Pad and not taller than the Structure Tower.",
+		"",
+		"§aIn order to progress this quest chain further, you'll first need to complete the Interdimensional Transport (either Dislocators or Telepad) questline and the Rocket Fuel questline, both of which are nearby on this quest tab."
+	],
+	dependencies: [
+		"d57dcf7b",
+		"08f31d64"
+	],
+	tasks: [{
+		uid: "d18c2d4a",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:rocketmotor 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "7a84b36e",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:fueltank 6"
+		}],
+		count: 6L
+	},
+	{
+		uid: "03b3a266",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:guidancecomputer"
+		}]
+	},
+	{
+		uid: "829570df",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:seat"
+		}]
+	}],
+	rewards: [{
+		uid: "7034e527",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

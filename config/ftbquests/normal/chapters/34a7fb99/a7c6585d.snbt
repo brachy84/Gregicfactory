@@ -1,0 +1,26 @@
+{
+	title: "Draconium Dust",
+	icon: "draconicevolution:draconium_dust",
+	x: -4.5d,
+	y: 5.75d,
+	text: [
+		"Draconium is a complex material needed in vast quantities.",
+		"",
+		"You'll likely have come by some dust while mining in the End, but you can also create it with §6Dragon's Breath§r and §6Manyullyn§r."
+	],
+	dependencies: [
+		"f203ef88"
+	],
+	tasks: [{
+		uid: "a2516a13",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconium_dust"
+		}]
+	}],
+	rewards: [{
+		uid: "b5efc5b8",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

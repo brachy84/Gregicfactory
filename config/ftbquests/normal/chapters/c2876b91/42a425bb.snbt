@@ -1,0 +1,24 @@
+{
+	title: "EV Machine Hulls",
+	icon: "gregtech:machine 1 504",
+	x: -30.75d,
+	y: 7.0d,
+	text: [
+		"With §6Titanium§r smelting automated, you can now build Machine Hulls for Extreme Voltage machines."
+	],
+	dependencies: [
+		"fb55c41e"
+	],
+	tasks: [{
+		uid: "759adbd4",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 504"
+		}]
+	}],
+	rewards: [{
+		uid: "264ee73f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

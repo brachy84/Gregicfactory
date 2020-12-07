@@ -1,0 +1,32 @@
+{
+	title: "Advanced Capacitor Bank",
+	icon: {
+		id: "enderio:block_cap_bank",
+		tag: {
+			"enderio:energy": 5000000
+		},
+		Damage: 2s
+	},
+	x: -10.5d,
+	y: 15.5d,
+	text: [
+		"Two §aCapacitor Banks§r can be grafted together with a §6Double-Layer Capacitor§r and §6Electrical Steel§r to create an §aAdvanced Capacitor Bank§r, which stores five times as much RF as the basic bank."
+	],
+	dependencies: [
+		"7a456b90",
+		"f9c42567"
+	],
+	tasks: [{
+		uid: "327382e9",
+		type: "item",
+		items: [{
+			item: "enderio:block_cap_bank 1 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cc0fae45",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

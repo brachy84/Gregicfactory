@@ -1,0 +1,39 @@
+{
+	title: "Polarizer",
+	icon: "gregtech:machine 1 420",
+	x: -23.25d,
+	y: 11.0d,
+	text: [
+		"Note: this quest accepts both LV and MV Polarizer.",
+		"",
+		"Although you could §emagnetize§r §6Iron Ingots§r by hand using §6Redstone§r, that's not an option for more advanced materials. This machine will let you magnetize §6Steel Rods§r, as well as even more advanced materials later.",
+		"",
+		"There are no recipes for the §3Polarizer§r that require more than 32 volts, which means you can get away with using an LV Polarizer for the entire pack. However, higher voltages will work faster, in exchange for consuming more power."
+	],
+	dependencies: [
+		"344445c4"
+	],
+	tasks: [{
+		uid: "1618f711",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "questbookPolarizer",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any questbookPolarizer"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "4f3165ec",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

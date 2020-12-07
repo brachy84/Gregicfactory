@@ -1,0 +1,24 @@
+{
+	title: "Thermal Device Casing",
+	icon: "thermalexpansion:frame 1 64",
+	x: -36.0d,
+	y: 6.75d,
+	text: [
+		"This casing is the structure for §bThermal Expansion§r's devices, which are simpler machines."
+	],
+	dependencies: [
+		"993745bf"
+	],
+	tasks: [{
+		uid: "535fa5d1",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 64"
+		}]
+	}],
+	rewards: [{
+		uid: "67a24170",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

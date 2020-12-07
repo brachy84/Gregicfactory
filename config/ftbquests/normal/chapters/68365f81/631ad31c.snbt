@@ -1,0 +1,25 @@
+{
+	title: "Element 039: Yttrium",
+	icon: "gregtech:meta_item_1 1 10078",
+	x: -1.5d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"26b6f0cb"
+	],
+	tasks: [{
+		uid: "4389b08c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10078"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "aa3e1729",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

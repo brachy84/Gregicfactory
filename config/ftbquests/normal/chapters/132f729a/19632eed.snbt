@@ -1,0 +1,53 @@
+{
+	title: "SMD Components",
+	icon: "gregtech:meta_item_2 1 32460",
+	x: -21.5d,
+	y: 13.5d,
+	text: [
+		"§6Surface Mounted Devices§r, or §6SMD§rs for short, are one of the first endgame materials you'll be making. Even the mighty Tier Nine circuits require SMD components, and huge amounts of them at that.",
+		"",
+		"All SMD components must be produced in at least an §3MV Assembing Machine§r, and they all will require liquid §9Polyethelyene§r.",
+		"",
+		"Start off with the §6SMD Transistor§r. These are simply a §6Gallium Plate§r and §6Fine Annealed Copper Wire§r.",
+		"",
+		"Next up are §6SMD Resistors§r, which are also simple: §6Carbon Dust§r and §6Fine Electrum Wire§r.",
+		"",
+		"Finally, §6SMD Capacitors§r. You'll need sheets of §6Polyvinyl Chloride§r to make these, or they can also be made more slowly with §6Silicone Rubber§r.",
+		"",
+		"Invest in an extremely robust system of automation for SMD components and all of their ingredients, since you'll never stop needing them. They will also work in place of the non-SMD versions you've been using in all but the simplest of recipes."
+	],
+	dependencies: [
+		"28e3427a",
+		"c6b6e94d",
+		"3801832a",
+		"0afe1590"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "316257da",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32460"
+		}]
+	},
+	{
+		uid: "b306fe6d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32459"
+		}]
+	},
+	{
+		uid: "91d00235",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32458"
+		}]
+	}],
+	rewards: [{
+		uid: "461e87c9",
+		type: "item",
+		item: "contenttweaker:omnicoin5",
+		count: 3
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "Element 001: Hydrogen",
+	icon: "contenttweaker:solidifiedhydrogen",
+	x: -5.5d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"6faaf0be",
+		"d18f4bb6"
+	],
+	tasks: [{
+		uid: "77523534",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedhydrogen 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "622808f8",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

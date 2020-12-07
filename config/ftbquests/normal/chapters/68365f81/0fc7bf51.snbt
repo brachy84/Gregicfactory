@@ -1,0 +1,25 @@
+{
+	title: "Element 014: Silicon",
+	icon: "gregtech:meta_item_1 1 10061",
+	x: 0.5d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"3cc02b11"
+	],
+	tasks: [{
+		uid: "ea5d5bb6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10061"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "895c7196",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

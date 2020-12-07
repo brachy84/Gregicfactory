@@ -1,0 +1,36 @@
+{
+	title: "Nuclear Fuel Infrastructure",
+	icon: "nuclearcraft:uranium 1 8",
+	x: -12.5d,
+	y: 8.0d,
+	text: [
+		"Climbing the ladder of fissile materials will require some specific raw materials and machinery.",
+		"",
+		"§6Uranium 238§r is an important fissile material, and can be obtained from ores like §6Uranium Ore§r and §6Pitchblende Ore§r. Uranium 238 ingots or dusts need to be processed in a §3Thermal Centrifuge§r into clumps required for Enriched Fuels. In the process, you'll get §6Tiny Clumps of Uranium 235§r, nine of which can be combined like nuggets or dusts into a full-size clump.",
+		"",
+		"Thermal Centrifuges are very slow machines so you should parallelize this processing as much as possible, using the highest tier ones you can afford for overclocking."
+	],
+	dependencies: [
+		"467287e3"
+	],
+	tasks: [{
+		uid: "f16c92ff",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:uranium 8 8"
+		}],
+		count: 8L
+	},
+	{
+		uid: "d2d64387",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:uranium 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "a962e0be",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

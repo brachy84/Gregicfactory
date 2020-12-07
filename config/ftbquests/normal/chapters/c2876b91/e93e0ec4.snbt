@@ -1,0 +1,26 @@
+{
+	title: "Dilithium",
+	icon: "libvulpes:productgem",
+	x: -33.0d,
+	y: 10.75d,
+	text: [
+		"§6Dilithium Crystals§r are used to power Warp Cores, and are also a key component in several Micro Miner missions.",
+		"",
+		"They are made by crystallizing §6Dilithium Dust§r with §9Deuterium§r in an §3Autoclave§r."
+	],
+	dependencies: [
+		"8e257401"
+	],
+	tasks: [{
+		uid: "c6773f36",
+		type: "item",
+		items: [{
+			item: "libvulpes:productgem"
+		}]
+	}],
+	rewards: [{
+		uid: "9b6d0b9e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

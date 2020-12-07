@@ -1,0 +1,28 @@
+{
+	title: "The Fourth and Final Tier Five Circuits",
+	icon: "contenttweaker:crystalcircuit",
+	x: -18.25d,
+	y: 11.75d,
+	text: [
+		"With your §6Crystal CPUs§r and the §3LuV Assembling Machine§r crafted, you can make the final type of Tier Five Circuit: the §6Quantum Circuit§r.",
+		"",
+		"As the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring §6Crystal System-on-Chip§r won't be available until you can make a §3ZPM Assembling Machine§r."
+	],
+	dependencies: [
+		"dac62926",
+		"4e2c356c",
+		"2b1de5a3"
+	],
+	tasks: [{
+		uid: "591da2ff",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32213"
+		}]
+	}],
+	rewards: [{
+		uid: "c62da0ec",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

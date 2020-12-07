@@ -1,0 +1,21 @@
+{
+	title: "LV Circuits",
+	icon: "gregtech:machine 1 501",
+	x: -7.5d,
+	y: 6.25d,
+	text: [
+		"Circuits along this line are LV, and can all be substituted in recipes.",
+		"",
+		"§7Primitive Circuits§r are the worst in terms of cost and effort required to produce, but you have to start with something.",
+		"",
+		"§2Electronic Circuits§r are the middle layer between Primitive Circuits and Refined Circuits.",
+		"",
+		"And finally, §aRefined Circuits§r, which take the lowest effort and come in batches of four, but require polyethylene."
+	],
+	dependencies: [
+		"f7c4923c",
+		"80a107cf",
+		"0b72194c"
+	],
+	size: 0.8333333333333334d
+}

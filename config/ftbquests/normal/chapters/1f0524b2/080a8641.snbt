@@ -1,0 +1,33 @@
+{
+	title: "Egg Thief",
+	icon: "minecraft:dragon_egg",
+	x: 9.75d,
+	y: 27.0d,
+	text: [
+		"Find a clever way to make the Ender Dragon's Egg to fall onto a torch. This neat trick will turn it into a collectible item so you can bring it home with you.",
+		"",
+		"You might be interested in getting yourself a §3Dragon Egg Mill§r to place it on for free 500 GP."
+	],
+	dependencies: [
+		"98cbb7c2"
+	],
+	tasks: [{
+		uid: "1210cebb",
+		type: "item",
+		items: [{
+			item: "minecraft:torch"
+		}]
+	},
+	{
+		uid: "45fe64f1",
+		type: "item",
+		items: [{
+			item: "minecraft:dragon_egg"
+		}]
+	}],
+	rewards: [{
+		uid: "cbd16fdb",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

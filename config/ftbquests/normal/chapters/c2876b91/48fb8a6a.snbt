@@ -1,0 +1,24 @@
+{
+	title: "Epoxy Substrate",
+	icon: "gregtech:meta_item_2 1 32444",
+	x: -27.5d,
+	y: 5.5d,
+	text: [
+		"§6Epoxy Circuit Boards§r are a more advanced substrate type that gives you access to §6Microcircuits§r, which span tiers two through five."
+	],
+	dependencies: [
+		"351637de"
+	],
+	tasks: [{
+		uid: "20729f39",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32444"
+		}]
+	}],
+	rewards: [{
+		uid: "bccce2d9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

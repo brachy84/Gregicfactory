@@ -1,0 +1,22 @@
+{
+	title: "Empowered Restonia Gear",
+	icon: "moreplates:empowered_restonia_gear",
+	x: -4.875d,
+	y: -3.75d,
+	text: [
+		"A gear forged from §6Empowered Restonia Crystal§r.",
+		"",
+		"While you can empower gears directly, it makes much more sense to solidify them."
+	],
+	dependencies: [
+		"ced2c146"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "c1330b72",
+		type: "item",
+		items: [{
+			item: "moreplates:empowered_restonia_gear"
+		}]
+	}]
+}

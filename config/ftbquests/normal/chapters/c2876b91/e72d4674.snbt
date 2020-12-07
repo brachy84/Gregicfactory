@@ -1,0 +1,26 @@
+{
+	title: "Palladium",
+	icon: "gregtech:meta_item_1 1 10049",
+	x: -31.25d,
+	y: 13.0d,
+	text: [
+		"§6Palladium§r is found in §6Palladium Ore§r, which is found alongside §6Platinum Ore§r. If you haven't found a vein yet, you should buy some.",
+		"",
+		"Palladium is smelted in the §3Electric Blast Furnace§r. It takes a while but each ingot goes pretty far for what you'll need it for."
+	],
+	dependencies: [
+		"237ea1ad"
+	],
+	tasks: [{
+		uid: "5ace4b83",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10049"
+		}]
+	}],
+	rewards: [{
+		uid: "67f536bf",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

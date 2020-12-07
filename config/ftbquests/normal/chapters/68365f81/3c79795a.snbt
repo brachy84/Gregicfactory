@@ -1,0 +1,25 @@
+{
+	title: "Electrical Steel Ingots",
+	icon: "enderio:item_alloy_ingot",
+	x: -12.75d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e0c73d4f"
+	],
+	tasks: [{
+		uid: "1e3593b9",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "9f2caab2",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

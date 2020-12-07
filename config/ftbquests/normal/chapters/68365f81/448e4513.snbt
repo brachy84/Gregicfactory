@@ -1,0 +1,25 @@
+{
+	title: "Pulsating Iron Ingots",
+	icon: "enderio:item_alloy_ingot 1 5",
+	x: -12.75d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"0782d4be"
+	],
+	tasks: [{
+		uid: "2e589a93",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 64 5"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "7fe7ef86",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

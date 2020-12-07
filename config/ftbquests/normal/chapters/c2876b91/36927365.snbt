@@ -1,0 +1,33 @@
+{
+	title: "Vacuum Freezer",
+	icon: "gregtech:machine 1 512",
+	x: -26.75d,
+	y: 2.5d,
+	text: [
+		"§3Vacuum Freezers§r are primarily used to cool down hot ingots.",
+		"",
+		"They're also capable of freezing air into a liquid, and making superconductors.",
+		"",
+		"At minimum you will need an energy input hatch, an input bus, an output bus, and 22 §6Frost Proof Machine Casings§r for forming the multiblock for processing Hot Ingots.",
+		"",
+		"If you want to deal with fluids as well, subtract two casings and use a fluid input and fluid output in their place.",
+		"",
+		"Besides the controller placement, as usual the hatches/buses can go anywhere. Use the building guide in §bJEI§r which can be pulled up from the controller block."
+	],
+	dependencies: [
+		"45f5a3bb"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "8d295150",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 512"
+		}]
+	}],
+	rewards: [{
+		uid: "793d5db1",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

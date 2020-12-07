@@ -1,0 +1,29 @@
+{
+	title: "Naquadah Ingots",
+	icon: "gregtech:meta_item_1 1 10307",
+	x: -10.75d,
+	y: 6.25d,
+	text: [
+		"An otherworldly material exclusive to Microverses, §6Naquadah§r is an important material in the late game.",
+		"",
+		"Unlike most materials at this point, Naquadah can be smelted in a standard furnace.",
+		"",
+		"It can be alloyed and enriched to various forms, and is the eventual source of §6Neutronium§r in a §3Mark Three Fusion Reactor§r."
+	],
+	dependencies: [
+		"47fe807e",
+		"fe990f23"
+	],
+	tasks: [{
+		uid: "a13bcebd",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10307"
+		}]
+	}],
+	rewards: [{
+		uid: "3da19854",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

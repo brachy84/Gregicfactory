@@ -1,0 +1,35 @@
+{
+	title: "Putting It All Together",
+	icon: "gregtech:meta_item_2 1 32465",
+	x: 0.0d,
+	y: 16.75d,
+	shape: "square",
+	text: [
+		"Now that you have everything you need to power your machines, it's time to put it all together.",
+		"",
+		"Your Steam Dynamo needs burnable fuel (like §6Coal§r) and §9water§r. It will output RF power through the Excitation Coil (the red bit at the top). The orientation of the Steam Dynamo can be adjusted with a §aCrescent Hammer§r, if needed.",
+		"",
+		"§6Energy Conduits§r can be used to transfer that RF power, but the dynamo can also output RF directly into a CEF by making the Excitation Coil touch the CEF.",
+		"",
+		"The CEF transforms RF power into EU, outputting the resulting EU through the side with a red dot. The orientation can be adjusted using a §aWrench§r. Attach your §6Conductive Iron Cables§r to the output side of the CEF.",
+		"",
+		"Now all you need are some §bGregTech§r machines to hook up to the cables! You can make whatever you want, but its recommended that you get these two first:",
+		"",
+		"The §6Wiremill§r will make crafting wires much, much easier.",
+		"",
+		"The §6Compressor§r will make Plates from one ingot instead of two."
+	],
+	dependencies: [
+		"52cb4227"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "43865e87",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "4a39a7cf",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

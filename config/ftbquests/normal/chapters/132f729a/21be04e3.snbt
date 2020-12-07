@@ -1,0 +1,33 @@
+{
+	title: "Dark Steel Enchanter",
+	icon: "enderio:block_enchanter",
+	x: -10.5d,
+	y: 4.5d,
+	text: [
+		"Vanilla enchanting mechanics are just so tedious. Don't you wish you could just make a specific enchant instead of grinding levels and rolling the dice?",
+		"",
+		"§eOh wait- you can!§r",
+		"",
+		"The §3Dark Steel Enchanter§r is a device that uses §6Book and Quill§r, experience levels, lapis, and enchant-specific items to create an §6Enchanted Book§r with an enchantment of your choosing. Then you can just use an Anvil to enchant your item like usual.",
+		"",
+		"This is a good time to bring up the §dHolding§r enchant, which can be applied to most items from §bThermal Foundation§r and its related mods. Holding can be crafted up to level IV, which massively boosts the storage capacity of items like §aSatchels§r, §aFlux Capacitors§r, and §aPortable Tanks§r.",
+		"",
+		"You can also make the §dMending§r enchant which allows you to infinitely repair the item when damaged using §9Liquid XP§r in an §bEnderIO §aFluid Tank§r or §aPressurized Fluid Tank§r."
+	],
+	dependencies: [
+		"7102c512",
+		"bc8aa01b"
+	],
+	tasks: [{
+		uid: "84d3441e",
+		type: "item",
+		items: [{
+			item: "enderio:block_enchanter"
+		}]
+	}],
+	rewards: [{
+		uid: "82eaa650",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "Kanthal Ingots",
+	icon: "gregtech:meta_item_1 1 10127",
+	x: -24.25d,
+	y: 3.75d,
+	text: [
+		"§6Kanthal§r is an alloy of §6Iron§r, §6Aluminium§r, and §6Chrome§r.",
+		"",
+		"This alloy is cooked in an §3Electric Blast Furnace§r and cooled in a §3Vacuum Freezer§r."
+	],
+	dependencies: [
+		"5d34f8d4",
+		"36927365"
+	],
+	tasks: [{
+		uid: "0deb494a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10127"
+		}]
+	}],
+	rewards: [{
+		uid: "1b182fb9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	title: "Charcoal",
+	icon: "minecraft:coal 1 1",
+	x: 2.0d,
+	y: 5.5d,
+	text: [
+		"No hoops to jump through here. Smelt §6Wood Logs§f to get §6Charcoal§f. It will serve you well as a fuel source until you locate a vein of §6Coal§f.",
+		"",
+		"You might want to craft Charcoal into §6Tiny Charcoal§f pieces to save some fuel. One tiny piece is enough to smelt exactly one item. Just put charcoal into the crafting grid to make some!"
+	],
+	dependencies: [
+		"cb806892"
+	],
+	tasks: [{
+		uid: "be94304c",
+		type: "item",
+		items: [{
+			item: "minecraft:coal 1 1"
+		}]
+	},
+	{
+		uid: "328c0a16",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_misc 8 11"
+		}],
+		count: 8L
+	}]
+}

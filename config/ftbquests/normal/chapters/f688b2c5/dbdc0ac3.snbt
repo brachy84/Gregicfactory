@@ -1,0 +1,104 @@
+{
+	title: "From Dusts To Wires",
+	icon: "gregtech:meta_item_1 1 2237",
+	x: 0.0d,
+	y: 10.0d,
+	shape: "square",
+	text: [
+		"Although most §ealloys§f require an §3Alloy Smelter§f, some alloys can be made simply by mixing the correct metal dusts together. ",
+		"",
+		"Copper Dust mixed with Redstone Dust makes §6Red Alloy Dust§f.",
+		"",
+		"Iron Dust mixed with Redstone Dust makes §6Conductive Iron Dust§f.",
+		"",
+		"§3Smelt§f it into ingots, §ahammer§f it into §6Plates§f, and §acut§f them into §6Wires§f."
+	],
+	dependencies: [
+		"de2ebf65"
+	],
+	tasks: [{
+		uid: "48c5433d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 14 2018"
+		}],
+		count: 14L
+	},
+	{
+		uid: "ad028640",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 14 2237"
+		}],
+		count: 14L
+	},
+	{
+		uid: "05383d7a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 14 10237"
+		}],
+		count: 14L
+	},
+	{
+		uid: "3b375096",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 32 2033"
+		}],
+		count: 32L
+	},
+	{
+		uid: "4613e846",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 32 4"
+		}],
+		count: 32L
+	},
+	{
+		uid: "f2c0f248",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 7 12237"
+		}],
+		count: 7L
+	},
+	{
+		uid: "cdf16602",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 7 237"
+		}],
+		count: 7L
+	},
+	{
+		uid: "546ec715",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2500"
+		}],
+		count: 32L
+	},
+	{
+		uid: "ae9d7754",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 12500"
+		}],
+		count: 16L
+	},
+	{
+		uid: "44b8e80a",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 1 500"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "0f9097ca",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

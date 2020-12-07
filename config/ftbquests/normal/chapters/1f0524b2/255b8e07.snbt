@@ -1,0 +1,29 @@
+{
+	title: "Rod of Return",
+	icon: "enderio:item_rod_of_return",
+	x: 18.375d,
+	y: 21.0d,
+	text: [
+		"A good, but slightly gated way of teleporting back to your telepads.",
+		"",
+		"It won't be possible to make this until you reach EV tier power."
+	],
+	dependencies: [
+		"dc21d68c",
+		"8c8df8e8"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "8bbae96d",
+		type: "item",
+		items: [{
+			item: "enderio:item_rod_of_return"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "97665906",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

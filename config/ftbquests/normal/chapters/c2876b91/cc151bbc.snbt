@@ -1,0 +1,35 @@
+{
+	title: "LEU-233",
+	icon: "nuclearcraft:uranium",
+	x: -12.5d,
+	y: 10.5d,
+	text: [
+		"§6Uranium 233§r is obtained exclusively from the fission of §6TBU Fuels§r.",
+		"",
+		"§6LEU-233§r is made from one §6U233§r and eight §6U238§r.",
+		"",
+		"§6Depleted LEU-233§r will give you various §6Plutonium§r isotopes and some §6Americium§r."
+	],
+	dependencies: [
+		"48cbaf1d"
+	],
+	tasks: [{
+		uid: "a06633b2",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_uranium"
+		}]
+	},
+	{
+		uid: "5326629c",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:depleted_fuel_uranium"
+		}]
+	}],
+	rewards: [{
+		uid: "7fdaa2fe",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

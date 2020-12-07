@@ -1,0 +1,25 @@
+{
+	title: "Element 077: Iridium",
+	icon: "gregtech:meta_item_1 1 10032",
+	x: -5.5d,
+	y: 9.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"0c670157"
+	],
+	tasks: [{
+		uid: "bd7fec00",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10032"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "80d5bf02",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

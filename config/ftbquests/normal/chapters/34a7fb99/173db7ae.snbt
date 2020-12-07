@@ -1,0 +1,24 @@
+{
+	title: "The Third Tier Six Circuits",
+	icon: "gregtech:meta_item_2 1 32497",
+	x: -18.25d,
+	y: 13.0d,
+	text: [
+		"With some now-standard components you can upgrade a few §6Crystal Circuits§r into a §6Crystal Processor§r."
+	],
+	dependencies: [
+		"8374b5af"
+	],
+	tasks: [{
+		uid: "5304d7ec",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32497"
+		}]
+	}],
+	rewards: [{
+		uid: "a86fb544",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

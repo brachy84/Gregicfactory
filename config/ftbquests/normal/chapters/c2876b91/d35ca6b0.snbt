@@ -1,0 +1,38 @@
+{
+	title: "Gas Turbine",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "gas",
+			Amount: 1000
+		}
+	},
+	x: -8.25d,
+	y: 0.5d,
+	text: [
+		"Like other petroleum products, §9Sulfuric Gas§r is hydrodesulfurized into §9Refinery Gas§r using §9Hydrogen§r in a §3Chemical Reactor§r.",
+		"",
+		"Refinery Gas can be cracked and further distilled for its constituents, but it is also useful as fuel for §3Gas Turbines§r. While it can be burned directly, centrifuging Refinery Gas produces §9LPG§r (Liquefied Petroleum Gas), which is the ideal fuel for Gas Turbines, and §9Methane§r which is a potential suboptimal turbine fuel but is also useful for various chemical reactions."
+	],
+	dependencies: [
+		"b6fb8ad8"
+	],
+	tasks: [{
+		uid: "632ea262",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "gas",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4ec6e0dd",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

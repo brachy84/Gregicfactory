@@ -1,0 +1,29 @@
+{
+	title: "MV Assembling Machine",
+	icon: "gregtech:machine 1 101",
+	x: -21.5d,
+	y: 11.0d,
+	text: [
+		"The §3Advanced Assembling Machine§r, or MV Assembler for short, allows you to craft recipes that require up to 128 EU/t instead of 32. Plus, any recipe that was at most 32 EU/t can §eoverclock§r, crafting up to 2.8 times faster for 4 times the original energy per tick.",
+		"",
+		"A host of new recipes are now achievable, including a new theme of Circuits!"
+	],
+	dependencies: [
+		"b33f8563",
+		"d63b7d0f",
+		"47eb58e8"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "86288993",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 101"
+		}]
+	}],
+	rewards: [{
+		uid: "85d6b1aa",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

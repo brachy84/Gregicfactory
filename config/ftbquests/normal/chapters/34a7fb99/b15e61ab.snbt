@@ -1,0 +1,36 @@
+{
+	title: "IV Assembling Machine",
+	icon: "gregtech:machine 1 2004",
+	x: -19.5d,
+	y: 4.0d,
+	text: [
+		"With your §6Tungstensteel§r-based machine hulls and §6Nanoprocessor Mainframes§r squared away, you can finally get on the path to making an Insane Voltage §3Assembling Machine§r.",
+		"",
+		"This tier of Assembling Machine unlocks §6Quantum Circuits§r, as well as handling crafting recipes up to 8192 EU/t. It can also optionally overclock recipes up to 2048 EU/t for improved speed at the cost of relatively more power."
+	],
+	dependencies: [
+		"d3c6e921",
+		"759fa2d8"
+	],
+	size: 1.75d,
+	tasks: [{
+		uid: "bacffb63",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2004"
+		}]
+	},
+	{
+		uid: "5b14d475",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_multiblock_casing 1 8"
+		}],
+		count: 7L
+	}],
+	rewards: [{
+		uid: "e61513de",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

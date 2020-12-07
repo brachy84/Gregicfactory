@@ -1,0 +1,27 @@
+{
+	title: "Phantom Booster",
+	icon: "actuallyadditions:block_phantom_booster",
+	x: -11.5d,
+	y: 12.75d,
+	text: [
+		"Up to three §aPhantom Boosters§r can be placed atop the §3Vertical Digger§r to increase its area of effect.",
+		"",
+		"These are also useful for extending the range of other \"Phantom\" machines and devices from §bActually Additions§r."
+	],
+	dependencies: [
+		"2ce819b9"
+	],
+	tasks: [{
+		uid: "9ab0d025",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_phantom_booster 3"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "1990324b",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

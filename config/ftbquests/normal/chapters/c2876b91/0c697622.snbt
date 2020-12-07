@@ -1,0 +1,32 @@
+{
+	title: "Seed Oil, Fish Oil, Canola Oil",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "canolaoil",
+			Amount: 1000
+		}
+	},
+	x: -16.5d,
+	y: 2.75d,
+	text: [
+		"A whole host of fluids can be used as the feedstock for your §9Bio Diesel§r, including §9Seed Oil§r, §9Fish Oil§r, and the various tiers of §9Canola Oils§r.",
+		"",
+		"Fish Oil and Canola Oil are probably the easiest, but it's up to you to choose.",
+		"",
+		"Fish are easiest to get from §aGuardian Models§r from §bDML§r."
+	],
+	dependencies: [
+		"42c2e66c",
+		"81318ada"
+	],
+	tasks: [{
+		uid: "1eef35fd",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "1cd954ce",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

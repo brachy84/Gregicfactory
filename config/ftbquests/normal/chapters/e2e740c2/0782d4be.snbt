@@ -1,0 +1,35 @@
+{
+	title: "Pulsating Iron and Ender Pearls",
+	icon: "enderio:item_alloy_ingot 1 5",
+	x: -31.75d,
+	y: 3.0d,
+	text: [
+		"An EnderIO alloy.",
+		"",
+		"Made from Pulsating Dust and an Iron Ingot.",
+		"",
+		"If you can't find one otherwise, Ender Pearls can be crafted using Pulsating Dust and a Diamond in an Alloy Smelter."
+	],
+	dependencies: [
+		"9c8bb401"
+	],
+	tasks: [{
+		uid: "48e910c0",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 5"
+		}]
+	},
+	{
+		uid: "80f99ceb",
+		type: "item",
+		items: [{
+			item: "minecraft:ender_pearl"
+		}]
+	}],
+	rewards: [{
+		uid: "13406131",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

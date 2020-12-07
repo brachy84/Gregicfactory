@@ -1,0 +1,28 @@
+{
+	title: "LuV Power Storage",
+	icon: "gregtech:meta_item_1 1 32598",
+	x: 1.75d,
+	y: 6.25d,
+	text: [
+		"A Ludicrous Voltage tier §bGregTech§r battery.",
+		"",
+		"You're unlikely to be using EU batteries so it's safe to skip this for now and do it later, though some of the infrastructure used for these batteries is also used for other things."
+	],
+	dependencies: [
+		"cac13d65",
+		"8e76496d",
+		"4c67dfec"
+	],
+	tasks: [{
+		uid: "bdbe0b75",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32598"
+		}]
+	}],
+	rewards: [{
+		uid: "3fef3c91",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

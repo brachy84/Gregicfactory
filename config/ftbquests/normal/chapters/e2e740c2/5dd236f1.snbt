@@ -1,0 +1,47 @@
+{
+	title: "Simulating Mobs",
+	icon: "deepmoblearning:simulation_chamber",
+	x: -28.975d,
+	y: 5.7d,
+	shape: "square",
+	text: [
+		"A §3Simulation Chamber§r from §bDeep Mob Learning§r (§bDML§r, for short) allows you to farm mobs in a totally environmentally (and server) friendly way!",
+		"",
+		"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as §6iron, gold, tin, copper, diamonds§r and many more!), although it requires a fairly substantial amount of power and time invested before you start seeing solid returns.",
+		"",
+		"Setting up DML automation during the early game is §avery important§r as it gives you access to infinite quantities of many resources!",
+		"",
+		"An important thing to know is that Deep Mob Learning machines are §asided§r, thus they only accept §6Pristine Matter§r through §athe top side§r and output products through §aall other sides§r. It's worth noting that you can also extract models through the top side.",
+		"",
+		"Consider reading the §bDeep Mob Learning§r book for more info.",
+		"",
+		"Yes, you can also use it for generating power... §owith Diamonds."
+	],
+	dependencies: [
+		"7102c512",
+		"adf405d6"
+	],
+	size: 1.9d,
+	tasks: [{
+		uid: "5434c673",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:simulation_chamber"
+		}]
+	}],
+	rewards: [{
+		uid: "c0df3e1a",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	},
+	{
+		uid: "7919436f",
+		type: "item",
+		item: {
+			id: "patchouli:guide_book",
+			tag: {
+				"patchouli:book": "deepmoblearning:book"
+			}
+		}
+	}]
+}

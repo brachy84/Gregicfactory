@@ -1,0 +1,40 @@
+{
+	title: "Fusion Reactor MK3",
+	icon: "gregtech:machine 1 2504",
+	x: 5.5d,
+	y: 4.5d,
+	text: [
+		"FUSION!",
+		"",
+		"This baby can do any fusion recipe, notably giving you access to §6Neutronium§r.",
+		"",
+		"The multiblock layout is the same as the Mark 1 and Mark 2, with the same hatch and casing substitions permitted.",
+		"",
+		"Obviously though, this one uses §6Fusion Machine Casing Mk II§r and only works with §aUV Energy Input Hatches§r."
+	],
+	dependencies: [
+		"0aa23aad"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "a50f0728",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2506"
+		}]
+	},
+	{
+		uid: "03e7d7cd",
+		type: "item",
+		items: [{
+			item: "gregtech:multiblock_casing 80 4"
+		}],
+		count: 80L
+	}],
+	rewards: [{
+		uid: "02824225",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 10
+	}]
+}

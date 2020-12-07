@@ -1,0 +1,50 @@
+{
+	title: "Digital Storage At Last",
+	icon: {
+		id: "appliedenergistics2:storage_cell_1k",
+		tag: {}
+	},
+	x: -20.75d,
+	y: 14.5d,
+	text: [
+		"§bApplied Energistics§r uses §6Storage Cells§r as its primary means of digital item and fluid storage.",
+		"",
+		"All unformatted Storage Cells are limited to at most 63 distinct item types, with the first item of each new type taking up a chunk of the total bytes of cell storage, and subsequent items of existing types taking a small amount of bytes thereafter.",
+		"",
+		"A §61k ME Storage Cell§r is the first and smallest cell for storing items. If you are going to be storing many different kinds of items in your network, you will need to make an §6ME Drive§r and fill it with multiple Storage Cells.",
+		"",
+		"The §64k ME Storage Cell§r is the next size up. With four times the bytes it holds substantially more items per type, but it requires a more advanced technology than you currently have available: AE §6Processors§r made in an §3Inscriber§r."
+	],
+	dependencies: [
+		"43c8e0d8"
+	],
+	tasks: [{
+		uid: "0451cdf2",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 35"
+		}]
+	},
+	{
+		uid: "17ef0e00",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 39"
+		}]
+	},
+	{
+		uid: "7449b7a1",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:storage_cell_1k",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1a92465b",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	title: "The Fourth And Final Tier Four Circuits",
+	icon: "gregtech:meta_item_2 1 32494",
+	x: -19.5d,
+	y: 5.75d,
+	text: [
+		"With your new §6Multi-Layer Fiber-Reinforced Epoxy Circuit Boards§r, §6QBit CPUs§r, and some standard components, you can make the final type of Tier Four Circuit: the §6Quantum Circuit§r.",
+		"",
+		"As the best form of Tier Four circuit, these should be automated and stockpiled. The variant recipe requiring §6Advanced System-on-Chip§r won't be available until ZPM."
+	],
+	dependencies: [
+		"b15e61ab",
+		"3a7a32ec",
+		"56f6568d"
+	],
+	tasks: [{
+		uid: "a0e25462",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32494"
+		}]
+	}],
+	rewards: [{
+		uid: "f36558e0",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

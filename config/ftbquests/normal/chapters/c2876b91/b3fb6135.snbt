@@ -1,0 +1,24 @@
+{
+	title: "Tough Alloy",
+	icon: "nuclearcraft:alloy 1 1",
+	x: -18.75d,
+	y: 8.0d,
+	text: [
+		"Alloying some §6Lithium§r into your §6Ferroboron§r results in §6Tough Alloy§r, a common component in §bNuclearCraft§r blocks."
+	],
+	dependencies: [
+		"a39dccd3"
+	],
+	tasks: [{
+		uid: "7a01d776",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:alloy 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "14dc77c1",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

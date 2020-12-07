@@ -1,0 +1,28 @@
+{
+	title: "Dark Steel",
+	icon: "enderio:item_alloy_ingot 1 6",
+	x: -29.0d,
+	y: 7.25d,
+	shape: "square",
+	text: [
+		"§6Steel§r alloyed with §6Obsidian§r makes §6Dark Steel§r, which is needed for many of the machines in §bEnderIO§r and §bApplied Energistics§r.",
+		"",
+		"Later, you can use §6Void Crystal§r instead of Obsidian."
+	],
+	dependencies: [
+		"344445c4"
+	],
+	tasks: [{
+		uid: "a7f23f2a",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 12 6"
+		}],
+		count: 12L
+	}],
+	rewards: [{
+		uid: "6dc52483",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "Advanced Inscriber",
+	icon: "ae2stuff:inscriber",
+	x: -8.25d,
+	y: 9.25d,
+	text: [
+		"§3Advanced Inscribers§r are much easier to work with for automation purposes, since you can insert more than a single item at a time and you can lock §aPresses§r in place.",
+		"",
+		"You can automate these nicely with processing patterns in an §aME Interface§r. They don't auto-eject items though, so you will need to pull the finished items out."
+	],
+	dependencies: [
+		"d466eb44"
+	],
+	tasks: [{
+		uid: "dcece7df",
+		type: "item",
+		items: [{
+			item: "ae2stuff:inscriber"
+		}]
+	}],
+	rewards: [{
+		uid: "aeac797d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

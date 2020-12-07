@@ -1,0 +1,27 @@
+{
+	title: "Capacitors",
+	icon: "gregtech:meta_item_2 1 32452",
+	x: -20.0d,
+	y: 4.5d,
+	text: [
+		"§6Capacitors§r are devices that store electrical energy, which is useful for circuits.",
+		"",
+		"Not to be confused with §bEnderIO§r's capacitors§r, which store redstone flux."
+	],
+	dependencies: [
+		"ed2a8868",
+		"9643c88c"
+	],
+	tasks: [{
+		uid: "496cde1d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32452"
+		}]
+	}],
+	rewards: [{
+		uid: "1da0ebea",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

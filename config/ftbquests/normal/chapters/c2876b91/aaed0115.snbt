@@ -1,0 +1,28 @@
+{
+	title: "Slice'N'Splice",
+	icon: "enderio:block_slice_and_splice",
+	x: -24.25d,
+	y: 8.0d,
+	text: [
+		"The §3Slice'N'Splice§r is a machine from §bEnderIO§r.",
+		"",
+		"It is used for making monster-head-related items that are components for various things.",
+		"",
+		"It needs to be supplied with an Axe and Shears, which are slowly damaged over time as items are crafted."
+	],
+	dependencies: [
+		"c17ebb53"
+	],
+	tasks: [{
+		uid: "19ba71b5",
+		type: "item",
+		items: [{
+			item: "enderio:block_slice_and_splice"
+		}]
+	}],
+	rewards: [{
+		uid: "35550c3d",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

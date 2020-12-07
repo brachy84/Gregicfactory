@@ -1,0 +1,36 @@
+{
+	title: "Oops... A Blackout!",
+	icon: {
+		id: "appliedenergistics2:energy_cell",
+		tag: {}
+	},
+	x: -20.75d,
+	y: 12.5d,
+	text: [
+		"If you've tried to insert or remove a lot of items quickly, you might notice your ME network",
+		"§eflickers offline§r briefly. This is because digitizing and re-materializing items requires energy!",
+		"",
+		"Your network doesn't naturally store very much energy and the §6Energy Acceptor§r only intermittently refills the network's power. To keep things stable, you will need to add some energy storage in your network using §6Energy Cells§r.",
+		"",
+		"Just place one anywhere in your network and it will fill up with AE energy received from the Energy Acceptor. Now, you should have enough energy in your network to prevent these power losses. Feel free to add more energy cells, or upgrade to §6Dense Energy Cells§r, if you continue to experience problems.",
+		"",
+		"If you've opted to enable channels in your AE2 configs, you will innately have some energy storage from the §3ME Controller§r, but we assume you know what you're doing at that point. §eAE2 Channels mechanics are outside the scope of the quest book, and this is the only time it will be mentioned."
+	],
+	dependencies: [
+		"43c8e0d8"
+	],
+	tasks: [{
+		uid: "90277877",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:energy_cell",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3d4fa950",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

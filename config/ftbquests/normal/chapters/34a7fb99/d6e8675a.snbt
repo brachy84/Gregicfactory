@@ -1,0 +1,28 @@
+{
+	title: "Implosion Compressor",
+	icon: "gregtech:machine 1 513",
+	x: -23.5d,
+	y: 9.0d,
+	text: [
+		"The §aImplosion Compressor§f is like an autoclave that uses explosions instead of water. It is the only way to turn most gem dusts into gemstones.",
+		"",
+		"It will also be vital for processing §5Motes of Omnium§f."
+	],
+	dependencies: [
+		"b33f8563"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "922aedfc",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 513"
+		}]
+	}],
+	rewards: [{
+		uid: "6e150103",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

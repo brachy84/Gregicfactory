@@ -1,0 +1,39 @@
+{
+	title: "Tetranitromethane",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "tetranitromethane",
+			Amount: 1000
+		}
+	},
+	x: -13.75d,
+	y: 3.0d,
+	text: [
+		"This is the additive that will bring our diesel fuel to the next level.",
+		"",
+		"Mix §9Ethenone§r and §9Nitric Acid§r in a §3Chemical Reactor§r to make §9Tetranitromethane§r."
+	],
+	dependencies: [
+		"b2ff0d83",
+		"f7b45472"
+	],
+	tasks: [{
+		uid: "e732c406",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "tetranitromethane",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "56b6fb07",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

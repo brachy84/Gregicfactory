@@ -1,0 +1,33 @@
+{
+	title: "Farming",
+	icon: "minecraft:diamond_hoe",
+	x: -5.0d,
+	y: 3.25d,
+	text: [
+		"You'll need large quantities of §6Canola§f (for §6Canola Oil§f in a §bCanola Press§f) and §6Sugarcane§f (for §6Ethanol§f).",
+		"",
+		"Of course, other crops can work as well, if you want to mix things up."
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "a7dbe903",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_misc 64 13"
+		}],
+		count: 64L
+	},
+	{
+		uid: "50bd0bd5",
+		type: "item",
+		items: [{
+			item: "minecraft:reeds 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "b067171a",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

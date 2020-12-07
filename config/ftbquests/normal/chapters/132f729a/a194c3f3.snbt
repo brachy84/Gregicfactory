@@ -1,0 +1,29 @@
+{
+	title: "Silicon Wafers",
+	icon: "gregtech:meta_item_2 1 32440",
+	x: -18.5d,
+	y: 6.0d,
+	text: [
+		"§6Wafers§r are thin pieces of silicon cut from a §6Silicon Boule§r.",
+		"",
+		"Their primary purpose is engraving §6Circuit Wafers§r.",
+		"",
+		"You'll be needing huge amounts of these Wafers for circuits. Silicon Boules currently take a very long time to craft, so consider parallelizing the recipe in multiple §3EBF§rs and making a stockpile of them."
+	],
+	dependencies: [
+		"1494756d",
+		"3cc02b11"
+	],
+	tasks: [{
+		uid: "a732ed2b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32440"
+		}]
+	}],
+	rewards: [{
+		uid: "137655f2",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

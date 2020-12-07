@@ -1,0 +1,25 @@
+{
+	title: "Element 049: Indium",
+	icon: "gregtech:meta_item_1 1 10031",
+	x: -5.5d,
+	y: 8.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"177c03a5"
+	],
+	tasks: [{
+		uid: "5352f162",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10031"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "6d75674a",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "Naquadah Dust",
+	icon: "gregtech:meta_item_1 1 2307",
+	x: -10.666666666666666d,
+	y: 10.0d,
+	text: [
+		"§6Naquadah§r comes in a dust form and only from the Tier Five micro miner.",
+		"",
+		"Get some, it's important. More on this later."
+	],
+	dependencies: [
+		"6498109e"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "8e6f8632",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2307"
+		}]
+	}],
+	rewards: [{
+		uid: "9b986486",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

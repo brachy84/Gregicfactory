@@ -1,0 +1,34 @@
+{
+	title: "Signalum Upgrade Kit",
+	icon: "thermalfoundation:upgrade 1 2",
+	x: -22.0d,
+	y: 11.75d,
+	text: [
+		"Having unlocked §6Signalum§r and §6Lumium§r, at long last you can now make §aSignalum Upgrade Kits§r!",
+		"",
+		"Provides more augment slots to machines and dynamos.",
+		"",
+		"Dynamos operate at §a500% of base power and fuel burn rate§r.",
+		"",
+		"Portable Tanks hold §a800 buckets§r.",
+		"",
+		"Machines operate at §a400% of base speed§r."
+	],
+	dependencies: [
+		"f61d76f1",
+		"8c6a7a09",
+		"2cb85613"
+	],
+	tasks: [{
+		uid: "eccf6e03",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:upgrade 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "b0ae0174",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

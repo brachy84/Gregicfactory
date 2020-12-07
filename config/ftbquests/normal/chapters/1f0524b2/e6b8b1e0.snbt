@@ -1,0 +1,26 @@
+{
+	title: "The Vat",
+	icon: "enderio:block_vat",
+	x: 18.0d,
+	y: 17.0d,
+	text: [
+		"§bEnderIO§r's equivalent of a §3Chemical Reactor§r, roughly speaking.",
+		"",
+		"The only way to make several important liquids from EnderIO."
+	],
+	dependencies: [
+		"4ef57e08"
+	],
+	tasks: [{
+		uid: "e422c2a4",
+		type: "item",
+		items: [{
+			item: "enderio:block_vat"
+		}]
+	}],
+	rewards: [{
+		uid: "93c004a3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

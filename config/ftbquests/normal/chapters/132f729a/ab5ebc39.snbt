@@ -1,0 +1,56 @@
+{
+	title: "Lenses",
+	icon: "gregtech:meta_item_1 1 15085",
+	x: -17.0d,
+	y: 7.5d,
+	text: [
+		"You'll need a variety of §alenses§r for use in §3Precision Laser Engravers§r, all of which are made in the §3Autoclave§r.",
+		"",
+		"Initially you'll need a §aRed Lens§r, a §aDiamond Lens§r, and a §aGlass Lens§r.",
+		"",
+		"Red Lenses can be made from §6Ruby§r, or alternately with Almandine, Red Garnet, Jasper or Rutile.",
+		"",
+		"The other two lenses should be self evident."
+	],
+	dependencies: [
+		"3eb2c476",
+		"d5ef8482"
+	],
+	tasks: [{
+		uid: "34e6b2e7",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingLensRed",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingLensRed"
+				}
+			}
+		}]
+	},
+	{
+		uid: "0c9898a0",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 15111"
+		}]
+	},
+	{
+		uid: "be6f6ad1",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 15209"
+		}]
+	}],
+	rewards: [{
+		uid: "c492138d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

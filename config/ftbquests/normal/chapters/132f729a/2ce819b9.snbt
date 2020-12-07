@@ -1,0 +1,26 @@
+{
+	title: "Explore Actually Additions",
+	icon: "actuallyadditions:block_phantomface",
+	x: -12.375d,
+	y: 11.25d,
+	text: [
+		"There's a great deal of interesting content within §bActually Additions§r, and although most of it is not strictly required for progression, you should still look through what it offers and build what interests you.",
+		"",
+		"In particular, the §aDrill§r with all the upgrades is a fantastically powerful mining tool, and the §3Vertical Digger§r is a machine which can be placed to automate mining an entire vein for you.",
+		"",
+		"§3Phantomfaces§r, §3Auto Placers/Breakers§r, §3Lava Factories§r, and much more can be utilized at your discretion to supplement and refine your automation techniques."
+	],
+	dependencies: [
+		"851649b0"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "76c590ca",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "25075138",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

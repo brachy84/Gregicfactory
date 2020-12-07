@@ -1,0 +1,25 @@
+{
+	title: "Element 002: Helium",
+	icon: "contenttweaker:solidifiedhelium",
+	x: -4.5d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"11564de3"
+	],
+	tasks: [{
+		uid: "671f511c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedhelium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "25252d27",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

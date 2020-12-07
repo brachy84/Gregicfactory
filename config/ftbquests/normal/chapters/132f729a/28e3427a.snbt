@@ -1,0 +1,31 @@
+{
+	title: "Polyvinyl Chloride",
+	icon: "gregtech:meta_item_1 1 12965",
+	x: -20.0d,
+	y: 13.5d,
+	text: [
+		"§9Vinyl Chloride§r is an industrial chemical made from chlorinating §9Ethylene§r (adding §9Chlorine§r at high temperature) in a §3Chemical Reactor§r.",
+		"",
+		"It is used to create the plastic §9Polyvinyl Chloride§r, most well known as PVC. While it deviates from reality, in GregTech you chemically react Vinyl Chloride and §9Oxygen§r to polymerize it into PVC.",
+		"",
+		"Later, you can use §9Titanium Tetrachloride§r to catalyze this reaction as well for greater yield.",
+		"",
+		"§6PVC Sheets§r are superior to §6Polyethylene Sheets§r for making plastic substrates, producing twice as many §6Plastic Boards§r per craft."
+	],
+	dependencies: [
+		"db04e6a4",
+		"c6b6e94d"
+	],
+	tasks: [{
+		uid: "acdb4150",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 12965"
+		}]
+	}],
+	rewards: [{
+		uid: "33cf76f3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

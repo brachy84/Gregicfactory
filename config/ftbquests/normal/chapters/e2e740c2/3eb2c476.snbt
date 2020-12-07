@@ -1,0 +1,27 @@
+{
+	title: "LV Autoclave",
+	icon: "gregtech:machine 1 110",
+	x: -25.5d,
+	y: 7.25d,
+	shape: "square",
+	text: [
+		"An §3Autoclave§r is a machine that uses liquids (usually water) to polish stones, carve gems into lenses, infuse gems with special liquids, and crystallize various dusts.",
+		"",
+		"You'll need an Autoclave for many recipes, but right now you want it to make §6Certus Quartz Crystals§r for §bApplied Energistics§r out of the §bGregTech§r §6Certus Quartz§r and its dust you get from mining and ore processing."
+	],
+	dependencies: [
+		"399fa177"
+	],
+	tasks: [{
+		uid: "a9b52f3d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 110"
+		}]
+	}],
+	rewards: [{
+		uid: "39f1415f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

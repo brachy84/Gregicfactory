@@ -1,0 +1,25 @@
+{
+	title: "Element 013: Aluminium",
+	icon: "gregtech:meta_item_1 1 10001",
+	x: -0.5d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e42bf607"
+	],
+	tasks: [{
+		uid: "4e2e087f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10001"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "1473eac1",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

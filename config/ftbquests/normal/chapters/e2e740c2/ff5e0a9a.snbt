@@ -1,0 +1,81 @@
+{
+	title: "Pyrolyse Oven",
+	icon: "gregtech:machine 1 514",
+	x: -23.0d,
+	y: 10.5d,
+	shape: "square",
+	text: [
+		"The main function of this oven is to increase the fuel values of your wood and coal while also recovering some of the various potentially useful waste products.",
+		"",
+		"Turning §6Coal§r into §6Coal Coke§r will not only make it more useful as fuel, but will also produce §9Phenol§r, which you'll need for circuits.",
+		"",
+		"The Pyrolyse oven is also the source of several other fluids that can be distilled for useful ingredients."
+	],
+	dependencies: [
+		"cd85d224"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "0d8cc454",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 16"
+		}],
+		count: 16L
+	},
+	{
+		uid: "b0d644a0",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 710"
+		}]
+	},
+	{
+		uid: "18da7880",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 711"
+		}]
+	},
+	{
+		uid: "c99cd334",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 712"
+		}]
+	},
+	{
+		uid: "8a8a1ae9",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 713"
+		}]
+	},
+	{
+		uid: "868709ef",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 714"
+		}]
+	},
+	{
+		uid: "14c6b62b",
+		type: "item",
+		items: [{
+			item: "gregtech:machine_casing 12"
+		}],
+		count: 12L
+	},
+	{
+		uid: "5858df09",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 514"
+		}]
+	}],
+	rewards: [{
+		uid: "600c94ee",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

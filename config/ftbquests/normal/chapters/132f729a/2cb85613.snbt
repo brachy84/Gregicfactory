@@ -1,0 +1,31 @@
+{
+	title: "Reinforced Upgrade Kit",
+	icon: "thermalfoundation:upgrade 1 1",
+	x: -9.0d,
+	y: 3.25d,
+	text: [
+		"Provides more augment slots to machines and dynamos.",
+		"",
+		"Dynamos operate at §a250% of base power and fuel burn rate§r.",
+		"",
+		"Tanks hold §a450 buckets§r.",
+		"",
+		"Machines operate at §a250% of base speed."
+	],
+	dependencies: [
+		"cc19d841"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "820cb1ed",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:upgrade 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "5245c962",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

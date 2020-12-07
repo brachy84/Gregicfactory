@@ -1,0 +1,89 @@
+{
+	title: "Medium Microverse Projector",
+	icon: "modularmachinery:blockcontroller",
+	x: -16.5d,
+	y: 10.125d,
+	text: [
+		"The §3Medium Microverse Projector§r is a more powerful projector required for sending Tier Four through Tier Six Micro Miners into microverses.",
+		"",
+		"While some of the miners run on IV power, make a §6LuV Energy Input§r so you don't have to replace it later or accidentally try to run a Tier Six on IV power. Always check the voltage required on a recipe, as you will §close a miner§r if you can't supply enough power to complete the mission; ModMachines will continue to eat incoming power without making progress.",
+		"",
+		"When building the multiblock, be sure to place the §6Quantum Compressors§r to face the same direction as the controller block (this is the usual reason for the structure not forming)."
+	],
+	dependencies: [
+		"2f01eb55"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "179800e9",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "f34eacf5",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 54"
+		}],
+		count: 54L
+	},
+	{
+		uid: "de553de0",
+		type: "item",
+		items: [{
+			item: "chisel:diamond 26 3"
+		}],
+		count: 26L
+	},
+	{
+		uid: "06208258",
+		type: "item",
+		items: [{
+			item: "extrautils2:ineffableglass 36 2"
+		}],
+		count: 36L
+	},
+	{
+		uid: "b3610d01",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 4 1"
+		}],
+		count: 4L
+	},
+	{
+		uid: "ef6a4ce6",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:compressor"
+		}]
+	},
+	{
+		uid: "26da123e",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockenergyinputhatch 1 5"
+		}]
+	},
+	{
+		uid: "b61f0b5b",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus 1 1"
+		}]
+	},
+	{
+		uid: "9340800e",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockoutputbus 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "89273304",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

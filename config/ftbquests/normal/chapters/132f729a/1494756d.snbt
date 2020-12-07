@@ -1,0 +1,32 @@
+{
+	title: "MV Cutting Machine",
+	icon: "gregtech:machine 1 221",
+	x: -17.0d,
+	y: 4.5d,
+	text: [
+		"Cuts things up.",
+		"",
+		"The §3Cutting Machine§r is able to cut wafers, rods, wood, and various other things for you, making it a versatile crafting tool. Cutting blocks into plates is fast and effective, and is the only way to get gem plates like §6Lapis Plates§r for now.",
+		"",
+		"The blade will require you to make §6Cobalt Brass§r. Cobalt is a byproduct you will obtain (probably first as tiny piles through some simple ore processing), §6Zinc§r you should have already from electrolyzing §6Sphalerite§r, and the other materials are just §6Copper§r and §6Aluminium§r.",
+		"",
+		"Cutting Machines work with plain §9Water§r for all recipes. You can also use §9Distilled Water§r which speeds up the processing somewhat, or §9Lubricant§r that speeds it up greatly. Right now though, the benefit is rather minor compared the extra effort required to make those fluids. Something to keep in mind for the future though.",
+		"",
+		"You might consider waiting until you have §6Electronic Processors§r before progressing too far down the path of MV machines, since these circuits are much easier to make than §6Primitive Processors§r."
+	],
+	dependencies: [
+		"c303a083"
+	],
+	tasks: [{
+		uid: "e03a83c5",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 221"
+		}]
+	}],
+	rewards: [{
+		uid: "7b08ec0d",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

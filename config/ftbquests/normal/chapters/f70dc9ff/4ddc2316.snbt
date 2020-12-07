@@ -1,0 +1,18 @@
+{
+	title: "Gap",
+	icon: {
+		Count: 0,
+		id: "minecraft:air",
+		Damage: 0s
+	},
+	disable_toast: true,
+	x: 7.0d,
+	y: 7.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "79a0cf9e",
+		type: "checkmark"
+	}]
+}

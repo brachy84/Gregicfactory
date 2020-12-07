@@ -1,0 +1,78 @@
+{
+	title: "Fusion Reactor MK1",
+	icon: "gregtech:machine 1 2504",
+	x: 0.5d,
+	y: 4.5d,
+	text: [
+		"Time to get fusing!",
+		"",
+		"The §3Fusion Reactor§r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows.",
+		"",
+		"The §bJEI§r preview shows §e§eall valid hatch locations§r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with §6LuV Machine Casings§r, as long as you have at least §atwo Fluid Input Hatches§r and §aone Fluid Output Hatch§r. It's possible to use input/output hatches in every valid location, if you prefer.",
+		"",
+		"Because of this, the quest only asks for §a80 LuV Machine Casings§r. If you want to use the minimum number of fluid hatches, you'll need to craft an additional §a28 casings§r.",
+		"",
+		"Each §aEnergy Input Hatch§r increases the reactor's power buffer. The \"Energy to Start\" value of a recipe is drained instantly when the reactor switches from the previous recipe it ran (or no previous recipe) to a different recipe. §aAll 16 Energy Input Hatches§r are required to be able to process all Mark 1 recipes.",
+		"",
+		"If you can't provide sufficient starting power or continuous energy, §cthe craft might be voided§r. Make sure you have enough power to start up the reactor and to run the recipe to completion.",
+		"",
+		"Fusion Reactors don't overclock, and they gate the next tier of materials, so you will eventually want to make more than one."
+	],
+	dependencies: [
+		"350e9b2b",
+		"4ec0e1fa"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "8110a3aa",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2504"
+		}]
+	},
+	{
+		uid: "deb6d507",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 32 7"
+		}],
+		count: 32L
+	},
+	{
+		uid: "1b7f9fce",
+		type: "item",
+		items: [{
+			item: "gregtech:machine_casing 80 6"
+		}],
+		count: 80L
+	},
+	{
+		uid: "29d16e29",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 2 702"
+		}],
+		count: 2L
+	},
+	{
+		uid: "a4f36fd7",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 703"
+		}]
+	},
+	{
+		uid: "ec868553",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 16 764"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "2a2417cc",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 10
+	}]
+}

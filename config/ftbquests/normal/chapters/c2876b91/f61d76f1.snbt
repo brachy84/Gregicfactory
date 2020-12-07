@@ -1,0 +1,28 @@
+{
+	title: "Lumium",
+	icon: "thermalfoundation:material 1 166",
+	x: -21.5d,
+	y: 10.5d,
+	text: [
+		"Glowing!",
+		"",
+		"This one takes a significant amount of time to cook, so make sure to have it going constantly.",
+		"",
+		"Wires made from §6Lumium§r transmit IV power losslessly, and it forms the basis for §6LuV Machine Hulls§r."
+	],
+	dependencies: [
+		"66c726fd"
+	],
+	tasks: [{
+		uid: "f48e1af1",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 166"
+		}]
+	}],
+	rewards: [{
+		uid: "0e0ff2f5",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

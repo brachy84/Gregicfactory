@@ -1,0 +1,35 @@
+{
+	title: "Ironman 2",
+	icon: {
+		id: "simplyjetpacks:itemjetpack",
+		tag: {
+			Energy: 0,
+			JetpackParticleType: 0
+		},
+		Damage: 2s
+	},
+	x: -9.25d,
+	y: 15.5d,
+	text: [
+		"Flying faster is nice."
+	],
+	dependencies: [
+		"7a456b90",
+		"20a14716"
+	],
+	tasks: [{
+		uid: "65262deb",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			tag: {},
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "39a292fc",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

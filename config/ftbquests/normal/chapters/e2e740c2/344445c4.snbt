@@ -1,0 +1,28 @@
+{
+	title: "Steel",
+	icon: "gregtech:meta_item_1 1 10184",
+	x: -31.75d,
+	y: 7.25d,
+	shape: "square",
+	text: [
+		"§6Steel§r is a basic component in all sorts of machines and alloys. It is made in the §3Alloy Smelter§r.",
+		"",
+		"You might want to save your §6Coal Dust§r for circuits and use §6Charcoal Dust§r instead. Later, you can also centrifuge either of these dusts or §6Coal Coke Dust§r into §6Carbon Dust§r, which can be used for Steel and other useful things."
+	],
+	dependencies: [
+		"ed2a8868"
+	],
+	size: 1.9d,
+	tasks: [{
+		uid: "c229677f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10184"
+		}]
+	}],
+	rewards: [{
+		uid: "603e29f3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

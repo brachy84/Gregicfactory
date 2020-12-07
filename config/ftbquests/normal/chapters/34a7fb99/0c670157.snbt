@@ -1,0 +1,40 @@
+{
+	title: "Tier Four Micro Miner",
+	icon: "contenttweaker:tierfourship",
+	x: -15.0d,
+	y: 10.0d,
+	text: [
+		"The Fourth Micro Miner.",
+		"",
+		"All of the Tier Four missions require §68 Quantum Flux§r and a stack of §6Petrotheum Dust§r.",
+		"",
+		"This miner is the first convenient source of §6Osmium§r and §6Iridium§r, via a mission requiring §6Wither Realm Data§r.",
+		"",
+		"A §6Composition Sensor§r instead directs the miner to obtain §6Dense Oilsands Ore§r, equivalent to 32 stacks of §6Oilsands Ore§r.",
+		"",
+		"When equipped with a §6Gemstone Sensor§r:",
+		"§6* Dense Redstone Ore",
+		"* Dense Emerald Ore",
+		"* Dense Diamond Ore",
+		"* Dense Lapis Ore",
+		"* Dense Coal Ore§r"
+	],
+	dependencies: [
+		"2f01eb55",
+		"7a428c43",
+		"cee98a94"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "ba922b03",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tierfourship"
+		}]
+	}],
+	rewards: [{
+		uid: "daba5414",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

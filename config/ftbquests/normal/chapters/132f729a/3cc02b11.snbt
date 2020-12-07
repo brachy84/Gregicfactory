@@ -1,0 +1,26 @@
+{
+	title: "Silicon Boules",
+	icon: "gregtech:meta_item_2 1 32439",
+	x: -18.5d,
+	y: 4.5d,
+	text: [
+		"A hefty amount of §6Silicon Dust§r and a pinch of §6Gallium§r cooked in an §3EBF§r will net you a §6Silicon Boule§r, the starting point for §6Circuit Wafers§r.",
+		"",
+		"Make sure your power system is up to the task. These take a long time to process so you'll need a signficant amount of energy to safely complete the job."
+	],
+	dependencies: [
+		"5d34f8d4"
+	],
+	tasks: [{
+		uid: "50a73953",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32439"
+		}]
+	}],
+	rewards: [{
+		uid: "93688bd9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

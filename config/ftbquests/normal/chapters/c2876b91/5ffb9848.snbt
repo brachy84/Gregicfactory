@@ -1,0 +1,26 @@
+{
+	title: "Advanced Plating",
+	icon: "nuclearcraft:part 1 1",
+	x: -16.5d,
+	y: 6.5d,
+	text: [
+		"Enhancing basic plating with §6YBCO§r and §6Hard Carbon alloy§r results in a better plating material for more advanced §bNuclearCraft§r blocks."
+	],
+	dependencies: [
+		"797334ea",
+		"111e7f85",
+		"518eeb9d"
+	],
+	tasks: [{
+		uid: "e3b8a555",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:part 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "af97aea3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

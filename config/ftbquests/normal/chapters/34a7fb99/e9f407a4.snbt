@@ -1,0 +1,25 @@
+{
+	title: "Enderium Heavy Plating",
+	icon: "contenttweaker:enderiumplating",
+	x: -9.0d,
+	y: 9.5d,
+	text: [
+		"Heavy plating made from §6Enderium§r used for the Tier Six Micro Miner."
+	],
+	dependencies: [
+		"e3c1255f",
+		"beb03a1f"
+	],
+	tasks: [{
+		uid: "a1ac2b8e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:enderiumplating"
+		}]
+	}],
+	rewards: [{
+		uid: "2f5448d9",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

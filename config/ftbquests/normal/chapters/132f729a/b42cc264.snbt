@@ -1,0 +1,35 @@
+{
+	title: "MV Extruder",
+	icon: "gregtech:machine 1 271",
+	x: -15.5d,
+	y: 6.0d,
+	text: [
+		"The §3Extruder§r is an alternative way to form shapes from metal. §aExtruder Shapes§r are used for telling an Extruder which shape to make.",
+		"",
+		"Extruders are the only way to make certain things, like §6Large Pipes§r. Extruders use ingots, but are as efficient for making §6Gears§r as melting and solidifying.",
+		"",
+		"You can also use Extruders to make things from other machines like plates and wires, but they are less efficient than using the dedicated machines for these purposes."
+	],
+	dependencies: [
+		"c303a083"
+	],
+	tasks: [{
+		uid: "f06eaccc",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 271"
+		}]
+	},
+	{
+		uid: "92ae3391",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32361"
+		}]
+	}],
+	rewards: [{
+		uid: "f6754b99",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

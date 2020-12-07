@@ -1,0 +1,29 @@
+{
+	title: "Worktables Are Life",
+	icon: "forestry:worktable",
+	x: 4.25d,
+	y: 4.5d,
+	text: [
+		"If you try to craft each item on demand, you'll go insane. Use §3Worktables§f to save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. If you're doing things right, you'll likely have §ea dozen or more worktables§f in short order.",
+		"",
+		"Load up the table's storage area with the necessary materials, and §ebatch-craft§f items when needed. The satisfaction of clicking a few buttons and getting §ea stack of finished items§f crafted up is worth the effort.",
+		"",
+		"Each worktable will remember up to the last nine recipes you made in them, which can be recalled by clicking in the top-right recipe history pane. If you want to ensure a recipe doesn't ever get replaced by a different one, right-click it in the history pane to lock it."
+	],
+	dependencies: [
+		"cb806892"
+	],
+	tasks: [{
+		uid: "58fd70de",
+		type: "item",
+		items: [{
+			item: "forestry:worktable 4"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "82419fed",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

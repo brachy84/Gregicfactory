@@ -1,0 +1,36 @@
+{
+	title: "Phosphorus and Sulfur",
+	icon: "gregtech:meta_item_1 1 2050",
+	x: -26.75d,
+	y: 11.75d,
+	shape: "square",
+	text: [
+		"These two dusts will be used in a variety of upcoming chemical reactions.",
+		"",
+		"§6Phosphor§r can be obtained by processing §6Phosphor Ore§r into dust and electrolyzing several times. This ore is found in §6Apatite§r veins.",
+		"",
+		"§6Sulfur§r can be electrolyzed easily from §6Sphalerite§r (which also provides §6Gallium§r), §6Cinnabar§r, and §6Pyrite§r. Alternately, Sulfur can be acquired through §bDeep Mob Learning§r- look into that quest line if you haven't already."
+	],
+	dependencies: [
+		"6faaf0be"
+	],
+	tasks: [{
+		uid: "08cbd3ab",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2050"
+		}]
+	},
+	{
+		uid: "f911d22e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2065"
+		}]
+	}],
+	rewards: [{
+		uid: "622f9986",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

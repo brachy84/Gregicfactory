@@ -1,0 +1,55 @@
+{
+	title: "Space Suit",
+	icon: "advancedrocketry:spacehelmet",
+	x: 23.0d,
+	y: 21.25d,
+	text: [
+		"Making yourself a space suit is the most important step towards your space adventures.",
+		"",
+		"This suit lets you breathe in space, which is kind of important."
+	],
+	dependencies: [
+		"fc98266e"
+	],
+	tasks: [{
+		uid: "b26bef41",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:spacehelmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "10de3094",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:spacechestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c27e61ed",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:spaceleggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "18b3e1d9",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:spaceboots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "553e4573",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

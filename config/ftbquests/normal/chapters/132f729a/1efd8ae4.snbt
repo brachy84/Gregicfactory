@@ -1,0 +1,26 @@
+{
+	title: "MV Chemical Reactor",
+	icon: "gregtech:machine 1 191",
+	x: -12.25d,
+	y: 3.25d,
+	text: [
+		"Here comes the chemistry.",
+		"",
+		"It might seem crazy right now, but you'll want a dedicated §3Chemical Reactor§r for pretty much every chemical you want to process. You probably want to hold off on doing that until you've got a solid base of autocrafting though... it stings a lot less when you can just request crafts of Chemical Reactors from your AE2 system."
+	],
+	dependencies: [
+		"47eb58e8"
+	],
+	tasks: [{
+		uid: "deaa2bd1",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 191"
+		}]
+	}],
+	rewards: [{
+		uid: "abfa9aea",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

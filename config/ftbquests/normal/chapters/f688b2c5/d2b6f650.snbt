@@ -1,0 +1,27 @@
+{
+	title: "Fuel Catalyzers",
+	icon: "thermalexpansion:augment 1 513",
+	x: -3.25d,
+	y: 10.0d,
+	text: [
+		"This is an augment that will work in all §3dynamos§f. It increases the efficiency of the fuel being used inside the dynamo, increasing the power it generates. However, the rate of power generation remains the same, the fuel simply lasts longer. So while §6Fuel Catalyzers§f decrease the amount you'll need to go mining for §6Coal§f, they won't boost your production of RF per second.",
+		"",
+		"Each Fuel Catalyzer increases fuel efficiency by §a15%§f, additively (so two will make fuel last §a30% longer§f, three is §a45% longer§f, etc)."
+	],
+	dependencies: [
+		"60bef9c1"
+	],
+	tasks: [{
+		uid: "30e8cfad",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 2 513"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "60db399b",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

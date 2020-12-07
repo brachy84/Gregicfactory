@@ -1,0 +1,25 @@
+{
+	title: "LuV Machine Hulls",
+	icon: "gregtech:machine 1 506",
+	x: -21.0d,
+	y: 11.75d,
+	text: [
+		"With §6Lumium§r and §6Vanadium-Gallium§r, you can now make hulls for Ludicrous Voltage (LuV) §bGregTech§r machines."
+	],
+	dependencies: [
+		"f61d76f1",
+		"a401dd3a"
+	],
+	tasks: [{
+		uid: "e09137b9",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 506"
+		}]
+	}],
+	rewards: [{
+		uid: "7484c735",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

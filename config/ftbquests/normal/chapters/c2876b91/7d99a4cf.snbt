@@ -1,0 +1,39 @@
+{
+	title: "Basic Air Collection",
+	icon: "gregtech:machine 1 950",
+	x: -20.5d,
+	y: 0.5d,
+	text: [
+		"Note: this quest accepts LV/MV/HV/EV §3Air Collectors§r.",
+		"",
+		"An §3Air Colllector§r will suck up air at a decent rate, provided the top side is unobstructed. The collected Air is automatically ejected into an adjacent tank via the output face.",
+		"",
+		"IV and LuV air collectors are not part of this quest, but for reference they exist and are called §3Atmosphere Collectors§r."
+	],
+	dependencies: [
+		"237ea1ad"
+	],
+	tasks: [{
+		uid: "26820519",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "questbookAirCollector",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any questbookAirCollector"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "cb5c9bcc",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

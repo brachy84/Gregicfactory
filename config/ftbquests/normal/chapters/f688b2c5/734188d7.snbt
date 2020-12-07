@@ -1,0 +1,52 @@
+{
+	title: "LV CEF",
+	icon: "gregtech:machine 1 2909",
+	x: 0.0d,
+	y: 13.0d,
+	shape: "square",
+	text: [
+		"Until now you have been generating §aRF power§r with your §3Steam Dynamos§r, but §bGregTech§r machines require §aEU power§r. With your first §6circuit§r in hand, you are ready to build a §eLow Voltage (LV) §3CEF§r.",
+		"",
+		"The §3CEF§r is a special device that §econverts §aRF power§r into §aEU power§r. CEFs come in two sizes: §e4 Amps§r and §e16 Amps§r, which have 4 and 16 inventory slots, respectively. Each slot in a CEF can hold a single §6Battery§r.",
+		"",
+		"You don't §oneed§r to put §bGregTech§r batteries inside the CEF§r, but keep in mind that §ethe CEF will be restricted to at most outputting one amp per battery inside§r if you do. With no batteries, they will output up to their rated number of amps as needed.",
+		"",
+		"§aRF§r converts into §aEU§r at a §e4 to 1 ratio§r. §a100 RF§r becomes §a25 EU§r, and vice-versa. If you ever switch over to being primarily powered by §aEU§r, a device called the §3CEU§r can switch power from §aEU§r into §aRF§r."
+	],
+	dependencies: [
+		"930ffce2",
+		"80a107cf",
+		"60bef9c1"
+	],
+	tasks: [{
+		uid: "3039806a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "lvcef",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any lvcef"
+				}
+			}
+		}]
+	},
+	{
+		uid: "51ae4420",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 1 500"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "03773874",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

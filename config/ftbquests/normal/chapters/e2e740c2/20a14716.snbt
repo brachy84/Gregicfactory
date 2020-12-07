@@ -1,0 +1,36 @@
+{
+	title: "Ironman",
+	icon: {
+		id: "simplyjetpacks:itemjetpack",
+		tag: {
+			Energy: 0,
+			JetpackParticleType: 0
+		},
+		Damage: 1s
+	},
+	x: -25.5d,
+	y: 9.25d,
+	text: [
+		"Being able to fly is nice. This is the first jetpack that uses §bEnderIO§r materials.",
+		"",
+		"There's also a quest chain for §bThermal Expansion§r material Jetpacks (starting with the §6Leadstone Jetpack§r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
+	],
+	dependencies: [
+		"cfafa8fa"
+	],
+	tasks: [{
+		uid: "d1d8112a",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			tag: {},
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3ca5eb11",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

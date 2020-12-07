@@ -1,0 +1,53 @@
+{
+	title: "Reinforced Satchel",
+	icon: {
+		id: "thermalexpansion:satchel",
+		tag: {
+			Accessible: 1b
+		},
+		Damage: 2s
+	},
+	x: -29.25d,
+	y: 12.75d,
+	text: [
+		"Carry §oeven more§r stuff."
+	],
+	dependencies: [
+		"efb4003b"
+	],
+	tasks: [{
+		uid: "08d9c69e",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:satchel",
+			tag: {
+				Accessible: 1b
+			},
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2be7cd5c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 2 10001"
+		}],
+		count: 2L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d30399ff",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 3 9112"
+		}],
+		count: 3L,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "efdcd609",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

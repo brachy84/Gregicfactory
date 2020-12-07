@@ -1,0 +1,54 @@
+{
+	title: "Hardened Satchel",
+	icon: {
+		id: "thermalexpansion:satchel",
+		tag: {
+			Accessible: 1b
+		},
+		Damage: 1s
+	},
+	x: -30.5d,
+	y: 12.75d,
+	text: [
+		"Carry even more stuff."
+	],
+	dependencies: [
+		"558227e1",
+		"2391499a"
+	],
+	tasks: [{
+		uid: "8a6fa5c9",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:satchel",
+			tag: {
+				Accessible: 1b
+			},
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b75960b4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 3 9071"
+		}],
+		count: 3L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "496cf4b3",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 2 10126"
+		}],
+		count: 2L,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "738354b3",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

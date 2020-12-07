@@ -1,0 +1,25 @@
+{
+	title: "Element 092: Uranium",
+	icon: "contenttweaker:stabilizeduranium",
+	x: 0.5d,
+	y: 9.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"53fe66b8"
+	],
+	tasks: [{
+		uid: "6e405057",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizeduranium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "09ca7d74",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

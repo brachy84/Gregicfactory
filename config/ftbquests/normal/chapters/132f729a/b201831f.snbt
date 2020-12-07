@@ -1,0 +1,30 @@
+{
+	title: "More Blast Furnaces",
+	icon: "gregtech:machine 1 511",
+	x: -3.0d,
+	y: 3.25d,
+	text: [
+		"Overclocking aside, as you continue to progress in §5Omnifactory§f, materials made in the §3Electric Blast Furnace§f will take longer to complete. §eMore advanced coils do not give speed bonuses§f, only allowing for the furnace to §eget hot enough to process more advanced materials§f.",
+		"",
+		"Consequently, you'll need to continually expand your smelting and power generation infrastructure.",
+		"",
+		"You don't have to get all four of these Electric Blast Furnaces completed and running just yet, but be prepared to make many of them over the course of the pack."
+	],
+	dependencies: [
+		"5d34f8d4"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "db37c188",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 4 511"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "60026fbe",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

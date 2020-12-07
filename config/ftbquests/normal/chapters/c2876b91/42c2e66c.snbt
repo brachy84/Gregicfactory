@@ -1,0 +1,37 @@
+{
+	title: "Fish Oil",
+	icon: "minecraft:fish 1 3",
+	x: -17.0d,
+	y: 1.5d,
+	text: [
+		"Fish Oil comes from, surprisingly, fish.",
+		"",
+		"Aeügh."
+	],
+	dependencies: [
+		"d2bf2443"
+	],
+	tasks: [{
+		uid: "2704c9b4",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "fish_oil",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bcd9f383",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	},
+	{
+		uid: "53ec3923",
+		type: "item",
+		item: "minecraft:carrot"
+	}]
+}

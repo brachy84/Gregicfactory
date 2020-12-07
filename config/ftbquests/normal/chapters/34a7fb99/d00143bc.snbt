@@ -1,0 +1,26 @@
+{
+	title: "High Speed Steel Type G",
+	icon: "gregtech:meta_item_1 1 10302",
+	x: -9.0d,
+	y: 5.0d,
+	text: [
+		"§6HSS-G§r is an alloy of §6Tungstensteel§r, §6Chrome§r, §6Molybdenum§r, and §6Vanadium§r.",
+		"",
+		"This alloy is cooked in an §3Electric Blast Furnace§r and cooled in a §3Vacuum Freezer§r."
+	],
+	dependencies: [
+		"66c726fd"
+	],
+	tasks: [{
+		uid: "66be93e9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10302"
+		}]
+	}],
+	rewards: [{
+		uid: "ffc0bd4e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

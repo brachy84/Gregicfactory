@@ -1,0 +1,46 @@
+{
+	title: "Exotic Materials Catalyst",
+	icon: "contenttweaker:exoticmaterialscatalyst",
+	x: -14.75d,
+	y: 1.5d,
+	text: [
+		"A small appetizer, before the §dOmnium§r main couse.",
+		"",
+		"As the name suggests, this catalyst is formed from exotic non-elemental materials and alloys."
+	],
+	dependencies: [
+		"a876a7b6",
+		"96bedf3c",
+		"de05f880",
+		"40cd62cb",
+		"74cac6c1",
+		"b1c75054",
+		"f46e0b3a",
+		"448e4513",
+		"f852e9cf",
+		"10c975d7",
+		"81f0336f",
+		"c26b234a",
+		"d471e713",
+		"ad7cc91f",
+		"3c79795a",
+		"86b11556",
+		"a39e83b4",
+		"6fa6030a",
+		"8c5bed76",
+		"b8ad6459",
+		"a3fb748e",
+		"834a1dff",
+		"a4d8f4ad",
+		"a6c0ae36",
+		"a5dfba67"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "79ce2c07",
+		type: "item",
+		items: [{
+			item: "contenttweaker:exoticmaterialscatalyst"
+		}]
+	}]
+}

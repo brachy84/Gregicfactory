@@ -1,0 +1,28 @@
+{
+	title: "Chaos Shards",
+	icon: "draconicevolution:chaos_shard",
+	x: 3.0d,
+	y: 14.5d,
+	text: [
+		"§6Chaos Shards§r are an endgame component for §bDraconic Evolution§r.",
+		"",
+		"They are the base material for Chaotic Tier materials and come exclusively from Tier Eight Micro Miners.",
+		"",
+		"Technically they also come from Chaos Guardians, but in the quantities you'll need these? That would be a silly prospect."
+	],
+	dependencies: [
+		"d3ef1fb8"
+	],
+	tasks: [{
+		uid: "41f3d851",
+		type: "item",
+		items: [{
+			item: "draconicevolution:chaos_shard"
+		}]
+	}],
+	rewards: [{
+		uid: "8b4cd243",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

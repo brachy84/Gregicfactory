@@ -1,0 +1,26 @@
+{
+	title: "Manyullyn Ingots",
+	icon: "gregtech:meta_item_1 1 10714",
+	x: -16.75d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"ad7cc91f",
+		"f203ef88"
+	],
+	tasks: [{
+		uid: "f4440ced",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10714"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "6f580733",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Element 098: Californium",
+	icon: "contenttweaker:stabilizedcalifornium",
+	x: -0.5d,
+	y: 10.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e5493987"
+	],
+	tasks: [{
+		uid: "a210eed5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizedcalifornium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "5f9ac842",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

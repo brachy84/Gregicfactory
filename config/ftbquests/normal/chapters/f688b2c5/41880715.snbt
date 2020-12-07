@@ -1,0 +1,35 @@
+{
+	title: "Fluxomagnet",
+	icon: {
+		id: "thermalinnovation:magnet",
+		tag: {
+			Energy: 40000
+		}
+	},
+	x: 2.5d,
+	y: 13.0d,
+	text: [
+		"Now that you have a §aFlux Capacitor§r to keep things charged, you might consider making yourself a §aFluxomagnet§r.",
+		"",
+		"This relatively inexpensive bauble will suck nearby items into your inventory."
+	],
+	dependencies: [
+		"a55cbb84"
+	],
+	tasks: [{
+		uid: "eb8aa9f4",
+		type: "item",
+		items: [{
+			id: "thermalinnovation:magnet",
+			tag: {
+				Energy: 40000
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "56599648",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "Yttrium",
+	icon: "gregtech:meta_item_1 1 2078",
+	x: -16.5d,
+	y: 9.25d,
+	text: [
+		"Centrifuge §6Rare Earth§r, and among other useful materials, you'll get some §6Yttrium§r.",
+		"",
+		"Because this recipe has chanced outputs, use an §3HV Centrifuge§r or better to guarantee all items, and §eensure the output slots don't fill up or excess items will be voided§r."
+	],
+	dependencies: [
+		"fca49e4f"
+	],
+	tasks: [{
+		uid: "e5e0462c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2078"
+		}]
+	}],
+	rewards: [{
+		uid: "a082b451",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	title: "Draconium Ingots",
+	icon: "draconicevolution:draconium_ingot",
+	x: -5.75d,
+	y: 6.25d,
+	text: [
+		"You'll need at least §6Naquadah Coil Blocks§r in your blast furnace to smelt §6Draconium§r, as well as a healthy supply of §9Cetane Diesel§r to reach the immense heat it takes to liquefy.",
+		"",
+		"Draconium gets so hot that it requires the potent coolant §9Gelid Cryotheum§r to aid your §3Vacuum Freezer§r in turning it into usable ingots.",
+		"",
+		"There are several ways to make Draconium: dust can be smelted into ingots, but you can also turn §6Ender Dragon Scales§r, which contain Draconium, directly into ingots. It uses a lot of Cetane Diesel, but is the most efficient way to craft Draconium.",
+		"",
+		"You've been stockpiling diesel, right?"
+	],
+	dependencies: [
+		"4e6de293",
+		"a7c6585d",
+		"9381685a"
+	],
+	tasks: [{
+		uid: "27a948bb",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconium_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "6b0f9441",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

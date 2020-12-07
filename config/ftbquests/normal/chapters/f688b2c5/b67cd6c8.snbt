@@ -1,0 +1,30 @@
+{
+	title: "Scanner Module: Block",
+	icon: "scannable:module_block",
+	x: 4.0d,
+	y: 8.0d,
+	text: [
+		"A good way to find a specific ore you're missing is the §6Scanner Module: Block§r for your Scanner. §6Sneak-right click§f a piece of ore you want to search for with a Module in your hand, then §6sneak-right click§f the §aScanner§f, put the module inside, and go wander around scanning. ",
+		"",
+		"The range is significantly longer than it is when using the modules which detect all ores, and you even have room for a second §6Range Module§f if you've got an §6Ender Pearl§f to craft one.",
+		"",
+		"You can combo this with ores bought from §dOmnicoins§f to act as a \"sample\" to easily find a full vein with the Block Module."
+	],
+	dependencies: [
+		"9f7f4a71"
+	],
+	tasks: [{
+		uid: "279df3af",
+		type: "item",
+		items: [{
+			item: "scannable:module_block"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "abd0e08c",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

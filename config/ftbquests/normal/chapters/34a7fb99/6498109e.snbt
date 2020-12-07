@@ -1,0 +1,41 @@
+{
+	title: "Tier Five Micro Miner",
+	icon: "contenttweaker:tierfiveship",
+	x: -12.666666666666666d,
+	y: 10.0d,
+	text: [
+		"The Fifth Micro Miner.",
+		"",
+		"The only source of §6Naquadah Dust§r.",
+		"",
+		"When provided with §6Stabilized Uranium§r, brings:",
+		"§6* Uranium 238 Ore",
+		"* Molybdenite Ore",
+		"* Tennantite Ore",
+		"* Bastnasite Ore",
+		"* Sphalerite Ore",
+		"* Palladium Ore",
+		"* Beryllium Ore",
+		"* Monazite Ore",
+		"* Osmium Ore",
+		"* Enderpearl §mOre§r§6 Blocks",
+		"* Boron Dust§r"
+	],
+	dependencies: [
+		"2e3de2e8",
+		"61319da2"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "1acffd30",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tierfiveship"
+		}]
+	}],
+	rewards: [{
+		uid: "a76cf9ec",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

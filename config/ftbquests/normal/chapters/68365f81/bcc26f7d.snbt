@@ -1,0 +1,26 @@
+{
+	title: "Element 099: Einsteinium",
+	icon: "contenttweaker:stabilizedeinsteinium",
+	x: 0.5d,
+	y: 10.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"7ee8be78",
+		"b6faaed0"
+	],
+	tasks: [{
+		uid: "20f0178e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizedeinsteinium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "4af4da40",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

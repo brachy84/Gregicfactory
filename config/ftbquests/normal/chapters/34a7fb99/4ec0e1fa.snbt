@@ -1,0 +1,105 @@
+{
+	title: "Assembly Line",
+	icon: "gregtech:machine 1 2502",
+	x: -16.0d,
+	y: 4.5d,
+	text: [
+		"The §3Assembly Line§r is a large multiblock structure that crafts complex materials, similar to an §3Assembling Machine§r. These will be crucial going forward for making a variety of components and machinery.",
+		"",
+		"Make sure your power generation and circuit production are up to the challenge. It is useful to make at least two of these to avoid recipe conflicts and for different programmed circuits.",
+		"",
+		"Notice that all numbers of required items are §emultiples of 12§r. This is to make an Assembly Line that's 12 units long, allowing for 11 inputs and one output. This is a large enough Assembly Line to make a §aFusion Reactor Controller Mk1§r, but you'll need to expand to more inputs for later projects.",
+		"",
+		"§aFluid Input Hatches§r can replace any of the §6Steel Casings§r along the bottom outside except for the Casings touching the §aOutput Bus§r. For the most part, ULV ones work fine, but a few recipes will need an LV one.",
+		"",
+		"The §aEnergy Input Hatches§r along the top can be replaced by Steel Casings: you only need the one Energy Input Hatch (although you can add more if you want).",
+		"",
+		"The §aInput Buses§r along the bottom §emust be ULV tier§r, nothing else. Make sure to spin them all so the hole is on the bottom."
+	],
+	dependencies: [
+		"d3c6e921"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "050ab1ab",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 31 4"
+		}],
+		count: 31L
+	},
+	{
+		uid: "de71d92c",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_multiblock_casing 12 1"
+		}],
+		count: 12L
+	},
+	{
+		uid: "51dac65f",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_transparent_casing 24"
+		}],
+		count: 24L
+	},
+	{
+		uid: "a6ab5aad",
+		type: "item",
+		items: [{
+			item: "gregtech:multiblock_casing 11 2"
+		}],
+		count: 11L
+	},
+	{
+		uid: "f37c4516",
+		type: "item",
+		items: [{
+			item: "gregtech:multiblock_casing 24 1"
+		}],
+		count: 24L
+	},
+	{
+		uid: "0c88cab3",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 764"
+		}]
+	},
+	{
+		uid: "227fbea0",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 4 712"
+		}],
+		count: 4L
+	},
+	{
+		uid: "0b7541d4",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 11 700"
+		}],
+		count: 11L
+	},
+	{
+		uid: "21d2dde8",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 711"
+		}]
+	},
+	{
+		uid: "17fa23cc",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2502"
+		}]
+	}],
+	rewards: [{
+		uid: "eb1ba7dd",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

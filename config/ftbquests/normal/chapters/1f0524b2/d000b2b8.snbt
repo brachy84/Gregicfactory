@@ -1,0 +1,30 @@
+{
+	title: "Deuterium",
+	icon: "contenttweaker:moondust",
+	x: 22.0d,
+	y: 24.25d,
+	text: [
+		"The Moon is a barren, lifeless rock... So why did you want to come here?",
+		"",
+		"One major draw is that §6Moon Turf§r, which makes up the surface of the Moon, is an efficient means of obtaining §9Deuterium§r. It will be useful for producing §9Modularium§r, §9Tritium§r, plasmas from fusion, and crystallizing §6Dilithium§r.",
+		"",
+		"There are also several ores that are rare on the Overworld but exist in abundance on the Moon. In particular, the Moon contains large quantities of §6Titanium§r (in the form of §6Rutile Ore§r and §6Ilmenite Ore§r) and §6Tungsten§r (in the form of §6Scheelite Ore§r and §6Tungstate Ore§r).",
+		"",
+		"Much later you will also gain access to the §3Lunar Mining Station§r, which as the name suggests only works on the Moon."
+	],
+	dependencies: [
+		"ad3c11c6"
+	],
+	tasks: [{
+		uid: "62f9fd6a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:moondust"
+		}]
+	}],
+	rewards: [{
+		uid: "8f6255c5",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

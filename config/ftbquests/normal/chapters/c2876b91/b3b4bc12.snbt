@@ -1,0 +1,58 @@
+{
+	title: "Energetic Infuser",
+	icon: {
+		id: "thermalexpansion:machine",
+		tag: {
+			RSControl: 0b,
+			Facing: 3b,
+			Energy: 0,
+			Level: 0b,
+			SideCache: [B;
+				1b,
+				1b,
+				2b,
+				2b,
+				2b,
+				2b
+			]
+		},
+		Damage: 9s
+	},
+	x: -37.25d,
+	y: 9.25d,
+	text: [
+		"Infuses things with Redstone Flux.",
+		"",
+		"This is useful for charging RF-powered devices, but it also can also charge §6Rich Phyto-Gro§r into §6Fluxed Phyto-Gro§r, and charge §6Certus Quartz Crystals§r into §6Charged Certus Quartz Crystals§r."
+	],
+	dependencies: [
+		"c7e80488"
+	],
+	tasks: [{
+		uid: "1a98acf6",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:machine",
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				Level: 0b,
+				SideCache: [B;
+					1b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				]
+			},
+			Damage: 9s
+		}]
+	}],
+	rewards: [{
+		uid: "54742555",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

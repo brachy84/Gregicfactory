@@ -1,0 +1,25 @@
+{
+	title: "Element 096: Curium",
+	icon: "contenttweaker:stabilizedcurium",
+	x: -2.5d,
+	y: 10.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"4721c47e"
+	],
+	tasks: [{
+		uid: "48e88f2b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stabilizedcurium 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "e2d8ecf7",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

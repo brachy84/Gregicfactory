@@ -1,0 +1,33 @@
+{
+	title: "Reconstruction Of Atoms",
+	icon: "actuallyadditions:item_crystal 1 3",
+	x: -10.75d,
+	y: 7.5d,
+	text: [
+		"By placing them in the path of an §3Atomic Reconstructor§r's laser beam, §6Coal§r can be turned into §6Void Crystals§r, and §6Iron Ingots§r into §6Enori Crystals§r.",
+		"",
+		"Keep in mind you can efficiently do this with blocks, splitting them into nine base items as usual."
+	],
+	dependencies: [
+		"851649b0"
+	],
+	tasks: [{
+		uid: "f857d8fa",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal 1 3"
+		}]
+	},
+	{
+		uid: "f2f07f22",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_crystal 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "a78faf29",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "LV Mixer",
+	icon: "gregtech:machine 1 370",
+	x: -33.25d,
+	y: 16.5d,
+	shape: "square",
+	text: [
+		"Mixes two dusts to make a third.",
+		"",
+		"For now, you'll be using it to make Glowstone Dust and Energetic Blend.",
+		"",
+		"Glowstone Dust is made from Phosphor Dust and Gold Dust, or you could gather it from the Nether.",
+		"",
+		"Energetic Blend is made from Glowstone Dust and Redstone Dust."
+	],
+	dependencies: [
+		"5876c22c"
+	],
+	tasks: [{
+		uid: "122784a5",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 370"
+		}]
+	}],
+	rewards: [{
+		uid: "62d6269f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

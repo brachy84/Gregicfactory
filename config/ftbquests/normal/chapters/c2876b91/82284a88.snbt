@@ -1,0 +1,38 @@
+{
+	title: "Air Centrifuging",
+	icon: "gregtech:machine 1 150",
+	x: -18.75d,
+	y: 0.5d,
+	text: [
+		"Note: this quest accepts LV/MV/HV Centrifuge.",
+		"",
+		"Centrifuging air is a reliable way to get §9Nitrogen§r before you have access to §3Cryogenic Distillation§r."
+	],
+	dependencies: [
+		"399fa177",
+		"7d99a4cf"
+	],
+	tasks: [{
+		uid: "2911d26a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "questbookCentrifuge",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any questbookCentrifuge"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "a1ea255e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

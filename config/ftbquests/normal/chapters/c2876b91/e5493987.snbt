@@ -1,0 +1,50 @@
+{
+	title: "Californium Fission",
+	icon: "nuclearcraft:fuel_californium",
+	x: -11.25d,
+	y: 11.75d,
+	text: [
+		"§6Californium§r is the final fissile material in the NuclearCraft processing chain.",
+		"",
+		"§6Depleted LECf-249 Fuel§r results in... different isotopes of Californium.",
+		"",
+		"Unless you want §6Californium RTGs§r or are experimenting with further fission routes, this step is probably unnecessary for general materials processing."
+	],
+	dependencies: [
+		"4721c47e"
+	],
+	tasks: [{
+		uid: "cdd5a3d8",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:californium"
+		}]
+	},
+	{
+		uid: "0e20bce7",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:californium 8 12"
+		}],
+		count: 8L
+	},
+	{
+		uid: "137be3da",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_californium"
+		}]
+	},
+	{
+		uid: "6ecf43c0",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:depleted_fuel_californium"
+		}]
+	}],
+	rewards: [{
+		uid: "77fa219b",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

@@ -1,0 +1,35 @@
+{
+	title: "Aluminium Casing",
+	icon: "actuallyadditions:block_misc 1 9",
+	x: -12.25d,
+	y: 6.0d,
+	text: [
+		"§6Quartzite Ore§r is found in... quartzite veins in the Overworld.",
+		"",
+		"§6Quartzite Dust§r can be electrolyzed into §6Crushed Black Quartz§r, which can be crystallized into §6Black Quartz§r in an §3Autoclave§r.",
+		"",
+		"Black Quartz and §6Aluminium Plates§r will make §6Aluminium Casings§r, which are used for making machines from §bActually Additions§r."
+	],
+	dependencies: [
+		"24e960a2"
+	],
+	tasks: [{
+		uid: "d9cd9cbe",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_misc 1 5"
+		}]
+	},
+	{
+		uid: "f4917110",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_misc 1 9"
+		}]
+	}],
+	rewards: [{
+		uid: "d14c9ba2",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

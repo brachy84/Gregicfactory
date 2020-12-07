@@ -1,0 +1,29 @@
+{
+	title: "Cables",
+	icon: "gregtech:cable 1 5237",
+	x: 2.75d,
+	y: 10.0d,
+	shape: "square",
+	text: [
+		"The most basic cables, such as these §6Red Alloy Cables§f, can be wrapped in their §6Rubber§f insulation by hand.",
+		"",
+		"More advanced types of cables will require an §3Assembling Machine§f and liquid §9Rubber§f, but you can do it the simple way for now."
+	],
+	dependencies: [
+		"9f7f4a71",
+		"dbdc0ac3"
+	],
+	tasks: [{
+		uid: "53bd5669",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 7 5237"
+		}],
+		count: 7L
+	}],
+	rewards: [{
+		uid: "6d3402c4",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

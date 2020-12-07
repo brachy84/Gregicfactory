@@ -1,0 +1,25 @@
+{
+	title: "Element 005: Boron",
+	icon: "gregtech:meta_item_1 1 2009",
+	x: -1.5d,
+	y: 3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"79ed420e"
+	],
+	tasks: [{
+		uid: "aab93ffd",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 2009"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "dc415eb4",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

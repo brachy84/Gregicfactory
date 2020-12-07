@@ -1,0 +1,35 @@
+{
+	title: "QBit Processing Unit",
+	icon: "gregtech:meta_item_2 1 32484",
+	x: -21.75d,
+	y: 5.75d,
+	text: [
+		"§6QBit CPUs§r are an advanced Circuit Wafer crucial for §6Quantum Circuits§r.",
+		"",
+		"There are two methods of creating them:",
+		"",
+		"The simpler recipe uses two §6Quantum Eyes§r and two ingots worth of molten §9Gallium Arsenide§r to enhance a §6NanoCPU Wafer§r. This recipe is slow and requires substantially more §9Radon§r per craft.",
+		"",
+		"The other route instead uses §6Indium Gallium Phosphide§r and a tiny amount of Radon. This skips the slow-crafting Quantum Eyes, using far less Radon in the process, but requires the infrastructure in place for obtaining §6Indium§r.",
+		"",
+		"The second route is overall better, and you will need Indium processing to complete the pack so might as well do it."
+	],
+	dependencies: [
+		"ab939eaf",
+		"177c03a5",
+		"1c2d688b"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "25fa0017",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32484"
+		}]
+	}],
+	rewards: [{
+		uid: "d0439412",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

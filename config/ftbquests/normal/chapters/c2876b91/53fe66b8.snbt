@@ -1,0 +1,37 @@
+{
+	title: "Uranium Fission",
+	icon: "nuclearcraft:fuel_uranium 1 4",
+	x: -13.75d,
+	y: 9.25d,
+	text: [
+		"When you have enough materials, you can craft Uranium isotope clumps into Low-Enriched Uranium 235 Fuel (or §6LEU-235§r, for short). This fuel uses an 8:1 ratio of U238 to U235.",
+		"",
+		"This fuel is processed in your §3Fission Reactor§r by placing it in the controller. When a redstone signal is applied it will burn the fuel, generating some power from the reactor and after a while you'll get a §6Depleted LEU-235 Fuel§r§r.",
+		"",
+		"Keep in mind that power generation is §nnot§r§r the goal: the duration of all fuels is quite short in §5Omnifactory§r. What you want are the next fissile materials in the chain.",
+		"",
+		"The depleted fuel is separated in a regular §3Centrifuge§r, resulting in many tiny clumps of fissile materials: Uranium 238, §6Neptunium 237§r, §6§6Plutonium 239§r, and §6Plutonium 241§r."
+	],
+	dependencies: [
+		"8eb6bd8f"
+	],
+	tasks: [{
+		uid: "236ef540",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_uranium 1 4"
+		}]
+	},
+	{
+		uid: "30326f99",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:depleted_fuel_uranium 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "3804007b",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

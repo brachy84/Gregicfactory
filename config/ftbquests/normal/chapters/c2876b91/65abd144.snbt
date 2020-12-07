@@ -1,0 +1,26 @@
+{
+	title: "The Third Tier Three Circuits",
+	icon: "gregtech:meta_item_2 1 32491",
+	x: -28.75d,
+	y: 6.5d,
+	text: [
+		"With three §6Microcircuits§r and some standard components, you can upgrade to the penultimate Tier Three circuit: a §6Microprocessor§r."
+	],
+	dependencies: [
+		"82774816",
+		"a9e23cd9"
+	],
+	tasks: [{
+		uid: "0a1b935e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32491"
+		}]
+	}],
+	rewards: [{
+		uid: "3897de85",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

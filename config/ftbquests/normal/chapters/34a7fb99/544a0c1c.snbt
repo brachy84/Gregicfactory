@@ -1,0 +1,24 @@
+{
+	title: "ZPM Compressor",
+	icon: "gregtech:machine 1 2070",
+	x: -5.75d,
+	y: 9.5d,
+	text: [
+		"The ZPM tier §3Compressor§r is needed for the most advanced heavy plating types: §6Draconium§r and §6Crystal Matrix§r."
+	],
+	dependencies: [
+		"57d7d634"
+	],
+	tasks: [{
+		uid: "32f916f4",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2070"
+		}]
+	}],
+	rewards: [{
+		uid: "8814caaf",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Plastic Sheets",
+	icon: "gregtech:meta_item_1 1 12141",
+	x: -17.0d,
+	y: 13.5d,
+	text: [
+		"Form §6Polyethylene Sheets§r using a §3Fluid Solidifer§r and a §aPlate Mold§r for use in crafting electronics components."
+	],
+	dependencies: [
+		"c6b6e94d"
+	],
+	tasks: [{
+		uid: "ae7bf01d",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 12141"
+		}]
+	}],
+	rewards: [{
+		uid: "8ffbe00a",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

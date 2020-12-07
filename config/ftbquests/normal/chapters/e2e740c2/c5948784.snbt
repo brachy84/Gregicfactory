@@ -1,0 +1,29 @@
+{
+	title: "Loot Fabricator",
+	icon: "deepmoblearning:extraction_chamber",
+	x: -27.5d,
+	y: 5.5d,
+	shape: "square",
+	text: [
+		"Simulating mob kills will occasionally result in §6Pristine Matter§r of that mob's type.",
+		"",
+		"Putting Pristine matter into a §3Loot Fabricator§r will allow you to obtain one of various items related to that mob.",
+		"",
+		"Much like §3Simulation Chambers§r, Loot Fabricators are §asided§r, accepting input from §athe top side§r and allowing extraction from §aall sides except the top§r."
+	],
+	dependencies: [
+		"5dd236f1"
+	],
+	tasks: [{
+		uid: "f67634b7",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:extraction_chamber"
+		}]
+	}],
+	rewards: [{
+		uid: "e7975907",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

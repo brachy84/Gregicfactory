@@ -1,0 +1,26 @@
+{
+	title: "Soularium Ingots",
+	icon: "enderio:item_alloy_ingot 1 7",
+	x: -16.75d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"9638a321",
+		"ed2a8868"
+	],
+	tasks: [{
+		uid: "b2379b96",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 64 7"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "0f997937",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

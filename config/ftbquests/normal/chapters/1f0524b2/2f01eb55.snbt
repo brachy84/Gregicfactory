@@ -1,0 +1,26 @@
+{
+	title: "Elite Extended Crafting Table",
+	icon: "extendedcrafting:table_elite",
+	x: 17.0d,
+	y: 22.5d,
+	text: [
+		"This table allows you to craft 7x7 Extended Crafting Table recipes."
+	],
+	dependencies: [
+		"57b5de21",
+		"bc22b134"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "91c064d9",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:table_elite"
+		}]
+	}],
+	rewards: [{
+		uid: "123a7205",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

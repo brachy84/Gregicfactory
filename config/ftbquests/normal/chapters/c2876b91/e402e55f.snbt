@@ -1,0 +1,119 @@
+{
+	title: "Oil Drilling Rig",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "oil",
+			Amount: 1000
+		}
+	},
+	x: -8.25d,
+	y: 3.75d,
+	text: [
+		"If you don't like the idea of mining out Oilsands veins, you can build an §3Oil Drilling Rig§r.",
+		"",
+		"You'll need to provide it with power, §9Drilling Fluid§r, and a steady supply of §6Pipes§r. The Pipes only have a 1% chance to have one be used up per bucket of §9Oil§r drilled."
+	],
+	dependencies: [
+		"f906e77c"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "b91f8830",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "frameGtSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any frameGtSteel"
+				}
+			}
+		}]
+	},
+	{
+		uid: "8e8a243f",
+		type: "item",
+		items: [{
+			item: "gregtech:boiler_casing 12 1"
+		}],
+		count: 12L
+	},
+	{
+		uid: "3951c119",
+		type: "item",
+		items: [{
+			item: "gregtech:turbine_casing 9 1"
+		}],
+		count: 9L
+	},
+	{
+		uid: "fd0e7014",
+		type: "item",
+		items: [{
+			item: "inspirations:pipe 12"
+		}],
+		count: 12L
+	},
+	{
+		uid: "31b4293c",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 8 4"
+		}],
+		count: 8L
+	},
+	{
+		uid: "39f7b949",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "21f13228",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockenergyinputhatch 1 2"
+		}]
+	},
+	{
+		uid: "86056329",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockfluidoutputhatch"
+		}]
+	},
+	{
+		uid: "ee90e5ac",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockfluidinputhatch"
+		}]
+	},
+	{
+		uid: "42a15186",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus"
+		}]
+	},
+	{
+		uid: "0dcadca3",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "drilling_fluid",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

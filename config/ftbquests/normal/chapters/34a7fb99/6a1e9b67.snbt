@@ -1,0 +1,26 @@
+{
+	title: "The Second Tier Seven Circuits",
+	icon: "contenttweaker:crystalprocessorarray",
+	x: -11.0d,
+	y: 13.0d,
+	text: [
+		"With §6Draconium§r, §6Enderium§r, and some §6HPICs§r, you can assemble a §6Crystal Processor Array§r."
+	],
+	dependencies: [
+		"e3c1255f",
+		"3f261428",
+		"173db7ae"
+	],
+	tasks: [{
+		uid: "36e38f44",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32214"
+		}]
+	}],
+	rewards: [{
+		uid: "5a219e46",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

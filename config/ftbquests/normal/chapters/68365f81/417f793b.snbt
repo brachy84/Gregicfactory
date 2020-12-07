@@ -1,0 +1,25 @@
+{
+	title: "Element 018: Argon",
+	icon: "contenttweaker:solidifiedargon",
+	x: -2.5d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"11564de3"
+	],
+	tasks: [{
+		uid: "12384bcf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedargon 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "5cc3e8d3",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

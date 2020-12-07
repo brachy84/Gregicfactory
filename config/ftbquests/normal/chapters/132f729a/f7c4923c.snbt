@@ -1,0 +1,29 @@
+{
+	title: "The Second Tier One Circuits",
+	icon: "gregtech:meta_item_2 1 32488",
+	x: -21.5d,
+	y: 6.0d,
+	text: [
+		"Much easier to mass produce than §6Primitive Circuits§r, and they fulfill the same function in nearly all cases.",
+		"",
+		"You should be batch crafting these."
+	],
+	dependencies: [
+		"22e0ec8c",
+		"ee5afcfc",
+		"0986f46d"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "7fd30591",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32488"
+		}]
+	}],
+	rewards: [{
+		uid: "bfdb2498",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

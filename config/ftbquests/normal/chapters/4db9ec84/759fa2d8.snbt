@@ -1,0 +1,26 @@
+{
+	title: "The First Tier Six Circuits",
+	icon: "contenttweaker:nanoprocessormainframe",
+	x: -1.25d,
+	y: 12.5d,
+	text: [
+		"The first and most expensive Tier Six Circuit, needed for crafting the §3IV Assembling Machine§r.",
+		"",
+		"Requires a bunch of standard circuit components, as well as multiple §6Lumium Wire§r and §6Tungstensteel Frames§r."
+	],
+	dependencies: [
+		"5ec56a1e"
+	],
+	tasks: [{
+		uid: "0a408684",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32212"
+		}]
+	}],
+	rewards: [{
+		uid: "87397414",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

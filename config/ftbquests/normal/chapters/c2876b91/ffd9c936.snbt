@@ -1,0 +1,24 @@
+{
+	title: "Pyrotheum",
+	icon: "thermalfoundation:material 1 1024",
+	x: -37.25d,
+	y: 3.0d,
+	text: [
+		"§6§6Redstone§r, §6Sulfur§r, and §6Blaze Powder§r creates §6Pyrotheum Dust§r, a mixture imbued with potent elemental flame."
+	],
+	dependencies: [
+		"b22a68b7"
+	],
+	tasks: [{
+		uid: "6d7c5a34",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 1024"
+		}]
+	}],
+	rewards: [{
+		uid: "50d74090",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

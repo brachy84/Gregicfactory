@@ -1,0 +1,24 @@
+{
+	title: "Cryotheum",
+	icon: "thermalfoundation:material 1 1025",
+	x: -33.5d,
+	y: 3.0d,
+	text: [
+		"§6§6Redstone§r, a §6Snowball§r, and §6Blizz Powder§r creates §6Cryotheum Dust§r, a mixture imbued with potent elemental frost."
+	],
+	dependencies: [
+		"30f69507"
+	],
+	tasks: [{
+		uid: "a27e9c82",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 1025"
+		}]
+	}],
+	rewards: [{
+		uid: "6d31fda8",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "Vertical Digger",
+	icon: "actuallyadditions:block_miner",
+	x: -13.75d,
+	y: 10.5d,
+	text: [
+		"Place the §3Vertical Digger§r over an ore vein, feed it RF, and it will mine up the entire vein for you.",
+		"",
+		"For drills, you will need a §6GregTech Drill§r (any LV drill will work), a §6Fluxbore§r (Reinforced tier is required) and an §6Actually Additions Drill§r (any color is fine, but take out any augments you wish to keep).",
+		"",
+		"The GregTech Drill will not be consumed, but everything else will be."
+	],
+	dependencies: [
+		"70e78723",
+		"2ce819b9",
+		"4f3c3cf2"
+	],
+	tasks: [{
+		uid: "e4569769",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_miner"
+		}]
+	}],
+	rewards: [{
+		uid: "682c36a7",
+		type: "item",
+		item: "contenttweaker:omnicoin100"
+	}]
+}

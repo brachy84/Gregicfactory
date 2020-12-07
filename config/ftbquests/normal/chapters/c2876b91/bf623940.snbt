@@ -1,0 +1,26 @@
+{
+	title: "Tungsten Carbide Heavy Plating",
+	icon: "contenttweaker:tungstencarbideplating",
+	x: -26.75d,
+	y: 8.0d,
+	text: [
+		"Heavy Plating for Micro Miners made from §6Tungsten Carbide§r.",
+		"",
+		"You'll need an §3EV Compressor§r to make these."
+	],
+	dependencies: [
+		"38223643"
+	],
+	tasks: [{
+		uid: "fe81af40",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tungstencarbideplating"
+		}]
+	}],
+	rewards: [{
+		uid: "aaba155d",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

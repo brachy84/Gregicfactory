@@ -1,0 +1,25 @@
+{
+	title: "HSS-G Coil Block",
+	icon: "gregtech:wire_coil 1 4",
+	x: -10.75d,
+	y: 5.0d,
+	text: [
+		"§6HSS-G§r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials."
+	],
+	dependencies: [
+		"d00143bc"
+	],
+	tasks: [{
+		uid: "d3a7fe1b",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 16 4"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "3f856838",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

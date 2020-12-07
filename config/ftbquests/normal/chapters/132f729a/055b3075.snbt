@@ -1,0 +1,27 @@
+{
+	title: "Vibrant Alloy Energy Conduits",
+	icon: "enderio:item_power_conduit 1 2",
+	x: -15.5d,
+	y: 15.5d,
+	text: [
+		"Conduits to carry even MORE RF power.",
+		"",
+		"You're making these in the §3Assembling Machine§r, right?"
+	],
+	dependencies: [
+		"906e6c13",
+		"b5b43e1f"
+	],
+	tasks: [{
+		uid: "60b6cb35",
+		type: "item",
+		items: [{
+			item: "enderio:item_power_conduit 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "67826947",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "ZPM Assembling Machine",
+	icon: "gregtech:machine 1 2004",
+	x: 2.5d,
+	y: 5.0d,
+	text: [
+		"With your §6Iridium§r-based machine hulls and §6Crystal Processor Mainframes§r squared away, you can finally get on the path to making a ZPM §3Assembling Machine§r.",
+		"",
+		"This tier of Assembling Machine unlocks §6Wetware Circuits§r, as well as handling crafting recipes up to 131072 EU/t. It can also optionally overclock recipes up to 32768 EU/t for improved speed at the cost of relatively more power."
+	],
+	dependencies: [
+		"949dd621",
+		"57d7d634"
+	],
+	tasks: [{
+		uid: "5862a5c5",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_multiblock_casing 1 10"
+		}],
+		count: 7L
+	}],
+	rewards: [{
+		uid: "bae88e48",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

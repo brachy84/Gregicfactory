@@ -1,0 +1,33 @@
+{
+	title: "Macerator",
+	icon: "gregtech:machine 1 60",
+	x: -36.0d,
+	y: 7.25d,
+	text: [
+		"Macerators are useful for grinding things down. The best application for one right now would be grinding down clay or terracotta into §6Clay Dust§f.",
+		"",
+		"LV Macerators lack byproduct slots. MV Macerators get one byproduct slot, but unfortunately the §6Stone Dust§r byproduct is prioritized so in practice you get a bit less than advertised. HV Macerators and better have all three slots.",
+		"",
+		"Macerator byproduct chances are doubled for each tier after MV. Here's the list of chances for ore byproducts for a quick reference:",
+		"§a§r• LV: §c0%",
+		"§r• MV: §a14%§c*",
+		"§r• HV: §a28%",
+		"§r• EV: §a56%",
+		"§r• IV and better: §a100%§r"
+	],
+	dependencies: [
+		"b42c2f03"
+	],
+	tasks: [{
+		uid: "63c784ab",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 60"
+		}]
+	}],
+	rewards: [{
+		uid: "1d550d7e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

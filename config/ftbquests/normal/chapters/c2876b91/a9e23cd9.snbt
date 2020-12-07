@@ -1,0 +1,30 @@
+{
+	title: "The Final Tier Two Circuits",
+	icon: "contenttweaker:microcircuit",
+	x: -28.75d,
+	y: 5.5d,
+	text: [
+		"Using your new §6Epoxy Circuit Boards§r and some familiar components, you can now make the final form of Tier Two Circuit: the §6Microcircuit§r.",
+		"",
+		"You craft four of these at once, and they're pretty cheap. Consider that you used to have to make §6Primitive Processors§r for this tier, and realize how far you've come.",
+		"",
+		"As with the final form of any tier of circuits, be sure to set up automation to stockpile these. You won't get to the §6System-on-Chip§r variant recipe for a while yet."
+	],
+	dependencies: [
+		"48fb8a6a",
+		"b996f8c0"
+	],
+	tasks: [{
+		uid: "bb877e63",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32207"
+		}]
+	}],
+	rewards: [{
+		uid: "700ca381",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

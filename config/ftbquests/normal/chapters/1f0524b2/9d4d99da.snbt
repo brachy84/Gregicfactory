@@ -1,0 +1,41 @@
+{
+	title: "Fuel Loading",
+	icon: "advancedrocketry:fuelingstation",
+	x: 22.0d,
+	y: 21.0d,
+	text: [
+		"The §3Fueling Station§r is how rockets get fuel.",
+		"",
+		"First, put together your Rocket, then §aScan§r and §cBuild§r the Rocket in the §3Rocket Assembling Machine§r to assemble it (which turns it into an entity). Next, with the §aLinker§r in your hand, right-click the Fueling Station then the Rocket to link them together. ",
+		"",
+		"You'll get a confirmation message when you do it right, and a little line will appear between the fuel loader and the rocket.",
+		"",
+		"Now just get §9Rocket Fuel§r into the Fueling Station and it will transfer to the Rocket automatically."
+	],
+	dependencies: [
+		"b822aba1",
+		"08f31d64"
+	],
+	tasks: [{
+		uid: "dd3100a0",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:fuelingstation"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4723882c",
+		type: "item",
+		items: [{
+			item: "libvulpes:linker"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f9ac4dc6",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

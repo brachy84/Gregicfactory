@@ -1,0 +1,41 @@
+{
+	title: "I Dont Need No Stinkin' Tower",
+	icon: "gregtech:machine 1 231",
+	x: -16.75d,
+	y: 10.5d,
+	text: [
+		"Note: this quest accepts both LV and MV Distillery.",
+		"",
+		"If you don't feel up to making a §3Distillation Tower§r just yet, you can get §9Ethanol§r via a single block §3Distillery§r, a machine that gets one fluid and §cvoids the rest§r (in this case, Water). This defers the tower for a little while longer.",
+		"",
+		"However, the Distillation Tower is mandatory for advanced chemistry, as most things have more than one important output: §9Fermented Biomass§r, §9Charcoal Byproducts§r from your §3Pyrolyse Oven§r, and the entire line of petrochemicals from §9Oil§r, to name a few.",
+		"",
+		"Can't avoid it forever!"
+	],
+	dependencies: [
+		"399fa177"
+	],
+	tasks: [{
+		uid: "e8593efc",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "questbookDistillery",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any questbookDistillery"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "98238946",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

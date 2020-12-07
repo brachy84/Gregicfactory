@@ -1,0 +1,24 @@
+{
+	title: "Travel Anchors",
+	icon: "enderio:block_travel_anchor",
+	x: 20.0d,
+	y: 18.75d,
+	text: [
+		"Scatter a few around your base, and you can warp to anywhere you please!"
+	],
+	dependencies: [
+		"906e6c13"
+	],
+	tasks: [{
+		uid: "d3cf009c",
+		type: "item",
+		items: [{
+			item: "enderio:block_travel_anchor"
+		}]
+	}],
+	rewards: [{
+		uid: "2c43fe8e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

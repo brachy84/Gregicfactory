@@ -1,0 +1,31 @@
+{
+	title: "Infinity Ingot",
+	icon: "avaritia:resource 1 6",
+	x: -9.0d,
+	y: 9.0d,
+	shape: "diamond",
+	text: [
+		"This ingot is the most advanced basic material.",
+		"",
+		"With creative fluids and all the automation you hopefully set up for your first §c§cInfinity Catalyst§r, these ingots should be easy.",
+		"",
+		"Well, not easy. But... Reasonable.",
+		"",
+		"From here, you are going to be crafting a multitude of Creative-Tier items from various mods. In addition to being useful for their regular functionality, they are needed for the final goal: the §dCreative Vending Upgrade§r.",
+		"",
+		"§bJEI§r is your friend: beyond noting a few more items, I will not be holding your hand anymore. I've taught you everything you need to know to beat the pack.",
+		"",
+		"You can do it!"
+	],
+	dependencies: [
+		"64d43d53"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "b0999ed1",
+		type: "item",
+		items: [{
+			item: "avaritia:resource 1 6"
+		}]
+	}]
+}

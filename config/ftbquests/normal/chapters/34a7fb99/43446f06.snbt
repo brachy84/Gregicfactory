@@ -1,0 +1,25 @@
+{
+	title: "Quantum Fluxed Eternium Heavy Plating",
+	icon: "contenttweaker:quantumfluxedeterniumplating",
+	x: -3.25d,
+	y: 13.25d,
+	text: [
+		"A complex plating material used exclusively for the Tier Nine Micro Miner."
+	],
+	dependencies: [
+		"2432171a",
+		"350e9b2b"
+	],
+	tasks: [{
+		uid: "943c499d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quantumfluxedeterniumplating"
+		}]
+	}],
+	rewards: [{
+		uid: "4ebc0d9d",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

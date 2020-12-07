@@ -1,0 +1,42 @@
+{
+	title: "Space Station Assembler",
+	icon: "advancedrocketry:stationbuilder",
+	x: -31.5d,
+	y: 10.75d,
+	text: [
+		"This quest, and the ones that follow it, are §cNOT REQUIRED§r for progression.",
+		"",
+		"Only do them if you want to be able to explore the various planets offered by Advanced Rocketry and potentially build bases there, or in space.",
+		"",
+		"Refer to the various high quality tutorials on AR available on youtube for specifics."
+	],
+	dependencies: [
+		"2d6ec97a"
+	],
+	tasks: [{
+		uid: "46ee1379",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:stationbuilder"
+		}]
+	},
+	{
+		uid: "737e2301",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:spacestationchip"
+		}]
+	},
+	{
+		uid: "a9dd8f57",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:loader 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "7e8b88a2",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

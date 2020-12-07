@@ -1,0 +1,26 @@
+{
+	title: "Interface Terminal",
+	icon: "appliedenergistics2:part 1 480",
+	x: -4.75d,
+	y: 12.75d,
+	text: [
+		"This handy terminal allows you to see the pattern slots of all §aME Interfaces§r in your network in one place.",
+		"",
+		"This means you don't have to run to your ME Interfaces each time you make a new pattern for them."
+	],
+	dependencies: [
+		"333269ca"
+	],
+	tasks: [{
+		uid: "250ec9c8",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 480"
+		}]
+	}],
+	rewards: [{
+		uid: "ec156e56",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

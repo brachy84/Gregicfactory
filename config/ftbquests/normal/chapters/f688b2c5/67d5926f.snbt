@@ -1,0 +1,31 @@
+{
+	title: "Grappling Hook",
+	icon: "hooked:hook 1 1",
+	x: -0.75d,
+	y: 5.5d,
+	text: [
+		"A §aGrappling Hook§f is very useful in an urban enviroment.",
+		"",
+		"There are lots of ways to upgrade and improve your Grappling Hook, so play around with it.",
+		"",
+		"Open your inventory and look for the Baubles button, click it to reveal the additional bauble slots and put the Hook there.",
+		"",
+		"The default key is §6C§r, however since quite a lot of mods occupy this hotkey you'll need to visit the controls menu to resolve the button conflicts."
+	],
+	dependencies: [
+		"cb806892"
+	],
+	tasks: [{
+		uid: "e902e40d",
+		type: "item",
+		items: [{
+			item: "hooked:hook 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "711814bc",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

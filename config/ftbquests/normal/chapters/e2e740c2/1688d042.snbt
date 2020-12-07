@@ -1,0 +1,54 @@
+{
+	title: "Machine Covers",
+	icon: "gregtech:meta_item_1 1 32730",
+	x: -35.979166666666664d,
+	y: 3.9166666666666665d,
+	text: [
+		"GregTech adds a very versatile way of augmenting machines with §aMachine Covers§r. Covers are \"upgrades\" that you can put on any GregTech machine, chest, or drum to expand its functionality. To work with covers, you'll need to make yourself a §aScrewdriver§r to configure covers, and a §aCrowbar§r to remove covers without having to break the machine.",
+		"",
+		"Here's a quick list of what covers there are in the game, and what they do:",
+		"",
+		"- §a§lFilter§r: controls what items can enter or leave through a particular side, with 9 configurable slots and whitelist/blacklist modes. You can also put a filter into a §aConveyor§r or §aRobotic Arm§r to customize what items they will move. There's also a §9Fluid§r variant of the filter, which offers the same controls and can be placed in §aPumps§f.",
+		"",
+		"- §a§lOre Dictionary Filter§r: a specialized filter that uses ore dictionary entries and supports \"*\" as a wildcard, e. g. \"§6ingotHot*§r\" will match all hot ingots, and \"§6dustTiny*§r\" will match all tiny piles.",
+		"",
+		"- §a§lConveyor§r: transfers items to or from an adjacent inventory.",
+		"",
+		"- §a§lRobotic Arm§r: is much like §aConveyor§r, but has two additional modes: §6Keep Exact§r, which keeps the exact amount of items in the inventory, and §6Supply Exact§r which transfers the exact amount of items per operation (useful for packaging tiny piles when used with §aOre Dictionary Filter§f!). This cover is very useful for crafting automation.",
+		"",
+		"- §a§lPump§r: is much like a §aConveyor§f, but for fluids.",
+		"",
+		"- §a§lShutter§r: prevents any interactions with a side.",
+		"",
+		"- §a§lMachine Controller§r: enables or disables a machine and/or its covers depending on whether it is receiving a redstone signal. Useful when paired with §6ME level emitters§f to keep resources in stock."
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "ff828a43",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "wrought_iron"
+				}
+			},
+			Damage: 11s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "464de43d",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "wrought_iron"
+				}
+			},
+			Damage: 10s
+		}],
+		ignore_nbt: 1b
+	}]
+}

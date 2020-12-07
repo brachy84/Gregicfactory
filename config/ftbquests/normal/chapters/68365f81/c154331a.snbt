@@ -1,0 +1,25 @@
+{
+	title: "Element 076: Osmium",
+	icon: "gregtech:meta_item_1 1 10047",
+	x: 0.5d,
+	y: 8.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"0c670157"
+	],
+	tasks: [{
+		uid: "67a5376b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10047"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "09c5789c",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

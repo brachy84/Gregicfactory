@@ -1,0 +1,44 @@
+{
+	title: "Steam Dynamo",
+	icon: {
+		id: "thermalexpansion:dynamo",
+		tag: {
+			RSControl: 0b,
+			Facing: 1b,
+			Energy: 0,
+			Level: 0b
+		}
+	},
+	x: -2.0d,
+	y: 10.0d,
+	text: [
+		"Your first major crafting project!",
+		"",
+		"You'll need a small bit of §6Silver§f for this dynamo. If you haven't found a §6Galena vein§f yet (which is where Silver is), then consider \"buying\" some §6Silver Ore§r using §dOmnicoins§r. You won't need a ton of silver and lead just yet, so it won't bankrupt you.",
+		"",
+		"Keep in mind that §eDynamos only output power when burning through fuel, and only the block attached directly to the coil will get provided with power§f."
+	],
+	dependencies: [
+		"ee428daf",
+		"dbdc0ac3",
+		"2d0e93d5"
+	],
+	tasks: [{
+		uid: "1949d355",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "ca60567a",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

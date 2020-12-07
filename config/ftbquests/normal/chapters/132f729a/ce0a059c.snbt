@@ -1,0 +1,27 @@
+{
+	title: "4k Item Storage",
+	icon: "appliedenergistics2:material 1 36",
+	x: -3.5d,
+	y: 9.25d,
+	text: [
+		"A component used primarily for making bigger §6Storage Cells§r.",
+		"",
+		"Unformatted disks always have a hard limit of 63 distinct types of items, but each step up has roughly four times the total storage space of the prior disk."
+	],
+	dependencies: [
+		"ba808170",
+		"f93fa897"
+	],
+	tasks: [{
+		uid: "b3297485",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 36"
+		}]
+	}],
+	rewards: [{
+		uid: "922cb8d1",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

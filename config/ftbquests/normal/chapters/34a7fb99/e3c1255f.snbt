@@ -1,0 +1,28 @@
+{
+	title: "Enderium Ingot",
+	icon: "thermalfoundation:material 1 167",
+	x: -9.0d,
+	y: 8.25d,
+	text: [
+		"A complex material from §bThermal Expansion§r cooked in an §3Electric Blast Furnace§r.",
+		"",
+		"§6Enderium§r doesn't require much power (running on as little as MV) but it does need a lot of heat and is incredibly slow without overclocking.",
+		"",
+		"As with all later blast furnace materials, dedicate a furnace to keeping these in stock and have it running constantly to ensure a stable supply (turning it off when you have an acceptably vast stockpile)."
+	],
+	dependencies: [
+		"4e6de293"
+	],
+	tasks: [{
+		uid: "01d625cf",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 167"
+		}]
+	}],
+	rewards: [{
+		uid: "47bb7aba",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

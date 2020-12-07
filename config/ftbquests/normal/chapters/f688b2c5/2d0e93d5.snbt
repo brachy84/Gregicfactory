@@ -1,0 +1,24 @@
+{
+	title: "Pressurized Fluid Conduits",
+	icon: "enderio:item_liquid_conduit 1 1",
+	x: -2.0d,
+	y: 5.5d,
+	text: [
+		"§bEnderIO§f conduits are the preferred way to move fluids around, rather than Gregtech pipes. Incredibly flexible and powerful, they'll make fluid crafting almost bearable."
+	],
+	dependencies: [
+		"cb806892"
+	],
+	tasks: [{
+		uid: "2e17f666",
+		type: "item",
+		items: [{
+			item: "enderio:item_liquid_conduit 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "201616bd",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

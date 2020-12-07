@@ -1,0 +1,25 @@
+{
+	title: "Bounties For Omnicoins!",
+	icon: "bountiful:bountyboarditem",
+	x: -7.0d,
+	y: 3.25d,
+	text: [
+		"Now that you have a §3Wiremill§f and a §3Compressor§f, you can consider starting to do §eBounties§f. The §6Bounty Board§f has a global inventory containing quests to turn in specific items in exchange for §dOmnicoins§f. These quests have a fairly short duration, so make sure to §estockpile the items§f that come up on them or else they'll §cexpire before you can complete them§f.",
+		"",
+		"With renewable §dOmnicoins§f, you should feel free to spend the ones you have on whatever you need. §aSpend your coins!"
+	],
+	dependencies: [
+		"5876c22c",
+		"4e8c60f2"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "94ccac2c",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "1fa0ed43",
+		type: "item",
+		item: "bountiful:bountyboarditem"
+	}]
+}

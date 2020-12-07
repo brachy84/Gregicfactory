@@ -1,0 +1,38 @@
+{
+	title: "Drill Baby Drill",
+	icon: {
+		id: "actuallyadditions:item_drill",
+		tag: {
+			Energy: 250000
+		},
+		Damage: 3s
+	},
+	x: -13.75d,
+	y: 12.0d,
+	text: [
+		"Is it expensive? Yes. Is it worth it? Hell yes.",
+		"",
+		"It doesn't start to shine until you get the good upgrades for it though, so maybe hold off for a while."
+	],
+	dependencies: [
+		"2ce819b9"
+	],
+	tasks: [{
+		uid: "176cce3a",
+		type: "item",
+		items: [{
+			id: "actuallyadditions:item_drill",
+			tag: {
+				Energy: 0
+			},
+			Damage: 3s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b1ea20a8",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

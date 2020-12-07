@@ -1,0 +1,22 @@
+{
+	title: "Ultimate Leggings",
+	icon: "armorplus:the_ultimate_leggings",
+	x: -7.75d,
+	y: 12.5d,
+	text: [
+		"An ultimate pair of leggings, forged from all manner of materials across dimensions and microverses."
+	],
+	dependencies: [
+		"8239c7bf"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "f48d9e3a",
+		type: "item",
+		items: [{
+			item: "armorplus:the_ultimate_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

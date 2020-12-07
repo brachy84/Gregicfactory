@@ -1,0 +1,28 @@
+{
+	title: "The First Tier Eight Circuits",
+	icon: "contenttweaker:crystalprocessormainframe",
+	x: -10.0d,
+	y: 13.0d,
+	text: [
+		"The §6Crystal Processor Mainframe§r is the first Tier Eight circuit.",
+		"",
+		"Along with things you already know how to make, this needs §6HSS-E Frames§r.",
+		"",
+		"These are required for crafting the §3ZPM Assembling Machine§r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these."
+	],
+	dependencies: [
+		"6a1e9b67"
+	],
+	tasks: [{
+		uid: "ef33ff0e",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32215"
+		}]
+	}],
+	rewards: [{
+		uid: "f563b18f",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

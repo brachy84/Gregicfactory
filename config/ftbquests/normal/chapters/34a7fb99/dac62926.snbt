@@ -1,0 +1,30 @@
+{
+	title: "LuV Assembling Machine",
+	icon: "gregtech:machine 1 2004",
+	x: -19.5d,
+	y: 10.5d,
+	text: [
+		"With your §6Lumium§r-based machine hulls, Assembling Machine built, and §6Quantum Processor Mainframes§r squared away, you can finally get on the path to making a Ludicrous Voltage §3Assembling Machine§r.",
+		"",
+		"This tier of Assembling Machine unlocks §6Crystal Circuits§r, as well as handling crafting recipes up to 32768 EU/t. It can also optionally overclock recipes up to 8192 EU/t for improved speed at the cost of relatively more power."
+	],
+	dependencies: [
+		"aa29942b",
+		"8e76496d",
+		"111e7f85"
+	],
+	size: 1.75d,
+	tasks: [{
+		uid: "3b37c4a8",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_multiblock_casing 1 9"
+		}],
+		count: 7L
+	}],
+	rewards: [{
+		uid: "3109ae19",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

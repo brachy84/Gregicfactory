@@ -1,0 +1,36 @@
+{
+	title: "Nitrogen Dioxide",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "nitrogen_dioxide",
+			Amount: 1000
+		}
+	},
+	x: -17.5d,
+	y: 0.5d,
+	text: [
+		"A simple combination of §9Nitrogen§r and §9Oxygen§r, the two most common elements in the air, yet this substance is very toxic. Chemistry is wierd."
+	],
+	dependencies: [
+		"d823b9af"
+	],
+	tasks: [{
+		uid: "0acd5e1d",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "nitrogen_dioxide",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "334d8e84",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Element 029: Copper",
+	icon: "gregtech:meta_item_1 1 10018",
+	x: 0.5d,
+	y: 6.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"de2ebf65"
+	],
+	tasks: [{
+		uid: "3580f633",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 64 10018"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "644d6347",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Element 009: Fluorine",
+	icon: "contenttweaker:solidifiedfluorine",
+	x: -4.5d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"24e960a2"
+	],
+	tasks: [{
+		uid: "5bda2362",
+		type: "item",
+		items: [{
+			item: "contenttweaker:solidifiedfluorine 64"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "ae397e98",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

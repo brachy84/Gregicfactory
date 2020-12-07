@@ -1,0 +1,25 @@
+{
+	title: "The Second Tier Four Circuits",
+	icon: "contenttweaker:microprocessorarray",
+	x: -28.75d,
+	y: 7.5d,
+	text: [
+		"Four §6Microprocessors§r combined with §6Titanium Plates§r and a few other standard components will make a §6Microprocessor Array§r."
+	],
+	dependencies: [
+		"65abd144",
+		"fb55c41e"
+	],
+	tasks: [{
+		uid: "79913a7f",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32209"
+		}]
+	}],
+	rewards: [{
+		uid: "93dfa233",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

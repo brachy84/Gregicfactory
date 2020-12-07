@@ -1,0 +1,35 @@
+{
+	title: "LV Assembling Machine",
+	icon: "gregtech:machine 1 100",
+	x: -23.5d,
+	y: 6.0d,
+	text: [
+		"§3Assembling Machines§r are the linchpin of your factory, gating progression through the §6Circuits§r. ",
+		"",
+		"Each time you upgrade to a new voltage of Assembling Machine, you will be able to craft more advanced §ethemes§r of circuits. These use more complex ingredients and require new infrastructure to be in place, but are more efficient to craft overall than the same tier of circuit from the prior theme.",
+		"",
+		"Check out the §dProgression quest book tab§r to see the flow of circuit progression.",
+		"",
+		"Assembling Machines also open up a plethora of §eequal or more efficient recipes that don't require hand tools§r. Hand tool recipes also don't play nice with §bApplied Energistics§r.",
+		"",
+		"Take advantage of Assembling Machines: §cphase out all use of hand tools for crafting items in your automation going forward.§r Once you have all the important machines, you will never need hand tools for crafting."
+	],
+	dependencies: [
+		"784602a2",
+		"ef3e86fa",
+		"cd85d224"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "518937af",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 100"
+		}]
+	}],
+	rewards: [{
+		uid: "17f31cd8",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

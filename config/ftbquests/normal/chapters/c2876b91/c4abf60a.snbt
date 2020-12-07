@@ -1,0 +1,29 @@
+{
+	title: "EV Assembling Machine",
+	icon: "gregtech:machine 1 103",
+	x: -28.75d,
+	y: 10.0d,
+	text: [
+		"With your §6Titanium§r-based machine hulls and §6Microprocessor Mainframes§r squared away, you can finally get on the path to making an Extreme Voltage §3Assembling Machine§r.",
+		"",
+		"This tier of Assembling Machine unlocks §6Nanocircuits§r, as well as handling crafting recipes up to 2048 EU/t. It can also optionally overclock recipes up to 512 EU/t for improved speed at the cost of relatively more power."
+	],
+	dependencies: [
+		"085f1c70",
+		"42a425bb"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "983bd894",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 103"
+		}]
+	}],
+	rewards: [{
+		uid: "92009232",
+		type: "item",
+		item: "contenttweaker:omnicoin25",
+		count: 2
+	}]
+}

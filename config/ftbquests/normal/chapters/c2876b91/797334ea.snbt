@@ -1,0 +1,26 @@
+{
+	title: "Hard Carbon Alloy",
+	icon: "nuclearcraft:alloy 1 1",
+	x: -16.5d,
+	y: 8.0d,
+	text: [
+		"§6Hard Carbon Alloy§r is an alloy made from §6Graphite§r and §6Diamonds§r.",
+		"",
+		"Graphite is an important ingredient for §bNuclearCraft§r and is found principally as a byproduct of processing §6Diamond Ore§r. §6Graphite Ore§r spawns alongside Diamond Ore, but unlike Diamond Ore it is not renewable through automation (though it can be purchased using §dOmnicoins§r)."
+	],
+	dependencies: [
+		"ed2a8868"
+	],
+	tasks: [{
+		uid: "acb40198",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:alloy 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "bbc193c4",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

@@ -1,0 +1,60 @@
+{
+	title: "Compactor",
+	icon: {
+		id: "thermalexpansion:machine",
+		tag: {
+			RSControl: 0b,
+			Facing: 3b,
+			Energy: 0,
+			Level: 0b,
+			SideCache: [B;
+				1b,
+				1b,
+				2b,
+				2b,
+				2b,
+				2b
+			]
+		},
+		Damage: 5s
+	},
+	x: -34.75d,
+	y: 9.25d,
+	text: [
+		"A very power-efficient, if slow before upgrades, means of creating plates. Also the only way to directly make plates from single gems.",
+		"",
+		"Upgrading the machine tier with §aUpgrade Kits§r and applying §aAugments§r to boost its crafting speed is a good idea.",
+		"",
+		"Plates and Platings that are gated specifically by later §bGregTech§r voltage tiers are not craftable in these (instead requiring a §3Compressor§r), but almost every single-ingredient recipe made in a Compressor is available."
+	],
+	dependencies: [
+		"c7e80488"
+	],
+	tasks: [{
+		uid: "08c28ca2",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:machine",
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				Level: 0b,
+				SideCache: [B;
+					1b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				]
+			},
+			Damage: 5s
+		}]
+	}],
+	rewards: [{
+		uid: "6139a095",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

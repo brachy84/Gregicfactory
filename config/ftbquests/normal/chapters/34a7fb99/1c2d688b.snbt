@@ -1,0 +1,26 @@
+{
+	title: "Arsenic",
+	icon: "gregtech:meta_item_1 1 2005",
+	x: -21.75d,
+	y: 4.25d,
+	text: [
+		"§6Arsenic§r can be obtained through the electrolysis of §6Cobaltite§r or §6Tennantite§r.",
+		"",
+		"The latter comes renewably from a Tier Five Micro Miner mission, and Cobaltite can be found or purchased with §dOmnicoins§r."
+	],
+	dependencies: [
+		"2d6ec97a"
+	],
+	tasks: [{
+		uid: "acd20381",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2005"
+		}]
+	}],
+	rewards: [{
+		uid: "449a6693",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

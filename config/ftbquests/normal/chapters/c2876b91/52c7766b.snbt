@@ -1,0 +1,38 @@
+{
+	title: "Hydrogen Sulfide",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "hydrogen_sulfide",
+			Amount: 1000
+		}
+	},
+	x: -8.25d,
+	y: 1.75d,
+	text: [
+		"§9Hydrogen Sulfide§r is a byproduct of hydrodesulfurization.",
+		"",
+		"A simple chemical reaction with §9Water§r reprocesses it into the useful §9Sulfuric Acid§r, or it can be electrolyzed for recovering the §9Hydrogen§r."
+	],
+	dependencies: [
+		"b6fb8ad8"
+	],
+	tasks: [{
+		uid: "fc54f142",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "hydrogen_sulfide",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "20ab0f09",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

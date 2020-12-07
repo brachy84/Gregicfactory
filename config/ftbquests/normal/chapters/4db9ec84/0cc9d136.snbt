@@ -1,0 +1,22 @@
+{
+	title: "LuV Circuits",
+	icon: "gregtech:machine_casing 1 6",
+	x: -2.7083333333333335d,
+	y: 12.5d,
+	text: [
+		"Circuits along this line are LuV, and can all be substituted in recipes.",
+		"",
+		"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce.",
+		"",
+		"Make sure to set up the wetware board production as soon as possible! These take very long time to make.",
+		"",
+		"It's LuV, not LUV."
+	],
+	dependencies: [
+		"173db7ae",
+		"8bdc0568",
+		"dc57b1b2",
+		"759fa2d8"
+	],
+	size: 0.8333333333333334d
+}

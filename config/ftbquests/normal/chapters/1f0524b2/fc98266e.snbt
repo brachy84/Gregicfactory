@@ -1,0 +1,42 @@
+{
+	title: "Suit Workstation",
+	icon: "advancedrocketry:suitworkstation",
+	x: 23.25d,
+	y: 20.25d,
+	text: [
+		"The Suit Workstation is needed to install §6Low Pressure Tanks§r (or a larger tank if you like) onto your Space Suit Chest-Piece.",
+		"",
+		"Once installed, you can stand on a §aGas Charging Pad§r to fill up the tanks with §9Oxygen§r. Of course, you'll need to fill the Gas Charging Pad with Oxygen first."
+	],
+	dependencies: [
+		"d57dcf7b",
+		"08f31d64"
+	],
+	tasks: [{
+		uid: "b252087c",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:suitworkstation"
+		}]
+	},
+	{
+		uid: "cff9eabc",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:pressuretank"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2f21592f",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:oxygencharger"
+		}]
+	}],
+	rewards: [{
+		uid: "fafc2cff",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

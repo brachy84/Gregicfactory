@@ -1,0 +1,55 @@
+{
+	title: "Snad",
+	icon: "snad:snad",
+	x: -25.5d,
+	y: 6.0d,
+	text: [
+		"Yes, Snad.",
+		"",
+		"This pack has §aSnad§r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block update or a redstone update.",
+		"",
+		"The sugar cane it produces can be used as a fuel for your dynamos, and later you can even brew it for §9Biomass§r.",
+		"",
+		"This quest calls for a §aRedstone Timer§r, but there are other ways to make snad grow sugar cane even faster (like wrenching a redstone conduit to connect it to a block of Snad). Make sure to set the timer to pulse as fast as possible.",
+		"",
+		"To collect the sugar cane, you can use a piston and an observer. Later you can make an §6Auto-Breaker§r from §bActually Additions§r, which works even better and doesn't spill sugar cane everywhere.",
+		"",
+		"For now, a §3Vacuum Chest§r should help keep the floor clean, and causes less lag than Hoppers. A §aVoid Upgrade§r in a §6Storage Drawer§r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
+	],
+	dependencies: [
+		"3eb2c476"
+	],
+	tasks: [{
+		uid: "f40ecfb6",
+		type: "item",
+		items: [{
+			item: "snad:snad"
+		}]
+	},
+	{
+		uid: "aad91cad",
+		type: "item",
+		items: [{
+			item: "enderio:block_vacuum_chest"
+		}]
+	},
+	{
+		uid: "8a1cb43c",
+		type: "item",
+		items: [{
+			item: "darkutils:timer"
+		}]
+	},
+	{
+		uid: "b81e9cbd",
+		type: "item",
+		items: [{
+			item: "storagedrawers:upgrade_void"
+		}]
+	}],
+	rewards: [{
+		uid: "1d4c299a",
+		type: "item",
+		item: "contenttweaker:omnicoin25"
+	}]
+}

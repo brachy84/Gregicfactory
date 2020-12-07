@@ -1,0 +1,53 @@
+{
+	title: "Charging Quartz",
+	icon: "appliedenergistics2:charger",
+	x: -24.25d,
+	y: 7.25d,
+	shape: "square",
+	text: [
+		"The main purpose for this device is to turn §6Certus Quartz Crystal§r into §6Charged Certus Quartz Crystal§r.",
+		"",
+		"This device can be powered with RF via energy conduits or use AE energy from a network via ME conduits or cables.",
+		"",
+		"It accepts power from two sides. Which two sides? It's pretty easy to guess.",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"Ok, ok. It's the top and bottom."
+	],
+	dependencies: [
+		"7102c512",
+		"3eb2c476"
+	],
+	tasks: [{
+		uid: "ada51c94",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material"
+		}]
+	},
+	{
+		uid: "967fa897",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:charger"
+		}]
+	},
+	{
+		uid: "f7e82b41",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "db24b64e",
+		type: "item",
+		item: "contenttweaker:omnicoin5"
+	}]
+}

@@ -1,0 +1,80 @@
+{
+	title: "Inspector Gadget",
+	icon: {
+		id: "buildinggadgets:buildingtool",
+		tag: {
+			mode: "BuildToMe",
+			blockstate: {
+				Name: "minecraft:air"
+			}
+		}
+	},
+	x: -36.0d,
+	y: 5.5625d,
+	text: [
+		"This pack has §bBuilding Gadgets§r.",
+		"",
+		"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing.",
+		"",
+		"Also important to note that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines).",
+		"",
+		"By default, the config GUI is bound to §6G§r."
+	],
+	size: 1.4583333333333333d,
+	tasks: [{
+		uid: "bb9f452c",
+		type: "item",
+		items: [{
+			id: "buildinggadgets:buildingtool",
+			tag: {
+				mode: "BuildToMe",
+				blockstate: {
+					Name: "minecraft:air"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "762480bd",
+		type: "item",
+		items: [{
+			id: "buildinggadgets:exchangertool",
+			tag: {
+				mode: "Surface",
+				range: 1,
+				blockstate: {
+					Name: "minecraft:air"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f1458456",
+		type: "item",
+		items: [{
+			id: "buildinggadgets:copypastetool",
+			tag: {
+				mode: "Copy"
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6d6a5102",
+		type: "item",
+		items: [{
+			id: "buildinggadgets:destructiontool",
+			tag: {
+				overlay: 1b,
+				fuzzy: 1b
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

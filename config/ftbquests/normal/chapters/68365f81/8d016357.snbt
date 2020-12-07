@@ -1,0 +1,27 @@
+{
+	title: "Creative Vending Upgrade",
+	icon: "storagedrawers:upgrade_creative 1 1",
+	x: -8.875d,
+	y: 17.375d,
+	text: [
+		"You win.",
+		"",
+		"Congratulations.",
+		"",
+		"I hope you enjoyed playing §5Omnifactory§r."
+	],
+	dependencies: [
+		"4f5fc3e7",
+		"26af9fb7",
+		"0ae1e05e",
+		"328e7359"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "ca3d2d62",
+		type: "item",
+		items: [{
+			item: "storagedrawers:upgrade_creative 1 1"
+		}]
+	}]
+}
