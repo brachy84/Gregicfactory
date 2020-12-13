@@ -1,0 +1,69 @@
+{
+  "weight": 20,
+  "density": 0.5,
+  "max_height": 40,
+  "min_height": 5,
+  "dimension_filter": ["name:*(overworld|lostcities)"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 13]
+  },
+  "filler": {
+    "type": "ga_simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 300, 
+          "value": "ore:pure:graphite"
+        },
+        {
+          "weight": 900,
+          "value": "ore:rich:graphite"
+        },
+        {
+          "weight": 3900,
+          "value": "ore:graphite"
+        },
+        {
+          "weight": 900,
+          "value": "ore:poor:graphite"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:diamond"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:diamond"
+        },
+        {
+          "weight": 1300,
+          "value": "ore:diamond"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:diamond"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:coal"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:coal"
+        },
+        {
+          "weight": 1300,
+          "value": "ore:coal"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:coal"
+        }
+      ]
+    }
+  }
+}

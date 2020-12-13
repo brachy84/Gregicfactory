@@ -1,0 +1,69 @@
+{
+  "weight": 30,
+  "density": 0.4,
+  "max_height": 40,
+  "min_height": 20,
+  "dimension_filter": ["name:*(overworld|lostcities)"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 13]
+  },
+  "filler": {
+    "type": "ga_simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 300, 
+          "value": "ore:pure:bastnasite"
+        },
+        {
+          "weight": 900,
+          "value": "ore:rich:bastnasite"
+        },
+        {
+          "weight": 3900,
+          "value": "ore:bastnasite"
+        },
+        {
+          "weight": 900,
+          "value": "ore:poor:bastnasite"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:monazite"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:monazite"
+        },
+        {
+          "weight": 1300,
+          "value": "ore:monazite"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:monazite"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:neodymium"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:neodymium"
+        },
+        {
+          "weight": 1300,
+          "value": "ore:neodymium"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:neodymium"
+        }
+      ]
+    }
+  }
+}

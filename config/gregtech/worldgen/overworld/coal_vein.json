@@ -1,12 +1,12 @@
 {
   "weight": 90,
-  "density": 0.8,
+  "density": 0.6,
   "max_height": 80,
-  "min_height": 10,
+  "min_height": 50,
   "dimension_filter": ["name:*(overworld|lostcities)"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [21, 21]
+    "radius": [16, 16]
   },
   "filler": {
     "type": "ga_simple",
@@ -14,36 +14,36 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 400, 
-          "value": "ore:pure:oilsands"
+          "weight": 125, 
+          "value": "ore:pure:lignite"
         },
         {
-          "weight": 1200,
-          "value": "ore:rich:oilsands"
+          "weight": 375,
+          "value": "ore:rich:lignite"
         },
         {
-          "weight": 5200,
-          "value": "ore:oilsands"
+          "weight": 1625,
+          "value": "ore:lignite"
         },
         {
-          "weight": 1200,
-          "value": "ore:poor:oilsands"
+          "weight": 375,
+          "value": "ore:poor:lignite"
         },
 
         {
-          "weight": 100, 
+          "weight": 375, 
           "value": "ore:pure:coal"
         },
         {
-          "weight": 300,
+          "weight": 1125,
           "value": "ore:rich:coal"
         },
         {
-          "weight": 1300,
+          "weight": 4875,
           "value": "ore:coal"
         },
         {
-          "weight": 300,
+          "weight": 1125,
           "value": "ore:poor:coal"
         }
       ]

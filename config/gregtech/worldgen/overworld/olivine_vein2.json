@@ -9,29 +9,93 @@
     "radius": [13, 13]
   },
   "filler": {
-    "type": "simple",
+    "type": "ga_simple",
     "value": {
       "type": "weight_random",
       "values": [
         {
-          "weight": 5,
+          "weight": 25, 
+          "value": "ore:pure:prasiolite"
+        },
+        {
+          "weight": 75,
+          "value": "ore:rich:prasiolite"
+        },
+        {
+          "weight": 325,
           "value": "ore:prasiolite"
         },
         {
-          "weight": 30,
+          "weight": 75,
+          "value": "ore:poor:prasiolite"
+        },
+
+        {
+          "weight": 140, 
+          "value": "ore:pure:bentonite"
+        },
+        {
+          "weight": 420,
+          "value": "ore:rich:bentonite"
+        },
+        {
+          "weight": 1820,
           "value": "ore:bentonite"
         },
         {
-          "weight": 30,
+          "weight": 420,
+          "value": "ore:poor:bentonite"
+        },
+
+        {
+          "weight": 140, 
+          "value": "ore:pure:magnesite"
+        },
+        {
+          "weight": 420,
+          "value": "ore:rich:magnesite"
+        },
+        {
+          "weight": 1820,
           "value": "ore:magnesite"
         },
         {
-          "weight": 30,
+          "weight": 420,
+          "value": "ore:poor:magnesite"
+        },
+
+        {
+          "weight": 145, 
+          "value": "ore:pure:olivine"
+        },
+        {
+          "weight": 435,
+          "value": "ore:rich:olivine"
+        },
+        {
+          "weight": 1885,
           "value": "ore:olivine"
         },
         {
-          "weight": 10,
+          "weight": 435,
+          "value": "ore:poor:olivine"
+        },
+
+        {
+          "weight": 50, 
+          "value": "ore:pure:glauconite"
+        },
+        {
+          "weight": 150,
+          "value": "ore:rich:glauconite"
+        },
+        {
+          "weight": 650,
           "value": "ore:glauconite"
+        },
+        {
+          "weight": 150,
+          "value": "ore:poor:glauconite"
         }
       ]
     }

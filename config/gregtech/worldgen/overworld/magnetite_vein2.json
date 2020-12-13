@@ -1,33 +1,84 @@
 {
-  "weight": 100,
+  "weight": 170,
   "density": 0.3,
+  "max_height": 120,
   "min_height": 50,
-  "surface_stone_material": "gold",
-
+  "dimension_filter": ["name:*(overworld|lostcities)"],
   "generator": {
     "type": "ellipsoid",
     "radius": [19, 22]
   },
   "filler": {
-    "type": "simple",
+    "type": "ga_simple",
     "value": {
       "type": "weight_random",
       "values": [
         {
-          "weight": 60,
+          "weight": 250, 
+          "value": "ore:pure:magnetite"
+        },
+        {
+          "weight": 750,
+          "value": "ore:rich:magnetite"
+        },
+        {
+          "weight": 3250,
           "value": "ore:magnetite"
         },
         {
-          "weight": 15,
+          "weight": 750,
+          "value": "ore:poor:magnetite"
+        },
+
+        {
+          "weight": 75, 
+          "value": "ore:pure:iron"
+        },
+        {
+          "weight": 225,
+          "value": "ore:rich:iron"
+        },
+        {
+          "weight": 975,
           "value": "ore:iron"
         },
-		{
-          "weight": 15,
+        {
+          "weight": 225,
+          "value": "ore:poor:iron"
+        },
+
+        {
+          "weight": 75, 
+          "value": "ore:pure:vanadium_magnetite"
+        },
+        {
+          "weight": 225,
+          "value": "ore:rich:vanadium_magnetite"
+        },
+        {
+          "weight": 975,
           "value": "ore:vanadium_magnetite"
         },
-		{
-          "weight": 10,
+        {
+          "weight": 225,
+          "value": "ore:poor:vanadium_magnetite"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:precious_metal"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:precious_metal"
+        },
+        {
+          "weight": 1300,
           "value": "ore:precious_metal"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:precious_metal"
         }
       ]
     }

@@ -1,0 +1,69 @@
+{
+  "weight": 20,
+  "density": 0.5,
+  "max_height": 30,
+  "min_height": 10,
+  "dimension_filter": ["name:*(overworld|lostcities)"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 13]
+  },
+  "filler": {
+    "type": "ga_simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 200, 
+          "value": "ore:pure:wulfenite"
+        },
+        {
+          "weight": 600,
+          "value": "ore:rich:wulfenite"
+        },
+        {
+          "weight": 2600,
+          "value": "ore:wulfenite"
+        },
+        {
+          "weight": 600,
+          "value": "ore:poor:wulfenite"
+        },
+
+        {
+          "weight": 200, 
+          "value": "ore:pure:molybdenite"
+        },
+        {
+          "weight": 600,
+          "value": "ore:rich:molybdenite"
+        },
+        {
+          "weight": 2600,
+          "value": "ore:molybdenite"
+        },
+        {
+          "weight": 600,
+          "value": "ore:poor:molybdenite"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:molybdenite"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:molybdenite"
+        },
+        {
+          "weight": 1300,
+          "value": "ore:molybdenite"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:molybdenite"
+        }
+      ]
+    }
+  }
+}

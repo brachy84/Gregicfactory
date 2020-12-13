@@ -1,11 +1,13 @@
 {
-  "weight": 40,
-  "density": 0.6,
-  "min_height": 150,
+  "weight": 80,
+  "density": 0.4,
+  "max_height": 50,
+  "min_height": 10,
+  "surface_stone_material": "copper",
 
   "generator": {
     "type": "ellipsoid",
-    "radius": [13, 13]
+    "radius": [17, 19]
   },
   "filler": {
     "type": "simple",
@@ -14,19 +16,19 @@
       "values": [
         {
           "weight": 30,
-          "value": "ore:dolomite"
+          "value": "ore:bornite"
         },
-        {
+		{
           "weight": 30,
-          "value": "ore:wollastonite"
+          "value": "ore:chalcocite"
         },
-        {
+		{
           "weight": 30,
-          "value": "ore:trona"
+          "value": "ore:enargite"
         },
-        {
+		{
           "weight": 10,
-          "value": "ore:andradite"
+          "value": "ore:copper"
         }
       ]
     }

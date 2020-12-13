@@ -1,0 +1,103 @@
+{
+  "weight": 60,
+  "density": 0.7,
+  "min_height": 40,
+  "surface_stone_material": "aluminium",
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [14, 17]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 175, 
+          "value": "ore:pure:salt"
+        },
+        {
+          "weight": 525,
+          "value": "ore:rich:salt"
+        },
+        {
+          "weight": 2275,
+          "value": "ore:salt"
+        },
+        {
+          "weight": 525,
+          "value": "ore:poor:salt"
+        },
+
+        {
+          "weight": 150, 
+          "value": "ore:pure:rock_salt"
+        },
+        {
+          "weight": 450,
+          "value": "ore:rich:rock_salt"
+        },
+        {
+          "weight": 1950,
+          "value": "ore:rock_salt"
+        },
+        {
+          "weight": 450,
+          "value": "ore:poor:rock_salt"
+        },
+
+        {
+          "weight": 75, 
+          "value": "ore:pure:lepidolite"
+        },
+        {
+          "weight": 225,
+          "value": "ore:rich:lepidolite"
+        },
+        {
+          "weight": 975,
+          "value": "ore:lepidolite"
+        },
+        {
+          "weight": 225,
+          "value": "ore:poor:lepidolite"
+        },
+
+        {
+          "weight": 50, 
+          "value": "ore:pure:tin"
+        },
+        {
+          "weight": 150,
+          "value": "ore:rich:tin"
+        },
+        {
+          "weight": 650,
+          "value": "ore:tin"
+        },
+        {
+          "weight": 150,
+          "value": "ore:poor:spodumene"
+        },
+
+        {
+          "weight": 50, 
+          "value": "ore:pure:spodumene"
+        },
+        {
+          "weight": 150,
+          "value": "ore:rich:spodumene"
+        },
+        {
+          "weight": 650,
+          "value": "ore:spodumene"
+        },
+        {
+          "weight": 150,
+          "value": "ore:poor:spodumene"
+        }
+      ]
+    }
+  }
+}

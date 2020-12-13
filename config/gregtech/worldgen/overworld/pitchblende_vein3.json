@@ -1,0 +1,35 @@
+{
+  "weight": 40,
+  "density": 0.5,
+  "max_height": 40,
+  "min_height": 10,
+    "dimension_filter": ["name:*(overworld|lostcities)"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 13]
+  },
+  "filler": {
+    "type": "ga_simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 500, 
+          "value": "ore:pure:oilsands"
+        },
+        {
+          "weight": 1500,
+          "value": "ore:rich:oilsands"
+        },
+        {
+          "weight": 6500,
+          "value": "ore:oilsands"
+        },
+        {
+          "weight": 1500,
+          "value": "ore:poor:oilsands"
+        }
+      ]
+    }
+  }
+}

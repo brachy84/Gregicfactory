@@ -1,0 +1,69 @@
+{
+  "weight": 70,
+  "density": 0.3,
+  "max_height": 120,
+  "min_height": 40,
+  "dimension_filter": ["name:*(overworld|lostcities)"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [17, 18]
+  },
+  "filler": {
+    "type": "ga_simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 300, 
+          "value": "ore:pure:tetrahedrite"
+        },
+        {
+          "weight": 900,
+          "value": "ore:rich:tetrahedrite"
+        },
+        {
+          "weight": 3900,
+          "value": "ore:tetrahedrite"
+        },
+        {
+          "weight": 900,
+          "value": "ore:poor:tetrahedrite"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:copper"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:copper"
+        },
+        {
+          "weight": 1300,
+          "value": "ore:copper"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:copper"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:stibnite"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:stibnite"
+        },
+        {
+          "weight": 1300,
+          "value": "ore:stibnite"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:stibnite"
+        }
+      ]
+    }
+  }
+}

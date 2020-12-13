@@ -1,0 +1,52 @@
+{
+  "weight": 60,
+  "density": 0.3,
+  "max_height": 90,
+  "min_height": 40,
+	"dimension_filter": ["name:*(overworld|lostcities)"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 13]
+  },
+  "filler": {
+    "type": "ga_simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 3, 
+          "value": "ore:pure:apatite"
+        },
+        {
+          "weight": 9,
+          "value": "ore:rich:apatite"
+        },
+        {
+          "weight": 39,
+          "value": "ore:apatite"
+        },
+        {
+          "weight": 9,
+          "value": "ore:poor:apatite"
+        },
+        
+        {
+          "weight": 2, 
+          "value": "ore:pure:phosphor"
+        },
+        {
+          "weight": 6,
+          "value": "ore:rich:phosphor"
+        },
+        {
+          "weight": 26,
+          "value": "ore:phosphor"
+        },
+        {
+          "weight": 6,
+          "value": "ore:poor:phosphor"
+        }
+      ]
+    }
+  }
+}
