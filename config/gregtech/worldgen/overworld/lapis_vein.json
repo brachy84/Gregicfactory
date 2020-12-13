@@ -6,7 +6,7 @@
   "dimension_filter": ["name:*(overworld|lostcities)"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [13, 15]
+    "radius": [8, 9]
   },
   "filler": {
     "type": "ga_simple",

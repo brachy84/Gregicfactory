@@ -9,22 +9,59 @@
     "radius": [5, 5]
   },
   "filler": {
-    "type": "simple",
+    "type": "ga_simple",
     "value": {
       "type": "weight_random",
       "values": [
         {
-          "weight": 55,
+          "weight": 275, 
+          "value": "ore:pure:topaz"
+        },
+        {
+          "weight": 825,
+          "value": "ore:rich:topaz"
+        },
+        {
+          "weight": 3575,
           "value": "ore:topaz"
         },
         {
-          "weight": 40,
-          "value": "ore:blue_topaz"
-        }
-      ,
+          "weight": 825,
+          "value": "ore:poor:topaz"
+        },
+
         {
-          "weight": 5,
+          "weight": 200, 
+          "value": "ore:pure:blue_topaz"
+        },
+        {
+          "weight": 600,
+          "value": "ore:rich:blue_topaz"
+        },
+        {
+          "weight": 2600,
+          "value": "ore:blue_topaz"
+        },
+        {
+          "weight": 600,
+          "value": "ore:poor:blue_topaz"
+        },
+
+        {
+          "weight": 25, 
+          "value": "ore:pure:zirkelite"
+        },
+        {
+          "weight": 75,
+          "value": "ore:rich:zirkelite"
+        },
+        {
+          "weight": 325,
           "value": "ore:zirkelite"
+        },
+        {
+          "weight": 75,
+          "value": "ore:poor:zirkelite"
         }
       ]
     }

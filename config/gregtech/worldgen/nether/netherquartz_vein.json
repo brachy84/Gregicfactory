@@ -1,0 +1,35 @@
+{
+  "weight": 170,
+  "density": 0.2,
+  "max_height": 110,
+  "min_height": 40,
+  "dimension_filter": ["is_nether"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [18, 18]
+  },
+  "filler": {
+    "type": "ga_simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 5, 
+          "value": "ore:pure:nether_quartz"
+        },
+        {
+          "weight": 15,
+          "value": "ore:rich:nether_quartz"
+        },
+        {
+          "weight": 65,
+          "value": "ore:nether_quartz"
+        },
+        {
+          "weight": 15,
+          "value": "ore:poor:nether_quartz"
+        }
+      ]
+    }
+  }
+}

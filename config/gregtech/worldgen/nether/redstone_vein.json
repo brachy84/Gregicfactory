@@ -1,17 +1,14 @@
 {
-  "weight": 130,
-  "density": 0.3,
-  "max_height": 70,
+  "weight": 60,
+  "density": 0.4,
+  "max_height": 40,
   "min_height": 10,
-  "dimension_filter": [
-    "is_nether"
-  ],
+  "dimension_filter": ["is_nether"],
+  "surface_stone_material": "redstone",
+
   "generator": {
     "type": "ellipsoid",
-    "radius": [
-      16,
-      17
-    ]
+    "radius": [12, 12]
   },
   "filler": {
     "type": "ga_simple",
@@ -20,53 +17,53 @@
       "values": [
         {
           "weight": 300, 
-          "value": "ore:pure:sulfur"
+          "value": "ore:pure:redstone"
         },
         {
           "weight": 900,
-          "value": "ore:rich:sulfur"
+          "value": "ore:rich:redstone"
         },
         {
           "weight": 3900,
-          "value": "ore:sulfur"
+          "value": "ore:redstone"
         },
         {
           "weight": 900,
-          "value": "ore:poor:sulfur"
+          "value": "ore:poor:redstone"
         },
 
         {
           "weight": 100, 
-          "value": "ore:pure:pyrite"
+          "value": "ore:pure:ruby"
         },
         {
           "weight": 300,
-          "value": "ore:rich:pyrite"
+          "value": "ore:rich:ruby"
         },
         {
           "weight": 1300,
-          "value": "ore:pyrite"
+          "value": "ore:ruby"
         },
         {
           "weight": 300,
-          "value": "ore:poor:pyrite"
+          "value": "ore:poor:cinnabar"
         },
 
         {
           "weight": 100, 
-          "value": "ore:pure:sphalerite"
+          "value": "ore:pure:cinnabar"
         },
         {
           "weight": 300,
-          "value": "ore:rich:sphalerite"
+          "value": "ore:rich:cinnabar"
         },
         {
           "weight": 1300,
-          "value": "ore:sphalerite"
+          "value": "ore:cinnabar"
         },
         {
           "weight": 300,
-          "value": "ore:poor:sphalerite"
+          "value": "ore:poor:cinnabar"
         }
       ]
     }
