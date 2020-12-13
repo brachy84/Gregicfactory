@@ -1,0 +1,70 @@
+{
+  "weight": 30,
+  "density": 0.3,
+  "max_height": 35,
+  "min_height": 5,
+  "surface_stone_material": "thorium",
+  "dimension_filter": ["name:the_end"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [9, 9]
+  },
+  "filler": {
+    "type": "ga_simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 250, 
+          "value": "ore:pure:beryllium"
+        },
+        {
+          "weight": 750,
+          "value": "ore:rich:beryllium"
+        },
+        {
+          "weight": 3250,
+          "value": "ore:beryllium"
+        },
+        {
+          "weight": 750,
+          "value": "ore:poor:beryllium"
+        },
+
+        {
+          "weight": 150, 
+          "value": "ore:pure:emerald"
+        },
+        {
+          "weight": 450,
+          "value": "ore:rich:emerald"
+        },
+        {
+          "weight": 1950,
+          "value": "ore:emerald"
+        },
+        {
+          "weight": 450,
+          "value": "ore:poor:emerald"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:thorium"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:thorium"
+        },
+        {
+          "weight": 1300,
+          "value": "ore:thorium"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:thorium"
+        }
+      ]
+    }
+  }
+}

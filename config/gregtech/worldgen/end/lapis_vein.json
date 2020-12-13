@@ -1,0 +1,86 @@
+{
+  "weight": 50,
+  "density": 0.5,
+  "max_height": 50,
+  "min_height": 20,
+  "dimension_filter": ["name:the_end"],
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [8, 9]
+  },
+  "filler": {
+    "type": "ga_simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 150, 
+          "value": "ore:pure:lazurite"
+        },
+        {
+          "weight": 450,
+          "value": "ore:rich:lazurite"
+        },
+        {
+          "weight": 1950,
+          "value": "ore:lazurite"
+        },
+        {
+          "weight": 450,
+          "value": "ore:poor:lazurite"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:sodalite"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:sodalite"
+        },
+        {
+          "weight": 1300,
+          "value": "ore:sodalite"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:sodalite"
+        },
+
+        {
+          "weight": 175, 
+          "value": "ore:pure:lapis"
+        },
+        {
+          "weight": 525,
+          "value": "ore:rich:lapis"
+        },
+        {
+          "weight": 2275,
+          "value": "ore:lapis"
+        },
+        {
+          "weight": 525,
+          "value": "ore:poor:lapis"
+        },
+
+        {
+          "weight": 75, 
+          "value": "ore:pure:calcite"
+        },
+        {
+          "weight": 225,
+          "value": "ore:rich:calcite"
+        },
+        {
+          "weight": 975,
+          "value": "ore:calcite"
+        },
+        {
+          "weight": 225,
+          "value": "ore:poor:calcite"
+        }
+      ]
+    }
+  }
+}

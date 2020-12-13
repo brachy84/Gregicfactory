@@ -5,7 +5,6 @@
   "min_height": 35,
   "surface_stone_material": "platinum",
   "dimension_filter": ["name:the_end"],
-
   "generator": {
     "type": "ellipsoid",
     "radius": [8, 8]
@@ -15,17 +14,55 @@
     "value": {
       "type": "weight_random",
       "values": [
-		  {
-          "weight": 45,
+        {
+          "weight": 225, 
+          "value": "ore:pure:platinum_metallic_powder"
+        },
+        {
+          "weight": 675,
+          "value": "ore:rich:platinum_metallic_powder"
+        },
+        {
+          "weight": 2925,
           "value": "ore:platinum_metallic_powder"
         },
-		  {
-          "weight": 35,
+        {
+          "weight": 675,
+          "value": "ore:poor:platinum_metallic_powder"
+        },
+
+        {
+          "weight": 175, 
+          "value": "ore:pure:palladium_metallic_powder"
+        },
+        {
+          "weight": 525,
+          "value": "ore:rich:palladium_metallic_powder"
+        },
+        {
+          "weight": 2275,
           "value": "ore:palladium_metallic_powder"
         },
-		  {
-          "weight": 20,
+        {
+          "weight": 525,
+          "value": "ore:poor:palladium_metallic_powder"
+        },
+
+        {
+          "weight": 100, 
+          "value": "ore:pure:rarest_metal_residue"
+        },
+        {
+          "weight": 300,
+          "value": "ore:rich:rarest_metal_residue"
+        },
+        {
+          "weight": 1300,
           "value": "ore:rarest_metal_residue"
+        },
+        {
+          "weight": 300,
+          "value": "ore:poor:rarest_metal_residue"
         }
       ]
     }
