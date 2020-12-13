@@ -7,8 +7,8 @@ import crafttweaker.item.IItemStack;
 //Conductive Iron Thruster
 recipes.remove(<simplyjetpacks:metaitemmods:7>);
 recipes.addShaped(<simplyjetpacks:metaitemmods:7>, [
-	[<gregtech:meta_item_1:12700>, <enderio:item_power_conduit>, <gregtech:meta_item_1:12700>],
-	[<gregtech:meta_item_1:12700>, <extrautils2:ingredients>, <gregtech:meta_item_1:12700>],
+	[<gregtech:meta_item_1:12500>, <enderio:item_power_conduit>, <gregtech:meta_item_1:12500>],
+	[<gregtech:meta_item_1:12500>, <extrautils2:ingredients>, <gregtech:meta_item_1:12500>],
 	[<ore:plateRedAlloy>,<ore:plateRedAlloy>,<ore:plateRedAlloy>]]);
 
 //Leadstone Thruster
@@ -35,8 +35,8 @@ recipes.addShaped(<simplyjetpacks:metaitemmods:27>, [
 //Energetic Alloy Thruster
 recipes.remove(<simplyjetpacks:metaitemmods:9>);
 recipes.addShaped(<simplyjetpacks:metaitemmods:9>, [
-	[<gregtech:meta_item_1:12701>, <enderio:item_power_conduit:1>, <gregtech:meta_item_1:12701>],
-	[<gregtech:meta_item_1:12701>, <enderio:item_material:15>, <gregtech:meta_item_1:12701>],
+	[<gregtech:meta_item_1:12501>, <enderio:item_power_conduit:1>, <gregtech:meta_item_1:12501>],
+	[<gregtech:meta_item_1:12501>, <enderio:item_material:15>, <gregtech:meta_item_1:12501>],
 	[<ore:plateRedAlloy>,<simplyjetpacks:metaitemmods:8>,<ore:plateRedAlloy>]]);
 
 //Reinforced Thruster
@@ -309,13 +309,13 @@ recipes.remove(<enderio:block_ender_generator>);
 recipes.addShaped(<enderio:block_ender_generator>, [
 	[<ore:plateEndSteel>,<ore:plateEndSteel>, <ore:plateEndSteel>],
 	[<appliedenergistics2:quartz_vibrant_glass>, <ore:skullEnderResonator>, <appliedenergistics2:quartz_vibrant_glass>],
-	[<gregtech:meta_item_2:26712>, <ore:plateEndSteel>, <gregtech:meta_item_2:26712>]]);
+	[<gregtech:meta_item_2:26512>, <ore:plateEndSteel>, <gregtech:meta_item_2:26512>]]);
 
 
 //Wireless Dish
 recipes.remove(<enderio:item_material:65>);
 recipes.addShaped(<enderio:item_material:65>,
-    [[<metaitem:emitter.lv>],[<gregtech:meta_item_1:14705>]]);
+    [[<metaitem:emitter.lv>],[<gregtech:meta_item_1:14505>]]);
 
 recipes.remove(<enderio:item_material>); // simple machine chassis
 recipes.remove(<enderio:item_material:66>); // end steel chassis
@@ -361,7 +361,7 @@ recipes.remove(<enderio:block_zombie_generator>);
 recipes.addShaped(<enderio:block_zombie_generator>, [
 	[<ore:plateElectricalSteel>,<ore:plateElectricalSteel>,<ore:plateElectricalSteel>],
 	[<appliedenergistics2:quartz_vibrant_glass>,<enderio:item_material:41>,<appliedenergistics2:quartz_vibrant_glass>],
-	[<gregtech:meta_item_2:26703>,<ore:plateElectricalSteel>,<gregtech:meta_item_2:26703>]]);
+	[<gregtech:meta_item_2:26503>,<ore:plateElectricalSteel>,<gregtech:meta_item_2:26503>]]);
 
 recipes.remove(<enderio:block_franken_zombie_generator>);
 recipes.addShaped(<enderio:block_franken_zombie_generator>, [
@@ -536,8 +536,8 @@ recipes.addShaped(<enderio:block_dark_steel_trapdoor>, [
 recipes.remove(<enderio:item_xp_transfer>);
 recipes.addShaped(<enderio:item_xp_transfer>, [
 	[null,null,<enderio:item_material:15>],
-	[null,<gregtech:meta_item_1:14702>,null],
-	[<gregtech:meta_item_1:14702>,null,null]]);
+	[null,<gregtech:meta_item_1:14502>,null],
+	[<gregtech:meta_item_1:14502>,null,null]]);
 
 recipes.addShaped(<enderio:block_xp_vacuum>, [
 	[<ore:plateDarkSteel>, <ore:plateDarkSteel>, <ore:plateDarkSteel>],
@@ -560,14 +560,14 @@ recipes.addShaped(<thermalexpansion:frame:130>, [
 	[<gregtech:meta_item_1:12112>, <gregtech:meta_item_1:14112>, <gregtech:meta_item_1:12112>]]);
 
 recipes.addShaped(<thermalexpansion:frame:131>, [
-	[<thermalfoundation:material:357>, <gregtech:meta_item_1:14707>, <thermalfoundation:material:357>],
-	[<gregtech:meta_item_1:14707>, null, <gregtech:meta_item_1:14707>],
-	[<thermalfoundation:material:357>, <gregtech:meta_item_1:14707>, <thermalfoundation:material:357>]]);
+	[<thermalfoundation:material:357>, <gregtech:meta_item_1:14507>, <thermalfoundation:material:357>],
+	[<gregtech:meta_item_1:14507>, null, <gregtech:meta_item_1:14507>],
+	[<thermalfoundation:material:357>, <gregtech:meta_item_1:14507>, <thermalfoundation:material:357>]]);
 
 recipes.addShaped(<thermalexpansion:frame:132>, [
-	[<thermalfoundation:material:359>, <gregtech:meta_item_1:14708>, <thermalfoundation:material:359>],
-	[<gregtech:meta_item_1:14708>, null, <gregtech:meta_item_1:14708>],
-	[<thermalfoundation:material:359>, <gregtech:meta_item_1:14708>, <thermalfoundation:material:359>]]);
+	[<thermalfoundation:material:359>, <gregtech:meta_item_1:14963>, <thermalfoundation:material:359>],
+	[<gregtech:meta_item_1:14963>, null, <gregtech:meta_item_1:14963>],
+	[<thermalfoundation:material:359>, <gregtech:meta_item_1:14963>, <thermalfoundation:material:359>]]);
 
 // redstone cell frame (filled) => "microminer engine core"
 alloy.recipeBuilder()

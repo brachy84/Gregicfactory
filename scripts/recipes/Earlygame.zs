@@ -255,8 +255,8 @@ recipes.addShaped(<enderio:item_yeta_wrench>, [
 	[null, <ore:gearIron>, null],
 	[null,<minecraft:iron_ingot>,null]]);
 <gregtech:machine:511>.displayName = "Electric Blast Furnace Controller"; // TODO: Put this in lang file
-<gregtech:machine:702>.displayName = "Fluid Input Hatch (ULV)";
-<gregtech:machine:712>.displayName = "Fluid Input Hatch (LV)";
+<gregtech:machine:502>.displayName = "Fluid Input Hatch (ULV)";
+<gregtech:machine:512>.displayName = "Fluid Input Hatch (LV)";
 <gregtech:machine:722>.displayName = "Fluid Input Hatch (MV)";
 <gregtech:machine:732>.displayName = "Fluid Input Hatch (HV)";
 <gregtech:machine:742>.displayName = "Fluid Input Hatch (EV)";
@@ -265,7 +265,7 @@ recipes.addShaped(<enderio:item_yeta_wrench>, [
 <gregtech:machine:772>.displayName = "Fluid Input Hatch (ZPM)";
 <gregtech:machine:782>.displayName = "Fluid Input Hatch (UV)";
 <gregtech:machine:792>.displayName = "Fluid Input Hatch (MAX)";
-<gregtech:machine:703>.displayName = "Fluid Output Hatch (ULV)";
+<gregtech:machine:503>.displayName = "Fluid Output Hatch (ULV)";
 <gregtech:machine:713>.displayName = "Fluid Output Hatch (LV)";
 <gregtech:machine:723>.displayName = "Fluid Output Hatch (MV)";
 <gregtech:machine:733>.displayName = "Fluid Output Hatch (HV)";

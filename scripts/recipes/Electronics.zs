@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.VanillaFactory;
@@ -56,32 +57,44 @@ recipes.addShaped(<metaitem:component.glass.tube>, [
 //assembler.findRecipe(8, [<metaitem:plate.integrated_logic_circuit>, <metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor>, <metaitem:board.phenolic>, <ore:wireFineCopper>.firstItem], [<liquid:tin> * 144]).remove();
 //assembler.findRecipe(8, [<metaitem:plate.integrated_logic_circuit>, <metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor>, <metaitem:board.phenolic>, <ore:wireFineCopper>.firstItem], [<liquid:soldering_alloy> * 72]).remove();
 
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 2, <metaitem:board.phenolic>, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.basic_electronic>]).duration(100).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 2, <metaitem:board.phenolic>, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.basic_electronic>]).duration(100).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 4, <metaitem:component.smd.capacitor> * 2, <metaitem:board.phenolic>, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.basic_electronic>]).duration(100).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 4, <metaitem:component.smd.capacitor> * 2, <metaitem:board.phenolic>, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.basic_electronic>]).duration(100).EUt(16).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 2, <metaitem:board.phenolic>, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.basic_electronic>]).duration(100).EUt(16).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 2, <metaitem:board.phenolic>, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.basic_electronic>]).duration(100).EUt(16).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 4, <metaitem:component.smd.capacitor> * 2, <metaitem:board.phenolic>, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.basic_electronic>]).duration(100).EUt(16).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 4, <metaitem:component.smd.capacitor> * 2, <metaitem:board.phenolic>, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.basic_electronic>]).duration(100).EUt(16).buildAndRegister();
+val fluids as int[ILiquidStack] = {
+	<liquid:soldering_alloy> : 288,
+	<liquid:tin> : 567,
+	<liquid:lead> : 1152
+};
 
+for fluid, amount in fluids {
+	gt.circuit_assembler.recipeBuilder()
+		.inputs([<metaitem:component.resistor> * 8, <metaitem:component.diode> * 4, <ore:wireFineCopper>.firstItem * 4, <metaitem:board.good.phenolic>])
+		.fluidInputs([fluid * amount])
+		.outputs([<metaitem:circuit.basic_electronic>])
+		.EUt(16).duration(sec(5))
+		.buildAndRegister();
+	gt.circuit_assembler.recipeBuilder()
+		.inputs([<metaitem:component.smd.resistor> * 4, <metaitem:component.smd.diode> * 2, <ore:wireFineCopper>.firstItem * 4, <metaitem:board.good.phenolic>])
+		.fluidInputs([fluid * amount])
+		.outputs([<metaitem:circuit.basic_electronic>])
+		.EUt(16).duration(sec(5))
+		.buildAndRegister();
+}
 
 
 //Refined Circuit
 
-<contenttweaker:refinedcircuit>.addTooltip(format.aqua(format.italic("This is the third and final Tier One circuit.")));
+<metaitem:circuit.processor.refined>.addTooltip(format.aqua(format.italic("This is the third and final Tier One circuit.")));
 
-// ??
-//assembler.findRecipe(60, [<metaitem:plate.central_processing_unit> * 4, <metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 4, <metaitem:component.transistor> * 4, <ore:wireFineCopper>.firstItem * 2, <metaitem:board.plastic>], [<liquid:tin> * 144]).remove();
-//assembler.findRecipe(60, [<metaitem:plate.central_processing_unit> * 4, <metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 4, <metaitem:component.transistor> * 4, <metaitem:board.plastic>, <ore:wireFineCopper>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
-//assembler.findRecipe(60, [<metaitem:plate.central_processing_unit> * 4, <metaitem:component.smd.resistor>* 4, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 4, <metaitem:board.plastic>, <ore:wireFineCopper>.firstItem * 2], [<liquid:tin> * 144]).remove();
-//assembler.findRecipe(60, [<metaitem:plate.central_processing_unit> * 4, <metaitem:component.smd.resistor>* 4, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 4, <metaitem:board.plastic>, <ore:wireFineCopper>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
-//assembler.findRecipe(600, [<metaitem:plate.system_on_chip>, <metaitem:board.plastic>, <ore:wireFineCopper>.firstItem * 2], [<liquid:tin> * 144]).remove();
-//assembler.findRecipe(600, [<metaitem:plate.system_on_chip>, <metaitem:board.plastic>, <ore:wireFineCopper>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
-
-assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit>, <metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 4, <metaitem:component.transistor> * 4, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedcircuit> * 4]).duration(200).EUt(60).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit>, <metaitem:component.resistor> * 4, <metaitem:component.capacitor> * 4, <metaitem:component.transistor> * 4, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedcircuit> * 4]).duration(200).EUt(60).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit>, <metaitem:component.smd.resistor> * 4, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 4, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedcircuit> * 4]).duration(200).EUt(60).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit>, <metaitem:component.smd.resistor> * 4, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 4, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedcircuit> * 4]).duration(200).EUt(60).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.system_on_chip>, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedcircuit> * 4]).duration(50).EUt(600).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.system_on_chip>, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedcircuit> * 4]).duration(50).EUt(600).buildAndRegister();
-
+for fluid, amount in fluids {
+	gt.circuit_assembler.recipeBuilder()
+		.inputs([<metaitem:plate.system_on_chip>, <metaitem:board.good.plastic>, <ore:wireFineTinAlloy> * 2])
+		.fluidInputs(fluid * amount)
+		.outputs([<metaitem:circuit.processor.refined> * 4])
+		.duration(50).EUt(600)
+		.buildAndRegister();
+}
 
 
 //Assembling Machines
@@ -146,86 +159,50 @@ recipes.addShaped(<meta_tile_entity:gtadditions:assembler.uv>, [
 
 //Primitive Processor
 
-<contenttweaker:combinationcircuit>.addTooltip(format.aqua(format.italic("This is the first Tier Two circuit.")));
+<metaitem:circuit.assembly.primitive>.addTooltip(format.aqua(format.italic("This is the first Tier Two circuit.")));
 
 recipes.remove(<metaitem:circuit.good>);
-recipes.addShaped(<contenttweaker:combinationcircuit>, [
-	[<ore:plateWroughtIron>, <metaitem:circuit.basic>, <ore:cableGtSingleRedAlloy>], 
-	[<metaitem:circuit.basic>, <metaitem:component.diode>, <metaitem:circuit.basic>], 
-	[<ore:cableGtSingleRedAlloy>, <metaitem:circuit.basic>, <ore:plateWroughtIron>]]);
 
 <metaitem:board.phenolic>.displayName = "Phenolic Substrate";
 <metaitem:board.phenolic>.clearTooltip();
 <metaitem:board.phenolic>.addTooltip("Phenolic Substrate");	
 	
-	
-	
 //Electronic Processor	
 
-<contenttweaker:electronicprocessor>.addTooltip(format.aqua(format.italic("This is the second Tier Two circuit.")));
+<metaitem:circuit.assembly.electronic>.addTooltip(format.aqua(format.italic("This is the second Tier Two circuit.")));
 /* removed by gregicality
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32489>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32490>);
 mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32507>);*/
 
-// ??
-//assembler.findRecipe(16, [<metaitem:component.resistor> * 4, <metaitem:circuit.basic_electronic> * 3, <metaitem:board.phenolic>, <ore:wireFineElectrum>.firstItem * 8], [<liquid:tin> * 144]).remove();
-//assembler.findRecipe(16, [<metaitem:component.resistor> * 4, <metaitem:circuit.basic_electronic> * 3, <metaitem:board.phenolic>, <ore:wireFineElectrum>.firstItem * 8], [<liquid:soldering_alloy> * 72]).remove();
-//assembler.findRecipe(16, [<metaitem:component.smd.resistor> * 4, <metaitem:circuit.basic_electronic> * 3, <metaitem:board.phenolic>, <ore:wireFineElectrum>.firstItem * 8], [<liquid:tin> * 144]).remove();
-//assembler.findRecipe(16, [<metaitem:component.smd.resistor> * 4, <metaitem:circuit.basic_electronic> * 3, <metaitem:board.phenolic>, <ore:wireFineElectrum>.firstItem * 8], [<liquid:soldering_alloy> * 72]).remove();
-
-
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 4, <metaitem:component.transistor>, <metaitem:circuit.basic_electronic> * 3, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:electronicprocessor>]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 4, <metaitem:component.transistor>, <metaitem:circuit.basic_electronic> * 3, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:electronicprocessor>]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 4, <metaitem:component.smd.transistor>, <metaitem:circuit.basic_electronic> * 3, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:electronicprocessor>]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 4, <metaitem:component.smd.transistor>, <metaitem:circuit.basic_electronic> * 3, <ore:wireFineCopper> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:electronicprocessor>]).duration(200).EUt(16).buildAndRegister();
-
-
-
 //Refined Processor	
 
-<contenttweaker:refinedprocessor>.addTooltip(format.aqua(format.italic("This is the third Tier Two circuit.")));
-
-// ??
-//assembler.findRecipe(60, [<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <metaitem:board.plastic>, <metaitem:plate.central_processing_unit>, <ore:wireFineRedAlloy>.firstItem * 2], [<liquid:tin> * 144]).remove();
-//assembler.findRecipe(60, [<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <metaitem:board.plastic>, <metaitem:plate.central_processing_unit>, <ore:wireFineRedAlloy>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
-//assembler.findRecipe(60, [<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <metaitem:board.plastic>, <metaitem:plate.central_processing_unit>, <ore:wireFineRedAlloy>.firstItem * 2], [<liquid:tin> * 144]).remove();
-//assembler.findRecipe(60, [<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <metaitem:board.plastic>, <metaitem:plate.central_processing_unit>, <ore:wireFineRedAlloy>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
-//assembler.findRecipe(2400, [<metaitem:plate.system_on_chip>, <metaitem:board.plastic>, <ore:wireFineRedAlloy>.firstItem * 2], [<liquid:tin> * 144]).remove();
-//assembler.findRecipe(2400, [<metaitem:plate.system_on_chip>, <metaitem:board.plastic>, <ore:wireFineRedAlloy>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
-
-
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <contenttweaker:refinedcircuit> * 3, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedprocessor>]).duration(100).EUt(60).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <contenttweaker:refinedcircuit> * 3, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedprocessor>]).duration(100).EUt(60).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <contenttweaker:refinedcircuit> * 3, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedprocessor>]).duration(100).EUt(60).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <contenttweaker:refinedcircuit> * 3, <metaitem:board.plastic>, <ore:wireFineTinAlloy> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedprocessor>]).duration(100).EUt(60).buildAndRegister();
-
-
+<metaitem:circuit.assembly.refined>.addTooltip(format.aqua(format.italic("This is the third Tier Two circuit.")));
 
 //Microcircuit
 
-<contenttweaker:microcircuit>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Two circuit.")));
+<metaitem:circuit.processor.micro>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Two circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit> * 2, <metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <metaitem:board.epoxy>, <ore:wireFineRedAlloy> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microcircuit> * 4]).duration(100).EUt(400).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit> * 2, <metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:component.transistor> * 2, <metaitem:board.epoxy>, <ore:wireFineRedAlloy> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microcircuit> * 4]).duration(100).EUt(400).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit> * 2, <metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <metaitem:board.epoxy>, <ore:wireFineRedAlloy> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microcircuit> * 4]).duration(100).EUt(400).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.central_processing_unit> * 2, <metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <metaitem:board.epoxy>, <ore:wireFineRedAlloy> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microcircuit> * 4]).duration(100).EUt(400).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.system_on_chip>, <metaitem:board.epoxy>, <ore:wireFineRedAlloy> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microcircuit> * 8]).duration(50).EUt(2400).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:plate.system_on_chip>, <metaitem:board.epoxy>, <ore:wireFineRedAlloy> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microcircuit> * 8]).duration(50).EUt(2400).buildAndRegister();
-
-
+for fluid, amount in fluids {
+	gt.circuit_assembler.recipeBuilder()
+		.inputs([<metaitem:plate.system_on_chip>, <metaitem:board.epoxy>, <ore:wireFineRedAlloy> * 2])
+		.fluidInputs(fluid * amount)
+		.outputs([<metaitem:circuit.processor.micro> * 8])
+		.duration(50).EUt(2400)
+		.buildAndRegister();
+}
 
 
 /////////////////   Tier Three Circuits | Advanced Tier   ///////////////////////	
 
 //Electronic Processor Array
 
-<contenttweaker:electronicprocessorarray>.addTooltip(format.aqua(format.italic("This is the first Tier Three circuit.")));
+<metaitem:circuit.computer.electronic>.addTooltip(format.aqua(format.italic("This is the first Tier Three circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:component.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <contenttweaker:electronicprocessor> * 4, <ore:plateAluminium> * 2, <ore:wireFineElectrum> * 16]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:electronicprocessorarray>]).duration(200).EUt(16).buildAndRegister();
 
 
 
@@ -233,13 +210,15 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metait
 
 <contenttweaker:refinedprocessorarray>.addTooltip(format.aqua(format.italic("This is the second Tier Three circuit.")));
 
-assembler.findRecipe(4, [gt.getCirc("MV").firstItem * 4, <ore:plateStainlessSteel>.firstItem * 2], [null]).remove();
-assembler.recipeBuilder().inputs([gt.getCirc("MV") * 4, <ore:ingotStainlessSteel> * 2]).outputs([<gtadditions:ga_meta_item:32131>]).duration(20).EUt(4).buildAndRegister(); //deconflicting blank schematic
+gt.removeByOutput(gt.circuit_assembler, [<metaitem:circuit.basic_electronic>]);
 
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:component.transistor> * 2, <contenttweaker:refinedprocessor> * 4, <metaitem:board.plastic>, <ore:plateStainlessSteel> * 2, <ore:wireGtSingleVibrantAlloy> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedprocessorarray>]).duration(200).EUt(90).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:component.transistor> * 2, <contenttweaker:refinedprocessor> * 4, <metaitem:board.plastic>, <ore:plateStainlessSteel> * 2, <ore:wireGtSingleVibrantAlloy> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedprocessorarray>]).duration(200).EUt(90).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 2, <contenttweaker:refinedprocessor> * 4, <metaitem:board.plastic>, <ore:plateStainlessSteel> * 2, <ore:wireGtSingleVibrantAlloy> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedprocessorarray>]).duration(200).EUt(90).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 2, <contenttweaker:refinedprocessor> * 4, <metaitem:board.plastic>, <ore:plateStainlessSteel> * 2, <ore:wireGtSingleVibrantAlloy> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedprocessorarray>]).duration(200).EUt(90).buildAndRegister();
+//assembler.findRecipe(4, [gt.getCirc("MV").firstItem * 4, <ore:plateStainlessSteel>.firstItem * 2], [null]).remove();
+//assembler.recipeBuilder().inputs([gt.getCirc("MV") * 4, <ore:ingotStainlessSteel> * 2]).outputs([<gtadditions:ga_meta_item:32131>]).duration(20).EUt(4).buildAndRegister(); //deconflicting blank schematic
+
+//assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:component.transistor> * 2, <contenttweaker:refinedprocessor> * 4, <metaitem:board.plastic>, <ore:plateStainlessSteel> * 2, <ore:wireGtSingleVibrantAlloy> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedprocessorarray>]).duration(200).EUt(90).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.resistor> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:component.transistor> * 2, <contenttweaker:refinedprocessor> * 4, <metaitem:board.plastic>, <ore:plateStainlessSteel> * 2, <ore:wireGtSingleVibrantAlloy> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedprocessorarray>]).duration(200).EUt(90).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 2, <contenttweaker:refinedprocessor> * 4, <metaitem:board.plastic>, <ore:plateStainlessSteel> * 2, <ore:wireGtSingleVibrantAlloy> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedprocessorarray>]).duration(200).EUt(90).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 2, <contenttweaker:refinedprocessor> * 4, <metaitem:board.plastic>, <ore:plateStainlessSteel> * 2, <ore:wireGtSingleVibrantAlloy> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedprocessorarray>]).duration(200).EUt(90).buildAndRegister();
 
 
 
@@ -256,10 +235,10 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metait
 //assembler.findRecipe(90, [<metaitem:circuit.advanced> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.plastic>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineRedAlloy>.firstItem * 12], [<liquid:tin> * 288]).remove();
 //assembler.findRecipe(90, [<metaitem:circuit.advanced> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.plastic>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineRedAlloy>.firstItem * 12], [<liquid:soldering_alloy> * 144]).remove();
 
-assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:plate.random_access_memory> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.epoxy>, <metaitem:component.capacitor> * 4, <ore:wireFineRedAlloy> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.processor_assembly>]).duration(100).EUt(360).buildAndRegister();
-assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:plate.random_access_memory> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.epoxy>, <metaitem:component.capacitor> * 4, <ore:wireFineRedAlloy> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.processor_assembly>]).duration(100).EUt(360).buildAndRegister();
-assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:plate.random_access_memory> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.epoxy>, <metaitem:component.smd.capacitor> * 4, <ore:wireFineRedAlloy> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.processor_assembly>]).duration(100).EUt(360).buildAndRegister();
-assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:plate.random_access_memory> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.epoxy>, <metaitem:component.smd.capacitor> * 4, <ore:wireFineRedAlloy> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.processor_assembly>]).duration(100).EUt(360).buildAndRegister();
+//assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:plate.random_access_memory> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.epoxy>, <metaitem:component.capacitor> * 4, <ore:wireFineRedAlloy> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.processor_assembly>]).duration(100).EUt(360).buildAndRegister();
+//assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:plate.random_access_memory> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.epoxy>, <metaitem:component.capacitor> * 4, <ore:wireFineRedAlloy> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.processor_assembly>]).duration(100).EUt(360).buildAndRegister();
+//assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:plate.random_access_memory> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.epoxy>, <metaitem:component.smd.capacitor> * 4, <ore:wireFineRedAlloy> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.processor_assembly>]).duration(100).EUt(360).buildAndRegister();
+//assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:plate.random_access_memory> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.epoxy>, <metaitem:component.smd.capacitor> * 4, <ore:wireFineRedAlloy> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.processor_assembly>]).duration(100).EUt(360).buildAndRegister();
 
 
 
@@ -276,12 +255,35 @@ assembler.recipeBuilder().inputs([<contenttweaker:microcircuit> * 3, <metaitem:p
 //assembler.findRecipe(9600, [<metaitem:board.epoxy>, <metaitem:plate.system_on_chip>, <ore:wireFineElectrum>.firstItem * 2], [<liquid:tin> * 144]).remove();
 //assembler.findRecipe(9600, [<metaitem:board.epoxy>, <metaitem:plate.system_on_chip>, <ore:wireFineElectrum>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.fiber_reinforced>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineAluminium> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.nano_processor> * 4]).duration(100).EUt(2000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.fiber_reinforced>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineAluminium> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.nano_processor> * 4]).duration(100).EUt(2000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:board.fiber_reinforced>, <metaitem:plate.system_on_chip>, <ore:wireFineAluminium> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.nano_processor> * 8]).duration(100).EUt(9600).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:board.fiber_reinforced>, <metaitem:plate.system_on_chip>, <ore:wireFineAluminium> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.nano_processor> * 8]).duration(100).EUt(9600).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.fiber_reinforced>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineAluminium> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.nano_processor> * 4]).duration(100).EUt(2000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.fiber_reinforced>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineAluminium> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.nano_processor> * 4]).duration(100).EUt(2000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:board.fiber_reinforced>, <metaitem:plate.system_on_chip>, <ore:wireFineAluminium> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.nano_processor> * 8]).duration(100).EUt(9600).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:board.fiber_reinforced>, <metaitem:plate.system_on_chip>, <ore:wireFineAluminium> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.nano_processor> * 8]).duration(100).EUt(9600).buildAndRegister();
 
+gt.removeByOutput(gt.circuit_assembler, [<metaitem:circuit.nano_processor> * 4] as IItemStack[], true);
 
+for fluid, amount in fluids {
+	gt.circuit_assembler.recipeBuilder()
+		.inputs([<metaitem:plate.nano_central_processing_unit> * 2, <metaitem:component.smd.transistor> * 8, <metaitem:component.smd.resistor> * 8, <metaitem:component.smd.capacitor> * 8, <ore:wireFineAluminium> * 2, <metaitem:board.extreme>])
+		.fluidInputs([fluid * amount])
+		.outputs([<metaitem:circuit.nano_processor>])
+		.EUt(2000).duration(sec(5))
+		.buildAndRegister();
+	gt.circuit_assembler.recipeBuilder()
+		.inputs([<metaitem:plate.nano_central_processing_unit> * 2, <metaitem:component.smd.transistor.nano> * 4, <metaitem:component.smd.resistor.nano> * 4, <metaitem:component.smd.capacitor.nano> * 4, <ore:wireFineAluminium> * 2, <metaitem:board.extreme>])
+		.fluidInputs([fluid * amount])
+		.outputs([<metaitem:circuit.nano_processor>])
+		.EUt(2000).duration(sec(5))
+		.buildAndRegister();
+	
+	gt.circuit_assembler.recipeBuilder()
+		.inputs([<metaitem:board.extreme>, <metaitem:plate.system_on_chip>, <ore:wireFineAluminium> * 2])
+		.fluidInputs(fluid * amount)
+		.outputs([<metaitem:circuit.nano_processor> * 8])
+		.duration(sec(5)).EUt(9600)
+		.buildAndRegister();
+
+}
 
 
 
@@ -291,20 +293,19 @@ assembler.recipeBuilder().inputs([<metaitem:board.fiber_reinforced>, <metaitem:p
 
 //Refined Processor Mainframe
 
-<contenttweaker:refinedprocessormainframe>.addTooltip(format.aqua(format.italic("This is the first Tier Four circuit.")));
+<metaitem:circuit.mainframe.refined>.addTooltip(format.aqua(format.italic("This is the first Tier Four circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 16, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 6, <metaitem:component.smd.capacitor> * 8, <metaitem:component.smd.diode> * 4, <contenttweaker:refinedprocessorarray> * 2, <ore:frameGtStainlessSteel> * 4, <ore:wireGtSingleVibrantAlloy> * 8]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedprocessormainframe>]).duration(500).EUt(110).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 16, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 6, <metaitem:component.smd.capacitor> * 8, <metaitem:component.smd.diode> * 4, <contenttweaker:refinedprocessorarray> * 2, <ore:frameGtStainlessSteel> * 4, <ore:wireGtSingleVibrantAlloy> * 8]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedprocessormainframe>]).duration(500).EUt(110).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 16, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 6, <metaitem:component.smd.capacitor> * 8, <metaitem:component.smd.diode> * 4, <contenttweaker:refinedprocessorarray> * 2, <ore:frameGtStainlessSteel> * 4, <ore:wireGtSingleVibrantAlloy> * 8]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:refinedprocessormainframe>]).duration(500).EUt(110).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 16, <metaitem:plate.random_access_memory> * 4, <metaitem:component.smd.transistor> * 6, <metaitem:component.smd.capacitor> * 8, <metaitem:component.smd.diode> * 4, <contenttweaker:refinedprocessorarray> * 2, <ore:frameGtStainlessSteel> * 4, <ore:wireGtSingleVibrantAlloy> * 8]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:refinedprocessormainframe>]).duration(500).EUt(110).buildAndRegister();
 
 
 
 //Microprocessor Array
 
-<contenttweaker:microprocessorarray>.addTooltip(format.aqua(format.italic("This is the second Tier Four circuit.")));
+<metaitem:circuit.computer.micro>.addTooltip(format.aqua(format.italic("This is the second Tier Four circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(16).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(16).buildAndRegister();
-
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(16).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.processor_assembly> * 4, <metaitem:board.epoxy>, <ore:plateTitanium> * 2, <ore:wireGtSingleEndSteel> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessorarray>]).duration(200).EUt(16).buildAndRegister();
 
 
 //Nanoprocessor
@@ -318,8 +319,8 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:
 //assembler.findRecipe(480, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:circuit.nano_processor> * 2, <metaitem:board.epoxy>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineElectrum>.firstItem * 6], [<liquid:tin> * 288]).remove();
 //assembler.findRecipe(480, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:circuit.nano_processor> * 2, <metaitem:board.epoxy>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineElectrum>.firstItem * 6], [<liquid:soldering_alloy> * 144]).remove();
 
-assembler.recipeBuilder().inputs([<metaitem:circuit.nano_processor> * 3, <metaitem:plate.nano_central_processing_unit> * 2, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFineAluminium> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.nano_processor_assembly>]).duration(100).EUt(2000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:circuit.nano_processor> * 3, <metaitem:plate.nano_central_processing_unit> * 2, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFineAluminium> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.nano_processor_assembly>]).duration(100).EUt(2000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:circuit.nano_processor> * 3, <metaitem:plate.nano_central_processing_unit> * 2, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFineAluminium> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.nano_processor_assembly>]).duration(100).EUt(2000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:circuit.nano_processor> * 3, <metaitem:plate.nano_central_processing_unit> * 2, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFineAluminium> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.nano_processor_assembly>]).duration(100).EUt(2000).buildAndRegister();
 
 
 
@@ -336,11 +337,18 @@ assembler.recipeBuilder().inputs([<metaitem:circuit.nano_processor> * 3, <metait
 //assembler.findRecipe(32000, [<metaitem:board.fiber_reinforced>, <metaitem:plate.advanced_system_on_chip>, <ore:wireFinePlatinum>.firstItem * 2], [<liquid:tin> * 144]).remove();
 //assembler.findRecipe(32000, [<metaitem:board.fiber_reinforced>, <metaitem:plate.advanced_system_on_chip>, <ore:wireFinePlatinum>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFinePlatinum> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.quantum_processor> * 4]).duration(200).EUt(3000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFinePlatinum> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.quantum_processor> * 4]).duration(200).EUt(3000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.advanced_system_on_chip>, <ore:wireFinePlatinum> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.quantum_processor> * 8]).duration(100).EUt(36000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.advanced_system_on_chip>, <ore:wireFinePlatinum> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.quantum_processor> * 8]).duration(100).EUt(36000).buildAndRegister();
-
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFinePlatinum> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.quantum_processor> * 4]).duration(200).EUt(3000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFinePlatinum> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.quantum_processor> * 4]).duration(200).EUt(3000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.advanced_system_on_chip>, <ore:wireFinePlatinum> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.quantum_processor> * 8]).duration(100).EUt(36000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.advanced_system_on_chip>, <ore:wireFinePlatinum> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.quantum_processor> * 8]).duration(100).EUt(36000).buildAndRegister();
+for fluid, amount in fluids {
+	gt.circuit_assembler.recipeBuilder()
+		.inputs([<metaitem:board.elite>, <metaitem:plate.advanced_system_on_chip>, <ore:wireFinePlatinum> * 4])
+		.fluidInputs([fluid * amount])
+		.outputs([<metaitem:circuit.quantum_processor> * 8])
+		.duration(100).EUt(36000)
+		.buildAndRegister();
+}
 
 
 
@@ -349,16 +357,16 @@ assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, 
 
 //Microprocessor Mainframe
 
-<contenttweaker:microprocessormainframe>.addTooltip(format.aqua(format.italic("This is the first Tier Five circuit.")));
+<metaitem:circuit.mainframe.micro>.addTooltip(format.aqua(format.italic("This is the first Tier Five circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 20, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 12, <metaitem:component.smd.capacitor> * 16, <metaitem:component.smd.diode> * 8, <contenttweaker:microprocessorarray> * 2, <ore:frameGtTitanium> * 4, <ore:wireGtSingleEndSteel> * 8]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessormainframe>]).duration(500).EUt(500).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 20, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 12, <metaitem:component.smd.capacitor> * 16, <metaitem:component.smd.diode> * 8, <contenttweaker:microprocessorarray> * 2, <ore:frameGtTitanium> * 4, <ore:wireGtSingleEndSteel> * 8]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessormainframe>]).duration(500).EUt(500).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 20, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 12, <metaitem:component.smd.capacitor> * 16, <metaitem:component.smd.diode> * 8, <contenttweaker:microprocessorarray> * 2, <ore:frameGtTitanium> * 4, <ore:wireGtSingleEndSteel> * 8]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:microprocessormainframe>]).duration(500).EUt(500).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 20, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 12, <metaitem:component.smd.capacitor> * 16, <metaitem:component.smd.diode> * 8, <contenttweaker:microprocessorarray> * 2, <ore:frameGtTitanium> * 4, <ore:wireGtSingleEndSteel> * 8]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:microprocessormainframe>]).duration(500).EUt(500).buildAndRegister();
 
 
 
 //Nanoprocessor Array
 
-<contenttweaker:nanoprocessorarray>.addTooltip(format.aqua(format.italic("This is the second Tier Five circuit.")));
+<metaitem:circuit.computer.nano>.addTooltip(format.aqua(format.italic("This is the second Tier Five circuit.")));
 
 assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.nano_processor_assembly> * 4, <metaitem:board.fiber_reinforced>, <ore:plateTungstenSteel> * 2, <ore:wireGtSingleLumium> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:nanoprocessorarray>]).duration(200).EUt(2000).buildAndRegister();
 assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:plate.random_access_memory> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:circuit.nano_processor_assembly> * 4, <metaitem:board.fiber_reinforced>, <ore:plateTungstenSteel> * 2, <ore:wireGtSingleLumium> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:nanoprocessorarray>]).duration(200).EUt(2000).buildAndRegister();
@@ -366,14 +374,14 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:
 
 //Quantum Processor
 
-<contenttweaker:quantumprocessor>.addTooltip(format.aqua(format.italic("This is the third Tier Five circuit.")));
+<metaitem:circuit.assembly.quantum>.addTooltip(format.aqua(format.italic("This is the third Tier Five circuit.")));
 
 // ??
 //assembler.findRecipe(1960, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.quantum_processor> * 2, <ore:wireFinePlatinum>.firstItem * 6], [<liquid:tin> * 288]).remove();
 //assembler.findRecipe(1960, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.quantum_processor> * 2, <ore:wireFinePlatinum>.firstItem * 6], [<liquid:soldering_alloy> * 144]).remove();
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.transistor> * 4, <metaitem:circuit.quantum_processor> * 3, <metaitem:plate.qbit_central_processing_unit> * 2, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFinePlatinum> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:quantumprocessor>]).duration(100).EUt(4000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.transistor> * 4, <metaitem:circuit.quantum_processor> * 3, <metaitem:plate.qbit_central_processing_unit> * 2, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFinePlatinum> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:quantumprocessor>]).duration(100).EUt(4000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.transistor> * 4, <metaitem:circuit.quantum_processor> * 3, <metaitem:plate.qbit_central_processing_unit> * 2, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFinePlatinum> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:quantumprocessor>]).duration(100).EUt(4000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.transistor> * 4, <metaitem:circuit.quantum_processor> * 3, <metaitem:plate.qbit_central_processing_unit> * 2, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFinePlatinum> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:quantumprocessor>]).duration(100).EUt(4000).buildAndRegister();
 
 // obsolete
 //recipes.addShapeless(<contenttweaker:quantumprocessor>, [<gregtech:meta_item_2:32495>]);	
@@ -381,7 +389,7 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.transistor> * 4, <meta
 
 //Crystal Circuit
 
-<contenttweaker:crystalcircuit>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Five circuit.")));
+<metaitem:circuit.processor.crystal>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Five circuit.")));
 
 // ??
 //assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineNiobiumTitanium>.firstItem * 2], [<liquid:tin> * 144]).remove();
@@ -389,10 +397,17 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.transistor> * 4, <meta
 //assembler.findRecipe(31900, [<metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.system_on_chip>, <ore:wireFineNiobiumTitanium>.firstItem * 2], [<liquid:tin> * 144]).remove();
 //assembler.findRecipe(31900, [<metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.system_on_chip>, <ore:wireFineNiobiumTitanium>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineNiobiumTitanium> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:crystalcircuit> * 4]).duration(200).EUt(10000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineNiobiumTitanium> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:crystalcircuit> * 4]).duration(200).EUt(10000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.system_on_chip>, <ore:wireFineNiobiumTitanium> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:crystalcircuit> * 8]).duration(100).EUt(86000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.system_on_chip>, <ore:wireFineNiobiumTitanium> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:crystalcircuit> * 8]).duration(100).EUt(86000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineNiobiumTitanium> * 2]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:crystalcircuit> * 4]).duration(200).EUt(10000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 8, <metaitem:component.smd.transistor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineNiobiumTitanium> * 2]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:crystalcircuit> * 4]).duration(200).EUt(10000).buildAndRegister();
+for fluid, amount in fluids {
+	gt.circuit_assembler.recipeBuilder()
+		.inputs([<metaitem:board.master>, <metaitem:crystal.system_on_chip>, <ore:wireFineNiobiumTitanium> * 4])
+		.fluidInputs(fluid * amount)
+		.outputs([<metaitem:circuit.processor.crystal> * 8])
+		.duration(sec(5)).EUt(86000)
+		.buildAndRegister();
+
+}
 
 // obsolete
 //recipes.addShapeless(<contenttweaker:crystalcircuit>, [<gregtech:meta_item_2:32496>]);	
@@ -403,18 +418,18 @@ assembler.recipeBuilder().inputs([<metaitem:board.multilayer.fiber_reinforced>, 
 
 //Nanoprocessor Mainframe
 
-<contenttweaker:nanoprocessormainframe>.addTooltip(format.aqua(format.italic("This is the first Tier Six circuit.")));
+<metaitem:circuit.mainframe.nano>.addTooltip(format.aqua(format.italic("This is the first Tier Six circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 24, <metaitem:plate.random_access_memory> * 12, <metaitem:component.smd.transistor> * 16, <metaitem:component.smd.capacitor> * 20, <metaitem:component.smd.diode> * 12, <contenttweaker:nanoprocessorarray> * 2, <ore:frameGtTungstenSteel> * 4, <ore:wireGtSingleLumium> * 8]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:nanoprocessormainframe>]).duration(500).EUt(2000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 24, <metaitem:plate.random_access_memory> * 12, <metaitem:component.smd.transistor> * 16, <metaitem:component.smd.capacitor> * 20, <metaitem:component.smd.diode> * 12, <contenttweaker:nanoprocessorarray> * 2, <ore:frameGtTungstenSteel> * 4, <ore:wireGtSingleLumium> * 8]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:nanoprocessormainframe>]).duration(500).EUt(2000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 24, <metaitem:plate.random_access_memory> * 12, <metaitem:component.smd.transistor> * 16, <metaitem:component.smd.capacitor> * 20, <metaitem:component.smd.diode> * 12, <contenttweaker:nanoprocessorarray> * 2, <ore:frameGtTungstenSteel> * 4, <ore:wireGtSingleLumium> * 8]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:nanoprocessormainframe>]).duration(500).EUt(2000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 24, <metaitem:plate.random_access_memory> * 12, <metaitem:component.smd.transistor> * 16, <metaitem:component.smd.capacitor> * 20, <metaitem:component.smd.diode> * 12, <contenttweaker:nanoprocessorarray> * 2, <ore:frameGtTungstenSteel> * 4, <ore:wireGtSingleLumium> * 8]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:nanoprocessormainframe>]).duration(500).EUt(2000).buildAndRegister();
 
 
 //Quantum Processor Array
 
-<contenttweaker:quantumprocessorarray>.addTooltip(format.aqua(format.italic("This is the second Tier Six circuit.")));
+<metaitem:circuit.computer.quantum>.addTooltip(format.aqua(format.italic("This is the second Tier Six circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:plate.power_integrated_circuit> * 4, <metaitem:component.smd.transistor> * 8, <contenttweaker:quantumprocessor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:quantumeye>, <ore:plateChrome> * 2, <ore:wireGtSingleSignalum> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:quantumprocessorarray>]).duration(200).EUt(6000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:plate.power_integrated_circuit> * 4, <metaitem:component.smd.transistor> * 8, <contenttweaker:quantumprocessor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:quantumeye>, <ore:plateChrome> * 2, <ore:wireGtSingleSignalum> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:quantumprocessorarray>]).duration(200).EUt(6000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:plate.power_integrated_circuit> * 4, <metaitem:component.smd.transistor> * 8, <contenttweaker:quantumprocessor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:quantumeye>, <ore:plateChrome> * 2, <ore:wireGtSingleSignalum> * 4]).fluidInputs(<liquid:tin> * 144).outputs([<contenttweaker:quantumprocessorarray>]).duration(200).EUt(6000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:plate.power_integrated_circuit> * 4, <metaitem:component.smd.transistor> * 8, <contenttweaker:quantumprocessor> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:quantumeye>, <ore:plateChrome> * 2, <ore:wireGtSingleSignalum> * 4]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<contenttweaker:quantumprocessorarray>]).duration(200).EUt(6000).buildAndRegister();
 
 
 //Crystal Processor
@@ -428,8 +443,8 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:
 //assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.crystal_processor> * 2, <ore:wireFineNiobiumTitanium>.firstItem * 6], [<liquid:tin> * 288]).remove();
 //assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.crystal_processor> * 2, <ore:wireFineNiobiumTitanium>.firstItem * 6], [<liquid:soldering_alloy> * 144]).remove();
 
-assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <contenttweaker:crystalcircuit> * 3, <metaitem:crystal.central_processing_unit>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFineNiobiumTitanium> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.energy_flow>]).duration(100).EUt(20000).buildAndRegister();
-assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <contenttweaker:crystalcircuit> * 3, <metaitem:crystal.central_processing_unit>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFineNiobiumTitanium> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.energy_flow>]).duration(100).EUt(20000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <contenttweaker:crystalcircuit> * 3, <metaitem:crystal.central_processing_unit>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFineNiobiumTitanium> * 6]).fluidInputs(<liquid:tin> * 144).outputs([<metaitem:circuit.energy_flow>]).duration(100).EUt(20000).buildAndRegister();
+//assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <contenttweaker:crystalcircuit> * 3, <metaitem:crystal.central_processing_unit>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:component.smd.diode> * 4, <ore:wireFineNiobiumTitanium> * 6]).fluidInputs(<liquid:soldering_alloy> * 72).outputs([<metaitem:circuit.energy_flow>]).duration(100).EUt(20000).buildAndRegister();
 
 
 
@@ -440,8 +455,12 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.capacitor> * 4, <conte
 <metaitem:circuit.wetware_processor>.addTooltip("Wetware Circuit");
 <metaitem:circuit.wetware_processor>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Six circuit.")));
 
-assembler.recipeBuilder().inputs([<metaitem:plate.advanced_system_on_chip> * 4, <ore:wireGtSingleNaquadah> * 4, <metaitem:board.wetware>]).fluidInputs(<liquid:sterilized_growth_medium> * 1000).outputs([<metaitem:circuit.wetware_processor> * 4]).duration(200).EUt(120000).buildAndRegister();
-
+gt.circuit_assembler.recipeBuilder()
+	.inputs([<metaitem:plate.advanced_system_on_chip> * 4, <ore:wireGtSingleNaquadah> * 4, <metaitem:board.wetware>])
+	.fluidInputs(<liquid:sterilized_growth_medium> * 1000)
+	.outputs([<metaitem:circuit.wetware_processor> * 4])
+	.duration(200).EUt(120000)
+	.buildAndRegister();
 
 
 
@@ -451,16 +470,80 @@ assembler.recipeBuilder().inputs([<metaitem:plate.advanced_system_on_chip> * 4, 
 
 //Quantum Processor Mainframe
 
-<contenttweaker:quantumprocessormainframe>.addTooltip(format.aqua(format.italic("This is the first Tier Seven circuit.")));
+<metaitem:circuit.mainframe.quantum>.addTooltip(format.aqua(format.italic("This is the first Tier Seven circuit.")));
 
-assembly_line.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 32, <metaitem:plate.power_integrated_circuit> * 8, <metaitem:component.smd.transistor> * 24, <metaitem:component.smd.capacitor> * 28, <metaitem:component.smd.diode> * 16, <metaitem:quantumstar>, <contenttweaker:quantumprocessorarray> * 2, <ore:frameGtHssg> * 4, <ore:wireGtSingleSignalum> * 8]).fluidInputs(<liquid:soldering_alloy> * 1440).outputs([<contenttweaker:quantumprocessormainframe>]).duration(500).EUt(8000).buildAndRegister();
+gt.removeByOutput(gt.assembly_line, [<metaitem:circuit.mainframe.quantum>]);
+
+for fluid, amount in fluids {
+	gt.assembly_line.recipeBuilder()
+		.inputs([<metaitem:component.smd.resistor.nano> * 64, 
+			<metaitem:plate.power_integrated_circuit> * 8, 
+			<metaitem:component.smd.transistor.nano> * 56, 
+			<metaitem:component.smd.capacitor.nano> * 56, 
+			<metaitem:component.smd.diode.nano> * 32, 
+			<metaitem:quantumstar>, 
+			<metaitem:circuit.computer.quantum> * 2, 
+			<ore:frameGtHssg> * 4, 
+			<ore:wireGtSingleIvSuperconductor> * 16])
+		.fluidInputs(fluid * (amount * 4))
+		.outputs([<metaitem:circuit.mainframe.quantum>])
+		.duration(sec(25)).EUt(8000)
+		.buildAndRegister();
+
+	gt.assembly_line.recipeBuilder()
+		.inputs([<metaitem:component.smd.resistor.quantum> * 32, 
+			<metaitem:plate.power_integrated_circuit> * 8, 
+			<metaitem:component.smd.transistor.quantum> * 28, 
+			<metaitem:component.smd.capacitor.quantum> * 28, 
+			<metaitem:component.smd.diode.quantum> * 16, 
+			<metaitem:quantumstar>, 
+			<metaitem:circuit.computer.quantum> * 2, 
+			<ore:frameGtHssg> * 4, 
+			<ore:wireGtSingleIvSuperconductor> * 16])
+		.fluidInputs(fluid * (amount * 4))
+		.outputs([<metaitem:circuit.mainframe.quantum>])
+		.duration(sec(25)).EUt(8000)
+		.buildAndRegister();
+}
+
 
 
 //Crystal Processor Array
 
-<contenttweaker:crystalprocessorarray>.addTooltip(format.aqua(format.italic("This is the second Tier Seven circuit.")));
+<metaitem:circuit.computer.crystal>.addTooltip(format.aqua(format.italic("This is the second Tier Seven circuit.")));
 
-assembly_line.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metaitem:plate.high_power_integrated_circuit>, <metaitem:component.smd.transistor> * 8, <metaitem:circuit.energy_flow> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:quantumeye>, <ore:plateDraconium> * 2, <ore:wireGtSingleEnderium> * 4]).fluidInputs(<liquid:soldering_alloy> * 720).outputs([<contenttweaker:crystalprocessorarray>]).duration(300).EUt(30000).buildAndRegister();
+gt.removeByOutput(gt.assembly_line, [<metaitem:circuit.computer.crystal>]);
+
+for fluid, amount in fluids {
+	gt.assembly_line.recipeBuilder()
+		.inputs([<metaitem:component.smd.diode.crystal> * 8, 
+			<metaitem:plate.high_power_integrated_circuit>, 
+			<metaitem:component.smd.transistor.crystal> * 8, 
+			<metaitem:circuit.energy_flow> * 4, 
+			<metaitem:board.master>, 
+			<metaitem:quantumeye>, 
+			<ore:plateDraconium> * 2, 
+			<ore:wireGtSingleLuvSuperconductor> * 16])
+		.fluidInputs(fluid * (amount * 3))
+		.outputs([<metaitem:circuit.computer.crystal>])
+		.duration(sec(15)).EUt(30000)
+		.buildAndRegister();
+	
+	gt.assembly_line.recipeBuilder()
+		.inputs([<metaitem:component.smd.diode.quantum> * 16, 
+			<metaitem:plate.high_power_integrated_circuit>, 
+			<metaitem:component.smd.transistor.quantum> * 16, 
+			<metaitem:circuit.energy_flow> * 4, 
+			<metaitem:board.master>, 
+			<metaitem:quantumeye>, 
+			<ore:plateDraconium> * 2, 
+			<ore:wireGtSingleLuvSuperconductor> * 16])
+		.fluidInputs(fluid * (amount * 3))
+		.outputs([<metaitem:circuit.computer.crystal>])
+		.duration(sec(15)).EUt(30000)
+		.buildAndRegister();
+}
+
 
 
 //Wetware Processor
@@ -471,7 +554,37 @@ assembly_line.recipeBuilder().inputs([<metaitem:component.smd.diode> * 8, <metai
 //<metaitem:circuit.wetware_assembly>.addTooltip("Wetware Processor");
 //<metaitem:circuit.wetware_assembly>.addTooltip(format.aqua(format.italic("This is the third and final Tier Seven circuit.")));
 
-assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32459> * 16, <gregtech:meta_item_1:19391> * 16, <gregtech:meta_item_2:32460> * 16, <gregtech:meta_item_2:32458> * 8, <gregtech:meta_item_2:32457> * 8, <metaitem:circuit.wetware_processor> * 2, <metaitem:board.wetware>, <enderio:item_material:42> * 2, <gregtech:meta_item_2:32485> * 4, <ore:wireGtSingleDraconium> * 6).fluidInputs(<liquid:sterilized_growth_medium> * 2000).outputs(<metaitem:circuit.wetware_assembly>).duration(400).EUt(120000).buildAndRegister();
+gt.assembly_line.recipeBuilder()
+	.inputs([<metaitem:component.smd.resistor.crystal> * 32,
+		<ore:foilSiliconRubber> * 16, 
+		<metaitem:component.smd.transistor.crystal> * 32,
+		<metaitem:component.smd.capacitor.crystal> * 32, 
+		<metaitem:component.smd.diode.crystal> * 32, 
+		<metaitem:circuit.wetware_processor> * 2, 
+		<enderio:item_material:42> * 2, 
+		<metaitem:plate.aram> * 4, 
+		<ore:wireGtSingleZpmSuperconductor> * 6,
+		<metaitem:cyber.processing.unit>])
+	.fluidInputs(<liquid:sterilized_growth_medium> * 2000)
+	.outputs(<metaitem:circuit.wetware_assembly>)
+	.duration(400).EUt(120000)
+	.buildAndRegister();
+
+gt.assembly_line.recipeBuilder()
+	.inputs([<metaitem:component.smd.resistor.wetware> * 16,
+		<ore:foilSiliconRubber> * 16, 
+		<metaitem:component.smd.transistor.wetware> * 16,
+		<metaitem:component.smd.capacitor.wetware> * 16, 
+		<metaitem:component.smd.diode.wetware> * 16, 
+		<metaitem:circuit.wetware_processor> * 2, 
+		<enderio:item_material:42> * 2, 
+		<metaitem:plate.aram> * 4, 
+		<ore:wireGtSingleZpmSuperconductor> * 6,
+		<metaitem:cyber.processing.unit>])
+	.fluidInputs(<liquid:sterilized_growth_medium> * 2000)
+	.outputs(<metaitem:circuit.wetware_assembly>)
+	.duration(400).EUt(120000)
+	.buildAndRegister();
 
 
 
@@ -479,9 +592,46 @@ assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32459> * 16, <gregtec
  
 //Crystal Processor Mainframe
 
-<contenttweaker:crystalprocessormainframe>.addTooltip(format.aqua(format.italic("This is the first Tier Eight circuit.")));
+<metaitem:circuit.mainframe.crystal>.addTooltip(format.aqua(format.italic("This is the first Tier Eight circuit.")));
+
+gt.removeByOutput(gt.assembly_line, [<metaitem:circuit.mainframe.crystal>]);
+
 // change gregicality recipe !!
-//assembly_line.recipeBuilder().inputs([<metaitem:component.smd.resistor> * 48, <gregtech:meta_item_2:32479>, <metaitem:component.smd.transistor> * 36, <metaitem:component.smd.capacitor> * 32, <metaitem:component.smd.diode> * 24, <enderio:item_material:19> * 4, <extendedcrafting:material:18> * 8, <contenttweaker:crystalprocessorarray> * 2, <gregtech:frame_hsse> * 4, <ore:wireGtSingleEnderium> * 8]).fluidInputs(<liquid:soldering_alloy> * 1440).outputs([<contenttweaker:crystalprocessormainframe>]).duration(500).EUt(30000).buildAndRegister();
+for fluid, amount in fluids {
+	gt.assembly_line.recipeBuilder()
+		.inputs([<metaitem:component.smd.resistor.quantum> * 64, 
+			<metaitem:component.smd.resistor.quantum> * 64, 
+			<metaitem:plate.high_power_integrated_circuit> * 4, 
+			<metaitem:component.smd.transistor.quantum> * 64, 
+			<metaitem:component.smd.capacitor.quantum> * 64, 
+			<metaitem:component.smd.diode.quantum> * 48, 
+			<enderio:item_material:19> * 4, 
+			<extendedcrafting:material:18> * 8, 
+			<metaitem:circuit.computer.crystal> * 2, 
+			<gregtech:frame_hsse> * 4, 
+			<ore:wireGtSingleLuvSuperconductor> * 32])
+		.fluidInputs(fluid * (amount * 5))
+		.outputs([<metaitem:circuit.mainframe.crystal>])
+		.duration(sec(25)).EUt(30000)
+		.buildAndRegister();
+
+	gt.assembly_line.recipeBuilder()
+		.inputs([<metaitem:component.smd.resistor.crystal> * 48, 
+			<metaitem:plate.high_power_integrated_circuit> * 4, 
+			<metaitem:component.smd.transistor.crystal> * 36, 
+			<metaitem:component.smd.capacitor.crystal> * 32, 
+			<metaitem:component.smd.diode.crystal> * 24, 
+			<enderio:item_material:19> * 4, 
+			<extendedcrafting:material:18> * 8, 
+			<metaitem:circuit.computer.crystal> * 2, 
+			<gregtech:frame_hsse> * 4, 
+			<ore:wireGtSingleLuvSuperconductor> * 32])
+		.fluidInputs(fluid * (amount * 5))
+		.outputs([<metaitem:circuit.mainframe.crystal>])
+		.duration(sec(25)).EUt(30000)
+		.buildAndRegister();
+}
+
  
  
 //Wetware Processor Array 
@@ -492,7 +642,7 @@ assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32459> * 16, <gregtec
 <metaitem:circuit.wetware_super_computer>.addTooltip(format.aqua(format.italic("This is the second and final Tier Eight circuit.")));
 
 // change gregicality recipe !!
-//assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32459> * 32, <gregtech:meta_item_1:19391> * 32, <gregtech:meta_item_2:32460> * 32, <gregtech:meta_item_2:32458> * 16, <gregtech:meta_item_2:32457> * 16, <ore:plateEuropium> * 4, <ore:wireGtSingleSuperconductor> * 8, <metaitem:circuit.wetware_assembly> * 2, <enderio:item_material:44> * 8).fluidInputs(<liquid:soldering_alloy> * 1152).outputs(<gregtech:meta_item_2:32500>).duration(600).EUt(122880).buildAndRegister();
+//gt.assembly_line.recipeBuilder().inputs(<gregtech:meta_item_2:32459> * 32, <gregtech:meta_item_1:19391> * 32, <gregtech:meta_item_2:32460> * 32, <gregtech:meta_item_2:32458> * 16, <gregtech:meta_item_2:32457> * 16, <ore:plateEuropium> * 4, <ore:wireGtSingleSuperconductor> * 8, <metaitem:circuit.wetware_assembly> * 2, <enderio:item_material:44> * 8).fluidInputs(<liquid:soldering_alloy> * 1152).outputs(<gregtech:meta_item_2:32500>).duration(600).EUt(122880).buildAndRegister();
 
 
 
@@ -580,10 +730,10 @@ recipes.remove(<meta_tile_entity:gtadditions:convert_gteu.mv.16>);
 recipes.remove(<meta_tile_entity:gtadditions:convert_forge.mv.16>);
 recipes.addShaped(<enderio:item_power_conduit:1> * 3, [									//Energetic Alloy Conduit
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
-	[<gregtech:cable:701>,<enderio:item_power_conduit>,<gregtech:cable:701>], 
+	[<gregtech:cable:501>,<enderio:item_power_conduit>,<gregtech:cable:501>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 <enderio:item_power_conduit:1>.displayName = "Energetic Alloy Energy Conduit";
-assembler.recipeBuilder().inputs([<gregtech:cable:701> * 2, <enderio:item_power_conduit>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_power_conduit:1> * 4]).duration(80).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:cable:501> * 2, <enderio:item_power_conduit>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_power_conduit:1> * 4]).duration(80).EUt(16).buildAndRegister();
 //x4 MV ceu
 recipes.addShaped(<meta_tile_entity:gtadditions:convert_gteu.mv.4>, [[<ore:wireGtQuadrupleEnergeticAlloy>, gt.getCirc("MV"), <ore:wireGtQuadrupleEnergeticAlloy>], [<enderio:item_power_conduit:1>, <meta_tile_entity:gregtech:hull.mv>,<enderio:item_power_conduit:1>], [<ore:wireGtQuadrupleEnergeticAlloy>, <ore:chestWood>, <ore:wireGtQuadrupleEnergeticAlloy>]]);
 //x4 MV cef
@@ -625,10 +775,10 @@ recipes.remove(<meta_tile_entity:gtadditions:convert_gteu.ev.16>);
 recipes.remove(<meta_tile_entity:gtadditions:convert_forge.ev.16>);
 recipes.addShaped(<enderio:item_endergy_conduit:1> * 3, [									//End Steel Conduit
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
-	[<gregtech:cable:712>,<enderio:item_power_conduit:2>,<gregtech:cable:712>], 
+	[<gregtech:cable:512>,<enderio:item_power_conduit:2>,<gregtech:cable:512>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 <enderio:item_endergy_conduit:1>.displayName = "End Steel Energy Conduit";
-assembler.recipeBuilder().inputs([<gregtech:cable:712> * 2, <enderio:item_power_conduit:2>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:1> * 4]).duration(80).EUt(16).buildAndRegister();	
+assembler.recipeBuilder().inputs([<gregtech:cable:512> * 2, <enderio:item_power_conduit:2>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:1> * 4]).duration(80).EUt(16).buildAndRegister();	
 //x4 EV ceu
 recipes.addShaped(<meta_tile_entity:gtadditions:convert_gteu.ev.4>, [[<ore:wireGtQuadrupleEndSteel>, gt.getCirc("EV"), <ore:wireGtQuadrupleEndSteel>], [<enderio:item_endergy_conduit:1>, <meta_tile_entity:gregtech:hull.ev>, <enderio:item_endergy_conduit:1>], [<ore:wireGtQuadrupleEndSteel>, <ore:chestWood>, <ore:wireGtQuadrupleEndSteel>]]);
 //x4 EV cef
@@ -647,10 +797,10 @@ recipes.remove(<meta_tile_entity:gtadditions:convert_gteu.iv.16>);
 recipes.remove(<meta_tile_entity:gtadditions:convert_forge.iv.16>);	
 recipes.addShaped(<enderio:item_endergy_conduit:6> * 3, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
-	[<gregtech:cable:706>,<enderio:item_endergy_conduit:1> ,<gregtech:cable:706>], 
+	[<gregtech:cable:506>,<enderio:item_endergy_conduit:1> ,<gregtech:cable:506>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 <enderio:item_endergy_conduit:6>.displayName = "Lumium Energy Conduit";
-assembler.recipeBuilder().inputs([<gregtech:cable:706> * 2, <enderio:item_endergy_conduit:1> , <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:6> * 4]).duration(80).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:cable:506> * 2, <enderio:item_endergy_conduit:1> , <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:6> * 4]).duration(80).EUt(16).buildAndRegister();
 
 //x4 IV ceu
 recipes.addShaped(<meta_tile_entity:gtadditions:convert_gteu.iv.4>, [[<ore:wireGtQuadrupleLumium>, gt.getCirc("IV"), <ore:wireGtQuadrupleLumium>], [<enderio:item_endergy_conduit:6>, <meta_tile_entity:gregtech:hull.iv>, <enderio:item_endergy_conduit:6>], [<ore:wireGtQuadrupleLumium>, <ore:chestWood>, <ore:wireGtQuadrupleLumium>]]);
@@ -671,10 +821,10 @@ recipes.remove(<meta_tile_entity:gtadditions:convert_gteu.luv.16>);
 recipes.remove(<meta_tile_entity:gtadditions:convert_forge.luv.16>);
 recipes.addShaped(<enderio:item_endergy_conduit:4> * 3, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
-	[<gregtech:cable:707>,<enderio:item_endergy_conduit:6>,<gregtech:cable:707>], 
+	[<gregtech:cable:507>,<enderio:item_endergy_conduit:6>,<gregtech:cable:507>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 <enderio:item_endergy_conduit:4>.displayName = "Signalum Energy Conduit";
-assembler.recipeBuilder().inputs([<gregtech:cable:707> * 2, <enderio:item_endergy_conduit:6>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:4> * 4]).duration(80).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:cable:507> * 2, <enderio:item_endergy_conduit:6>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit:4> * 4]).duration(80).EUt(16).buildAndRegister();
 //x4 LUV ceu
 recipes.addShaped(<meta_tile_entity:gtadditions:convert_gteu.luv.4>, [[<ore:wireGtQuadrupleSignalum>, gt.getCirc("LuV"), <ore:wireGtQuadrupleSignalum>], [<enderio:item_endergy_conduit:4>, <meta_tile_entity:gregtech:hull.luv>, <enderio:item_endergy_conduit:4>], [<ore:wireGtQuadrupleSignalum>, <ore:chestWood>, <ore:wireGtQuadrupleSignalum>]]);
 //x4 LUV cef
@@ -694,10 +844,10 @@ recipes.remove(<meta_tile_entity:gtadditions:convert_gteu.zpm.16>);
 recipes.remove(<meta_tile_entity:gtadditions:convert_forge.zpm.16>);
 recipes.addShaped(<enderio:item_endergy_conduit> * 3, [
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
-	[<gregtech:cable:708>,<enderio:item_endergy_conduit:4>,<gregtech:cable:708>], 
+	[<gregtech:cable:963>,<enderio:item_endergy_conduit:4>,<gregtech:cable:963>], 
 	[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
 <enderio:item_endergy_conduit>.displayName = "Enderium Energy Conduit";
-assembler.recipeBuilder().inputs([<gregtech:cable:708>* 2, <enderio:item_endergy_conduit:4>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit> * 4]).duration(80).EUt(16).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:cable:963>* 2, <enderio:item_endergy_conduit:4>, <ore:itemConduitBinder> * 6]).outputs([<enderio:item_endergy_conduit> * 4]).duration(80).EUt(16).buildAndRegister();
 //x4 ZPM ceu
 recipes.addShaped(<meta_tile_entity:gtadditions:convert_gteu.zpm.4>, [[<ore:wireGtQuadrupleEnderium>, gt.getCirc("ZPM"), <ore:wireGtQuadrupleEnderium>], [<enderio:item_endergy_conduit>, <meta_tile_entity:gregtech:hull.zpm>, <enderio:item_endergy_conduit>], [<ore:wireGtQuadrupleEnderium>, <ore:chestWood>, <ore:wireGtQuadrupleEnderium>]]);
 //x4 ZPM cef
@@ -892,13 +1042,6 @@ recipes.remove(<gregtech:machine_casing>);
         [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>],
         [<ore:plateWroughtIron>,          gt.wrench       , <ore:plateWroughtIron>],
         [<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
-
-
-    // Modularium Machine Casing
-    recipes.addShaped("of_modular_casing_wrench", <modularmachinery:blockcasing> *2, [
-        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>], 
-        [<modularmachinery:itemmodularium>,               gt.wrench             , <modularmachinery:itemmodularium>], 
-        [<modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>]]);
 
     // LuV Machine Casing
     recipes.addShaped("of_luv_casing_wrench", <gregtech:machine_casing:6>, [

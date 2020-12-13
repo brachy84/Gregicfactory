@@ -61,4 +61,4 @@ increaseBatchSize(DT.findRecipe(256, null, [<liquid:wood_tar> * 1000]),320,DT);
 increaseBatchSize(DT.findRecipe(256, null, [<liquid:wood_gas> * 1000]),320,DT);
 increaseBatchSize(DT.findRecipe(256, null, [<liquid:wood_vinegar> * 1000]),320,DT);
 
-increaseBatchSize(DT.findRecipe(180, null, [<liquid:fermented_biomass> * 1000]),600,DT);
+increaseBatchSize(DT.findRecipe(180, null, [<liquid:fermented_biomass> * 2000]),600,DT);

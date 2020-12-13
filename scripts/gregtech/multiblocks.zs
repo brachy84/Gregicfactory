@@ -13,7 +13,12 @@ import mods.gregtech.multiblock.FactoryMultiblockShapeInfo;
 import mods.gregtech.multiblock.IBlockInfo;
 import mods.gregtech.multiblock.IBlockWorldState;
 import mods.gregtech.multiblock.Multiblock;
-
+import mods.gregtech.recipe.functions.IRecipePredicate;
+import mods.gregtech.recipe.functions.IUpdateWorktableFunction;
+import mods.gregtech.recipe.functions.IUpdateFunction;
+import mods.gregtech.recipe.functions.ICompleteRecipeFunction;
+import mods.gregtech.recipe.IRecipe;
+import mods.gregtech.IControllerTile;
 import mods.gregtech.MetaTileEntities;
 
 import mods.gregtech.recipe.FactoryRecipeMap;
@@ -1185,92 +1190,82 @@ val lunarminingstation = Builder.start(loc, id)
                         .build())
     .buildAndRegister() as Multiblock;
 
+id += 1;
+loc = "microverse_absorber";
+
+val microverseAbsorber = Builder.start(loc, id)
+    .withPattern(FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.UP, RelativeDirection.BACK)
+			.aisle("   C   ", "  CCC  ", " CCGCC ", "CCGGGCC", " CCGCC ", "  CCC  ", "   C   ")
+			.aisle("  CCC  ", " C   C ", "C     C", "C     C", "C     C", " C   C ", "  CCC  ")
+			.aisle(" CCCCC ", "C     C", "c     c", "G     G", "c     c", "C     C", " CCCCC ")
+            .aisle("CCCCCCC", "C     C", "G     G", "G     G", "G     G", "C     C", "CCCCCCC")
+            .aisle(" CCCCC ", "C     C", "c     c", "G     G", "c     c", "C     C", " CCCCC ")
+            .aisle("  CCC  ", " C   C ", "C     C", "C     C", "C     C", " C   C ", "  CCC  ")
+            .aisle("   C   ", "  CSC  ", " CCGCC ", "CCGGGCC", " CCGCC ", "  CCC  ", "   C   ")
+            .where("C", <metastate:gregtech:metal_casing_naquadria>)
+            .where("G",<metastate:gtadditions:ga_transparent_casing:6>)
+            .whereOr("c", <metastate:gregtech:metal_casing_naquadria>,
+                IBlockMatcher.abilityPartPredicate(
+                    MultiblockAbility.INPUT_ENERGY,
+                    MultiblockAbility.IMPORT_ITEMS,
+                    MultiblockAbility.EXPORT_ITEMS,
+					MultiblockAbility.IMPORT_FLUIDS
+                ))
+            .where("S", IBlockMatcher.controller(loc))
+			.where(" ", IBlockMatcher.ANY)
+            .build())
+    .addDesign(
+		FactoryMultiblockShapeInfo.start()
+			.aisle("   C   ", "  CCC  ", " CCGCC ", "CCGGGCC", " CCGCC ", "  CCC  ", "   C   ")
+			.aisle("  CCC  ", " C   C ", "C     C", "C     C", "C     C", " C   C ", "  CCC  ")
+			.aisle(" CCCCC ", "C     C", "I     C", "G     G", "O     C", "C     C", " CCCCC ")
+            .aisle("CCCCCCC", "S     C", "G     G", "G     G", "G     G", "C     C", "CCCCCCC")
+            .aisle(" CCCCC ", "C     C", "O     C", "G     G", "O     C", "C     C", " CCCCC ")
+            .aisle("  CCC  ", " C   C ", "C     C", "C     C", "C     C", " C   C ", "  CCC  ")
+            .aisle("   C   ", "  CCC  ", " CCGCC ", "CCGGGCC", " CCGCC ", "  CCC  ", "   C   ")
+            .where("C", <metastate:gregtech:metal_casing_naquadria>)
+            .where("G",<metastate:gtadditions:ga_transparent_casing:6>)
+            .where("S", IBlockInfo.controller(loc))
+            .where("I", MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
+            .where("O", MetaTileEntities.ITEM_EXPORT_BUS[7], IFacing.west())
+            .build())
+    .withRecipeMap(
+        FactoryRecipeMap.start(loc)
+		    .minInputs(1)
+		    .maxInputs(5)
+		    .minOutputs(0)
+		    .maxOutputs(4)
+			.minFluidOutputs(1)
+			.maxFluidOutputs(16)
+			.minFluidInputs(0)
+			.maxFluidInputs(1)
+		    .build())
+    .buildAndRegister();
+
+//microverseAbsorber.recipePredicate = function(controller as IControllerTile, irecipe as IRecipe, consumeIfSuccess as bool) as bool {
+//    
+//} as IRecipePredicate;
+
+microverseAbsorber.recipeMap.recipeBuilder()
+    .inputs([<contenttweaker:universecreationdata>])
+    .fluidOutputs([<liquid:copper> * 1296,
+        <liquid:iron> * 1296,
+        <liquid:titanium> * 576])
+    .EUt(500000).duration(sec(15 * 60))
+    .buildAndRegister();
+
+
 ///////////////////////////////////////////////
 ////////////   Crafting Recipes   /////////////
 ///////////////////////////////////////////////
 
-// Modular Machinery conversion recipes
-recipes.addShapeless("mm_casing_conversion", <contenttweaker:microverse_casing>, [<modularmachinery:blockcasing>]);
-recipes.addShapeless("mm_vent_conversion", <contenttweaker:microverse_vent>, [<modularmachinery:blockcasing:1>]);
-recipes.addShapeless("mm_ingot_conversion", <ore:ingotMicroversium>.firstItem, [<modularmachinery:itemmodularium>]);
-
-// Generate shapeless recipes for getting microversium back from the ModularMachinery item buses
-for meta in 0 .. 7 {
-    // tiny returns 4 from the casing, then there's 3 more ingots per tier
-    val count as int = (4 + meta * 3);
-
-    recipes.addShapeless("mm_inputbus_conversion_" ~ meta,
-        <ore:ingotMicroversium>.firstItem * count,
-        [itemUtils.getItem("modularmachinery:blockinputbus", meta)]);
-
-    recipes.addShapeless("mm_outputbus_conversion__" ~ meta, 
-        <ore:ingotMicroversium>.firstItem * count,
-        [itemUtils.getItem("modularmachinery:blockoutputbus", meta)]);
-}
-
-// Generate shapeless recipes for getting microversium back from the ModularMachinery fluid hatches
-for meta in 0 .. 8 {
-    // tiny returns 4 from the casing, then there's 3 more ingots per tier
-    val count as int = (4 + meta * 3);
-    
-    recipes.addShapeless("mm_fluidinput_refund_" ~ meta,
-        <ore:ingotMicroversium>.firstItem * count,
-        [itemUtils.getItem("modularmachinery:blockfluidinputhatch", meta)]);
-
-    recipes.addShapeless("mm_fluidoutput_refund_" ~ meta, 
-        <ore:ingotMicroversium>.firstItem * count,
-        [itemUtils.getItem("modularmachinery:blockfluidoutputhatch", meta)]);
-}
-
-// Generate Shapeless conversion recipes for getting the GTCE energy hatch back from ModularMachinery hatches.
-
-val energyInputHatches as int[] = [
-    714, 724, 734, 744, 754, 764, 774, 784
-] as int[];
-
-for idx,meta in energyInputHatches {
-    recipes.addShapeless("mm_energyinput_refund_" ~ idx,
-        itemUtils.getItem("gregtech:machine", meta),
-        [itemUtils.getItem("modularmachinery:blockenergyinputhatch", idx)]);
-
-    recipes.addShapeless("mm_energyoutput_refund_" ~ idx,
-        itemUtils.getItem("gregtech:machine", meta + 1),
-        [itemUtils.getItem("modularmachinery:blockenergyoutputhatch", idx)]);
-}
-
-val controllers = [
-    <gregtech:machine:3000>,
-    <gregtech:machine:3001>,
-    <gregtech:machine:3002>,
-    <gregtech:machine:3003>,
-    <gregtech:machine:3004>,
-    <gregtech:machine:3005>,
-    <gregtech:machine:3006>,
-    <gregtech:machine:3007>] as IItemStack[];
-
-function makeRecipe(i as int, result as IItemStack) {
-    val grid = [[null, null, null],
-                [null, null, null],
-                [null, null, null]] as IIngredient[][];
-
-    grid[i / 3][i % 3] = <modularmachinery:blockcontroller>;
-
-    recipes.addShaped("multiblock_controller_"+i, result, grid);
-}
-
-for i, controller in controllers {
-    makeRecipe(i, controller);
-}
-
-/// End conversion code ///
-
 // Casing
-assembler.recipeBuilder()
+/*assembler.recipeBuilder()
     .duration(200)
     .EUt(30)
     .inputs(<ore:ingotMicroversium>.firstItem * 4)
     .outputs(<contenttweaker:microverse_casing>)
-    .buildAndRegister();
+    .buildAndRegister();*/
 
 // Vent
 recipes.addShaped("ctt_vent", <contenttweaker:microverse_vent>, [
@@ -1641,8 +1636,8 @@ large_microverse.recipeMap
     .EUt(31250)
     .inputs(<contenttweaker:tiersevenship>,
             <contenttweaker:quantumflux> * 32,
-            <ore:crystalDilithium>.firstItem * 64,
-            <ore:crystalDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
             <contenttweaker:dragonlairdata> * 32)
     .outputs(<draconicevolution:dragon_heart> * 32,
              <minecraft:dragon_egg> * 64,
@@ -1668,8 +1663,8 @@ large_microverse.recipeMap
     .duration(1500)
     .EUt(31250)
     .inputs(<contenttweaker:tiersevenship>,
-            <ore:crystalDilithium>.firstItem * 64,
-            <ore:crystalDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
             <contenttweaker:gemsensor>,
             <contenttweaker:dragonlairdata> * 64,
             <contenttweaker:dragonlairdata> * 64,
@@ -1685,10 +1680,10 @@ large_microverse.recipeMap
     .EUt(62500)
     .inputs(<contenttweaker:tiereightship>,
             <contenttweaker:quantumflux> * 64,
-            <ore:crystalDilithium>.firstItem * 64,
-            <ore:crystalDilithium>.firstItem * 64,
-            <ore:crystalDilithium>.firstItem * 64,
-            <ore:crystalDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
             <contenttweaker:witherrealmdata> * 64,
             <contenttweaker:witherrealmdata> * 64)
     .outputs(<gregtech:meta_item_1:32725> * 32,
@@ -1705,10 +1700,10 @@ large_microverse.recipeMap
     .EUt(62500)
     .inputs(<contenttweaker:tiereightship>,
             <contenttweaker:quantumflux> * 64,
-            <ore:crystalDilithium>.firstItem * 64,
-            <ore:crystalDilithium>.firstItem * 64,
-            <ore:crystalDilithium>.firstItem * 64,
-            <ore:crystalDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
+            <ore:gemDilithium>.firstItem * 64,
             <contenttweaker:lairofthechaosguardiandata>)
     .outputs(<draconicevolution:chaos_shard> * 4,
              <minecraft:dragon_egg> * 64,

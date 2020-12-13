@@ -118,4 +118,9 @@ zenClass Utils {
 			}
 		}
 	}
+
+	// PRNG
+	function random() as int {
+		
+	}
 }

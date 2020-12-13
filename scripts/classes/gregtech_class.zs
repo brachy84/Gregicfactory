@@ -6,14 +6,16 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import mods.gregtech.recipe.RecipeMap;
-import mods.gtadditions.recipe.GARecipeMaps as GT;
+import mods.gregtech.recipe.RecipeMaps;
+import mods.gtadditions.recipe.GARecipeMaps as GA;
 import mods.gtadditions.recipe.LargeRecipeMap;
+import mods.gtadditions.recipe.Utils;
 
 zenClass Gregtech {
 	zenConstructor() {
 	}
 
-	val compressor as RecipeMap = RecipeMap.getByName("compressor");
+	val compressor as RecipeMap = RecipeMaps.COMPRESSOR_RECIPES;
 	val extractor as RecipeMap = RecipeMap.getByName("extractor");
 	val macerator as RecipeMap = RecipeMap.getByName("macerator");
 	val orewasher as RecipeMap = RecipeMap.getByName("orewasher");
@@ -58,25 +60,35 @@ zenClass Gregtech {
 	val packer as RecipeMap = RecipeMap.getByName("packer");
 	val unpacker as RecipeMap = RecipeMap.getByName("unpacker");
 
-	val cluster_mill as RecipeMap = RecipeMap.getByName("cluster_mill");
-	val assembly_line as RecipeMap = RecipeMap.getByName("assembly_line");
-	val mass_fab as RecipeMap = RecipeMap.getByName("mass_fab");
-	val replicator as RecipeMap = RecipeMap.getByName("replicator");
-	val cracker_unit as RecipeMap = RecipeMap.getByName("cracker_unit");
-	val circuit_assembler as RecipeMap = RecipeMap.getByName("circuit_assembler");
-	val electric_sieve as RecipeMap = RecipeMap.getByName("electric_sieve");
-	val attractor as RecipeMap = RecipeMap.getByName("attractor");
-	val large_chemical_reactor as RecipeMap = RecipeMap.getByName("large_chemical_reactor");
-	val chemical_dehydrator as RecipeMap = RecipeMap.getByName("chemical_dehydrator");
-	val chemical_plant as RecipeMap = RecipeMap.getByName("chemical_plant");
-	val large_mixer as RecipeMap = RecipeMap.getByName("large_mixer");
-	val blast_alloy as RecipeMap = RecipeMap.getByName("blast_alloy");
-	val large_forge_hammer as RecipeMap = RecipeMap.getByName("large_forge_hammer");
-	val simple_ore_washer as RecipeMap = RecipeMap.getByName("simple_ore_washer");
-	val nuclear_reactor as RecipeMap = RecipeMap.getByName("nuclear_reactor");
-	val decay_chamber as RecipeMap = RecipeMap.getByName("decay_chamber");
-	val nuclear_breeder as RecipeMap = RecipeMap.getByName("nuclear_breeder");
-	val large_centrifuge as RecipeMap = RecipeMap.getByName("large_centrifuge");
+	//Gregicality
+	val cluster_mill as RecipeMap = GA.CLUSTER_MILL_RECIPES;
+	val assembly_line as RecipeMap = GA.ASSEMBLY_LINE_RECIPES;
+	val mass_fab as RecipeMap = GA.MASS_FAB_RECIPES;
+	val replicator as RecipeMap = GA.REPLICATOR_RECIPES;
+	val cracker_unit as RecipeMap = GA.CRACKER_UNIT_RECIPES;
+	val circuit_assembler as RecipeMap = GA.CIRCUIT_ASSEMBLER_RECIPES;
+	val electric_sieve as RecipeMap = GA.SIEVE_RECIPES;
+	val attractor as RecipeMap = GA.ATTRACTOR_RECIPES;
+	val chemical_dehydrator as RecipeMap = GA.CHEMICAL_DEHYDRATOR_RECIPES;
+	val chemical_plant as RecipeMap = GA.CHEMICAL_PLANT_RECIPES;
+	val blast_alloy as RecipeMap = GA.BLAST_ALLOY_RECIPES;
+	val simple_ore_washer as RecipeMap = GA.SIMPLE_ORE_WASHER_RECIPES;
+	val nuclear_reactor as RecipeMap = GA.NUCLEAR_REACTOR_RECIPES;
+	val nuclear_breeder as RecipeMap = GA.NUCLEAR_BREEDER_RECIPES;
+	val decay_chamber as RecipeMap = GA.DECAY_CHAMBERS_RECIPES;
+	val bio_reactor as RecipeMap = GA.BIO_REACTOR_RECIPES;
+	val qubit_generator as RecipeMap = GA.SIMPLE_QUBIT_GENERATOR;
+	val stellar_forge as RecipeMap = GA.STELLAR_FORGE_RECIPES;
+	val plasma_condenser as RecipeMap = GA.PLASMA_CONDENSER_RECIPES;
+	val gas_centrifuge as RecipeMap = GA.GAS_CENTRIFUGE_RECIPES;
+	val adv_fusion as RecipeMap = GA.ADV_FUSION_RECIPES;
+
+	// Large
+	val large_chemical_reactor as LargeRecipeMap = LargeRecipeMap.of(GA.LARGE_CHEMICAL_RECIPES);
+	val large_mixer as LargeRecipeMap = LargeRecipeMap.of(GA.LARGE_MIXER_RECIPES);
+	val large_forge_hammer as LargeRecipeMap = LargeRecipeMap.of(GA.LARGE_FORGE_HAMMER_RECIPES);
+	val large_centrifuge as LargeRecipeMap = LargeRecipeMap.of(GA.LARGE_CENTRIFUGE_RECIPES);
+	val large_engraver as LargeRecipeMap = LargeRecipeMap.of(GA.LARGE_ENGRAVER_RECIPES);
 
 	val diesel_generator as RecipeMap = RecipeMap.getByName("diesel_generator");
 	val gas_turbine as RecipeMap = RecipeMap.getByName("gas_turbine");
@@ -95,6 +107,26 @@ zenClass Gregtech {
 	val cutter as IIngredient = <ore:gregWireCutters>;
 	val benCyl as IItemStack = <gtadditions:ga_meta_tool:1>;
 	val benCylLrg as IItemStack = <gtadditions:ga_meta_tool:0>;
+
+	function removeByOutput(recipeMap as RecipeMap, outputs as IItemStack[]) {
+		removeByOutput(recipeMap, outputs, null, false);
+	}
+
+	function removeByOutput(recipeMap as RecipeMap, outputs as IItemStack[], useAmounts as bool) {
+		removeByOutput(recipeMap, outputs, null, useAmounts);
+	}
+
+	function removeByOutput(recipeMap as RecipeMap, liquidOutputs as ILiquidStack[], useAmounts as bool) {
+		removeByOutput(recipeMap, [null], liquidOutputs, useAmounts);
+	}
+
+	function removeByOutput(recipeMap as RecipeMap, outputs as IItemStack[], liquidOutputs as ILiquidStack[]) {
+		removeByOutput(recipeMap, outputs, liquidOutputs, false);
+	}
+
+	function removeByOutput(recipeMap as RecipeMap, outputs as IItemStack[], liquidOutputs as ILiquidStack[], useAmounts as bool) {
+		Utils.removeRecipeByOutput(recipeMap, outputs, liquidOutputs, useAmounts);
+	}
 
 	val mats as string[string] = {
 		Aluminium : "MV",
@@ -264,7 +296,6 @@ zenClass Gregtech {
 		Grisium : "EV",
 		EglinSteel : "HV",
 		Neutronium : "ZPM",
-		Modularium : "LV",
 
 		//Custom materials
 		DarkSteel : "HV",
@@ -309,30 +340,42 @@ zenClass Gregtech {
 	function getCirc(tier as string) as IOreDictEntry {
 		if(tier.toLowerCase == "lv") {
 			return <ore:circuitBasic>;
-		}
+		} else
 		if(tier.toLowerCase == "mv") {
 			return <ore:circuitGood>;
-		}
+		} else
 		if(tier.toLowerCase == "hv") {
 			return <ore:circuitAdvanced>;
-		}
+		} else
 		if(tier.toLowerCase == "ev") {
 			return <ore:circuitExtreme>;
-		}
+		} else
 		if(tier.toLowerCase == "iv") {
 			return <ore:circuitElite>;
-		}
+		} else
 		if(tier.toLowerCase == "luv") {
 			return <ore:circuitMaster>;
-		}
+		} else
 		if(tier.toLowerCase == "zpm") {
 			return <ore:circuitUltimate>;
-		}
+		} else
 		if(tier.toLowerCase == "uv") {
 			return <ore:circuitSuperconductor>;
-		}
-		if(tier.toLowerCase == "max") {
+		} else
+		if(tier.toLowerCase == "uhv") {
 			return <ore:circuitInfinite>;
+		} else
+		if(tier.toLowerCase == "uev") {
+			return <ore:circuitUev>;
+		} else
+		if(tier.toLowerCase == "uiv") {
+			return <ore:circuitUiv>;
+		} else
+		if(tier.toLowerCase == "umv") {
+			return <ore:circuitUmv>;
+		} else
+		if(tier.toLowerCase == "uxv") {
+			return <ore:circuitUxv>;
 		}
 		return <ore:circuitPrimitive>;
 	}

@@ -65,10 +65,6 @@ var grainsofinnocence = VanillaFactory.createItem("grainsofinnocence");
 grainsofinnocence.maxStackSize = 64;
 grainsofinnocence.register();
 
-var combinationcircuit = VanillaFactory.createItem("combinationcircuit");
-combinationcircuit.maxStackSize = 64;
-combinationcircuit.register();
-
 var electronicprocessor = VanillaFactory.createItem("electronicprocessor");
 electronicprocessor.maxStackSize = 64;
 electronicprocessor.register();

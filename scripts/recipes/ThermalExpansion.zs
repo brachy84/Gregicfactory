@@ -94,7 +94,7 @@ mods.jei.JEI.addItem(reinforcedtank);
 mods.jei.JEI.addItem(signalumtank);
 mods.jei.JEI.addItem(resonanttank);
 
-mods.jei.JEI.addItem(<gregtech:meta_tool:7>.withTag({RandomKey: -9206505693458694257 as long, CreatorMost: -5567380206174582019 as long, CraftingComponents: [{id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "minecraft:stick", Count: 1 as byte, Damage: 0 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}], "GT.ToolStats": {PrimaryMaterial: "rubber", HandleMaterial: "wood"}, CreatorLeast: -6837252790035570724 as long}));
+mods.jei.JEI.addItem(<gregtech:meta_tool:7>.withTag({RandomKey: -9206505693458694257 as long, CreatorMost: -5567380206174582019 as long, CraftingComponents: [{id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "minecraft:stick", Count: 1 as byte, Damage: 0 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}, {id: "gregtech:meta_item_1", Count: 1 as byte, Damage: 10152 as short}], "GT.ToolStats": {PrimaryMaterial: "rubber", HandleMaterial: "wood"}, CreatorLeast: -6837252790035550724 as long}));
 
 //Steam Dynamo
 recipes.remove(<thermalexpansion:dynamo>);
@@ -114,7 +114,7 @@ recipes.addShaped(<thermalexpansion:dynamo:1>, [
 recipes.remove(<thermalexpansion:dynamo:3>);
 recipes.addShaped(<thermalexpansion:dynamo:3>, [
 	[null, <contenttweaker:excitationcoil>, null],
-	[<gregtech:meta_item_1:12701>, <morefurnaces:furnaceblock:1>, <gregtech:meta_item_1:12701>],
+	[<gregtech:meta_item_1:12501>, <morefurnaces:furnaceblock:1>, <gregtech:meta_item_1:12501>],
 	[<enderio:item_material:12>, <thermalfoundation:material:514>, <enderio:item_material:12>]]);
 
 //Numismatic Dynamo
@@ -438,16 +438,16 @@ for liquid,items in liquidMap {
 
 //Furnace Recipes
 //Enderium
-furnace.remove(<gregtech:meta_item_1:10708>, <gregtech:meta_item_1:2708>);
-furnace.addRecipe(<thermalfoundation:material:167>, <gregtech:meta_item_1:2708>);
+furnace.remove(<gregtech:meta_item_1:10963>, <gregtech:meta_item_1:2963>);
+furnace.addRecipe(<thermalfoundation:material:167>, <gregtech:meta_item_1:2963>);
 
 //Signalum
-furnace.remove(<gregtech:meta_item_1:10707>, <gregtech:meta_item_1:2707>);
-furnace.addRecipe(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>);
+furnace.remove(<gregtech:meta_item_1:10507>, <gregtech:meta_item_1:2507>);
+furnace.addRecipe(<thermalfoundation:material:165>, <gregtech:meta_item_1:2507>);
 
 //Lumium
-furnace.remove(<gregtech:meta_item_1:10706>, <gregtech:meta_item_1:2706>);
-furnace.addRecipe(<thermalfoundation:material:166>, <gregtech:meta_item_1:2706>);
+furnace.remove(<gregtech:meta_item_1:10506>, <gregtech:meta_item_1:2506>);
+furnace.addRecipe(<thermalfoundation:material:166>, <gregtech:meta_item_1:2506>);
 
 //Mana Infused
 mixer.recipeBuilder()

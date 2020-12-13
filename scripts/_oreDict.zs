@@ -450,7 +450,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 
 	#ingotEnderium
 	<ore:ingotEnderium> : [
-		<gregtech:meta_item_1:10708>
+		<gregtech:meta_item_1:10963>
 	],
 
 	#ingotGraphite
@@ -465,7 +465,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 
 	#ingotLumium
 	<ore:ingotLumium> : [
-		<gregtech:meta_item_1:10706>
+		<gregtech:meta_item_1:10506>
 	],
 
 	#ingotOsmiridium
@@ -533,7 +533,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 
 	#ingotSignalum
 	<ore:ingotSignalum>: [
-		<gregtech:meta_item_1:10707>
+		<gregtech:meta_item_1:10507>
 	],
 
 	#ingotSteel
@@ -985,6 +985,284 @@ for oreDictEntry, items in miscDisabled {
 	oreDictEntry.removeItems(items);
 }
 
+static oresAdd as IItemStack[][IOreDictEntry] = {
+    // Gregtech tools
+    <ore:gregWrenches> : [
+        <gregtech:meta_tool:8>.withEmptyTag(), 
+        <gregtech:meta_tool:29>.withEmptyTag(), 
+        <gregtech:meta_tool:30>.withEmptyTag(), 
+        <gregtech:meta_tool:31>.withEmptyTag()
+    ],
+    <ore:gregSaws> : [
+        <gregtech:meta_tool:5>.withEmptyTag(),
+        <gregtech:meta_tool:16>.withEmptyTag(), 
+        <gregtech:meta_tool:26>.withEmptyTag(), 
+        <gregtech:meta_tool:27>.withEmptyTag(), 
+        <gregtech:meta_tool:28>.withEmptyTag(), 
+        <gregtech:meta_tool:33>.withEmptyTag(),
+    ],
+    <ore:gregHoes> : [
+        <gregtech:meta_tool:4>.withEmptyTag()
+    ],
+    <ore:gregAxes> : [
+        <gregtech:meta_tool:3>.withEmptyTag()
+    ],
+    <ore:gregFiles> : [
+        <gregtech:meta_tool:9>.withEmptyTag()
+    ],
+    <ore:gregSwords> : [
+        <gregtech:meta_tool:0>.withEmptyTag()
+    ],
+    <ore:gregScoops> : [
+        <gregtech:meta_tool:14>.withEmptyTag()
+    ],
+    <ore:gregKnives> : [
+        <gregtech:meta_tool:17>.withEmptyTag()
+    ],
+    <ore:gregBlades> : [
+        <gregtech:meta_tool:16>.withEmptyTag(),
+        <gregtech:meta_tool:17>.withEmptyTag(),
+        <gregtech:meta_tool:18>.withEmptyTag(),
+        <gregtech:meta_tool:19>.withEmptyTag()
+    ],
+    <ore:gregMortars> : [
+        <gregtech:meta_tool:12>.withEmptyTag()
+    ],
+    <ore:gregShovels> : [
+        <gregtech:meta_tool:2>.withEmptyTag(),
+        <gregtech:meta_tool:16>.withEmptyTag(),
+    ],
+    <ore:gregPlungers> : [
+        <gregtech:meta_tool:37>.withEmptyTag()
+    ],
+    <ore:gregCrowbars> : [
+        <gregtech:meta_tool:10>.withEmptyTag(),
+        <gregtech:meta_tool:16>.withEmptyTag()
+    ],
+    <ore:gregPickaxes> : [
+        <gregtech:meta_tool:1>.withEmptyTag()
+    ],
+    <ore:gregBranchCutters> : [
+        <gregtech:meta_tool:15>.withEmptyTag()
+    ],
+    <ore:gregWireCutters> : [
+        <gregtech:meta_tool:13>.withEmptyTag()
+    ],
+    <ore:gregHardHammers> : [
+        <gregtech:meta_tool:6>.withEmptyTag()
+    ],
+    <ore:gregSoftHammers> : [
+        <gregtech:meta_tool:7>.withEmptyTag()
+    ],
+    <ore:gregJackHammers> : [
+        <gregtech:meta_tool:32>.withEmptyTag()
+    ],
+    <ore:gregScrewDrivers> : [
+        <gregtech:meta_tool:11>.withEmptyTag(),
+        <gregtech:meta_tool:34>.withEmptyTag()
+    ],
+    <ore:gregMiningDrills> : [
+        <gregtech:meta_tool:23>.withEmptyTag(),
+        <gregtech:meta_tool:24>.withEmptyTag(),
+        <gregtech:meta_tool:25>.withEmptyTag()
+    ],
+    <ore:gregJackHammers> : [
+        <gregtech:meta_tool:32>.withEmptyTag()
+    ],
+    // GregTech stone types
+    <ore:stoneMarble> : [
+        <gregtech:mineral>,
+        <gregtech:mineral:1>,
+        <gregtech:mineral:5>,
+        <gregtech:mineral:12>
+    ],
+    <ore:stoneRedGranite> : [
+        <gregtech:granite:1>,
+        <gregtech:granite:3>,
+        <gregtech:granite:7>,
+        <gregtech:granite:13>
+    ],
+    <ore:stoneBlackGranite> : [
+        <gregtech:granite>,
+        <gregtech:granite:2>,
+        <gregtech:granite:6>,
+        <gregtech:granite:12>
+    ],
+    <ore:stoneBasalt> : [
+        <gregtech:mineral:2>,
+        <gregtech:mineral:3>,
+        <gregtech:mineral:7>,
+        <gregtech:mineral:14>
+    ],
+
+    //Hatches and Busses
+    <ore:anyInputHatch> : [
+        <meta_tile_entity:gregtech:fluid_hatch.import.ulv>,
+        <meta_tile_entity:gregtech:fluid_hatch.import.lv>,
+        <meta_tile_entity:gregtech:fluid_hatch.import.mv>,
+        <meta_tile_entity:gregtech:fluid_hatch.import.hv>,
+        <meta_tile_entity:gregtech:fluid_hatch.import.ev>,
+        <meta_tile_entity:gregtech:fluid_hatch.import.iv>,
+        <meta_tile_entity:gregtech:fluid_hatch.import.luv>,
+        <meta_tile_entity:gregtech:fluid_hatch.import.zpm>,
+        <meta_tile_entity:gregtech:fluid_hatch.import.uv>,
+        <meta_tile_entity:gregtech:fluid_hatch.import.max>
+    ],
+    <ore:anyEnergyInputHatch> : [
+        <meta_tile_entity:gregtech:energy_hatch.input.ulv>,
+        <meta_tile_entity:gregtech:energy_hatch.input.lv>,
+        <meta_tile_entity:gregtech:energy_hatch.input.mv>,
+        <meta_tile_entity:gregtech:energy_hatch.input.hv>,
+        <meta_tile_entity:gregtech:energy_hatch.input.ev>,
+        <meta_tile_entity:gregtech:energy_hatch.input.iv>,
+        <meta_tile_entity:gregtech:energy_hatch.input.luv>,
+        <meta_tile_entity:gregtech:energy_hatch.input.zpm>,
+        <meta_tile_entity:gregtech:energy_hatch.input.uv>,
+        <meta_tile_entity:gregtech:energy_hatch.input.max>
+    ],
+    <ore:anyInputBus> : [
+        <meta_tile_entity:gregtech:item_bus.import.ulv>,
+        <meta_tile_entity:gregtech:item_bus.import.lv>,
+        <meta_tile_entity:gregtech:item_bus.import.mv>,
+        <meta_tile_entity:gregtech:item_bus.import.hv>,
+        <meta_tile_entity:gregtech:item_bus.import.ev>,
+        <meta_tile_entity:gregtech:item_bus.import.iv>,
+        <meta_tile_entity:gregtech:item_bus.import.luv>,
+        <meta_tile_entity:gregtech:item_bus.import.zpm>,
+        <meta_tile_entity:gregtech:item_bus.import.uv>,
+        <meta_tile_entity:gregtech:item_bus.import.max>
+    ],
+    <ore:anyOutputHatch> : [
+        <meta_tile_entity:gregtech:fluid_hatch.export.ulv>,
+        <meta_tile_entity:gregtech:fluid_hatch.export.lv>,
+        <meta_tile_entity:gregtech:fluid_hatch.export.mv>,
+        <meta_tile_entity:gregtech:fluid_hatch.export.hv>,
+        <meta_tile_entity:gregtech:fluid_hatch.export.ev>,
+        <meta_tile_entity:gregtech:fluid_hatch.export.iv>,
+        <meta_tile_entity:gregtech:fluid_hatch.export.luv>,
+        <meta_tile_entity:gregtech:fluid_hatch.export.zpm>,
+        <meta_tile_entity:gregtech:fluid_hatch.export.uv>,
+        <meta_tile_entity:gregtech:fluid_hatch.export.max>
+    ],
+    <ore:anyEnergyOutputHatch> : [
+        <meta_tile_entity:gregtech:energy_hatch.output.ulv>,
+        <meta_tile_entity:gregtech:energy_hatch.output.lv>,
+        <meta_tile_entity:gregtech:energy_hatch.output.mv>,
+        <meta_tile_entity:gregtech:energy_hatch.output.hv>,
+        <meta_tile_entity:gregtech:energy_hatch.output.ev>,
+        <meta_tile_entity:gregtech:energy_hatch.output.iv>,
+        <meta_tile_entity:gregtech:energy_hatch.output.luv>,
+        <meta_tile_entity:gregtech:energy_hatch.output.zpm>,
+        <meta_tile_entity:gregtech:energy_hatch.output.uv>,
+        <meta_tile_entity:gregtech:energy_hatch.output.max>
+    ],
+    <ore:anyOutputBus> : [
+        <meta_tile_entity:gregtech:item_bus.export.ulv>,
+        <meta_tile_entity:gregtech:item_bus.export.lv>,
+        <meta_tile_entity:gregtech:item_bus.export.mv>,
+        <meta_tile_entity:gregtech:item_bus.export.hv>,
+        <meta_tile_entity:gregtech:item_bus.export.ev>,
+        <meta_tile_entity:gregtech:item_bus.export.iv>,
+        <meta_tile_entity:gregtech:item_bus.export.luv>,
+        <meta_tile_entity:gregtech:item_bus.export.zpm>,
+        <meta_tile_entity:gregtech:item_bus.export.uv>,
+        <meta_tile_entity:gregtech:item_bus.export.max>
+    ],
+    <ore:anyLVBatBuff> : [
+        <meta_tile_entity:gregtech:battery_buffer.lv.1>,
+        <meta_tile_entity:gregtech:battery_buffer.lv.4>,
+        <meta_tile_entity:gregtech:battery_buffer.lv.9>,
+        <meta_tile_entity:gregtech:battery_buffer.lv.16>
+    ],
+    <ore:anyMVBatBuff> : [
+        <meta_tile_entity:gregtech:battery_buffer.mv.1>,
+        <meta_tile_entity:gregtech:battery_buffer.mv.4>,
+        <meta_tile_entity:gregtech:battery_buffer.mv.9>,
+        <meta_tile_entity:gregtech:battery_buffer.mv.16>
+    ],
+    <ore:anyHVBatBuff> : [
+        <meta_tile_entity:gregtech:battery_buffer.hv.1>,
+        <meta_tile_entity:gregtech:battery_buffer.hv.4>,
+        <meta_tile_entity:gregtech:battery_buffer.hv.9>,
+        <meta_tile_entity:gregtech:battery_buffer.hv.16>
+    ],
+    <ore:anyEVBatBuff> : [
+        <meta_tile_entity:gregtech:battery_buffer.ev.1>,
+        <meta_tile_entity:gregtech:battery_buffer.ev.4>,
+        <meta_tile_entity:gregtech:battery_buffer.ev.9>,
+        <meta_tile_entity:gregtech:battery_buffer.ev.16>
+    ],
+    <ore:anyIVBatBuff> : [
+        <meta_tile_entity:gregtech:battery_buffer.iv.1>,
+        <meta_tile_entity:gregtech:battery_buffer.iv.4>,
+        <meta_tile_entity:gregtech:battery_buffer.iv.9>,
+        <meta_tile_entity:gregtech:battery_buffer.iv.16>
+    ],
+    <ore:anyLuVBatBuff> : [
+        <meta_tile_entity:gregtech:battery_buffer.luv.1>,
+        <meta_tile_entity:gregtech:battery_buffer.luv.4>,
+        <meta_tile_entity:gregtech:battery_buffer.luv.9>,
+        <meta_tile_entity:gregtech:battery_buffer.luv.16>
+    ],
+    <ore:anyZPMBatBuff> : [
+        <meta_tile_entity:gregtech:battery_buffer.zpm.1>,
+        <meta_tile_entity:gregtech:battery_buffer.zpm.4>,
+        <meta_tile_entity:gregtech:battery_buffer.zpm.9>,
+        <meta_tile_entity:gregtech:battery_buffer.zpm.16>
+    ],
+    <ore:anyUVBatBuff> : [
+        <meta_tile_entity:gregtech:battery_buffer.uv.1>,
+        <meta_tile_entity:gregtech:battery_buffer.uv.4>,
+        <meta_tile_entity:gregtech:battery_buffer.uv.9>,
+        <meta_tile_entity:gregtech:battery_buffer.uv.16>
+    ],
+    <ore:anyMAXBatBuff> : [
+        <meta_tile_entity:gregtech:battery_buffer.max.1>,
+        <meta_tile_entity:gregtech:battery_buffer.max.4>,
+        <meta_tile_entity:gregtech:battery_buffer.max.9>,
+        <meta_tile_entity:gregtech:battery_buffer.max.16>
+    ],
+    <ore:anyQuantumTank> : [
+        <meta_tile_entity:gregtech:quantum_tank.mv>,
+        <meta_tile_entity:gregtech:quantum_tank.hv>,
+        <meta_tile_entity:gregtech:quantum_tank.ev>,
+        <meta_tile_entity:gregtech:quantum_tank.iv>
+    ],
+    <ore:anyQuantumChest> : [
+        <meta_tile_entity:gregtech:quantum_chest.mv>,
+        <meta_tile_entity:gregtech:quantum_chest.hv>,
+        <meta_tile_entity:gregtech:quantum_chest.ev>,
+        <meta_tile_entity:gregtech:quantum_chest.iv>
+    ],
+    <ore:anyRotorHolder> : [
+        <meta_tile_entity:gregtech:rotor_holder.hv>,
+        <meta_tile_entity:gregtech:rotor_holder.luv>,
+        <meta_tile_entity:gregtech:rotor_holder.max>
+    ],
+    //other
+    <ore:dustQuartz> : [
+        <gregtech:meta_item_1:2201>, //Netherqueartz dust
+        <gregtech:meta_item_1:2202> //Certus dust
+    ],
+    <ore:crystalFluix> : [
+        <appliedenergistics2:material:12>
+    ],
+    <ore:crystalCertusQuartz> : [
+        <appliedenergistics2:material:10>,
+        <gregtech:meta_item_1:8202> //Gregtech certus quartz
+    ],
+    <ore:gemNetherQuartz> : [
+        <appliedenergistics2:material:11>
+    ],
+    <ore:blockAluminum> : [
+        <ore:blockAluminium>.firstItem
+    ] // add gregtech block to stupid aluminium oreDict
+};
+
+for ore, items in oresAdd {
+    ore.addItems(items);
+}
+
 <ore:itemSilicon>.add(<gregtech:meta_item_2:32440>);
 <ore:dustQuartz>.add(<gregtech:meta_item_1:2201>);
 <ore:dustBone>.add(<minecraft:dye:15>);
@@ -1406,13 +1684,13 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:10694>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10695>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10698>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10699>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:10702>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:10703>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:10706>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:10707>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:10710>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:10502>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:10503>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:10506>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:10507>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:10510>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10711>);
-mods.jei.JEI.removeAndHide(<gregtech:machine:10714>);
+mods.jei.JEI.removeAndHide(<gregtech:machine:10514>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10715>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10718>);
 mods.jei.JEI.removeAndHide(<gregtech:machine:10719>);
@@ -1564,9 +1842,9 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:tool.hammer_invar>);
 
 //Custom Materials Removals
 //3 Thermal Alloys (nugget, block, ingot, dust)
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9706>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9707>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9708>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9506>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9507>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9963>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:7>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:5>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:6>);
@@ -1598,7 +1876,7 @@ mods.jei.JEI.removeAndHide(<lumberjack:stellaralloy_lumberaxe>);
 
 
 //Ingots to Proper Ingots
-recipes.addShapeless(<thermalfoundation:material:167>, [<gregtech:meta_item_1:10708>]);
+recipes.addShapeless(<thermalfoundation:material:167>, [<gregtech:meta_item_1:10963>]);
 recipes.addShapeless(<enderio:item_alloy_ingot:2>, [<ore:ingotVibrantAlloy>]);
 recipes.addShapeless(<enderio:item_alloy_ingot:1>, [<ore:ingotEnergeticAlloy>]);
 recipes.addShapeless(<enderio:item_alloy_ingot:4>, [<ore:ingotConductiveIron>]);
@@ -1606,10 +1884,10 @@ recipes.addShapeless(<enderio:item_alloy_ingot:8>, [<ore:ingotEndSteel>]);
 recipes.addShapeless(<enderio:item_alloy_ingot:5>, [<ore:ingotPulsatingIron>]);
 recipes.addShapeless(<enderio:item_alloy_ingot:6>, [<ore:ingotDarkSteel>]);
 recipes.addShapeless(<enderio:item_alloy_ingot>, [<ore:ingotElectricalSteel>]);
-recipes.addShapeless(<thermalfoundation:material:166>, [<gregtech:meta_item_1:10706>]);
-recipes.addShapeless(<thermalfoundation:material:165>, [<gregtech:meta_item_1:10707>]);
-recipes.addShapeless(<draconicevolution:draconium_ingot>, [<gregtech:meta_item_1:10710>]);
-recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:2710>]);
+recipes.addShapeless(<thermalfoundation:material:166>, [<gregtech:meta_item_1:10506>]);
+recipes.addShapeless(<thermalfoundation:material:165>, [<gregtech:meta_item_1:10507>]);
+recipes.addShapeless(<draconicevolution:draconium_ingot>, [<gregtech:meta_item_1:10510>]);
+recipes.addShapeless(<gregtech:meta_item_1:2510>, [<draconicevolution:draconium_dust>]);
 recipes.addShapeless(<ore:dustWood>.firstItem, [<thermalfoundation:material:800>]);
 
 
@@ -1662,21 +1940,21 @@ fluidextractor.recipeBuilder().inputs(<enderio:block_alloy:7>).fluidOutputs([<li
 
 
 //Omnium
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10709>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9709>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10509>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9509>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:8>);
 <ore:ingotOmnium>.add(<extendedcrafting:material:32>);
 <ore:nuggetOmnium>.add(<extendedcrafting:material:33>);
 <ore:blockOmnium>.add(<extendedcrafting:storage:4>);
 recipes.removeByRecipeName("gregtech:block_compress_omnium");
-wiremill.findRecipe(8, [<gregtech:meta_item_1:10709>], [null]).remove();
-macerator.findRecipe(8, [<gregtech:meta_item_1:10709>], [null]).remove();
+wiremill.findRecipe(8, [<gregtech:meta_item_1:10509>], [null]).remove();
+macerator.findRecipe(8, [<gregtech:meta_item_1:10509>], [null]).remove();
 macerator.findRecipe(8, [<ore:wireGtSingleOmnium>.firstItem], [null]).remove();
-extruder.findRecipe(48, [<gregtech:meta_item_1:10709>,<gregtech:meta_item_1:32356>], [null]).remove();
-extruder.findRecipe(64, [<gregtech:meta_item_1:10709> * 9,<gregtech:meta_item_1:32363>], [null]).remove();
-alloy.findRecipe(32, [<gregtech:meta_item_1:10709> * 9,<metaitem:shape.mold.block>], [null]).remove();
-fluidextractor.findRecipe(32, [<gregtech:meta_item_1:10709>], [null]).remove();
-fluidextractor.findRecipe(32, [<gregtech:meta_item_1:9709>], [null]).remove();
+extruder.findRecipe(48, [<gregtech:meta_item_1:10509>,<gregtech:meta_item_1:32356>], [null]).remove();
+extruder.findRecipe(64, [<gregtech:meta_item_1:10509> * 9,<gregtech:meta_item_1:32363>], [null]).remove();
+alloy.findRecipe(32, [<gregtech:meta_item_1:10509> * 9,<metaitem:shape.mold.block>], [null]).remove();
+fluidextractor.findRecipe(32, [<gregtech:meta_item_1:10509>], [null]).remove();
+fluidextractor.findRecipe(32, [<gregtech:meta_item_1:9509>], [null]).remove();
 fluidextractor.findRecipe(32, [<gregtech:compressed_17:8>], [null]).remove();
 fluidextractor.recipeBuilder().inputs(<extendedcrafting:material:33>).fluidOutputs([<liquid:omnium> * 16]).duration(25).EUt(30).buildAndRegister();
 fluidextractor.recipeBuilder().inputs(<extendedcrafting:material:32>).fluidOutputs([<liquid:omnium> * 144]).duration(200).EUt(30).buildAndRegister();
@@ -1688,28 +1966,28 @@ solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 144).notConsumable(<met
 solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 144).notConsumable(<metaitem:shape.mold.ingot>).outputs([<extendedcrafting:material:32>]).duration(200).EUt(30).buildAndRegister();
 solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 1296).notConsumable(<metaitem:shape.mold.block>).outputs([<extendedcrafting:storage:4>]).duration(200).EUt(30).buildAndRegister();
 solidifier.recipeBuilder().fluidInputs(<liquid:omnium> * 16).notConsumable(<gregtech:meta_item_1:32307>).outputs([<extendedcrafting:singularity_ultimate>]).duration(200).EUt(30).buildAndRegister();
-furnace.remove(<gregtech:meta_item_1:10709>);
-furnace.addRecipe(<extendedcrafting:material:32>, <gregtech:meta_item_1:2709>, 0.0);
-recipes.addShapeless(<extendedcrafting:material:32>, [<gregtech:meta_item_1:10709>]);
+furnace.remove(<gregtech:meta_item_1:10509>);
+furnace.addRecipe(<extendedcrafting:material:32>, <gregtech:meta_item_1:2509>, 0.0);
+recipes.addShapeless(<extendedcrafting:material:32>, [<gregtech:meta_item_1:10509>]);
 
 //Draconium
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:9>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10710>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9710>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:2710>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10510>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9510>);
+mods.jei.JEI.removeAndHide(<draconicevolution:draconium_dust>); // hide ugly dust rather than beautiful gregtech dust
 solidifier.findRecipe(8, [<metaitem:shape.mold.nugget>], [<liquid:draconium> * 144]).remove();
 solidifier.findRecipe(8, [<metaitem:shape.mold.ingot>], [<liquid:draconium> * 144]).remove();
 solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [<liquid:draconium> * 1296]).remove();
-fluidextractor.findRecipe(32, [<gregtech:meta_item_1:10710>], [null]).remove();
-fluidextractor.findRecipe(32, [<gregtech:meta_item_1:9710>], [null]).remove();
+fluidextractor.findRecipe(32, [<gregtech:meta_item_1:10510>], [null]).remove();
+fluidextractor.findRecipe(32, [<gregtech:meta_item_1:9510>], [null]).remove();
 fluidextractor.findRecipe(32, [<gregtech:compressed_17:9>], [null]).remove();
 solidifier.recipeBuilder().fluidInputs(<liquid:draconium> * 144).notConsumable(<metaitem:shape.mold.nugget>).outputs([<draconicevolution:nugget> * 9]).duration(200).EUt(30).buildAndRegister();
 solidifier.recipeBuilder().fluidInputs(<liquid:draconium> * 144).notConsumable(<metaitem:shape.mold.ingot>).outputs([<draconicevolution:draconium_ingot>]).duration(200).EUt(30).buildAndRegister();
 solidifier.recipeBuilder().fluidInputs(<liquid:draconium> * 1296).notConsumable(<metaitem:shape.mold.block>).outputs([<draconicevolution:draconium_block>]).duration(200).EUt(30).buildAndRegister();
-recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:1710>,<gregtech:meta_item_1:1710>,<gregtech:meta_item_1:1710>,<gregtech:meta_item_1:1710>]);
-recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>,<gregtech:meta_item_1:710>]);
-furnace.remove(<gregtech:meta_item_1:9710>);
-recipes.addShapeless(<draconicevolution:draconium_ingot>, [<gregtech:meta_item_1:10710>]);
+recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:1510>,<gregtech:meta_item_1:1510>,<gregtech:meta_item_1:1510>,<gregtech:meta_item_1:1510>]);
+recipes.addShapeless(<draconicevolution:draconium_dust>, [<gregtech:meta_item_1:510>,<gregtech:meta_item_1:510>,<gregtech:meta_item_1:510>,<gregtech:meta_item_1:510>,<gregtech:meta_item_1:510>,<gregtech:meta_item_1:510>,<gregtech:meta_item_1:510>,<gregtech:meta_item_1:510>,<gregtech:meta_item_1:510>]);
+furnace.remove(<gregtech:meta_item_1:9510>);
+recipes.addShapeless(<draconicevolution:draconium_ingot>, [<gregtech:meta_item_1:10510>]);
 
 //Awakened Draconium
 fluidextractor.recipeBuilder().inputs(<draconicevolution:nugget:1>).fluidOutputs([<liquid:awakeneddraconium> * 16]).duration(200).EUt(30).buildAndRegister();
@@ -1771,7 +2049,6 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 <ore:lvcef>.add(<meta_tile_entity:gtadditions:convert_forge.lv.4>);
 <ore:lvcef>.add(<meta_tile_entity:gtadditions:convert_forge.lv.16>);
 <ore:circuitBasic>.add(<contenttweaker:refinedcircuit>);
-<ore:circuitGood>.add(<contenttweaker:combinationcircuit>);
 <ore:circuitGood>.add(<contenttweaker:electronicprocessor>);
 <ore:circuitGood>.add(<contenttweaker:refinedprocessor>);
 <ore:circuitGood>.add(<contenttweaker:microcircuit>);
@@ -1823,26 +2100,26 @@ recipes.addShapeless(<gregtech:meta_item_1:10237>, [<enderio:item_alloy_ingot:3>
 
 //Extra EnderIO Stuff
 mods.jei.JEI.removeAndHide(<ore:ingotConductiveIron>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9700>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9500>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_16:15>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:2>);
 mods.jei.JEI.removeAndHide(<ore:ingotPulsatingIron>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9703>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9503>);
 mods.jei.JEI.removeAndHide(<ore:ingotDarkSteel>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9704>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9504>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:3>);
 mods.jei.JEI.removeAndHide(<ore:ingotElectricalSteel>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9705>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9505>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:4>);
 mods.jei.JEI.removeAndHide(<ore:ingotEnergeticAlloy>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9701>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9501>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17>);
 mods.jei.JEI.removeAndHide(<ore:ingotVibrantAlloy>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9702>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9502>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:1>);
 mods.jei.JEI.removeAndHide(<gregtech:compressed_17:10>);
 mods.jei.JEI.removeAndHide(<ore:ingotEndSteel>);
-mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9712>);
+mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:9512>);
 
 
 //Nuggets

@@ -94,3 +94,7 @@ global armoredreinforcedjetpack as IItemStack  = <simplyjetpacks:itemjetpack:16>
 global armoredresonantjetpack   as IItemStack  = <simplyjetpacks:itemjetpack:17>.withTag({Energy: 0, JetpackParticleType: 0});
 global fluxinfusedjetplate    as IItemStack  = <simplyjetpacks:itemjetpack:18>.withTag({Energy: 0, JetpackParticleType: 0});
 
+global sec as function(int)int = function (second as int) as int {
+	//turns seconds to ticks
+	return second * 20;
+};

@@ -283,7 +283,7 @@ assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18072> * 4, <ore:pipeMed
 
 //Pumps Via Assembler
 
-assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18071>, <gregtech:meta_item_1:17071>, <metaitem:electric.motor.lv>, <ore:pipeMediumBronze>, <ore:cableGtSingleTin>, <gregtech:meta_item_1:18152> * 2]).outputs([<metaitem:electric.pump.lv>]).duration(200).EUt(16).buildAndRegister();	//lv pump
+assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18071>, <gregtech:meta_item_1:15071>, <metaitem:electric.motor.lv>, <ore:pipeMediumBronze>, <ore:cableGtSingleTin>, <gregtech:meta_item_1:18152> * 2]).outputs([<metaitem:electric.pump.lv>]).duration(200).EUt(16).buildAndRegister();	//lv pump
 assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18095>, <gregtech:meta_item_1:17095>, <metaitem:electric.motor.mv>, <gregtech:fluid_pipe:2184>, <gregtech:cable:5018>, <gregtech:meta_item_1:18152> * 2]).outputs([<metaitem:electric.pump.mv>]).duration(200).EUt(16).buildAndRegister();	//mv pump
 assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18184>, <gregtech:meta_item_1:17184>, <gregtech:meta_item_1:32602>, <ore:pipeMediumStainlessSteel>, <gregtech:cable:5026>, <gregtech:meta_item_1:18152> * 2]).outputs([<gregtech:meta_item_1:32612>]).duration(200).EUt(16).buildAndRegister();	//hv pump
 assembler.recipeBuilder().inputs([<gregtech:meta_item_2:18183>, <gregtech:meta_item_1:17183>, <gregtech:meta_item_1:32603>, <ore:pipeMediumTitanium>, <gregtech:cable:5001>, <gregtech:meta_item_1:18152> * 2]).outputs([<gregtech:meta_item_1:32613>]).duration(200).EUt(16).buildAndRegister();	//ev pump
@@ -303,15 +303,15 @@ assembler.findRecipe(2, [<ore:plateIron>.firstItem * 5, <minecraft:trapped_chest
 assembler.recipeBuilder().inputs([<ore:plateIron> * 5, <minecraft:chest>]).notConsumable(gt.getCirc(5)).outputs([<minecraft:hopper>]).duration(100).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs([<ore:plateWroughtIron> * 5, <minecraft:chest>]).notConsumable(gt.getCirc(5)).outputs([<minecraft:hopper>]).duration(100).EUt(16).buildAndRegister();
 recipes.addShapeless(<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}}), [<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:cow"})]);
-furnace.remove(<gregtech:meta_item_1:9706>, <gregtech:meta_item_1:706>);
-furnace.remove(<gregtech:meta_item_1:9707>, <gregtech:meta_item_1:707>);
-furnace.remove(<gregtech:meta_item_1:9708>, <gregtech:meta_item_1:708>);
-recipes.remove(<gregtech:meta_item_1:706>);
-recipes.remove(<gregtech:meta_item_1:707>);
-recipes.remove(<gregtech:meta_item_1:708>);
-recipes.remove(<gregtech:meta_item_1:2706>);
-recipes.remove(<gregtech:meta_item_1:2707>);
-recipes.remove(<gregtech:meta_item_1:2708>);
+furnace.remove(<gregtech:meta_item_1:9506>, <gregtech:meta_item_1:506>);
+furnace.remove(<gregtech:meta_item_1:9507>, <gregtech:meta_item_1:507>);
+furnace.remove(<gregtech:meta_item_1:9963>, <gregtech:meta_item_1:963>);
+recipes.remove(<gregtech:meta_item_1:506>);
+recipes.remove(<gregtech:meta_item_1:507>);
+recipes.remove(<gregtech:meta_item_1:963>);
+recipes.remove(<gregtech:meta_item_1:2506>);
+recipes.remove(<gregtech:meta_item_1:2507>);
+recipes.remove(<gregtech:meta_item_1:2963>);
 
 //Small Gear Via Extruder
 
@@ -328,7 +328,7 @@ recipes.addShaped(<contenttweaker:creativeportabletankmold>, [
 extruder.recipeBuilder().inputs([<ore:ingotSteel>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<ore:gearSmallSteel>.firstItem]).duration(130).EUt(64).buildAndRegister();	//steel	small gear
 extruder.recipeBuilder().inputs([<ore:ingotAluminium>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<gregtech:meta_item_2:17001>]).duration(130).EUt(64).buildAndRegister();	//aluminium	small gear
 extruder.recipeBuilder().inputs([<ore:ingotStainlessSteel>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<gregtech:meta_item_2:17183>]).duration(130).EUt(64).buildAndRegister();	//stainless steel small gear
-extruder.recipeBuilder().inputs([<ore:ingotTitanium>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<gregtech:meta_item_2:17072>]).duration(130).EUt(64).buildAndRegister();	//titanium small gear
+extruder.recipeBuilder().inputs([<ore:ingotTitanium>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<gregtech:meta_item_2:15072>]).duration(130).EUt(64).buildAndRegister();	//titanium small gear
 extruder.recipeBuilder().inputs([<ore:ingotTungstenSteel>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<gregtech:meta_item_2:17235>]).duration(130).EUt(64).buildAndRegister();	//tungstensteel	small gear
 extruder.recipeBuilder().inputs([<gregtech:meta_item_1:10302>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<gregtech:meta_item_2:17302>]).duration(130).EUt(64).buildAndRegister();	//hss-g	small gear
 extruder.recipeBuilder().inputs([<gregtech:meta_item_1:10303>]).notConsumable(<contenttweaker:smallgearextrudershape>).outputs([<gregtech:meta_item_2:17303>]).duration(130).EUt(64).buildAndRegister();	//hss-e	small gear

@@ -182,8 +182,8 @@ val t8c as IIngredient[] = [
 #assembler.findRecipe(34400, t8c, [<liquid:tin> * 288]).remove();
 #assembler.findRecipe(34400, t8c, [<liquid:soldering_alloy> * 144]).remove();
 
-recipes.remove(<gregtech:meta_item_2:26708>);
-recipes.remove(<gregtech:meta_item_2:26707>);
+recipes.remove(<gregtech:meta_item_2:26963>);
+recipes.remove(<gregtech:meta_item_2:26507>);
 */
 //neuroprocessor // ??
 //assembly_line.findRecipe(80000,
@@ -200,7 +200,7 @@ recipes.remove(<gregtech:meta_item_2:26707>);
 
 assembly_line.recipeBuilder()
     .inputs(<contenttweaker:draconicstemcells> * 8,
-            <gregtech:cable:708> * 32,
+            <gregtech:cable:963> * 32,
             <metaitem:circuit.wetware_processor> * 8,
             <metaitem:board.wetware> * 4)
     .fluidInputs(<liquid:sterilized_growth_medium> * 16000)
@@ -376,21 +376,22 @@ craft.makeShaped("of_omnium_trimmed_black_steel",
 //Remove hardcoded gtce neutronium recipes and replace with oredicted versions
 
 //Cutting Saw recipes
-saw.findRecipe(30, [<avaritia:block_resource>], [<liquid:water> * 1000]).remove();
+gt.removeByOutput(gt.cutting_saw, [<gregtech:meta_item_1:12993>]); // gt Neutronium plates
+//saw.findRecipe(30, [<avaritia:block_resource>], [<liquid:water> * 1000]).remove(); // ??
 saw.recipeBuilder()
     .inputs(<avaritia:block_resource:0>)
     .fluidInputs(<liquid:water> * 1000)
     .outputs([<moreplates:neutronium_plate> * 9])
     .duration(80000).EUt(30).buildAndRegister();
 
-saw.findRecipe(30, [<avaritia:block_resource>], [<liquid:distilled_water> * 750]).remove();
+//saw.findRecipe(30, [<avaritia:block_resource>], [<liquid:distilled_water> * 750]).remove();
 saw.recipeBuilder()
     .inputs(<avaritia:block_resource:0>)
     .fluidInputs(<liquid:distilled_water> * 750)
     .outputs([<moreplates:neutronium_plate> * 9])
     .duration(52000).EUt(30).buildAndRegister();
 
-saw.findRecipe(30, [<avaritia:block_resource>], [<liquid:lubricant> * 250]).remove();
+//saw.findRecipe(30, [<avaritia:block_resource>], [<liquid:lubricant> * 250]).remove();
 saw.recipeBuilder()
     .inputs(<avaritia:block_resource:0>)
     .fluidInputs(<liquid:lubricant> * 250)
@@ -398,7 +399,7 @@ saw.recipeBuilder()
     .duration(20000).EUt(30).buildAndRegister();
 
 //Extruder Recipes
-extruder.findRecipe(64,[<avaritia:resource:4>, <metaitem:shape.extruder.plate>], [null]).remove();
+//extruder.findRecipe(64,[<avaritia:resource:4>, <metaitem:shape.extruder.plate>], [null]).remove();
 extruder.recipeBuilder()
     .inputs(<avaritia:resource:4>)
     .notConsumable(<metaitem:shape.extruder.plate>)
@@ -406,7 +407,7 @@ extruder.recipeBuilder()
     .duration(5000).EUt(64).buildAndRegister();
 
 //Alloy Smelter recipes
-alloy.findRecipe(16, [<avaritia:resource:4> * 2, <metaitem:shape.mold.plate>], [null]).remove();
+//alloy.findRecipe(16, [<avaritia:resource:4> * 2, <metaitem:shape.mold.plate>], [null]).remove();
 alloy.recipeBuilder()
     .inputs(<ore:ingotNeutronium> * 2)
     .notConsumable(<metaitem:shape.mold.plate>)

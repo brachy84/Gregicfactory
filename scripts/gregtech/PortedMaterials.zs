@@ -1,5 +1,6 @@
 #loader gregtech
 import mods.gregtech.material.MaterialRegistry;
+import mods.gregtech.material.MaterialCasting;
 
 var materialList = MaterialRegistry.getAllMaterials();
 
@@ -41,9 +42,9 @@ ardite.addFlags(["GENERATE_PLATE"]);
 val manyullyn = MaterialRegistry.createIngotMaterial(514, "manyullyn", 0x9949cc, "dull", 2);
 manyullyn.addFlags(["GENERATE_PLATE"]);
 
-val omnium = MaterialRegistry.createIngotMaterial(709, "omnium", 0x84053e, "shiny", 2);
+val omnium = MaterialRegistry.createIngotMaterial(509, "omnium", 0x84053e, "shiny", 2);
 
-val draconium = MaterialRegistry.createIngotMaterial(710, "draconium", 0xbe49ed, "dull", 2);
+val draconium = MaterialRegistry.createIngotMaterial(510, "draconium", 0xbe49ed, "dull", 2);
 
 
 conductiveIron.setCableProperties(32, 1, 0);
@@ -52,6 +53,6 @@ vibrantAlloy.setCableProperties(512, 1, 0);
 endSteel.setCableProperties(2048, 1, 0);
 lumium.setCableProperties(8192, 1, 0);
 signalum.setCableProperties(32768, 1, 0);
-//enderium.setCableProperties(131072, 1, 0);
+MaterialCasting.toIngot(<material:enderium>).setCableProperties(131072, 1, 0);
 draconium.setCableProperties(524288, 1, 0);
 omnium.setCableProperties(2147483647, 1, 0);

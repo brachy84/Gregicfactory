@@ -12,9 +12,9 @@ furnace.remove(<ore:gemQuartzBlack>);
 furnace.remove(<ore:ingotDraconium>);
 furnace.remove(<ore:ingotMithril>);
 furnace.remove(<appliedenergistics2:material:5>);
-furnace.remove(<thermalfoundation:material:167>, <gregtech:meta_item_1:2708>); #enderium
-furnace.remove(<thermalfoundation:material:166>, <gregtech:meta_item_1:2706>); #lumium
-furnace.remove(<thermalfoundation:material:165>, <gregtech:meta_item_1:2707>); #signalum
+furnace.remove(<thermalfoundation:material:167>, <gregtech:meta_item_1:2963>); #enderium
+furnace.remove(<thermalfoundation:material:166>, <gregtech:meta_item_1:2506>); #lumium
+furnace.remove(<thermalfoundation:material:165>, <gregtech:meta_item_1:2507>); #signalum
 
 //  Tier 0										Steel, Silicon
 //	Tier 1	[1000 temp]		120		Copper		Black Steel, Annealed Copper
@@ -113,9 +113,9 @@ blast_furnace.findRecipe(120, [<ore:dustChrome>.firstItem], [null]).remove();
 blast_furnace.recipeBuilder().inputs([<ore:dustChrome>]).outputs([<ore:ingotChrome>.firstItem]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Modularium [tier 3]
-recipes.remove(<modularmachinery:itemmodularium>);
-blast_furnace.recipeBuilder().inputs([<ore:dustSteel>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<modularmachinery:itemmodularium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
-blast_furnace.recipeBuilder().inputs([<ore:ingotSteel>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<modularmachinery:itemmodularium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
+//recipes.remove(<modularmachinery:itemmodularium>);
+//blast_furnace.recipeBuilder().inputs([<ore:dustSteel>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<modularmachinery:itemmodularium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
+//blast_furnace.recipeBuilder().inputs([<ore:ingotSteel>,<nuclearcraft:compound:2>]).fluidInputs([<liquid:deuterium>*50]).outputs([<modularmachinery:itemmodularium>]).property("temperature", 1700).duration(600).EUt(120).buildAndRegister();
 
 //Nichrome [tier 4]
 blast_furnace.findRecipe(480, [<ore:ingotNickel>.firstItem * 4,<ore:ingotChrome>.firstItem], [null]).remove();
