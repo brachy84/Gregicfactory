@@ -1,8 +1,8 @@
 {
 	title: "Signalum Upgrade Kit",
 	icon: "thermalfoundation:upgrade 1 2",
-	x: -22.0d,
-	y: 11.75d,
+	x: -22.25d,
+	y: 12.25d,
 	text: [
 		"Having unlocked §6Signalum§r and §6Lumium§r, at long last you can now make §aSignalum Upgrade Kits§r!",
 		"",

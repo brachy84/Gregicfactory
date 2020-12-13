@@ -1,8 +1,8 @@
 {
 	title: "The Third Tier Four Circuits",
 	icon: "gregtech:meta_item_2 1 32493",
-	x: -1.25d,
-	y: 10.0d,
+	x: -28.75d,
+	y: 13.0d,
 	text: [
 		"Nothing you haven't seen here: just combine some standard circuit components and §6Nanocircuits§r to make a §6Nanoprocessor§r."
 	],

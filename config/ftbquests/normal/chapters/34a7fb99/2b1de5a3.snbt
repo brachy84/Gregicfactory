@@ -2,7 +2,7 @@
 	title: "Crystal Processing Unit",
 	icon: "gregtech:meta_item_2 1 32474",
 	x: -21.75d,
-	y: 11.75d,
+	y: 13.0d,
 	text: [
 		"§6Crystal CPUs§r are the cores of §6Crystal Circuits§r.",
 		"",

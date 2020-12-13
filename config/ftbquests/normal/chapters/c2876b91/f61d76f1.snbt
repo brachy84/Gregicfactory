@@ -2,7 +2,7 @@
 	title: "Lumium",
 	icon: "thermalfoundation:material 1 166",
 	x: -21.5d,
-	y: 10.5d,
+	y: 14.25d,
 	text: [
 		"Glowing!",
 		"",

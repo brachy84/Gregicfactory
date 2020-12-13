@@ -1,8 +1,8 @@
 {
 	title: "The First Tier Six Circuits",
 	icon: "contenttweaker:nanoprocessormainframe",
-	x: -1.25d,
-	y: 12.5d,
+	x: -28.75d,
+	y: 15.5d,
 	text: [
 		"The first and most expensive Tier Six Circuit, needed for crafting the §3IV Assembling Machine§r.",
 		"",

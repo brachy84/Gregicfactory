@@ -1,7 +1,7 @@
 {
 	title: "The Third and Final Tier Seven Circuits",
 	icon: "gregtech:meta_item_2 1 32499",
-	x: -7.25d,
+	x: -6.5d,
 	y: 13.5d,
 	text: [
 		"§6Wetware Processors§r are made in an §3Assembly Line§r on ZPM power.",

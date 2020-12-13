@@ -1,8 +1,8 @@
 {
 	title: "The Second Tier Five Circuits",
 	icon: "contenttweaker:nanoprocessorarray",
-	x: -1.25d,
-	y: 11.25d,
+	x: -28.75d,
+	y: 14.25d,
 	text: [
 		"Upgrading to the §6Nanoprocessor Array§r requires some standard circuit components, but also some §6Lumium Wire§r and §6Tungstensteel Plates§r."
 	],

@@ -1,0 +1,19 @@
+{
+	title: "MV Circuit Assembling Machine",
+	x: -25.5d,
+	y: 12.25d,
+	text: [
+		""
+	],
+	dependencies: [
+		"b33f8563"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "a405cf1d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2001"
+		}]
+	}]
+}

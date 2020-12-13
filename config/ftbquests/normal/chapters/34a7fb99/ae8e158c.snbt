@@ -1,7 +1,7 @@
 {
 	title: "The Second And Final Tier Eight Circuits",
 	icon: "gregtech:meta_item_2 1 32500",
-	x: -7.25d,
+	x: -6.5d,
 	y: 14.75d,
 	text: [
 		"§6Wetware Processor Arrays§r are made in an §3Assembly Line§r at ZPM or better power.",

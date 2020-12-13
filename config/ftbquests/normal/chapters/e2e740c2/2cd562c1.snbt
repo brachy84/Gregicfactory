@@ -1,7 +1,7 @@
 {
 	title: "Charging Quartz",
 	icon: "appliedenergistics2:charger",
-	x: -24.25d,
+	x: -23.5d,
 	y: 7.25d,
 	shape: "square",
 	text: [

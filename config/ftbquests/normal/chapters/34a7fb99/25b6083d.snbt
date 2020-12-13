@@ -1,7 +1,7 @@
 {
 	title: "The First And Only Tier Nine Circuit",
 	icon: "gregtech:meta_item_2 1 32501",
-	x: -7.25d,
+	x: -6.5d,
 	y: 16.0d,
 	text: [
 		"The final circuit.",

@@ -8,8 +8,8 @@
 		},
 		Damage: 1s
 	},
-	x: -25.5d,
-	y: 9.25d,
+	x: -26.0d,
+	y: 8.0d,
 	text: [
 		"Being able to fly is nice. This is the first jetpack that uses §bEnderIO§r materials.",
 		"",

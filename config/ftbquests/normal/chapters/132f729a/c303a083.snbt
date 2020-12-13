@@ -1,6 +1,6 @@
 {
 	title: "MV Energy Input And MV CEF",
-	icon: "gregtech:machine 1 10673",
+	icon: "gregtech:machine 1 724",
 	x: -15.5d,
 	y: 4.5d,
 	text: [
@@ -22,6 +22,17 @@
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 724"
+		}]
+	},
+	{
+		uid: "a3b8fcde",
+		type: "item",
+		title: "Forge Energy Converter (MV)",
+		items: [{
+			item: "gregtech:machine 1 2923"
+		},
+		{
+			item: "gregtech:machine 1 2919"
 		}]
 	}],
 	rewards: [{

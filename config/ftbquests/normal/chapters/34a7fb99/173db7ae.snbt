@@ -1,7 +1,7 @@
 {
 	title: "The Third Tier Six Circuits",
 	icon: "gregtech:meta_item_2 1 32497",
-	x: -18.25d,
+	x: -12.5d,
 	y: 13.0d,
 	text: [
 		"With some now-standard components you can upgrade a few §6Crystal Circuits§r into a §6Crystal Processor§r."

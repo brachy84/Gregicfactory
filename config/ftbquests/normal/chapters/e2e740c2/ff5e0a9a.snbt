@@ -2,7 +2,7 @@
 	title: "Pyrolyse Oven",
 	icon: "gregtech:machine 1 514",
 	x: -23.0d,
-	y: 10.5d,
+	y: 11.0d,
 	shape: "square",
 	text: [
 		"The main function of this oven is to increase the fuel values of your wood and coal while also recovering some of the various potentially useful waste products.",

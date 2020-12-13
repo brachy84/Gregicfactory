@@ -2,7 +2,7 @@
 	title: "Engraved Crystal Chip",
 	icon: "gregtech:meta_item_2 1 32502",
 	x: -21.75d,
-	y: 9.75d,
+	y: 11.0d,
 	text: [
 		"By baking an §6Exquisite Emerald§r and §6Emerald Plates§r with §9Helium§r in an §3Electric Blast Furnace§r, you can create an §6Engraved Crystal Chip§r.",
 		"",

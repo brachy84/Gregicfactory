@@ -10,6 +10,9 @@
 		"",
 		"Quartz Fiber are §emicroparts§r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
 	],
+	dependencies: [
+		"e0c73d4f"
+	],
 	size: 2.0d,
 	tasks: [{
 		uid: "0fb700bb",

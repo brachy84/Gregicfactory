@@ -1,12 +1,12 @@
 {
 	title: "Wetware Substrate",
-	icon: "gregtech:meta_item_2 1 32449",
+	icon: "gtadditions:ga_meta_item 1 32035",
 	x: -9.0d,
 	y: 16.0d,
 	text: [
 		"The most advanced substrate available, crafted and grown with bleeding-edge bioengineering technology.",
 		"",
-		"§6Wetware Lifesupport Circuit Boards§r are the basis of §6Wetware§r circuits, the final theme that spans tiers six through nine."
+		"§6Wetware Lifesupport Circuit Boards§r are the basis of §6§mWetware§r §6Crystal§r circuits§m, the final theme that spans tiers six through nine§r."
 	],
 	dependencies: [
 		"a8ee1142"

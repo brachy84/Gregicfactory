@@ -1,8 +1,8 @@
 {
-	title: "ZPM Assembling Machine",
+	title: "ZPM Circuit Assembly Line",
 	icon: "gregtech:machine 1 2004",
-	x: 2.5d,
-	y: 5.0d,
+	x: -7.25d,
+	y: 10.5d,
 	text: [
 		"With your §6Iridium§r-based machine hulls and §6Crystal Processor Mainframes§r squared away, you can finally get on the path to making a ZPM §3Assembling Machine§r.",
 		"",

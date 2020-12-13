@@ -1,5 +1,5 @@
 {
-	title: "EV Assembling Machine",
+	title: "EV Circuit Assembling Machine",
 	icon: "gregtech:machine 1 103",
 	x: -28.75d,
 	y: 10.0d,
@@ -14,10 +14,10 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "983bd894",
+		uid: "7de5d97e",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 103"
+			item: "gregtech:machine 1 2003"
 		}]
 	}],
 	rewards: [{

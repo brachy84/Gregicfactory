@@ -1,8 +1,8 @@
 {
 	title: "LuV Machine Hulls",
 	icon: "gregtech:machine 1 506",
-	x: -21.0d,
-	y: 11.75d,
+	x: -20.75d,
+	y: 12.25d,
 	text: [
 		"With §6Lumium§r and §6Vanadium-Gallium§r, you can now make hulls for Ludicrous Voltage (LuV) §bGregTech§r machines."
 	],

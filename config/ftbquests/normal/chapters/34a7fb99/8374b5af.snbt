@@ -1,8 +1,8 @@
 {
 	title: "The Fourth and Final Tier Five Circuits",
 	icon: "contenttweaker:crystalcircuit",
-	x: -18.25d,
-	y: 11.75d,
+	x: -19.5d,
+	y: 13.0d,
 	text: [
 		"With your §6Crystal CPUs§r and the §3LuV Assembling Machine§r crafted, you can make the final type of Tier Five Circuit: the §6Quantum Circuit§r.",
 		"",

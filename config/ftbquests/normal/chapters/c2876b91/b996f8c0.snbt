@@ -1,5 +1,5 @@
 {
-	title: "HV Assembling Machine",
+	title: "HV Circuit Assembling Machine",
 	icon: "gregtech:machine 1 102",
 	x: -28.75d,
 	y: 2.5d,
@@ -13,10 +13,10 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "07acb435",
+		uid: "d31f4633",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 102"
+			item: "gregtech:machine 1 2002"
 		}]
 	}],
 	rewards: [{

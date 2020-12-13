@@ -1,18 +1,16 @@
 {
 	title: "The Fourth And Final Tier Six Circuits",
 	icon: "gregtech:meta_item_2 1 32498",
-	x: -7.25d,
+	x: -6.5d,
 	y: 12.25d,
 	text: [
-		"The final form of Tier Six circuits, and the final circuit theme.",
-		"",
 		"Using your §6Wetware Lifesupport Circuit Boards§r, §6Naquadah Alloy wire§r, §6ASoCs§r, and §9Sterilized Growth Medium§r, you can craft (grow?) these circuits in a ZPM or better §3Assembling Machine§r.",
 		"",
 		"These are fairly slow to craft and you're going to need considerable quantities, so make sure you have a good parallelized infrastructure for keeping these stocked."
 	],
 	dependencies: [
-		"4e2c356c",
-		"c5ee40b6"
+		"c5ee40b6",
+		"bde9916b"
 	],
 	tasks: [{
 		uid: "b060b0cd",

@@ -2,7 +2,7 @@
 	title: "Exquisite Gems",
 	icon: "gregtech:meta_item_2 1 25113",
 	x: -21.75d,
-	y: 8.5d,
+	y: 9.0d,
 	text: [
 		"§6Exquisite Gems§r are mostly needed for crafting special materials.",
 		"",
