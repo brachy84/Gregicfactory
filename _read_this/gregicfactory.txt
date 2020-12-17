@@ -1,0 +1,24 @@
+1. Ores spawn    DONE
+	5% Pure
+	15% Rich
+	65% Normal
+	15% Poor
+	
+2. The early game will still be as easy, if not easier
+	- Mid and late game recipes will be more expensive due to Gregicaliy
+
+3. Most of the circuits have Gregicaliy recipe which makes them slightly more expensive
+
+4. The Nuclear Elements (Californium, Einsteinium, Neptunium, etc...) will be replaced with gregicalitys
+	(May remove Nuclearcraft)
+
+5. Creative Items start at UXV
+
+6. Creative Tank (UV) will be replaced with Microverse Absorber
+	- Needs a universe creation data to start, which lasts c.a. 15min
+	- It will generate stacks of Pure ore (maybe other materials) every second
+	- so basically a fancy void miner
+
+7. Omnium will stay where it is
+
+8. New End game material Decalium
