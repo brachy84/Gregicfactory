@@ -2,10 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.gregtech.recipe.RecipeMap;
-import mods.modularmachinery.RecipePrimer;
-import mods.modularmachinery.RecipeBuilder;
 
-import mods.modularmachinery.RecipeBuilder.newBuilder as mmRecipe;
 //import scripts.CommonVars.craft.makeExtremeRecipe5 as craft.makeExtremeRecipe5;
 //import scripts.CommonVars.craft.makeExtremeRecipe7 as craft.makeExtremeRecipe7;
 //import scripts.CommonVars.craft.makeExtremeRecipe9 as craft.makeExtremeRecipe9;
