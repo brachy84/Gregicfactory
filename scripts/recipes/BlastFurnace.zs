@@ -158,7 +158,7 @@ blast_furnace.recipeBuilder().inputs([<ore:dustNiobium>]).outputs([<ore:ingotHot
 
 //Signalum [tier 8]
 recipes.remove(<thermalfoundation:material:101>);
-recipes.addShapeless(<thermalfoundation:material:101> * 4, [  // Mixer Recipe ???????????
+recipes.addShapeless(<thermalfoundation:material:101> * 4, [  // Mixer Recipe ??
 	<ore:dustAnnealedCopper>,<ore:dustAnnealedCopper>,<ore:dustAnnealedCopper>,
 	<ore:dustAnnealedCopper>,<ore:dustArdite>,<ore:dustArdite>,
 	<ore:dustRedAlloy>,<ore:dustRedAlloy>,<thermalfoundation:material:893>]);
@@ -205,7 +205,7 @@ furnace.addRecipe(<ore:ingotOsmiridium>.firstItem, <ore:dustOsmiridium>, 0.0);
 	
 //Enderium [tier 13]
 recipes.remove(<thermalfoundation:material:103>);
-recipes.addShapeless(<thermalfoundation:material:103> * 4, [ // Mixer Recipe ?????????????????????
+recipes.addShapeless(<thermalfoundation:material:103> * 4, [ // Mixer Recipe ??
 	<ore:dustLead>,<ore:dustLead>,<ore:dustLead>,
 	<ore:dustLead>,<ore:dustPlatinum>,<ore:dustPlatinum>,
 	<ore:dustBlueSteel>,<ore:dustOsmium>,<thermalfoundation:material:895>]);

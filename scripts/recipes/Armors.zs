@@ -428,7 +428,7 @@ recipes.addShaped(<armorplus:lapis_bow>, [
 [<ore:stickLapis>,null,<minecraft:string>],
 [null,<ore:stickLapis>,<minecraft:string>]]);
 
-recipes.addShaped(<armorplus:emerald_bow>, [ // ???????????????????????????????????????????????
+recipes.addShaped(<armorplus:emerald_bow>, [ // ??
 [null,null,<gregtech:meta_item_1:14113>,<gregtech:meta_item_1:14113>,<minecraft:string>],
 [null,<gregtech:meta_item_1:14113>,null,null,<minecraft:string>],
 [null,<gregtech:meta_item_1:14113>,null,null,<minecraft:string>],

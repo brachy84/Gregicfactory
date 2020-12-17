@@ -51,7 +51,6 @@ recipes.addShaped(<metaitem:component.glass.tube>, [
 <metaitem:circuit.basic_electronic>.addTooltip("Electronic Circuit");
 <metaitem:circuit.basic_electronic>.addTooltip(format.aqua(format.italic("This is the second Tier One circuit.")));
 
-// ??
 //assembler.findRecipe(8, [<metaitem:plate.integrated_logic_circuit>, <metaitem:component.resistor> * 2, <metaitem:component.capacitor>, <metaitem:board.phenolic>, <ore:wireFineCopper>.firstItem], [<liquid:tin> * 144]).remove();
 //assembler.findRecipe(8, [<metaitem:plate.integrated_logic_circuit>, <metaitem:component.resistor> * 2, <metaitem:component.capacitor>, <metaitem:board.phenolic>, <ore:wireFineCopper>.firstItem], [<liquid:soldering_alloy> * 72]).remove();
 //assembler.findRecipe(8, [<metaitem:plate.integrated_logic_circuit>, <metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor>, <metaitem:board.phenolic>, <ore:wireFineCopper>.firstItem], [<liquid:tin> * 144]).remove();
@@ -229,7 +228,6 @@ gt.removeByOutput(gt.circuit_assembler, [<metaitem:circuit.basic_electronic>]);
 <metaitem:circuit.processor_assembly>.addTooltip("Microprocessor");
 <metaitem:circuit.processor_assembly>.addTooltip(format.aqua(format.italic("This is the third Tier Three circuit.")));
 
-// ??
 //assembler.findRecipe(90, [<metaitem:circuit.advanced> * 2, <metaitem:component.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.plastic>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineRedAlloy>.firstItem * 12], [<liquid:tin> * 288]).remove();
 //assembler.findRecipe(90, [<metaitem:circuit.advanced> * 2, <metaitem:component.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.plastic>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineRedAlloy>.firstItem * 12], [<liquid:soldering_alloy> * 144]).remove();
 //assembler.findRecipe(90, [<metaitem:circuit.advanced> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.plastic>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineRedAlloy>.firstItem * 12], [<liquid:tin> * 288]).remove();
@@ -249,7 +247,6 @@ gt.removeByOutput(gt.circuit_assembler, [<metaitem:circuit.basic_electronic>]);
 <metaitem:circuit.nano_processor>.addTooltip("Nanocircuit");
 <metaitem:circuit.nano_processor>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Three circuit.")));
 
-// ??
 //assembler.findRecipe(480, [<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.epoxy>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineElectrum>.firstItem * 2], [<liquid:tin> * 144]).remove();
 //assembler.findRecipe(480, [<metaitem:component.smd.resistor> * 2, <metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.epoxy>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineElectrum>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
 //assembler.findRecipe(9600, [<metaitem:board.epoxy>, <metaitem:plate.system_on_chip>, <ore:wireFineElectrum>.firstItem * 2], [<liquid:tin> * 144]).remove();
@@ -315,7 +312,6 @@ for fluid, amount in fluids {
 <metaitem:circuit.nano_processor_assembly>.addTooltip("Nanoprocessor");
 <metaitem:circuit.nano_processor_assembly>.addTooltip(format.aqua(format.italic("This is the third Tier Four circuit.")));
 
-// ??
 //assembler.findRecipe(480, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:circuit.nano_processor> * 2, <metaitem:board.epoxy>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineElectrum>.firstItem * 6], [<liquid:tin> * 288]).remove();
 //assembler.findRecipe(480, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:circuit.nano_processor> * 2, <metaitem:board.epoxy>, <metaitem:plate.random_access_memory> * 4, <ore:wireFineElectrum>.firstItem * 6], [<liquid:soldering_alloy> * 144]).remove();
 
@@ -331,7 +327,6 @@ for fluid, amount in fluids {
 <metaitem:circuit.quantum_processor>.addTooltip("Quantum Circuit");
 <metaitem:circuit.quantum_processor>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Four circuit.")));
 
-// ??
 //assembler.findRecipe(1960, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.fiber_reinforced>, <metaitem:plate.nano_central_processing_unit>, <metaitem:plate.qbit_central_processing_unit>, <ore:wireFinePlatinum>.firstItem * 2], [<liquid:tin> * 144]).remove();
 //assembler.findRecipe(1960, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.smd.transistor> * 2, <metaitem:board.fiber_reinforced>, <metaitem:plate.nano_central_processing_unit>, <metaitem:plate.qbit_central_processing_unit>, <ore:wireFinePlatinum>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
 //assembler.findRecipe(32000, [<metaitem:board.fiber_reinforced>, <metaitem:plate.advanced_system_on_chip>, <ore:wireFinePlatinum>.firstItem * 2], [<liquid:tin> * 144]).remove();
@@ -376,7 +371,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:
 
 <metaitem:circuit.assembly.quantum>.addTooltip(format.aqua(format.italic("This is the third Tier Five circuit.")));
 
-// ??
 //assembler.findRecipe(1960, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.quantum_processor> * 2, <ore:wireFinePlatinum>.firstItem * 6], [<liquid:tin> * 288]).remove();
 //assembler.findRecipe(1960, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.quantum_processor> * 2, <ore:wireFinePlatinum>.firstItem * 6], [<liquid:soldering_alloy> * 144]).remove();
 
@@ -391,7 +385,6 @@ assembler.recipeBuilder().inputs([<metaitem:component.smd.diode> * 4, <metaitem:
 
 <metaitem:circuit.processor.crystal>.addTooltip(format.aqua(format.italic("This is the fourth and final Tier Five circuit.")));
 
-// ??
 //assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineNiobiumTitanium>.firstItem * 2], [<liquid:tin> * 144]).remove();
 //assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 2, <metaitem:component.smd.transistor> * 2, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <ore:wireFineNiobiumTitanium>.firstItem * 2], [<liquid:soldering_alloy> * 72]).remove();
 //assembler.findRecipe(31900, [<metaitem:board.multilayer.fiber_reinforced>, <metaitem:crystal.system_on_chip>, <ore:wireFineNiobiumTitanium>.firstItem * 2], [<liquid:tin> * 144]).remove();
@@ -439,7 +432,6 @@ for fluid, amount in fluids {
 <metaitem:circuit.energy_flow>.addTooltip("Crystal Processor");
 <metaitem:circuit.energy_flow>.addTooltip(format.aqua(format.italic("This is the third Tier Six circuit.")));
 
-// ??
 //assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.crystal_processor> * 2, <ore:wireFineNiobiumTitanium>.firstItem * 6], [<liquid:tin> * 288]).remove();
 //assembler.findRecipe(7600, [<metaitem:component.smd.capacitor> * 4, <metaitem:component.small_coil> * 4, <metaitem:board.multilayer.fiber_reinforced>, <metaitem:plate.random_access_memory> * 4, <metaitem:circuit.crystal_processor> * 2, <ore:wireFineNiobiumTitanium>.firstItem * 6], [<liquid:soldering_alloy> * 144]).remove();
 
@@ -548,7 +540,6 @@ for fluid, amount in fluids {
 
 //Wetware Processor
 
-// ??
 //<metaitem:circuit.wetware_assembly>.displayName = "Wetware Processor";
 //<metaitem:circuit.wetware_assembly>.clearTooltip();
 //<metaitem:circuit.wetware_assembly>.addTooltip("Wetware Processor");
